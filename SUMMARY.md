@@ -45,3 +45,6 @@
   * [Adding a stop between two airports in a Booking](guides/bookings-operators/adding-a-stop-between-two-airports-in-a-booking.md)
 * [🗺️ Maps](guides/maps/README.md)
   * [Use map-based route editing to create a tour flight](guides/maps/use-map-based-route-editing-to-create-a-tour-flight.md)
+* [Custom Items](guides/custom-items/README.md)
+  * [Custom Airports](guides/custom-items/custom-airports.md)
+  * [Custom Facilities](guides/custom-items/custom-facilities.md)
