@@ -39,6 +39,7 @@
   * [Require T\&Cs to be accepted online](guides/quotes/require-t-and-cs-to-be-accepted-online.md)
   * [Quote Details Page](guides/quotes/quote-details-page/README.md)
     * [Edit Quote valid till date](guides/quotes/quote-details-page/edit-quote-valid-till-date.md)
+* [Facilities](guides/facilities.md)
 * [Bookings (Operators)](guides/bookings-operators/README.md)
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
   * [Passenger Weights](guides/bookings-operators/passenger-weights.md)
@@ -48,4 +49,3 @@
 * [Custom Items](guides/custom-items/README.md)
   * [Custom Airports](guides/custom-items/custom-airports.md)
   * [Custom Facilities](guides/custom-items/custom-facilities.md)
-* [Facilities](guides/facilities.md)
