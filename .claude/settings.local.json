@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Read(//Users/tompwhite/Sites/aeroquote/**)",
+      "Read(//Users/tompwhite/Sites/aeroquote/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
