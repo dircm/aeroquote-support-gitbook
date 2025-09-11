@@ -20,4 +20,4 @@ coverY: 91.751179245283
 
 6. Click Save to create the new airport.  You may search for your airport anywhere you see a departure or arrival location box.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
