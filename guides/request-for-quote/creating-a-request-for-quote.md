@@ -1,7 +1,7 @@
 # Creating a Request For Quote
 
 {% hint style="info" %}
-Before you can create a RFQ you will need at least one External Aircraft, learn how to create one [creating-an-aircraft-with-external-operator.md](creating-an-aircraft-with-external-operator.md "mention")
+Before you can create a RFQ you will need at least one Aircraft with an External Operator, learn how to create one [creating-an-aircraft-with-external-operator.md](creating-an-aircraft-with-external-operator.md "mention")
 {% endhint %}
 
 Step 1: Start by creating a quote as you normally would either by:

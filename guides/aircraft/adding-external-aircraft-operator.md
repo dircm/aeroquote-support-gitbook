@@ -1,2 +1,0 @@
-# Adding external aircraft (operator)
-

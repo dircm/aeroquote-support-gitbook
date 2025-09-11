@@ -17,7 +17,6 @@
 * [Aircraft](guides/aircraft/README.md)
   * [Listing aircraft](guides/aircraft/listing-aircraft.md)
   * [Adding fleet aircraft](guides/aircraft/adding-fleet-aircraft.md)
-  * [Adding external aircraft (operator)](guides/aircraft/adding-external-aircraft-operator.md)
 * [Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
   * [Default Units](guides/settings/default-units.md)
