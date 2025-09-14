@@ -43,6 +43,7 @@
 * [Request For Quote](guides/request-for-quote/README.md)
   * [Creating an Aircraft with External Operator](guides/request-for-quote/creating-an-aircraft-with-external-operator.md)
   * [Creating a Request For Quote](guides/request-for-quote/creating-a-request-for-quote.md)
+  * [Viewing and Managing a Request For Quote](guides/request-for-quote/viewing-and-managing-a-request-for-quote.md)
   * [Sending Request For Quotes](guides/request-for-quote/sending-request-for-quotes.md)
   * [Track Responses to a RFQ](guides/request-for-quote/track-responses-to-a-rfq.md)
   * [Manage RFQ Responses](guides/request-for-quote/manage-rfq-responses.md)

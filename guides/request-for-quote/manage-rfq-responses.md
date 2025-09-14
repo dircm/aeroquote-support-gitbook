@@ -38,7 +38,7 @@ Once the External Operator provides a price to you using their online RFQ page, 
 
 * External operator's total price is immediately applied to the corresponding quote option **cost**
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Currency conversion happens automatically if the response is in a different currency.
 * Any original cost estimates are overridden but preserved for reference
@@ -62,4 +62,4 @@ Facility / FBO Changes: Any facility selections made by the external operator.
 
 Sometimes the External Operator will choose to respond with "Aircraft Unavailable".  This will be emailled to you and also update the banner attached to the Option.  A handy **Delete Option** button is available to allow you to remove this Option before sending to the customer.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

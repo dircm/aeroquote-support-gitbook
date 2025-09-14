@@ -31,15 +31,14 @@ No login required - uses secure signed URLs for access
 * External notes from you
 * Related aircraft links (if multiple aircraft selected for same External Operator)
 * Status indicators for current response state
+* Questions and answers
 * Visual route map showing complete flight path
 * Flight Details:
   * Flights organized chronologically by departure date
   * Shows departure/arrival airports, facilities / FBO, and timings
   * Displays passenger counts per flight segment
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/MacBook Pro-1757820109915.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Add Flight Before/After:
 
@@ -92,10 +91,19 @@ External operators can modify the mission with additional positioning flights:
 
 
 
-#### Question/Clarification:
+### Question & Answer Communication
 
-* Dedicated messaging field for questions about mission requirements
-* Flags request for quick follow-up from requesting operator
+When an external operator asks a question:
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Sample "Response" pop-up</p></figcaption></figure>
+* Questions appear in their Questions and Comments section
+* A email is sent immediately to you with question details
+* All communications are logged for reference
+
+Communication Flow:
+
+External operator asks question → You receive notification
+
+You reply → External operator receives your response
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 

@@ -8,11 +8,11 @@ Air crews can view the FBO location and contact details to ensure seamless opera
 
 When you select an airport from a departure or arrival selection box, and that airport has one or more Facilities, a **Choose Facility** link will appear below the airport box.  Clicking that box will open a facility choice window.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Select the facility you want to attach to the quote or booking.  The facility will be shown to the customer in the online quote or booking webview when the customer clicks "**Show Details**". Features include a clickable map to open in a new page and a driving directions address link.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -21,7 +21,7 @@ Select the facility you want to attach to the quote or booking.  The facility wi
 1. Navigate to **Options** in any Quote and click the edit button <img src="../.gitbook/assets/cog.jpg" alt="" data-size="line"> of a flight sector.
 2. In the Flight edit window, you may add and remove Facilities under the departure or arrival selection boxes.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

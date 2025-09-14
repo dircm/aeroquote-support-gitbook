@@ -4,7 +4,7 @@ Once you have generated a Quote with an External Aircraft the RFQs will be autom
 
 All generated new Quotes will automatically open the Quote Details page.  A window will pop up asking if you would like to send all the RFQs to all the [External Operators](../external-operators/) immediately.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking **Send All Now** will create emails to all the External Operators associated with the External Aircraft you selected in the Quote building process.
 
