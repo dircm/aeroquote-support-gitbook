@@ -16,6 +16,10 @@ The RFQ feature transforms how you source aircraft quote from [external operator
 [creating-an-aircraft-with-external-operator.md](creating-an-aircraft-with-external-operator.md)
 {% endcontent-ref %}
 
+{% content-ref url="viewing-and-managing-a-request-for-quote.md" %}
+[viewing-and-managing-a-request-for-quote.md](viewing-and-managing-a-request-for-quote.md)
+{% endcontent-ref %}
+
 {% content-ref url="sending-request-for-quotes.md" %}
 [sending-request-for-quotes.md](sending-request-for-quotes.md)
 {% endcontent-ref %}
