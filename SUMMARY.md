@@ -56,6 +56,7 @@
 * [Accounting Integration](guides/accounting-integration/README.md)
   * [Xero Integration Setup](guides/accounting-integration/xero-integration-setup.md)
   * [Quickbooks Integration Setup](guides/accounting-integration/quickbooks-integration-setup.md)
+  * [Payment Status Tracking](guides/accounting-integration/payment-status-tracking.md)
 * [🗺️ Maps](guides/maps/README.md)
   * [Use map-based route editing to create a tour flight](guides/maps/use-map-based-route-editing-to-create-a-tour-flight.md)
 * [Custom Items](guides/custom-items/README.md)
