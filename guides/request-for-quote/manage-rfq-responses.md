@@ -63,3 +63,29 @@ Facility / FBO Changes: Any facility selections made by the external operator.
 Sometimes the External Operator will choose to respond with "Aircraft Unavailable".  This will be emailled to you and also update the banner attached to the Option.  A handy **Delete Option** button is available to allow you to remove this Option before sending to the customer.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+From the [Request for Quotes menu](track-responses-to-a-rfq.md#method-2-view-all-the-rfqs-in-the-request-for-quotes-menu.-the-status-is-shown-in-the-list) you can perform actions on multiple RFQs within the same quote group:
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### Available Bulk Actions
+
+1. **Send** - Send selected RFQs to external operators
+   * Option to include external notes with the email
+   * RFQs are grouped by operator to minimize emails sent
+2. **Cancel RFQ** - Cancel selected RFQs
+   * Marks RFQs as cancelled
+   * Requires confirmation before proceeding
+   * Cannot be undone
+3. **Delete** - Permanently delete selected RFQs
+   * Removes RFQ and associated flight data
+   * Requires confirmation before proceeding
+   * Cannot be undone
+
+#### Using Bulk Actions
+
+1. Select one or more RFQs using the checkboxes
+2. Click the "Bulk actions" button that appears
+3. Choose your desired action from the dropdown
+4. Complete any required fields (e.g., external notes for Send)
+5. Confirm the action

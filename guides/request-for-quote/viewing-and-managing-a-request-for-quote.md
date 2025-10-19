@@ -18,9 +18,7 @@ The status of a RFQ will always be attached to the Option that uses the External
 
 #### Method 2 - From the RFQ list page
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ### Managing a RFQ
 
