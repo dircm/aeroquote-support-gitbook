@@ -75,7 +75,7 @@ Once connected, you'll see an **Invoice Configuration** section appear below the
 
 1. Locate the **"Default Invoice Line Item"** dropdown
 2. Click the dropdown to see all Products and Services from your QuickBooks account
-3. Select the item you want to use (e.g., "Charter Flight Services", "Aviation Services", "Flight Booking")
+3. Type to search and select the item you want to use (e.g., "Charter Flight Services", "Aviation Services", "Flight Booking")
 4. The selection saves automatically
 
 **Tip**: The dropdown loads items from QuickBooks in real-time, so you'll see exactly what's in your QuickBooks Products and Services list.
