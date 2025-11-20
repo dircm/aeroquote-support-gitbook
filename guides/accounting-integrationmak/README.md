@@ -5,7 +5,7 @@ description: >-
   generate invoices.
 ---
 
-# Accounting Integration
+# Accounting Integrationmak
 
 The accounting integration allows you to:
 
@@ -37,9 +37,9 @@ Navigate to **Settings → Integrations** and connect your QuickBooks or Xero ac
 [quickbooks-integration-setup.md](quickbooks-integration-setup.md)
 {% endcontent-ref %}
 
-### 2. Accept a Quote
+### 2. Accept a Quote (Optional)
 
-When you or your customer accepts a quote in AeroQuote, the quote status changes to "Accepted" but **no invoice is automatically created**. <img src="../../.gitbook/assets/image (17).png" alt="" data-size="line">
+When you or your customer accepts a quote in AeroQuote, the quote status changes to "Accepted". This generally indicates it is time to request payment from the customer. <img src="../../.gitbook/assets/image (17).png" alt="" data-size="line">
 
 ### 3. Generate Invoice (When You're Ready)
 
