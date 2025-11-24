@@ -9,3 +9,6 @@ coverY: -99
 
 # Aircraft
 
+{% content-ref url="adding-aircraft-with-external-operator.md" %}
+[adding-aircraft-with-external-operator.md](adding-aircraft-with-external-operator.md)
+{% endcontent-ref %}

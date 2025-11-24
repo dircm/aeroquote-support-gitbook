@@ -4,8 +4,7 @@ Welcome to AeroQuote, the only air charter software built by aviation industry p
 
 With AeroQuote, you can take the guesswork out of pricing and get charter estimates that are just right for you and your customers. Join the digital transformation and start wowing customers from the very first contact with AeroQuote and make your business fly.
 
-\
-
+<br>
 
 ## Video Overview
 

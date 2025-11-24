@@ -52,6 +52,5 @@ These statuses are reflected in the Online Booking View for your customers.
 
 #### Online Booking View
 
-AeroQuote's online customer booking view gives your customers real-time, online access to information about their booking. They will see the current itinerary, flight status, flight leg details, photos, maps, and notes. Customers can browse the options you have provided and make selections on their preferred aircraft. Like the [online quote view](concepts.md#online-quote-view), AeroQuote provides a question-and-answer chat feature where your customers can ask questions and view answers.\
-
+AeroQuote's online customer booking view gives your customers real-time, online access to information about their booking. They will see the current itinerary, flight status, flight leg details, photos, maps, and notes. Customers can browse the options you have provided and make selections on their preferred aircraft. Like the [online quote view](concepts.md#online-quote-view), AeroQuote provides a question-and-answer chat feature where your customers can ask questions and view answers.<br>
 
