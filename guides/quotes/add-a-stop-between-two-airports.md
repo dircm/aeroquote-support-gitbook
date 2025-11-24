@@ -7,4 +7,5 @@ description: >-
 
 # Add a stop between two airports
 
-{% @arcade/embed flowId="uVeXxl72sCpoDDB2rbO1" url="https://app.arcade.software/share/uVeXxl72sCpoDDB2rbO1" %}
+{% embed url="https://screen.studio/share/TMBN9ahw" %}
+
