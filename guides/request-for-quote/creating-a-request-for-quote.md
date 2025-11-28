@@ -13,9 +13,11 @@ Add your flight details, passenger requirements, and preferences.
 
 When you include an external aircraft (by clicking the include check ) in your list of available aircraft, AeroQuote automatically generates one or more Request for Quotes in the background after you generate Quote.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="success" %}
+You can select to allow or block the generation of  Request for Quotes for any external aircraft you tick to include in your quote by changing the **Create RFQ** toggle.
+{% endhint %}
 
-
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 All your RFQs can be viewed in the **Requests for Quotes** page.
 

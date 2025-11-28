@@ -23,3 +23,13 @@ You can create an Aircraft with an External Operator directly when you are build
 ### Method 2 - Attach an External Operator to existing Aircraft
 
 {% embed url="https://screen.studio/share/6MvyXy9M" %}
+
+
+
+### Allow RFQ Toggle for External Aircraft
+
+You can control whether Request For Quotes are created by default for each external aircraft in your fleet. This gives you fine-grained control over which aircraft should trigger RFQ workflows when included in quotes.
+
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+You may choose to disable automatic RFQ generation for external operator whose aircraft you frequently include in quotes, but you handle pricing updated directly with them rather than through RFQs.
