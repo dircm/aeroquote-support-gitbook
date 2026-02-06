@@ -14,6 +14,8 @@
 
 ## 📖 Guides
 
+* [📊 Dashboard](guides/dashboard/README.md)
+  * [🤖 AI Assistant (Beta)](guides/dashboard/ai-assistant.md)
 * [Aircraft](guides/aircraft/README.md)
   * [Adding aircraft (with External Operator)](guides/aircraft/adding-aircraft-with-external-operator.md)
 * [Settings](guides/settings/README.md)
@@ -22,6 +24,7 @@
 * [Contacts](guides/contacts/README.md)
   * [Add a new contact](guides/contacts/add-a-new-contact.md)
   * [Import contacts](guides/contacts/import-contacts.md)
+* [👨‍💼 Staff](guides/staff/README.md)
 * [External Operators](guides/external-operators/README.md)
   * [Add a new External Operator](guides/external-operators/add-a-new-external-operator.md)
 * [Documents](guides/documents/README.md)
