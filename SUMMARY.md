@@ -40,6 +40,7 @@
   * [Uploading a new Document](guides/documents/uploading-a-new-document.md)
   * [Creating PDFs for Aeroquote.com Upload](guides/documents/creating-pdfs-for-aeroquote.com-upload.md)
   * [Using Documents in a Quote](guides/documents/using-documents-in-a-quote.md)
+* [📋 Templates](guides/templates/README.md)
 * [Requests](guides/requests/README.md)
   * [Creating a Request (Operators)](guides/requests/creating-a-request-operators.md)
   * [Creating a Request (Brokers)](guides/requests/creating-a-request-brokers.md)
