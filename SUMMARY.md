@@ -74,3 +74,4 @@
 * [Custom Items](guides/custom-items/README.md)
   * [Custom Airports](guides/custom-items/custom-airports.md)
   * [Custom Facilities](guides/custom-items/custom-facilities.md)
+* [🔌 Widgets](guides/widgets/README.md)
