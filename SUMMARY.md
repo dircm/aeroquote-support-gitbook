@@ -16,7 +16,12 @@
 
 * [📊 Dashboard](guides/dashboard/README.md)
   * [🤖 AI Assistant (Beta)](guides/dashboard/ai-assistant.md)
-* [Aircraft](guides/aircraft/README.md)
+* [✈️ Aircraft](guides/aircraft/README.md)
+  * [Aircraft Details](guides/aircraft/aircraft-details.md)
+  * [Flight Performance](guides/aircraft/flight-performance.md)
+  * [Costings](guides/aircraft/costings.md)
+  * [Cost Simulator](guides/aircraft/cost-simulator.md)
+  * [Aircraft Images](guides/aircraft/aircraft-images.md)
   * [Adding aircraft (with External Operator)](guides/aircraft/adding-aircraft-with-external-operator.md)
 * [⚙️ Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
