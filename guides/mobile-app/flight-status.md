@@ -2,6 +2,9 @@
 
 Mark flights as **Departed** or **Arrived** directly from the mobile app with confirmed timestamps.
 
+<!-- 📸 PLACEHOLDER: Screenshot of the Flight Status section showing Departed/Arrived buttons and confirmation bottom sheet -->
+<!-- Suggested filename: .gitbook/assets/mobile-flight-status.png -->
+
 ## Recording Departure
 
 1. On the Flight Detail screen, scroll to the **Flight Status** section

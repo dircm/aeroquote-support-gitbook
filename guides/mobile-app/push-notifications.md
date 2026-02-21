@@ -21,6 +21,9 @@ Notifications are sent for key booking events, such as:
 * New passenger or crew assignments
 * Flight schedule updates
 
+<!-- 📸 PLACEHOLDER: Screenshot of an iOS rich notification with the route map image expanded -->
+<!-- Suggested filename: .gitbook/assets/mobile-push-notification-ios.png -->
+
 ### Rich Notifications (iOS)
 
 On iOS, notifications may include a **route map image** showing the flight path — giving you instant visual context without opening the app.

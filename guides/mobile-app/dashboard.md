@@ -2,6 +2,9 @@
 
 The Dashboard is the first screen you see after signing in. It provides a quick overview of your operations.
 
+<!-- 📸 PLACEHOLDER: Screenshot of the mobile Dashboard screen showing the Next Flight card, stats, and quick actions -->
+<!-- Suggested filename: .gitbook/assets/mobile-dashboard.png -->
+
 ## Next Flight Card
 
 The hero card at the top shows your **next upcoming flight**:

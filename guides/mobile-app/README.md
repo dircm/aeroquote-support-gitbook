@@ -14,6 +14,10 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 * **Offline Support** — Works without internet; data syncs automatically when connectivity returns
 * **Push Notifications** — Receive real-time alerts for booking updates (with rich map images on iOS)
 
+<!-- 📸 PLACEHOLDER: Screenshot of the mobile app home screen on iPhone and Android side by side -->
+<!-- Suggested filename: .gitbook/assets/mobile-app-hero.png -->
+<!-- Dimensions: 1200x600, showing both platforms -->
+
 ## Supported Platforms
 
 * **iOS** — iPhone (iOS 14+)

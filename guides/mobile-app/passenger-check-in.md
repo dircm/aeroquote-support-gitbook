@@ -2,6 +2,9 @@
 
 The mobile app supports two ways to check in passengers and cargo: **manual toggle** and **QR code scanning**.
 
+<!-- 📸 PLACEHOLDER: Screenshot showing the passenger manifest with check-in toggles (some checked, some unchecked) -->
+<!-- Suggested filename: .gitbook/assets/mobile-checkin-manual.png -->
+
 ## Manual Check-In
 
 On the Flight Detail screen, each passenger and cargo item has a check-in toggle:
@@ -15,6 +18,9 @@ To check in everyone at once, tap the **Check In All** button at the top of the 
 {% hint style="info" %}
 Check-in is **one-way** — once checked in, a passenger cannot be unchecked from the mobile app. This is by design to prevent accidental changes during boarding.
 {% endhint %}
+
+<!-- 📸 PLACEHOLDER: Screenshot of the QR scanner screen with the camera viewfinder and torch button -->
+<!-- Suggested filename: .gitbook/assets/mobile-qr-scanner.png -->
 
 ## QR Code Check-In
 

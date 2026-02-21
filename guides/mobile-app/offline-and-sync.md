@@ -27,6 +27,9 @@ Actions you take while offline are queued locally:
 
 These are stored in an outbox and automatically sent to the server when connectivity returns. You'll see a **sync pending** indicator next to any queued action.
 
+<!-- 📸 PLACEHOLDER: Screenshot showing the sync pending indicator next to a queued check-in, and the offline banner -->
+<!-- Suggested filename: .gitbook/assets/mobile-offline-sync.png -->
+
 ## Connectivity Indicator
 
 * **Green dot + "Online — System Synced"** on the Dashboard means you're connected
