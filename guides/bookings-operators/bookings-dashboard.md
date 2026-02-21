@@ -2,6 +2,10 @@
 
 The Bookings Dashboard is a **real-time operations display** designed to give your team a live overview of all flight activity. It's purpose-built for wall-mounted TVs, dedicated monitors, or a second screen — leave it open and watch your bookings progress through their lifecycle.
 
+<!-- 📸 PLACEHOLDER: Full-width screenshot of the Bookings Dashboard with active flights, map, and activity feed visible -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-hero.png -->
+<!-- Dimensions: 1400x900, captured from a wide browser window in dark mode -->
+
 ## Opening the Dashboard
 
 1. Navigate to **Bookings** from the main menu
@@ -20,6 +24,9 @@ The dashboard uses a dark theme optimised for large displays and low-light envir
 * **LIVE indicator** — green pulsing dot confirms the page is actively polling
 * **Date and live clock** — updates every second, no manual refresh needed
 
+<!-- 📸 PLACEHOLDER: Cropped screenshot of the 4 summary cards (In Progress, Upcoming, Active Legs, Ground Time) -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-summary-cards.png -->
+
 ### Summary Cards
 
 Four cards across the top provide an at-a-glance snapshot:
@@ -31,6 +38,9 @@ Four cards across the top provide an at-a-glance snapshot:
 | **Active Legs** | Currently airborne flight legs vs total legs across all bookings |
 | **Ground Time** | Bookings waiting between flight legs (e.g. overnight stops) |
 
+<!-- 📸 PLACEHOLDER: Cropped screenshot of the activity feed showing check-in, departure, and arrival events -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-activity-feed.png -->
+
 ### Activity Feed
 
 A live feed strip below the summary cards shows the **last 6 events** across all bookings:
@@ -41,6 +51,9 @@ A live feed strip below the summary cards shows the **last 6 events** across all
 * ✅ **Arrived** — Route, aircraft, booking code
 
 Events appear automatically as they happen — no page refresh required.
+
+<!-- 📸 PLACEHOLDER: Screenshot of the live flight map showing dark theme, position trail, airport markers, and aircraft arrow -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-live-map.png -->
 
 ### Live Flight Map
 
@@ -61,6 +74,9 @@ The map requires a valid Google Maps API key. If the map appears as a grey box, 
 
 Bookings are organised into four sections, each with colour-coded cards:
 
+<!-- 📸 PLACEHOLDER: Screenshot of an In Progress booking card showing route, crew, check-in count, ETA, altitude/speed, and status badge -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-card-inprogress.png -->
+
 #### 🔵 In Progress
 
 Bookings with at least one flight currently boarding or airborne. Each card shows:
@@ -72,6 +88,9 @@ Bookings with at least one flight currently boarding or airborne. Each card show
 * **Departure time** and **ETA** (based on actual departure + flight duration, in the arrival airport's timezone)
 * **Live telemetry** — altitude and speed for airborne flights
 * **Status badges** per flight leg (Boarding, InProgress, Completed)
+
+<!-- 📸 PLACEHOLDER: Screenshot of a Ground Time booking card showing completed outbound leg and upcoming return leg -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-card-groundtime.png -->
 
 #### 🟠 Ground Time
 
@@ -106,6 +125,10 @@ The dashboard respects existing booking permissions:
 
 * **bookings.view** — Can see bookings they are assigned to as crew
 * **bookings.view-all** — Can see all bookings for the operator
+
+<!-- 📸 PLACEHOLDER: Photo or mockup of the Bookings Dashboard displayed on a wall-mounted TV in an ops room setting -->
+<!-- Suggested filename: .gitbook/assets/bookings-dashboard-tv-mockup.png -->
+<!-- This could be a real photo or a device-frame mockup showing the dashboard on a large screen -->
 
 ## Tips for Ops Rooms
 
