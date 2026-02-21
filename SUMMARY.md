@@ -70,6 +70,7 @@
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
   * [Passenger Weights](guides/bookings-operators/passenger-weights.md)
   * [Adding a stop between two airports in a Booking](guides/bookings-operators/adding-a-stop-between-two-airports-in-a-booking.md)
+  * [Bookings Dashboard](guides/bookings-operators/bookings-dashboard.md)
 * [Accounting Integration](guides/accounting-integration/README.md)
   * [Xero Integration Setup](guides/accounting-integration/xero-integration-setup.md)
   * [Quickbooks Integration Setup](guides/accounting-integration/quickbooks-integration-setup.md)
