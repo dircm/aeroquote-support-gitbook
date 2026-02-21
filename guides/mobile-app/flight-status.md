@@ -30,3 +30,14 @@ Like check-ins, flight status updates work offline:
 * Status changes are saved locally and queued for sync
 * A pending indicator shows until the update reaches the server
 * Status syncs automatically when connectivity is restored
+
+## Live Bookings Dashboard
+
+Flight status updates from the mobile app feed directly into the **Bookings Dashboard** — a real-time ops display designed for TV screens and wall monitors. When you record a departure or arrival from the mobile app:
+
+* The flight appears on the **live map** with position tracking
+* The **activity feed** shows the departure/arrival event in real time
+* Booking cards update with actual departure and estimated arrival times
+* Multi-leg bookings transition to **Ground Time** status between legs
+
+See the [Bookings Dashboard](../bookings-operators/bookings-dashboard.md) guide for more information.
