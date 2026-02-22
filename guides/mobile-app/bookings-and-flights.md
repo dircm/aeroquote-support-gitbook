@@ -48,6 +48,51 @@ A static map showing the flight path between departure and arrival airports. Tap
 
 Lists all passengers and cargo assigned to the flight, with a check-in progress badge (e.g. "3/5"). See [Passenger Check-In](passenger-check-in.md) for details.
 
+#### Passenger Details
+
+Tap the **chevron** (›) next to any passenger to open their contact sheet, which shows:
+
+* **Name** and **initials avatar**
+* **Check-in status** badge
+* **Weight** — displayed with the unit (kg or lb). Tap to edit (see below)
+* **Phone** and **email** contact details
+* **Quick actions** — Call, Message, or Email with one tap
+
+#### Editing Passenger Weight
+
+1. Open a passenger's contact sheet by tapping the chevron
+2. Tap the **weight row** (or "Set weight" if no weight is recorded)
+3. Enter the weight value and select the unit (**kg** or **lb**)
+4. Tap **Save** — the update is sent to the server immediately
+
+#### Adding a Passenger to a Flight
+
+Tap the **➕ person icon** next to the "Passenger Manifest" heading to add a passenger from the booking's contact list:
+
+1. A search sheet appears showing all booking contacts not already on this flight
+2. Search by name to filter the list
+3. Tap a contact to add them to this flight
+
+{% hint style="info" %}
+**Auto-transfer:** If the passenger is currently assigned to a different flight leg in the same booking, they are automatically removed from that flight and transferred to this one. The app will confirm with a "transferred to this flight" message.
+{% endhint %}
+
+#### Removing a Passenger from a Flight
+
+1. Open the passenger's contact sheet (tap the chevron)
+2. Tap **Remove from Flight** at the bottom
+3. Confirm the removal in the dialog
+
+The passenger is removed from this flight leg only — they remain in the booking's contact list and can be re-added later.
+
+### Sharing a Booking
+
+On the Booking Detail screen, tap the **share icon** (top-right, next to the booking code) to share the customer booking link via your device's native share sheet (Messages, Email, AirDrop, etc.).
+
+{% hint style="info" %}
+The share button only appears for bookings that have a customer booking URL configured.
+{% endhint %}
+
 ### Flight Status
 
 Mark the flight as **Departed** or **Arrived**. See [Flight Status](flight-status.md) for details.

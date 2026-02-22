@@ -28,6 +28,14 @@ Two stat cards give you a snapshot:
 * **Scan Pass** — Opens the QR code scanner for passenger check-in
 * **View Fleet** — Jumps to the Aircraft list
 
+## Help & Getting Started
+
+On your first visit, a **help guide** slides down from the top of the Dashboard with swipe-through pages covering the key features of the app. You can:
+
+* **Swipe** left/right to navigate between help pages (dot indicators show your progress)
+* **Dismiss** the guide by tapping the close button — it won't appear again automatically
+* **Re-open** the guide anytime by tapping the **help icon** (?) in the top-right of the Dashboard, or from the **Help & Getting Started** card on the Profile screen
+
 ## Navigation
 
 Use the bottom tab bar to navigate between the main sections:

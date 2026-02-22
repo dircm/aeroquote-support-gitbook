@@ -8,11 +8,14 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 
 * **Dashboard** — At-a-glance view of your next flight, active bookings, and fleet status
 * **Bookings & Flights** — Browse all bookings, view flight legs with departure/arrival times, routes, and crew
+* **Passenger Management** — View contact details, edit weights, add/remove/transfer passengers between flights
 * **Passenger Check-In** — Check in passengers and cargo via toggle or QR code scanner
 * **Flight Status** — Mark flights as departed or arrived with confirmed timestamps
+* **Booking Sharing** — Share the customer booking link via your device's native share sheet
 * **Aircraft & Fleet** — View your fleet with aircraft details and images
 * **Offline Support** — Works without internet; data syncs automatically when connectivity returns
 * **Push Notifications** — Receive real-time alerts for booking updates (with rich map images on iOS)
+* **Help & Getting Started** — In-app help guide with swipe-through pages on first launch
 
 <!-- 📸 PLACEHOLDER: Screenshot of the mobile app home screen on iPhone and Android side by side -->
 <!-- Suggested filename: .gitbook/assets/mobile-app-hero.png -->
