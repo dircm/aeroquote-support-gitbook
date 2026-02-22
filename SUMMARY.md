@@ -55,6 +55,7 @@
   * [Add a stop between two airports](guides/quotes/add-a-stop-between-two-airports.md)
   * [Edit the Price of a Quote](guides/quotes/edit-the-price-of-a-quote.md)
   * [Require T\&Cs to be accepted online](guides/quotes/require-t-and-cs-to-be-accepted-online.md)
+  * [Cost Management](guides/quotes/cost-management.md)
   * [Quote Details Page](guides/quotes/quote-details-page/README.md)
     * [Edit Quote valid till date](guides/quotes/quote-details-page/edit-quote-valid-till-date.md)
 * [Request For Quote](guides/request-for-quote/README.md)
