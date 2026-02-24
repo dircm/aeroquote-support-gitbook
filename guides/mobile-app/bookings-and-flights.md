@@ -74,7 +74,7 @@ Tap the **➕ person icon** next to the "Passenger Manifest" heading to add a pa
 3. Tap a contact to add them to this flight
 
 {% hint style="info" %}
-**Auto-transfer:** If the passenger is currently assigned to a different flight leg in the same booking, they are automatically removed from that flight and transferred to this one. The app will confirm with a "transferred to this flight" message.
+A passenger can be added to multiple flight legs in the same booking. If they should only be on one leg, remove them from the other leg first (see below).
 {% endhint %}
 
 #### Removing a Passenger from a Flight
