@@ -47,10 +47,10 @@ A live feed strip below the summary cards shows the **last 6 events** across all
 
 * 👤 **Passenger check-ins** — Name, flight route, booking code
 * 🚪 **Boarding commenced** — Route, aircraft registration
-* ✈️ **Departed** — Route, aircraft, booking code
-* ✅ **Arrived** — Route, aircraft, booking code
+* ✈️ **Departed** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
+* ✅ **Arrived** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
 
-Events appear automatically as they happen — no page refresh required.
+Events appear automatically as they happen — no page refresh required. Departure and arrival events are triggered by **FlightAware webhooks** when your aircraft is detected departing or arriving, or when crew confirm times via the [mobile app](../mobile-app/flight-status.md).
 
 <!-- 📸 PLACEHOLDER: Screenshot of the live flight map showing dark theme, position trail, airport markers, and aircraft arrow -->
 <!-- Suggested filename: .gitbook/assets/bookings-dashboard-live-map.png -->
@@ -62,9 +62,14 @@ When any flight is airborne, an interactive map appears showing:
 * **Blue markers** — Departure airports
 * **Green markers** — Arrival airports
 * **Orange arrow** — Current aircraft position and heading
-* **Blue trail line** — Flight path so far (position history)
+* **Blue trail line** — Actual flight path from FlightAware position data
+* **Dashed grey line** — Planned route (shown for flights without position data yet)
 
-The map uses a dark theme to match the dashboard and updates every 10 seconds.
+Position data is sourced from **FlightAware** via ADS-B tracking. The map uses a dark theme to match the dashboard and updates every 10 seconds.
+
+{% hint style="info" %}
+Flight tracking must be enabled in **Settings → Integrations** for position data to appear. See the [Integrations](../settings/integrations.md) guide for setup.
+{% endhint %}
 
 {% hint style="warning" %}
 The map requires a valid Google Maps API key. If the map appears as a grey box, check your API key configuration in Settings.
@@ -85,8 +90,8 @@ Bookings with at least one flight currently boarding or airborne. Each card show
 * **Route string** (e.g. YBBN → YSSY)
 * **Crew assigned** and **aircraft registration**
 * **Check-in progress** (e.g. 3/4 passengers)
-* **Departure time** and **ETA** (based on actual departure + flight duration, in the arrival airport's timezone)
-* **Live telemetry** — altitude and speed for airborne flights
+* **Departure time** and **ETA** (based on actual departure + flight duration, in the arrival airport's timezone). Times come from FlightAware detection or crew confirmation via the mobile app.
+* **Live telemetry** — altitude and speed from FlightAware for airborne flights
 * **Status badges** per flight leg (Boarding, InProgress, Completed)
 
 <!-- 📸 PLACEHOLDER: Screenshot of a Ground Time booking card showing completed outbound leg and upcoming return leg -->
