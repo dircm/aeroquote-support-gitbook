@@ -1,6 +1,6 @@
 # Push Notifications
 
-The AeroQuote Crew app supports push notifications to keep your team informed of booking updates in real time.
+The AeroQuote Crew app supports push notifications to keep your team informed of booking updates and flight events in real time.
 
 ## Setup
 
@@ -17,6 +17,8 @@ If you denied notification permission, you can re-enable it in your device's **S
 
 Notifications are sent for key booking events, such as:
 
+* **Flight departure detected** — When FlightAware detects your aircraft has departed
+* **Flight arrival detected** — When FlightAware detects your aircraft has arrived
 * Booking status changes
 * New passenger or crew assignments
 * Flight schedule updates
@@ -24,13 +26,24 @@ Notifications are sent for key booking events, such as:
 <!-- 📸 PLACEHOLDER: Screenshot of an iOS rich notification with the route map image expanded -->
 <!-- Suggested filename: .gitbook/assets/mobile-push-notification-ios.png -->
 
+### Flight Status Notifications
+
+When a flight departs or arrives, all crew assigned to that flight leg receive a push notification containing:
+
+* The flight route (e.g. YBBN → YSSY)
+* Aircraft registration
+* The detected time from FlightAware
+* A static map image of the route
+
+Tapping the notification opens a **confirmation sheet** where you can accept the detected time or adjust it before confirming. See [Flight Status](flight-status.md) for details.
+
 ### Rich Notifications (iOS)
 
-On iOS, notifications may include a **route map image** showing the flight path — giving you instant visual context without opening the app.
+On iOS, notifications include a **route map image** showing the flight path — giving you instant visual context without opening the app.
 
 ## Tapping a Notification
 
-Tapping a notification opens the app and navigates directly to the relevant booking or flight detail screen.
+Tapping a notification opens the app and navigates directly to the relevant booking or flight detail screen. For flight status notifications, a confirmation sheet appears automatically.
 
 ## Troubleshooting
 

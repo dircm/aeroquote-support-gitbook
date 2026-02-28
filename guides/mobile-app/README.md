@@ -10,7 +10,7 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 * **Bookings & Flights** — Browse all bookings, view flight legs with departure/arrival times, routes, and crew
 * **Passenger Management** — View contact details, edit weights, add/remove/transfer passengers between flights
 * **Passenger Check-In** — Check in passengers and cargo via toggle or QR code scanner
-* **Flight Status** — Mark flights as departed or arrived with confirmed timestamps
+* **Flight Status** — Receive automatic departure/arrival notifications from FlightAware and confirm times
 * **Booking Sharing** — Share the customer booking link via your device's native share sheet
 * **Aircraft & Fleet** — View your fleet with aircraft details and images
 * **Offline Support** — Works without internet; data syncs automatically when connectivity returns
