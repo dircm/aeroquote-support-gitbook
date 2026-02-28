@@ -30,6 +30,40 @@ The Integrations tab lets you connect AeroQuote to external services like accoun
 |-------------|-------------|
 | **iFlightPlanner** | Route planning and facility data |
 | **Firestore** | Real-time mobile app sync |
+| **FlightAware** | Automatic flight departure and arrival detection |
+
+---
+
+## Flight Tracking (FlightAware)
+
+AeroQuote integrates with **FlightAware** to automatically detect when your flights depart and arrive. When enabled, crew members receive push notifications on the mobile app to confirm actual times.
+
+### Enabling Flight Tracking
+
+1. Go to **Settings → Integrations**
+2. Scroll to the **Flight Tracking** section
+3. Toggle flight tracking **ON**
+
+### API Key
+
+By default, AeroQuote uses a shared FlightAware API key at no extra cost during the current rollout.
+
+You can optionally enter your own FlightAware API key for higher rate limits:
+
+1. Enter your key in the **FlightAware API Key** field
+2. Click **Save**
+
+{% hint style="info" %}
+Operators using their own FlightAware API key are not charged for flight tracking. Operators using the shared AeroQuote key will be charged /month once the feature moves to paid billing.
+{% endhint %}
+
+### How It Works
+
+* When a booking has a confirmed aircraft, AeroQuote registers the flight with FlightAware
+* FlightAware monitors the flight and sends webhooks when it departs or arrives
+* Crew assigned to the flight receive push notifications on the mobile app
+* Crew confirm or adjust the detected time — confirmed times take priority over further FlightAware updates
+* Actual flight tracks are saved and displayed on the booking itinerary
 
 ---
 
