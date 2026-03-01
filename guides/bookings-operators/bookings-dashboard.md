@@ -50,7 +50,9 @@ A live feed strip below the summary cards shows the **last 6 events** across all
 * ✈️ **Departed** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
 * ✅ **Arrived** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
 
-Events appear automatically as they happen — no page refresh required. Departure and arrival events are triggered by **FlightAware webhooks** when your aircraft is detected departing or arriving, or when crew confirm times via the [mobile app](../mobile-app/flight-status.md).
+Events appear automatically as they happen — no page refresh required. Departure and arrival events are triggered by **FlightAware webhooks** when your aircraft is detected departing or arriving, or when crew confirm times via the [mobile app](../mobile-app/flight-status.md). The source (FlightAware or Crew) is shown alongside each event.
+
+When a flight arrives, AeroQuote automatically saves the complete flight track from FlightAware. This track is displayed as a route map on the booking's itinerary card — no manual action required.
 
 <!-- 📸 PLACEHOLDER: Screenshot of the live flight map showing dark theme, position trail, airport markers, and aircraft arrow -->
 <!-- Suggested filename: .gitbook/assets/bookings-dashboard-live-map.png -->
@@ -90,7 +92,7 @@ Bookings with at least one flight currently boarding or airborne. Each card show
 * **Route string** (e.g. YBBN → YSSY)
 * **Crew assigned** and **aircraft registration**
 * **Check-in progress** (e.g. 3/4 passengers)
-* **Departure time** and **ETA** (based on actual departure + flight duration, in the arrival airport's timezone). Times come from FlightAware detection or crew confirmation via the mobile app.
+* **Departure time** and **ETA** — When FlightAware provides an estimated arrival time, it's shown as "ETA (FA)". Otherwise, a calculated ETA based on departure time + flight duration is shown as "ETA (calc)". Times are displayed in the arrival airport's timezone.
 * **Live telemetry** — altitude and speed from FlightAware for airborne flights
 * **Status badges** per flight leg (Boarding, InProgress, Completed)
 
@@ -119,6 +121,14 @@ Confirmed bookings that haven't started yet, ordered by departure time. Shows:
 #### ✅ Recently Completed
 
 Bookings that finished within the **last 2 hours**, then automatically removed. Provides a brief record of today's completed operations.
+
+## Booking Expiry
+
+Bookings that are still in **Confirmed** or **Ground Time** status 24 hours after their last flight has ended are automatically marked as **Expired**. This keeps the dashboard and mobile app uncluttered by clearing out bookings the operator forgot to close.
+
+{% hint style="info" %}
+Expired bookings are **not deleted** — they can be reverted to Confirmed at any time from the booking details page using the **Revert to Confirmed** button. Expired bookings are hidden from the mobile app and the Bookings Dashboard.
+{% endhint %}
 
 ## Auto-Refresh
 
