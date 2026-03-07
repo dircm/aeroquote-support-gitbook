@@ -18,6 +18,13 @@ The dashboard uses a dark theme optimised for large displays and low-light envir
 
 ## Layout
 
+The dashboard uses a **split-screen layout**:
+
+* **Left half** — Interactive flight map (live tracking or upcoming routes)
+* **Right half** — Scrollable list of all booking cards, grouped by status
+
+When there are no active or upcoming bookings, the map is hidden and booking cards take the full width.
+
 ### Header
 
 * **AeroQuote logo** and "Bookings Dashboard" title
@@ -47,39 +54,44 @@ A live feed strip below the summary cards shows the **last 6 events** across all
 
 * 👤 **Passenger check-ins** — Name, flight route, booking code
 * 🚪 **Boarding commenced** — Route, aircraft registration
-* ✈️ **Departed** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
-* ✅ **Arrived** — Route, aircraft, booking code (detected by FlightAware or confirmed by crew)
+* ✈️ **Departed** — Route, aircraft, booking code (auto-detected or confirmed by crew)
+* ✅ **Arrived** — Route, aircraft, booking code (auto-detected or confirmed by crew)
 
-Events appear automatically as they happen — no page refresh required. Departure and arrival events are triggered by **FlightAware webhooks** when your aircraft is detected departing or arriving, or when crew confirm times via the [mobile app](../mobile-app/flight-status.md). The source (FlightAware or Crew) is shown alongside each event.
+Events appear automatically as they happen — no page refresh required. Departure and arrival events are auto-detected via **FlightRadar24** position tracking, or when crew confirm times via the [mobile app](../mobile-app/flight-status.md). The source (e.g. FlightRadar24, Crew confirmed) is shown alongside each event.
 
-When a flight arrives, AeroQuote automatically saves the complete flight track from FlightAware. This track is displayed as a route map on the booking's itinerary card — no manual action required.
+When a flight arrives, AeroQuote automatically saves the complete flight track. This track is displayed as a route map on the booking's itinerary card — no manual action required.
 
 <!-- 📸 PLACEHOLDER: Screenshot of the live flight map showing dark theme, position trail, airport markers, and aircraft arrow -->
 <!-- Suggested filename: .gitbook/assets/bookings-dashboard-live-map.png -->
 
-### Live Flight Map
+### Flight Map
 
-When any flight is airborne, an interactive map appears showing:
+The map occupies the **left half of the screen** and adapts based on flight status:
+
+#### When flights are airborne ("Live Flight Map")
 
 * **Blue markers** — Departure airports
 * **Green markers** — Arrival airports
-* **Orange arrow** — Current aircraft position and heading
-* **Blue trail line** — Actual flight path from FlightAware position data
+* **Orange arrow** — Current aircraft position and heading, with registration label
+* **Blue trail line** — Actual flight path from position tracking data
 * **Dashed grey line** — Planned route (shown for flights without position data yet)
 
-Position data is sourced from **FlightAware** via ADS-B tracking. The map uses a dark theme to match the dashboard and updates every 10 seconds.
+#### When no flights are airborne ("Upcoming Routes")
+
+* **Muted airport markers** — All departure and arrival airports for upcoming bookings
+* **Dashed amber lines** — Planned routes for all upcoming flights, giving a visual overview of what's ahead
+
+The map automatically transitions between these modes as flights depart and arrive.
+
+Position data is sourced from **FlightRadar24** via ADS-B tracking. The map uses a dark theme to match the dashboard.
 
 {% hint style="info" %}
 Flight tracking must be enabled in **Settings → Integrations** for position data to appear. See the [Integrations](../settings/integrations.md) guide for setup.
 {% endhint %}
 
-{% hint style="warning" %}
-The map requires a valid Google Maps API key. If the map appears as a grey box, check your API key configuration in Settings.
-{% endhint %}
+### Booking Cards
 
-### Booking Sections
-
-Bookings are organised into four sections, each with colour-coded cards:
+All booking cards are displayed on the **right half of the screen** in a scrollable list, ordered by status:
 
 <!-- 📸 PLACEHOLDER: Screenshot of an In Progress booking card showing route, crew, check-in count, ETA, altitude/speed, and status badge -->
 <!-- Suggested filename: .gitbook/assets/bookings-dashboard-card-inprogress.png -->
@@ -88,12 +100,11 @@ Bookings are organised into four sections, each with colour-coded cards:
 
 Bookings with at least one flight currently boarding or airborne. Each card shows:
 
-* **Booking code** (links to the individual booking)
-* **Route string** (e.g. YBBN → YSSY)
+* **Booking code** and **route string** (e.g. YBBN → YSSY)
 * **Crew assigned** and **aircraft registration**
 * **Check-in progress** (e.g. 3/4 passengers)
-* **Departure time** and **ETA** — When FlightAware provides an estimated arrival time, it's shown as "ETA (FA)". Otherwise, a calculated ETA based on departure time + flight duration is shown as "ETA (calc)". Times are displayed in the arrival airport's timezone.
-* **Live telemetry** — altitude and speed from FlightAware for airborne flights
+* **Departure time** and **ETA** — When FlightRadar24 provides an estimated arrival time, the source is shown (e.g. "ETA FlightRadar24"). Otherwise, a calculated ETA based on departure time + flight duration is shown as "ETA (calc)". Times are displayed in the arrival airport's timezone.
+* **Live telemetry** — altitude and speed for airborne flights
 * **Status badges** per flight leg (Boarding, InProgress, Completed)
 
 <!-- 📸 PLACEHOLDER: Screenshot of a Ground Time booking card showing completed outbound leg and upcoming return leg -->
@@ -122,6 +133,17 @@ Confirmed bookings that haven't started yet, ordered by departure time. Shows:
 
 Bookings that finished within the **last 2 hours**, then automatically removed. Provides a brief record of today's completed operations.
 
+## Automatic Flight Tracking
+
+When flight tracking is enabled, AeroQuote automatically detects key flight events via **FlightRadar24**:
+
+* **Block off** — Detected when the aircraft begins taxiing (ground movement detected)
+* **Departure** — Detected when the aircraft becomes airborne
+* **Arrival** — Detected when the aircraft lands near the destination airport
+* **Block on** — Estimated after arrival
+
+Crew can always override auto-detected times via the mobile app — **crew-confirmed times always take precedence** over automated tracking.
+
 ## Booking Expiry
 
 Bookings that are still in **Confirmed** or **Ground Time** status 24 hours after their last flight has ended are automatically marked as **Expired**. This keeps the dashboard and mobile app uncluttered by clearing out bookings the operator forgot to close.
@@ -132,7 +154,7 @@ Expired bookings are **not deleted** — they can be reverted to Confirmed at an
 
 ## Auto-Refresh
 
-The dashboard automatically refreshes every **10 seconds**. There is no need to manually reload the page. All sections — summary cards, activity feed, map, and booking cards — update together.
+The dashboard automatically refreshes every **60 seconds**. There is no need to manually reload the page. All sections — summary cards, activity feed, map, and booking cards — update together.
 
 ## Permissions
 
