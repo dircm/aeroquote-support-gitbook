@@ -17,8 +17,8 @@ If you denied notification permission, you can re-enable it in your device's **S
 
 Notifications are sent for key booking events, such as:
 
-* **Flight departure detected** — When FlightAware detects your aircraft has departed
-* **Flight arrival detected** — When FlightAware detects your aircraft has arrived
+* **Flight departure detected** — When the flight tracking provider detects your aircraft has departed
+* **Flight arrival detected** — When the flight tracking provider detects your aircraft has arrived
 * Booking status changes
 * New passenger or crew assignments
 * Flight schedule updates
@@ -32,7 +32,7 @@ When a flight departs or arrives, all crew assigned to that flight leg receive a
 
 * The flight route (e.g. YBBN → YSSY)
 * Aircraft registration
-* The detected time from FlightAware
+* The detected time from the tracking provider
 * A static map image of the route
 
 Tapping the notification opens a **confirmation sheet** where you can accept the detected time or adjust it before confirming. See [Flight Status](flight-status.md) for details.

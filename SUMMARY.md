@@ -87,3 +87,4 @@
   * [Flight Status](guides/mobile-app/flight-status.md)
   * [Offline Mode & Data Sync](guides/mobile-app/offline-and-sync.md)
   * [Push Notifications](guides/mobile-app/push-notifications.md)
+  * [Calendar Sync](guides/mobile-app/calendar-sync.md)

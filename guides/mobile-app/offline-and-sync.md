@@ -24,8 +24,11 @@ Actions you take while offline are queued locally:
 
 * Passenger and cargo check-ins
 * Flight departure and arrival status updates
+* Block off and block on times
+* ETA updates
+* GPS position logs
 
-These are stored in an outbox and automatically sent to the server when connectivity returns. You'll see a **sync pending** indicator next to any queued action.
+These are stored in an outbox and automatically sent to the server when connectivity returns. You'll see a **sync pending** indicator next to any queued action. Failed syncs are retried with exponential backoff (up to 5 minutes between retries).
 
 <!-- 📸 PLACEHOLDER: Screenshot showing the sync pending indicator next to a queued check-in, and the offline banner -->
 <!-- Suggested filename: .gitbook/assets/mobile-offline-sync.png -->
@@ -38,7 +41,7 @@ These are stored in an outbox and automatically sent to the server when connecti
 
 ## Tips
 
-* **Don't worry about signal** — Complete your check-ins and flight status updates as normal. Everything queues safely.
+* **Don't worry about signal** — Complete your check-ins, flight status updates, ETA changes, and position reports as normal. Everything queues safely.
 * **Force a sync** — If you need the latest data right now, pull to refresh on the Bookings screen.
 * **Restarting the app** — All local data and pending actions survive app restarts. Nothing is lost.
 

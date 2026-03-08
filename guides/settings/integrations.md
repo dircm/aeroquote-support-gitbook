@@ -30,13 +30,13 @@ The Integrations tab lets you connect AeroQuote to external services like accoun
 |-------------|-------------|
 | **iFlightPlanner** | Route planning and facility data |
 | **Firestore** | Real-time mobile app sync |
-| **FlightAware** | Automatic flight departure and arrival detection |
+| **FlightRadar24 / FlightAware** | Automatic flight departure, arrival, and ETA detection |
 
 ---
 
-## Flight Tracking (FlightAware)
+## Flight Tracking
 
-AeroQuote integrates with **FlightAware** to automatically detect when your flights depart and arrive. When enabled, crew members receive push notifications on the mobile app to confirm actual times.
+AeroQuote integrates with **FlightRadar24** (primary) and **FlightAware** to automatically detect when your flights depart and arrive, and to provide live ETA updates during flights. When enabled, crew members receive push notifications on the mobile app to confirm actual times.
 
 ### Enabling Flight Tracking
 
@@ -44,26 +44,26 @@ AeroQuote integrates with **FlightAware** to automatically detect when your flig
 2. Scroll to the **Flight Tracking** section
 3. Toggle flight tracking **ON**
 
-### API Key
-
-By default, AeroQuote uses a shared FlightAware API key at no extra cost during the current rollout.
-
-You can optionally enter your own FlightAware API key for higher rate limits:
-
-1. Enter your key in the **FlightAware API Key** field
-2. Click **Save**
-
-{% hint style="info" %}
-Operators using their own FlightAware API key are not charged for flight tracking. Operators using the shared AeroQuote key will be charged /month once the feature moves to paid billing.
-{% endhint %}
-
 ### How It Works
 
-* When a booking has a confirmed aircraft, AeroQuote registers the flight with FlightAware
-* FlightAware monitors the flight and sends webhooks when it departs or arrives
+* When a booking has a confirmed aircraft, AeroQuote registers the flight with the tracking provider
+* The provider monitors the flight and sends updates when it departs, arrives, or when the ETA changes
 * Crew assigned to the flight receive push notifications on the mobile app
-* Crew confirm or adjust the detected time — confirmed times take priority over further FlightAware updates
+* Crew confirm or adjust the detected time — confirmed times take priority over further tracking updates
 * Actual flight tracks are saved and displayed on the booking itinerary
+* Live ETA updates are shown on the mobile app dashboard with the source labelled (e.g. "FR24 ETA", "FA ETA")
+
+### ETA Sources
+
+The mobile app shows where an ETA estimate comes from:
+
+| Label | Source |
+|-------|--------|
+| **FR24 ETA** | Estimated by FlightRadar24 |
+| **FA ETA** | Estimated by FlightAware |
+| **Crew ETA** | Manually set by crew in the app |
+
+Crew-set ETAs always take priority over automated tracking ETAs.
 
 ---
 

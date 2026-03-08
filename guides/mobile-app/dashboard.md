@@ -10,9 +10,13 @@ The Dashboard is the first screen you see after signing in. It provides a quick 
 The hero card at the top shows your **next upcoming flight**:
 
 * **Route** — Departure and arrival ICAO codes with city names
-* **Countdown** — Time until departure (e.g. "In 3h 24m")
+* **Countdown** — Time until departure (e.g. "In 3h 24m"), or ETA countdown when in progress
 * **Booking Code** — Quick reference to the booking
-* **Passenger Count** — Total passengers on the flight
+* **Aircraft registration** and **leg/passenger count**
+
+When a flight is in progress, the card switches to **"In Progress"** mode and shows the estimated arrival countdown. The ETA source is labelled (e.g. "FR24 ETA", "FA ETA", or "Crew ETA") so you know where the estimate comes from.
+
+Completed, cancelled, and expired bookings are automatically excluded from the hero card.
 
 If you have no upcoming bookings, the card displays a "No Upcoming Bookings" message.
 

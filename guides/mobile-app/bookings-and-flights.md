@@ -10,6 +10,8 @@ The Bookings screen shows all your active bookings. Each booking card displays:
 * **Booking code** and **status badge**
 * **Route summary** (e.g. YBBN → YSSY → YBBN)
 
+Status badges include standard statuses (Confirmed, In Progress, Completed, Cancelled) plus **Overdue** — shown in red for bookings that have passed their scheduled end time without being completed.
+
 ### Filtering by Aircraft
 
 Use the aircraft filter chips at the top of the list to show only bookings for a specific aircraft. Tap **All** to reset the filter.
