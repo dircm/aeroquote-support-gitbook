@@ -76,12 +76,23 @@ The map occupies the **left half of the screen** and adapts based on flight stat
 * **Blue trail line** — Actual flight path from position tracking data
 * **Dashed grey line** — Planned route (shown for flights without position data yet)
 
-#### When no flights are airborne ("Upcoming Routes")
+#### When aircraft are on the ground between legs ("Ground Time")
+
+For multi-leg bookings in ground time, the map shows the full journey context:
+
+* **Dimmed grey trail** — Completed leg's flight path (faded to show it's finished)
+* **Orange aircraft marker** — Aircraft position at the current airport, with registration label
+* **Dashed green line** — Route to the next destination
+* **Green destination marker** — Next arrival airport (slightly larger to draw attention)
+
+This ensures the map stays visible between legs rather than disappearing while the aircraft is on the ground.
+
+#### When no flights are airborne or on ground ("Upcoming Routes")
 
 * **Muted airport markers** — All departure and arrival airports for upcoming bookings
 * **Dashed amber lines** — Planned routes for all upcoming flights, giving a visual overview of what's ahead
 
-The map automatically transitions between these modes as flights depart and arrive.
+The map automatically transitions between these three modes as flights depart, land, and enter ground time.
 
 Position data is sourced from **FlightRadar24** via ADS-B tracking. The map uses a dark theme to match the dashboard.
 
@@ -118,8 +129,10 @@ Multi-leg bookings where all current flights have landed but future legs are sch
 * Completed legs with actual arrival times
 * Upcoming legs with scheduled departure times
 
+The **flight map** remains visible during ground time, showing the completed leg's trail and a dashed line to the next destination — see [Flight Map](#flight-map) above.
+
 {% hint style="info" %}
-**Ground Time** is an automatic status. When a flight leg completes and the booking has future legs, the booking transitions to Ground Time. When the next leg's boarding begins, it returns to In Progress.
+**Ground Time** is an automatic status. When a flight leg completes and the booking has future legs, the booking transitions to Ground Time. When the next leg's boarding or check-in begins, it returns to In Progress.
 {% endhint %}
 
 #### 🟡 Upcoming
@@ -138,11 +151,30 @@ Bookings that finished within the **last 2 hours**, then automatically removed. 
 When flight tracking is enabled, AeroQuote automatically detects key flight events via **FlightRadar24**:
 
 * **Block off** — Detected when the aircraft begins taxiing (ground movement detected)
-* **Departure** — Detected when the aircraft becomes airborne
-* **Arrival** — Detected when the aircraft lands near the destination airport
+* **Departure** — Detected when the aircraft becomes airborne (a dedicated departure seeker polls every 2 minutes after block off until takeoff is confirmed)
+* **ETA updates** — In-flight estimated arrival time updated at key milestones (⅓, ½, and ⅔ of the flight)
+* **Arrival** — Detected when the aircraft lands near the destination airport, or when it disappears from the live feed after the expected flight duration
 * **Block on** — Estimated after arrival
 
 Crew can always override auto-detected times via the mobile app — **crew-confirmed times always take precedence** over automated tracking.
+
+### Multi-leg sequencing
+
+For bookings with multiple flight legs, AeroQuote automatically sequences departure detection. Polling for the next leg's departure **does not begin until the preceding leg has arrived or is on blocks**. This prevents false detections when the aircraft is still airborne on an earlier leg.
+
+### Aircraft tracking identifier
+
+AeroQuote resolves which identifier to use for FlightRadar24 lookups in this order:
+
+1. **Assigned registration** — Set per flight leg (useful when a generic aircraft is assigned a specific tail number closer to departure)
+2. **Aircraft registration** — The registration from the aircraft record
+3. **Flight number** — A callsign like QF1924 (used when no registration is available)
+
+Both flight number and assigned registration can be set from the **Flight Details** panel on a booking's itinerary.
+
+### Disabling tracking per aircraft
+
+FlightRadar24 tracking can be disabled for individual aircraft from the **Aircraft Details** page using the **FlightRadar24 Tracking** toggle. When disabled, AeroQuote will not poll FR24 for that aircraft's flights — useful for aircraft that are not visible on FlightRadar24 or where tracking is not desired.
 
 ## Booking Expiry
 
