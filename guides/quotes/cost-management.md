@@ -21,6 +21,7 @@ Previously, flight costs were summarised as a single total. With this update:
 - **Per-passenger charges** are now shown as a separate line item
 - **Ground time charges** now appear as a separate row between flights in the itinerary
 - Cost breakdowns carry through from **estimates to quotes to bookings** automatically
+- **Automatic price updates** — for aircraft using margin-based pricing, the option price recalculates automatically when you change costs
 
 ---
 
@@ -54,7 +55,7 @@ You can edit, add, toggle, and delete costs before generating a quote:
 - **Toggle**: Click the check/minus icon to include or exclude a cost
 - **Delete**: Click the trash icon on custom (non-system) cost items
 
-All changes update the aircraft option's total cost in real time. When you generate a quote, your edited costs carry through to the quote's cost items.
+All changes update the aircraft option's total cost in real time. If the aircraft uses margin-based pricing, the option price is also recalculated automatically and you'll see a notification showing the old and new price. When you generate a quote, your edited costs carry through to the quote's cost items.
 
 {% hint style="info" %}
 If you change the charter flights (add, remove, or modify a route), the estimates recalculate from scratch and any cost edits will be reset.
@@ -133,6 +134,10 @@ Custom costs you add are marked differently from system-generated costs. You can
 Editing a system-generated cost (like landing charges) will override the calculated value. If you recalculate the flight, the system value will be restored.
 {% endhint %}
 
+{% hint style="info" %}
+For margin-based aircraft, the option price will automatically update to reflect the new cost. You'll see a notification with the old and new price.
+{% endhint %}
+
 ---
 
 ## Toggling Costs On or Off
@@ -147,6 +152,29 @@ This is useful when you want to:
 - Temporarily exclude a cost for a special quote
 - See the impact of individual costs on the total
 - Keep a cost on record without including it in the price
+
+---
+
+## Automatic Price Recalculation
+
+When you edit costs on a quote option that uses a **margin-based** aircraft, AeroQuote automatically recalculates the option price using the aircraft's configured margin percentage.
+
+### How It Works
+
+1. You add, edit, toggle, or delete a cost item on a flight or option
+2. The option's total cost updates
+3. If the aircraft has a **price margin** configured (not hourly rates), the price recalculates: **price = cost + (cost × margin%)**
+4. A notification appears showing the previous price and the new price
+
+### When It Doesn't Apply
+
+- **Hourly-rate aircraft** — Price is based on flight duration, not costs, so it doesn't change when costs are edited
+- **Cost overridden** — If you've manually overridden the option cost, neither cost nor price will auto-recalculate
+- **Manual price edits** — Only automatic cost changes trigger recalculation; editing the price directly in the option modal works as before
+
+{% hint style="info" %}
+The margin percentage used comes from the aircraft's pricing configuration. To change it, go to **Aircraft → Costings** and update the price margin.
+{% endhint %}
 
 ---
 
