@@ -35,7 +35,7 @@ The Flight Detail screen is the heart of flight operations in the app. It shows 
 
 * Departure and arrival **ICAO codes** and **city names**
 * **Local departure time** and **Zulu (UTC) time**
-* **Flight duration**
+* **Flight duration** — When a leg is in progress, this is replaced with a live **time remaining** countdown and the current **ETA** with source label (Crew/FA). The countdown updates every minute and clamps to "Arriving soon" once past the ETA.
 * **FBO / Facility** — If an FBO or facility is assigned, a chip appears under the airport name. Tap it to see facility details and get directions.
 
 ### Aircraft Card

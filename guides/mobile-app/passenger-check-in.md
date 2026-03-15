@@ -33,6 +33,9 @@ For faster boarding, use the built-in QR scanner:
 
 ### Scanner Features
 
+* **Scan modes** — Toggle between two modes using the button in the top bar:
+  * **Continuous** — The scanner processes codes automatically as they enter the viewfinder (fastest for high-throughput boarding)
+  * **Press to Check** — The scanner detects codes but waits for you to tap a confirm button before checking in (useful when you need to verify each passenger)
 * **Torch** — Tap the flash icon to toggle the camera light for low-light scanning
 * **Deduplication** — Scanning the same code twice within 3 seconds is silently ignored
 * **Already checked in** — If a passenger is already checked in, the scan is silently skipped
