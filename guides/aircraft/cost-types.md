@@ -114,14 +114,13 @@ Ground time charges appear as separate rows in the itinerary between consecutive
 
 ## Cost Rules (Flight Type Filtering)
 
-For most cost types (except Daily and Overnight), you can choose which flight types the cost applies to:
+For most cost types (except Daily, Overnight, and Ground Time), you can choose which flight types the cost applies to:
 
 | Rule | Description |
 |------|-------------|
 | **All Sectors** | Applies to both charter and ferry flights (default) |
 | **Charter Only** | Applies only to revenue/charter flights |
 | **Ferry Only** | Applies only to repositioning/ferry flights |
-| **Minimum Charge** | Sets a minimum charge regardless of distance or duration |
 
 {% hint style="success" %}
 **Example:** You might set handling fees as "All Sectors" since you pay them at every airport, but set catering charges as "Charter Only" since ferry flights carry no passengers.

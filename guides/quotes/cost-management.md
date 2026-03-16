@@ -17,6 +17,7 @@ Previously, flight costs were summarised as a single total. With this update:
 - You can **add custom costs** to any flight or option
 - You can **toggle individual costs** on or off without deleting them
 - You can **edit amounts** on any cost item
+- You can **control customer visibility** — choose exactly which costs appear on customer quotes and PDFs
 - You can **remove ferry flights** from estimates
 - **Per-passenger charges** are now shown as a separate line item
 - **Ground time charges** now appear as a separate row between flights in the itinerary
@@ -152,6 +153,36 @@ This is useful when you want to:
 - Temporarily exclude a cost for a special quote
 - See the impact of individual costs on the total
 - Keep a cost on record without including it in the price
+
+---
+
+## Customer Visibility
+
+You can control which cost items are visible to your customers on their quote page and PDF. By default, all costs are **hidden** from customers — the customer sees only the total price.
+
+### Toggling Customer Visibility
+
+1. Expand the cost breakdown on a flight item
+2. Hover over a cost item to reveal the **eye icon**
+3. Click the eye icon to toggle visibility:
+   - **Blue eye** — visible to the customer (icon stays visible persistently)
+   - **Grey eye-slash** — hidden from the customer (icon appears on hover only)
+
+### What the Customer Sees
+
+When one or more cost items are marked as visible, an expandable **Operating Costs** section appears on the customer's quote page. This section shows only the costs you've chosen to share — along with the cost name, amount, and any explanatory notes.
+
+{% hint style="info" %}
+Customer visibility only controls what is **displayed** to the customer. Hidden costs are still included in the total price — they are not excluded from pricing.
+{% endhint %}
+
+{% hint style="success" %}
+**Use visibility strategically** — Share costs like landing charges or fuel uplift to justify your pricing, while keeping internal costs like maintenance reserves private.
+{% endhint %}
+
+### Visibility on PDFs
+
+The same visibility rules apply to quote PDFs. Only cost items marked as visible will appear on the generated PDF, regardless of which PDF variant your operator uses.
 
 ---
 
