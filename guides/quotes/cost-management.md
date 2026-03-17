@@ -108,7 +108,7 @@ When expanded, you'll see each cost line item:
 
 ### On an Option
 
-Option-level costs (day charges, overnight charges, and custom charges) appear in a separate cost section below the flight items within the option.
+Option-level costs (day charges, overnight charges, and custom charges) appear in a separate cost section above the flight items within the option.
 
 <figure><img src="../../.gitbook/assets/general option costs.png" alt=""><figcaption></figcaption></figure>
 
