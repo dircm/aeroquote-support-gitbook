@@ -2,7 +2,7 @@
 description: Set up pricing and hourly rates for your aircraft.
 ---
 
-# Costings
+# 🆕 Costings
 
 The Costings section defines how AeroQuote calculates prices for this aircraft. Configure hourly rates, minimum charges, and pricing rules here.
 

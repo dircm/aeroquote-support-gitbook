@@ -4,7 +4,7 @@ description: >-
   estimates.
 ---
 
-# Cost Management
+# 🆕 Cost Management
 
 AeroQuote now gives you full visibility and control over every cost that makes up a quote. Each flight, ground time, and option displays an itemised cost breakdown that you can expand, edit, and customise — starting from the estimate stage, before a quote is even created.
 

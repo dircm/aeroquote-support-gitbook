@@ -2,11 +2,11 @@
 description: Understand each aircraft cost type available when configuring sector charges.
 ---
 
-# Cost Types
+# 🆕 Cost Types
 
 When adding or editing costs on the Aircraft Costings page, you choose from several cost types. Each type determines how the charge is calculated and applied to flights in your quotes and bookings.
 
----
+***
 
 ## Per Flight Hour
 
@@ -16,7 +16,7 @@ Charged for every hour of flight time on a sector. Use this for costs that scale
 
 **How it's calculated:** hourly rate × flight duration (in hours)
 
----
+***
 
 ## Per Landing / Sector
 
@@ -26,7 +26,7 @@ A flat charge applied once per landing or flight sector. Use this for fixed cost
 
 **How it's calculated:** flat rate × number of sectors
 
----
+***
 
 ## Per Passenger
 
@@ -40,7 +40,7 @@ Charged per passenger on each charter sector. Use this for costs that scale with
 Per-passenger charges only apply to charter flights, not ferry/repositioning flights.
 {% endhint %}
 
----
+***
 
 ## Per Distance
 
@@ -66,7 +66,7 @@ Rate applied per statute mile of great-circle distance between airports.
 Distance is calculated as the great-circle distance between the departure and arrival airports for each sector.
 {% endhint %}
 
----
+***
 
 ## Daily Charge
 
@@ -80,7 +80,7 @@ A flat charge applied for each calendar day of the trip. Use this for costs that
 Daily charges are applied at the option level, not per individual flight. The number of days is calculated from the first departure to the last arrival.
 {% endhint %}
 
----
+***
 
 ## Overnight Charge
 
@@ -94,7 +94,7 @@ A flat charge for each night the aircraft stays away from its homebase. Use this
 Like daily charges, overnight charges are applied at the option level. A night is counted when the aircraft is away from its homebase overnight.
 {% endhint %}
 
----
+***
 
 ## Ground Time
 
@@ -110,23 +110,23 @@ You can optionally set a **maximum charge** to cap the ground time cost. This is
 Ground time charges appear as separate rows in the itinerary between consecutive flights, making them easy to identify and adjust.
 {% endhint %}
 
----
+***
 
 ## Cost Rules (Flight Type Filtering)
 
 For most cost types (except Daily, Overnight, and Ground Time), you can choose which flight types the cost applies to:
 
-| Rule | Description |
-|------|-------------|
-| **All Sectors** | Applies to both charter and ferry flights (default) |
-| **Charter Only** | Applies only to revenue/charter flights |
-| **Ferry Only** | Applies only to repositioning/ferry flights |
+| Rule             | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| **All Sectors**  | Applies to both charter and ferry flights (default) |
+| **Charter Only** | Applies only to revenue/charter flights             |
+| **Ferry Only**   | Applies only to repositioning/ferry flights         |
 
 {% hint style="success" %}
 **Example:** You might set handling fees as "All Sectors" since you pay them at every airport, but set catering charges as "Charter Only" since ferry flights carry no passengers.
 {% endhint %}
 
----
+***
 
 ## Setting Up Costs
 
@@ -140,10 +140,10 @@ To add or edit aircraft costs:
 
 The cost name is auto-generated from your selections but can be customised.
 
----
+***
 
 ## Next Steps
 
-- [Costings](costings.md) — Configure pricing models and rates
-- [Cost Simulator](cost-simulator.md) — Test how your costs affect quotes
-- [Cost Management](../quotes/cost-management.md) — Manage costs on individual quotes
+* [Costings](costings.md) — Configure pricing models and rates
+* [Cost Simulator](cost-simulator.md) — Test how your costs affect quotes
+* [Cost Management](../quotes/cost-management.md) — Manage costs on individual quotes
