@@ -70,16 +70,35 @@ Protect your margins with minimums:
 
 ---
 
-## Additional Charges
+## Sector Charges (Cost Types)
 
-Configure extra costs that may apply:
+Add recurring costs that are automatically calculated on every quote for this aircraft. These are configured in the **Aircraft costs that you will pay** section.
 
-| Charge | Description |
-|--------|-------------|
-| **Overnight Fee** | When aircraft stays away from homebase |
-| **Crew Expenses** | Per diem for crew on overnight trips |
-| **International Fee** | Additional charge for international flights |
-| **Weekend/Holiday Rate** | Premium for off-hours operations |
+Each cost has a **type** that determines how it's calculated (per hour, per sector, per passenger, per distance, daily, overnight, or ground time) and a **rule** that controls which flights it applies to (all sectors, charter only, or ferry only).
+
+{% hint style="info" %}
+See [Cost Types](cost-types.md) for a detailed explanation of each cost type, how it's calculated, and when to use it.
+{% endhint %}
+
+---
+
+## Minimum Customer Price
+
+Set a **floor price** for this aircraft to ensure quotes never fall below a minimum amount, regardless of how the price is calculated.
+
+| Field | Description |
+|-------|-------------|
+| **Minimum Customer Price** | The lowest price that will be quoted for this aircraft |
+
+When a quote is generated and the calculated price (whether from hourly rates or margin-based pricing) is below the minimum, the quoted price is automatically raised to the minimum amount.
+
+{% hint style="info" %}
+Leave this field empty to disable the minimum. A value of zero is treated as "not set".
+{% endhint %}
+
+{% hint style="success" %}
+**Use this for short flights** — If your shortest possible flight still costs a minimum amount to operate (crew callout, fuel, handling), set a minimum customer price to ensure you don't quote below your break-even.
+{% endhint %}
 
 ---
 
@@ -120,5 +139,6 @@ For a typical quote, AeroQuote calculates:
 
 ## Next Steps
 
+- [Cost Types](cost-types.md) — Detailed guide to each cost type and when to use it
 - [Cost Simulator](cost-simulator.md) — Test your pricing configuration
 - [Flight Performance](flight-performance.md) — Verify performance data
