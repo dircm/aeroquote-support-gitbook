@@ -84,6 +84,8 @@ Set a **floor price** for this aircraft to ensure quotes never fall below a mini
 
 When a quote is generated and the calculated price (whether from hourly rates or margin-based pricing) is below the minimum, the quoted price is automatically raised to the minimum amount.
 
+<figure><img src="../../.gitbook/assets/minimum_price.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 Leave this field empty to disable the minimum. A value of zero is treated as "not set".
 {% endhint %}
