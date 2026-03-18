@@ -16,10 +16,12 @@ Previously, flight costs were summarised as a single total. With this update:
 
 * Every cost is displayed as its own **line item** (flight costs, landing charges, parking charges, fuel uplifts, per-passenger charges, and more)
 * Cost breakdowns are available at the **estimate stage** — before a quote is created
-* You can **add custom costs** to any flight or option
+* The **Add Cost Wizard** lets you add landing charges, parking charges, ground time, fuel uplift (with supplier pricing), or custom costs
+* **Fuel uplift** costs can be calculated from airport fuel supplier data with live pricing and discount display
 * You can **toggle individual costs** on or off without deleting them
 * You can **edit amounts** on any cost item
 * You can **control customer visibility** — choose exactly which costs appear on customer quotes and PDFs
+* **Flight Cost breakdown** — click to expand and see individual sector charge calculations
 * You can **remove ferry flights** from estimates
 * **Per-passenger charges** are now shown as a separate line item
 * **Ground time charges** now appear as a separate row between flights in the itinerary
@@ -106,6 +108,18 @@ When expanded, you'll see each cost line item:
 | **Amount** | The cost in your operator currency                     |
 | **Toggle** | Include or exclude this cost from the total            |
 
+### Flight Cost Breakdown
+
+The **Flight Costs** line item rolls up all of an aircraft's sector charges (hourly rates, per-landing fees, distance charges, etc.) into a single total. To see what makes up the total:
+
+1. Click the **Flight Costs** row in the cost list
+2. The individual charge calculations expand below, showing each charge name, rate, and how it was calculated (e.g. "Charter (A$200.00 per hour * 2:30) = A$500.00")
+3. The item count shows next to the name (e.g. "Flight Costs (3)")
+
+{% hint style="info" %}
+If you mark **Flight Costs** as visible to the customer, the individual charge breakdown also appears on the customer quote page and in PDF quotes.
+{% endhint %}
+
 ### On an Option
 
 Option-level costs (day charges, overnight charges, and custom charges) appear in a separate cost section above the flight items within the option.
@@ -114,18 +128,61 @@ Option-level costs (day charges, overnight charges, and custom charges) appear i
 
 ***
 
-## Adding a Custom Cost
+## Adding Costs with the Add Cost Wizard
 
-You can add your own cost items to any flight or option:
+Click **Add Cost** at the bottom of any cost list to open the Add Cost Wizard. The wizard guides you through creating different types of cost items.
 
-1. Expand the cost breakdown on a flight item or option
-2. Click **Add Cost**
-3. Enter:
-   * **Name** — A description (e.g. "Handling Fee", "De-icing")
-   * **Amount** — The cost in dollars.
+### Cost Types Available
+
+When adding costs to a **flight item**, you can choose from:
+
+| Type | Description |
+|------|-------------|
+| **Landing Charge** | Landing fees at the arrival airport |
+| **Parking Charge** | Parking or hangarage charges |
+| **Ground Time Charge** | Charge for time on the ground between flights |
+| **Fuel Uplift** | Fuel uplift at the arrival airport (with supplier lookup or manual entry) |
+| **Other Cost** | A custom cost with any name and amount |
+
+When adding costs to an **option** (General Option Costs), only **Other Cost** is available — flight-specific costs like fuel and landing charges belong on individual flights.
+
+### Adding a Landing, Parking, or Ground Time Charge
+
+1. Click **Add Cost** → select the charge type
+2. The name is auto-filled (e.g. "Landing Charges") — you can customise it
+3. Enter the amount
 4. Click **Save**
 
-The new cost is immediately included in the flight and option totals.
+### Adding a Fuel Uplift
+
+If the arrival airport has fuel supplier pricing data in the system:
+
+1. Click **Add Cost** → select **Fuel Uplift**
+2. The airport is shown automatically (read-only)
+3. Select a **fuel type** from the dropdown — this lists fuel types available from suppliers at that airport
+4. **Supplier cards** appear showing each supplier's brand, current price per unit, any discounts, and when the price was last updated
+5. Select a supplier, enter the **fuel amount** and **unit** (Litres, Gallons, etc.)
+6. Advance to the **Review** step — the calculated cost is shown as `amount × price/unit = total`
+7. The cost name is auto-generated (e.g. "Fuel Uplift — Shell @ YSSY") — customise if needed
+8. Click **Save**
+
+If no fuel suppliers are found at the airport, or you prefer to enter the cost directly:
+
+1. The wizard shows a **manual entry** toggle (auto-enabled when no suppliers exist)
+2. Enter the fuel cost amount and name directly
+3. Click **Save**
+
+The fuel cost item is created with the correct **Fuel Uplift** type and all supplier/pricing metadata is stored for audit purposes.
+
+{% hint style="info" %}
+Fuel uplift is available for the **arrival airport** of each flight. The fuel amount must be entered manually — automatic fuel burn calculation based on flight duration is planned for a future update.
+{% endhint %}
+
+### Adding an Other Cost
+
+1. Click **Add Cost** → select **Other Cost**
+2. Enter a **name** (e.g. "Handling Fee", "De-icing") and **amount**
+3. Click **Save**
 
 {% hint style="info" %}
 Custom costs you add are marked differently from system-generated costs. You can edit or delete custom costs at any time. System-generated costs can be toggled off but not deleted.
