@@ -113,7 +113,7 @@ When expanded, you'll see each cost line item:
 The **Flight Costs** line item rolls up all of an aircraft's sector charges (hourly rates, per-landing fees, distance charges, etc.) into a single total. To see what makes up the total:
 
 1. Click the **Flight Costs** row in the cost list
-2. The individual charge calculations expand below, showing each charge name, rate, and how it was calculated (e.g. "Charter (A$200.00 per hour * 2:30) = A$500.00")
+2. The individual charge calculations expand below, showing each charge name, rate, and how it was calculated (e.g. "Charter (A$200.00 per hour \* 2:30) = A$500.00")
 3. The item count shows next to the name (e.g. "Flight Costs (3)")
 
 {% hint style="info" %}
@@ -132,17 +132,19 @@ Option-level costs (day charges, overnight charges, and custom charges) appear i
 
 Click **Add Cost** at the bottom of any cost list to open the Add Cost Wizard. The wizard guides you through creating different types of cost items.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2026-03-19 at 11.32.26 am.png" alt=""><figcaption></figcaption></figure>
+
 ### Cost Types Available
 
 When adding costs to a **flight item**, you can choose from:
 
-| Type | Description |
-|------|-------------|
-| **Landing Charge** | Landing fees at the arrival airport |
-| **Parking Charge** | Parking or hangarage charges |
-| **Ground Time Charge** | Charge for time on the ground between flights |
-| **Fuel Uplift** | Fuel uplift at the arrival airport (with supplier lookup or manual entry) |
-| **Other Cost** | A custom cost with any name and amount |
+| Type                   | Description                                                               |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Landing Charge**     | Landing fees at the arrival airport                                       |
+| **Parking Charge**     | Parking or hangarage charges                                              |
+| **Ground Time Charge** | Charge for time on the ground between flights                             |
+| **Fuel Uplift**        | Fuel uplift at the arrival airport (with supplier lookup or manual entry) |
+| **Other Cost**         | A custom cost with any name and amount                                    |
 
 When adding costs to an **option** (General Option Costs), only **Other Cost** is available — flight-specific costs like fuel and landing charges belong on individual flights.
 
@@ -158,7 +160,7 @@ When adding costs to an **option** (General Option Costs), only **Other Cost** i
 If the arrival airport has fuel supplier pricing data in the system:
 
 1. Click **Add Cost** → select **Fuel Uplift**
-2. The airport is shown automatically (read-only)
+2. The airport is shown automatically
 3. Select a **fuel type** from the dropdown — this lists fuel types available from suppliers at that airport
 4. **Supplier cards** appear showing each supplier's brand, current price per unit, any discounts, and when the price was last updated
 5. Select a supplier, enter the **fuel amount** and **unit** (Litres, Gallons, etc.)
