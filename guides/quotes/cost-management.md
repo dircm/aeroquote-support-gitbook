@@ -28,6 +28,8 @@ Previously, flight costs were summarised as a single total. With this update:
 * Cost breakdowns carry through from **estimates to quotes to bookings** automatically
 * **Automatic price updates** — for aircraft using margin-based pricing, the option price recalculates automatically when you change costs
 
+{% embed url="https://vimeo.com/1175398570?share=copy&fl=sv&fe=ci" %}
+
 ***
 
 ## Estimate-Stage Cost Breakdown
