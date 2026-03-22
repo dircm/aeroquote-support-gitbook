@@ -4,13 +4,13 @@ The Bookings Dashboard is a **real-time operations display** designed to give yo
 
 ## Opening the Dashboard
 
-The Bookings Dashboard is accessed from the **operator dashboard** (Home page):
+The Bookings Dashboard is accessed from the **Bookings card** on the operator Home page:
 
 1. Log in to AeroQuote
-2. On the Home page, look for the **Bookings Dashboard** launch banner below the summary cards
-3. Click the banner — the dashboard opens in a **new browser tab**
+2. On the Home page, find the **Bookings** summary card (shows total bookings, in-progress count, and upcoming count)
+3. Click the **Dashboard** link (with TV icon) on the right side of the card footer — it opens in a **new browser tab**
 
-The launch banner is only visible to users with **Manager**, **Account Administrator**, or **Chief Pilot** roles (users with the `bookings.view-all` permission). Crew members with basic `bookings.view` cannot access the dashboard.
+The Dashboard link is only visible to users with **Manager**, **Account Administrator**, or **Chief Pilot** roles (users with the `bookings.view-all` permission). Crew members with basic `bookings.view` can see the Bookings card but not the Dashboard link.
 
 {% hint style="info" %}
 The dashboard uses a dark theme optimised for large displays and low-light environments like ops rooms.
