@@ -124,11 +124,48 @@ When you make changes to a booking:
 
 ## Crew Communications
 
-You may also be able to send booking details to crew:
+You can send booking details to crew:
 - Flight brief
 - Passenger manifest
 - Route information
 - Special requirements
+
+---
+
+## Automatic Booking Completion Email
+
+When a booking is fully completed and all block times have been recorded, AeroQuote **automatically sends a completion summary email** to:
+
+* The **operator** — full flight summary with planned vs actual duration analysis
+* All **assigned crew members** — flight summary without cost analysis
+
+This email is sent approximately **2 hours after the final flight arrives** (allowing time for block times and flight track data to be finalised).
+
+### What's included
+
+Each flight in the booking shows:
+
+| Detail | Description |
+|--------|-------------|
+| **Block Off** | Time the aircraft left the gate/parking |
+| **Departed** | Takeoff time |
+| **Arrived** | Landing time |
+| **Block On** | Time the aircraft reached the gate/parking |
+| **Actual Duration** | Total flight time (departed to arrived) |
+| **Flight Track Map** | Static map showing the actual path flown (when flight tracking data is available) |
+
+### Operator-only: Duration Variance
+
+The operator version includes a **planned vs actual duration** comparison for each flight:
+
+* **Green** — Actual duration was shorter than planned
+* **Red** — Actual duration was longer than planned
+
+This helps operators identify flights that consistently run over or under estimated durations, informing future quoting accuracy.
+
+{% hint style="info" %}
+The completion email is fully automatic — no manual action is required. It fires after the system confirms all block times are recorded, either from flight tracking or from the 2-hour fallback timer.
+{% endhint %}
 
 ---
 
@@ -138,6 +175,7 @@ You may also be able to send booking details to crew:
 - Include clear next steps for the customer
 - Attach relevant documents (itinerary PDF, etc.)
 - Follow up closer to departure with reminders
+- The completion email handles post-flight communication automatically
 
 ---
 
