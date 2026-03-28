@@ -30,6 +30,40 @@ The Integrations tab lets you connect AeroQuote to external services like accoun
 |-------------|-------------|
 | **iFlightPlanner** | Route planning and facility data |
 | **Firestore** | Real-time mobile app sync |
+| **FlightRadar24 / FlightAware** | Automatic flight departure, arrival, and ETA detection |
+
+---
+
+## Flight Tracking
+
+AeroQuote integrates with **FlightRadar24** (primary) and **FlightAware** to automatically detect when your flights depart and arrive, and to provide live ETA updates during flights. When enabled, crew members receive push notifications on the mobile app to confirm actual times.
+
+### Enabling Flight Tracking
+
+1. Go to **Settings → Integrations**
+2. Scroll to the **Flight Tracking** section
+3. Toggle flight tracking **ON**
+
+### How It Works
+
+* When a booking has a confirmed aircraft, AeroQuote registers the flight with the tracking provider
+* The provider monitors the flight and sends updates when it departs, arrives, or when the ETA changes
+* Crew assigned to the flight receive push notifications on the mobile app
+* Crew confirm or adjust the detected time — confirmed times take priority over further tracking updates
+* Actual flight tracks are saved and displayed on the booking itinerary
+* Live ETA updates are shown on the mobile app dashboard with the source labelled (e.g. "External ETA", "FA ETA")
+
+### ETA Sources
+
+The mobile app shows where an ETA estimate comes from:
+
+| Label | Source |
+|-------|--------|
+| **External ETA** | Estimated by a flight tracking provider (e.g. FlightRadar24) |
+| **FA ETA** | Estimated by FlightAware |
+| **Crew ETA** | Manually set by crew in the app |
+
+Crew-set ETAs always take priority over automated tracking ETAs.
 
 ---
 
