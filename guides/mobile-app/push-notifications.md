@@ -15,13 +15,12 @@ If you denied notification permission, you can re-enable it in your device's **S
 
 ## What You'll Receive
 
-Notifications are sent for key booking events, such as:
+Notifications are sent for key flight events:
 
 * **Flight departure detected** — When the flight tracking provider detects your aircraft has departed
 * **Flight arrival detected** — When the flight tracking provider detects your aircraft has arrived
-* Booking status changes
-* New passenger or crew assignments
-* Flight schedule updates
+* **Flight data sync** — Silent background notifications that keep flight times and status up to date
+* **Check-in sync** — Silent background notifications that update passenger check-in state across devices
 
 <!-- 📸 PLACEHOLDER: Screenshot of an iOS rich notification with the route map image expanded -->
 <!-- Suggested filename: .gitbook/assets/mobile-push-notification-ios.png -->

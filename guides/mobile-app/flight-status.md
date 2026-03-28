@@ -112,7 +112,7 @@ Crew can manually update the estimated arrival time during a flight:
 
 The ETA source is shown on the dashboard hero card:
 
-* **FR24 ETA** — Estimated by FlightRadar24
+* **External ETA** — Estimated by a flight tracking provider (e.g. FlightRadar24)
 * **FA ETA** — Estimated by FlightAware
 * **Crew ETA** — Manually set by crew via the app
 

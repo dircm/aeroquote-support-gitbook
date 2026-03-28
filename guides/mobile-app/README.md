@@ -8,7 +8,7 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 
 * **Dashboard** — At-a-glance view of your next flight, active bookings, and fleet status
 * **Bookings & Flights** — Browse all bookings, view flight legs with departure/arrival times, routes, and crew
-* **Passenger Management** — View contact details, edit weights, add/remove/transfer passengers between flights
+* **Passenger Management** — View contact details, edit weights, add and remove passengers on flights
 * **Passenger Check-In** — Check in passengers and cargo via toggle or QR code scanner
 * **Flight Status** — Record block off/on, departure/arrival times; receive automatic notifications from FlightRadar24/FlightAware
 * **Log Position & Update ETA** — Report GPS position and update estimated arrival during flights
@@ -25,8 +25,8 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 
 ## Supported Platforms
 
-* **iOS** — iPhone (iOS 14+)
-* **Android** — Android 6.0+
+* **iOS** — iPhone (iOS 15.0+)
+* **Android** — Android 5.0+ (API 21)
 
 ## Getting Started
 

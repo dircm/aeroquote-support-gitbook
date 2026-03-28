@@ -51,7 +51,7 @@ AeroQuote integrates with **FlightRadar24** (primary) and **FlightAware** to aut
 * Crew assigned to the flight receive push notifications on the mobile app
 * Crew confirm or adjust the detected time — confirmed times take priority over further tracking updates
 * Actual flight tracks are saved and displayed on the booking itinerary
-* Live ETA updates are shown on the mobile app dashboard with the source labelled (e.g. "FR24 ETA", "FA ETA")
+* Live ETA updates are shown on the mobile app dashboard with the source labelled (e.g. "External ETA", "FA ETA")
 
 ### ETA Sources
 
@@ -59,7 +59,7 @@ The mobile app shows where an ETA estimate comes from:
 
 | Label | Source |
 |-------|--------|
-| **FR24 ETA** | Estimated by FlightRadar24 |
+| **External ETA** | Estimated by a flight tracking provider (e.g. FlightRadar24) |
 | **FA ETA** | Estimated by FlightAware |
 | **Crew ETA** | Manually set by crew in the app |
 

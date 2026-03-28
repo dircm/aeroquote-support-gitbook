@@ -14,7 +14,7 @@ The hero card at the top shows your **next upcoming flight**:
 * **Booking Code** — Quick reference to the booking
 * **Aircraft registration** and **leg/passenger count**
 
-When a flight is in progress, the card switches to **"In Progress"** mode and shows the estimated arrival countdown. The ETA source is labelled (e.g. "FR24 ETA", "FA ETA", or "Crew ETA") so you know where the estimate comes from.
+When a flight is in progress, the card switches to **"In Progress"** mode and shows the estimated arrival countdown. The ETA source is labelled (e.g. "External ETA", "FA ETA", or "Crew ETA") so you know where the estimate comes from.
 
 Completed, cancelled, and expired bookings are automatically excluded from the hero card.
 
@@ -48,3 +48,5 @@ Use the bottom tab bar to navigate between the main sections:
 * **Bookings** — All your bookings
 * **Aircraft** — Your fleet
 * **Profile** — Account info and sign out
+
+A centre **Scan** button (floating action button) is always visible in the tab bar for quick access to the QR code scanner.
