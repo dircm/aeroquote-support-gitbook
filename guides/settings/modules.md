@@ -1,10 +1,10 @@
 ---
-description: Enable or disable AeroQuote features for your workflow.
+description: Enable, disable, and manage AeroQuote module subscriptions.
 ---
 
 # 🧩 Modules
 
-The Modules tab lets you customize which features are active in your AeroQuote account. Turn modules on or off to streamline the interface for your team's workflow.
+The Modules tab lets you customize which features are active in your AeroQuote account. Some modules are included free with your plan, while others are available as paid add-ons.
 
 ---
 
@@ -17,54 +17,73 @@ The Modules tab lets you customize which features are active in your AeroQuote a
 
 ## Available Modules
 
-Toggle these features based on your needs:
-
-| Module | Description |
-|--------|-------------|
-| **Request for Quote (RFQ)** | Enable broker-style RFQ workflows to source aircraft from external operators |
-| **External Operators** | Manage relationships with third-party operators |
-| **Widgets** | Enable embeddable enquiry widgets for your website |
-| **Maps** | Visual route editing and tour flight creation |
-| **Accounting Integration** | Connect to Xero or QuickBooks |
+| Module | Type | Description |
+|--------|------|-------------|
+| **Bookings & Flight Tracking** | Paid | Manage bookings, track flights, assign crew and passengers, and access analytics |
+| **Request for Quote (RFQ)** | Free | Enable broker-style RFQ workflows to source aircraft from external operators |
 
 ---
 
-## Enabling a Module
+## Free vs Paid Modules
 
-1. Find the module you want to enable
-2. Toggle the switch to **On**
-3. The feature becomes immediately available
+Modules are labelled with a **Free** or **Paid** badge on the module card.
+
+- **Free modules** can be toggled on or off instantly with no billing impact
+- **Paid modules** show pricing on the card and require a subscription confirmation before enabling
 
 ---
 
-## Disabling a Module
+## Subscribing to a Paid Module
+
+1. Find the module you want to enable (e.g. **Bookings & Flight Tracking**)
+2. Click **Enable**
+3. A confirmation modal will appear showing the pricing and your billing period
+4. Click **Subscribe** to add the module to your subscription
+5. The module becomes immediately available
+
+Your Stripe subscription is updated automatically. The module cost will appear on your next invoice.
+
+---
+
+## Unsubscribing from a Paid Module
 
 1. Find the module you want to disable
-2. Toggle the switch to **Off**
-3. The feature is hidden from the interface
+2. Click **Disable**
+3. A confirmation modal will warn you about losing access
+4. Click **Unsubscribe** to remove the module from your subscription
 
-{% hint style="info" %}
-Disabling a module hides it from the interface but doesn't delete any data. Re-enable anytime to access your data again.
+{% hint style="warning" %}
+Unsubscribing removes access to bookings, flight tracking, and analytics features. Your existing booking data is preserved and will be accessible if you re-subscribe later.
 {% endhint %}
 
 ---
 
-## Recommended Configurations
+## Enabling / Disabling Free Modules
 
-### For Charter Operators
+1. Find the module you want to toggle
+2. Click **Enable** or **Disable**
+3. The change takes effect immediately across your account
 
-Most operators need:
-- ✅ Maps (for route planning)
-- ✅ Accounting Integration (for invoicing)
-- ❌ RFQ (unless you also broker flights)
+{% hint style="info" %}
+Disabling a free module hides it from the interface but doesn't delete any data. Re-enable anytime to access your data again.
+{% endhint %}
 
-### For Brokers
+---
 
-Brokers typically enable:
-- ✅ RFQ (essential for sourcing)
-- ✅ External Operators (manage your network)
-- ✅ Accounting Integration
-- ✅ Maps
+## Grace Period
+
+If you had access to the Bookings module during the free evaluation period, you will see a banner on your dashboard prompting you to subscribe before the grace period ends.
+
+- The banner shows pricing in your billing currency
+- Click **Subscribe** to go directly to the Modules page
+- Once you subscribe, the banner disappears
+- If you don't subscribe before the grace period ends, the module will be disabled
+
+---
+
+## Who Can Manage Modules
+
+Module subscription changes require the **billing.manage** permission, which is assigned to the **Account Administrator** role by default. Users without this permission can still see the Modules page but cannot subscribe or unsubscribe from paid modules.
 
 ---
 
@@ -74,6 +93,6 @@ Brokers typically enable:
 **Start minimal** — Enable only what you need. You can always turn on more modules later as your needs grow.
 {% endhint %}
 
-- Fewer active modules = cleaner interface
-- Train new staff with limited modules, then expand
-- Review your module configuration quarterly
+- Fewer active modules = cleaner interface for your team
+- The grace period banner only appears for users with billing access
+- If you think a module was disabled in error, contact [support@aeroquote.com](mailto:support@aeroquote.com)
