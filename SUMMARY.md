@@ -11,6 +11,8 @@
 
 * [🏃‍♂️ Account Setup Guide](getting-started/account-setup-guide.md)
 * [🤷‍♀️ Concepts](getting-started/concepts.md)
+* [✈️ Add Your First Aircraft](getting-started/add-your-first-aircraft.md)
+* [📝 Create Your First Quote](getting-started/create-your-first-quote.md)
 
 ## 📖 Guides
 
