@@ -97,4 +97,4 @@ See [Custom Routes & Route Library](../guides/custom-items/custom-routes-and-rou
 
 ## Availability
 
-Bookings & Flight Tracking is **free until April 30, 2026** during the evaluation period. After that, it's available as a paid module from **Settings → Modules**.
+Bookings & Flight Tracking is **free until May 31, 2026** during the evaluation period. After that, it's available as a paid module from **Settings → Modules**.
