@@ -78,10 +78,28 @@ This helps avoid double-booking crew members.
 
 ## Crew Notifications
 
-Depending on your settings, assigned crew may receive:
+Assigned crew members receive:
 - Email notification of assignment
-- Calendar invite for the flight
+- Calendar invite for the flight (synced to their device calendar)
 - Access to view booking details
+- **Push notifications** via the mobile app for departure and arrival alerts
+
+{% hint style="info" %}
+Crew must have the AeroQuote mobile app installed to receive push notifications. Notifications are sent automatically when departures and arrivals are detected by flight tracking or confirmed by crew.
+{% endhint %}
+
+---
+
+## Mobile App for Crew
+
+Assigned crew can use the AeroQuote mobile app (iOS and Android) to:
+- View upcoming flights with a countdown to departure
+- Check in passengers manually or by scanning QR boarding passes
+- Confirm departures and arrivals with timestamps
+- Update ETAs from the field
+- Record flight status even offline — data syncs when connectivity returns
+
+All actions from the mobile app sync to the Bookings Dashboard and your team in real time.
 
 ---
 

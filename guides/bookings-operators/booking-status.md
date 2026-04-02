@@ -1,10 +1,10 @@
 ---
-description: Track flight progress through status updates.
+description: Track flight progress through status updates and automatic flight tracking.
 ---
 
 # 📊 Booking Status
 
-The Status section lets you track each flight through its lifecycle. Update statuses to keep your team and customers informed.
+The Status tab tracks each flight through its lifecycle — from block off to block on. Status updates can come from crew via the mobile app, or automatically from FlightRadar24 integration.
 
 ---
 
@@ -12,112 +12,146 @@ The Status section lets you track each flight through its lifecycle. Update stat
 
 1. Go to **Bookings** from the sidebar
 2. Click on a booking
-3. Select the **Status** tab or view status on the Itinerary
+3. Select the **Status** tab
 
 ---
 
-## Flight Status Options
+## Flight Status Timeline
 
-Each flight leg can have a status:
+Each flight leg tracks four key events in sequence:
+
+| Event | Description |
+|-------|-------------|
+| **Block Off** | Aircraft leaves the gate or parking position |
+| **Departed** | Aircraft takes off |
+| **Arrived** | Aircraft lands |
+| **Block On** | Aircraft reaches the gate or parking at destination |
+
+Each event records:
+- **Timestamp** — When it occurred
+- **Source** — How it was recorded (see Sources below)
+
+---
+
+## Flight Status Values
+
+Each flight leg has a status that updates as events are recorded:
 
 | Status | Meaning |
 |--------|---------|
-| **Scheduled** | Flight is planned, not yet departed |
-| **Confirmed** | All details confirmed, ready to go |
-| **Boarding** | Passengers boarding |
-| **Departed** | Aircraft has taken off |
-| **In Flight** | Currently airborne |
-| **Landed** | Aircraft has landed |
-| **Completed** | Flight finished, passengers deplaned |
-| **Cancelled** | Flight cancelled |
-| **Delayed** | Flight delayed from original time |
+| **Boarding** | Passengers are boarding the aircraft |
+| **In Progress** | Aircraft has departed and is airborne |
+| **Completed** | Aircraft has arrived at its destination |
+| **Cancelled** | Flight has been cancelled |
 
 ---
 
-## Updating Status
+## Status Sources
 
-### Manual Updates
+Every status event is tagged with its source, so you always know how it was recorded:
 
-1. Open the booking
-2. Find the flight leg
-3. Click on the status
-4. Select the new status
-5. Optionally add notes
-6. Save
+| Source | Description |
+|--------|-------------|
+| **FlightRadar24** | Automatically detected by flight tracking |
+| **FlightAware** | Automatically detected by flight tracking |
+| **App (Manual)** | Crew confirmed via the mobile app |
+| **App (GPS)** | Detected by GPS on the crew's device |
 
-### Quick Status Updates
+{% hint style="info" %}
+**Crew input always takes priority.** If a crew member confirms a departure or arrival time via the mobile app, that time takes precedence over any automatic tracking data.
+{% endhint %}
 
-Some views allow quick status changes:
-- Click directly on status badges
-- Use dropdown menus
-- Bulk update multiple legs
+---
+
+## Automatic Flight Tracking
+
+When Flight Tracking is enabled in **Settings → Integrations**, AeroQuote automatically detects flight events using FlightRadar24:
+
+### Departure Detection
+- Detects ground movement (block off) when the aircraft begins taxiing
+- Records departure when the aircraft becomes airborne
+- Monitoring begins 5 minutes before the scheduled departure
+
+### In-Flight Tracking
+- Live position updates with altitude, speed, and heading
+- ETA updates as the flight progresses
+- Position trail visible on the Bookings Dashboard map
+
+### Arrival Detection
+- Detects arrival when the aircraft lands at the destination airport
+- Records the full flight track for your records after landing
+
+{% hint style="success" %}
+**No crew input needed.** Flight tracking works automatically using the aircraft registration or flight number — your crew can focus on the flight while AeroQuote handles the status updates.
+{% endhint %}
+
+---
+
+## Manual Status Updates
+
+Crew can also update flight status manually via the mobile app:
+
+1. Open the booking in the AeroQuote mobile app
+2. Tap the flight leg
+3. Tap to confirm departure or arrival
+4. Timestamp is recorded immediately
+
+Manual updates from the app are also available for ETA changes when conditions change in flight.
+
+---
+
+## Booking Status vs Flight Status
+
+| Level | What it tracks | Values |
+|-------|----------------|--------|
+| **Booking Status** | Overall booking state | Confirmed, In Progress, Ground Time, Completed, Cancelled, Expired |
+| **Flight Status** | Individual leg progress | Boarding, In Progress, Completed, Cancelled |
+
+Booking status updates automatically based on flight progress:
+- Any flight departs → Booking becomes **In Progress**
+- A flight arrives with more legs remaining → Booking becomes **Ground Time**
+- All flights complete → Booking becomes **Completed**
 
 ---
 
 ## Status on the Dashboard
 
-Flight statuses appear on:
-- **Calendar** — Color-coded by status
-- **Fleet Timeline** — Shows aircraft status
-- **Booking List** — Status column
+The **Bookings Dashboard** provides a real-time operations view:
 
----
+- **Live flight map** — Aircraft positions with registration labels and position trails
+- **Booking cards** — Altitude, speed, ETA, and check-in progress for active flights
+- **Activity feed** — Status changes stream in as they happen with their source
+- **Summary cards** — Count of in-progress, upcoming, and ground time bookings
 
-## Customer-Facing Status
-
-If you've enabled online booking view for customers:
-- Customers see current flight status
-- Status updates in real-time
-- Builds trust and reduces status calls
-
----
-
-## Booking vs Flight Status
-
-| Level | What it tracks |
-|-------|----------------|
-| **Booking Status** | Overall booking (Confirmed, In Progress, Completed) |
-| **Flight Status** | Individual leg status (Scheduled, Departed, Landed) |
-
-A booking is typically "In Progress" when any flight has departed, and "Completed" when all flights are done.
+The dashboard auto-refreshes and is designed for wall-mounted displays or ops room screens.
 
 ---
 
 ## Status History
 
-Each status change is logged:
-- Who made the change
-- When it was changed
-- Previous status
-- Any notes added
+Every status change is recorded with:
+- What changed
+- When it changed
+- The source (FlightRadar24, crew app, etc.)
+- The timestamp of the event
 
-View history in the [Amendments](amendments.md) section.
-
----
-
-## Automated Status Updates
-
-Depending on your integrations, status may update automatically:
-- Flight tracking integrations
-- Departure/arrival time triggers
-- External data feeds
+View the full audit trail in the [Amendments](amendments.md) section.
 
 ---
 
 ## Tips
 
 {% hint style="success" %}
-**Update promptly** — Real-time status updates keep everyone informed and reduce phone calls asking "has the flight left yet?"
+**Enable Flight Tracking** — Automatic status updates via FlightRadar24 mean less manual work and more accurate records. Enable it in Settings → Integrations.
 {% endhint %}
 
-- Set up status update reminders
-- Designate who's responsible for updates
-- Use notes to explain any delays or issues
-- Keep customers informed of changes
+- Assign aircraft registrations or flight numbers on bookings so flight tracking can identify your flights
+- Crew can override any automatic tracking data from the mobile app
+- The completion email with variance analysis is sent automatically after all flights finish — see [Sending Confirmations](sending-confirmations.md)
 
 ---
 
 ## Next Steps
 
 - [Amendments](amendments.md) — View full change history
-- [Sending Confirmations](sending-confirmations.md) — Notify customers
+- [Sending Confirmations](sending-confirmations.md) — Customer communications and completion emails
