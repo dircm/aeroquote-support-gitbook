@@ -72,7 +72,6 @@
 * [📅 Bookings (Operators)](guides/bookings-operators/README.md)
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
   * [👥 Passengers & Cargo](guides/bookings-operators/passengers-and-cargo.md)
-  * [Passenger Weights](guides/bookings-operators/passenger-weights.md)
   * [👨‍✈️ Crew Assignment](guides/bookings-operators/crew-assignment.md)
   * [📊 Booking Status](guides/bookings-operators/booking-status.md)
   * [📝 Amendments](guides/bookings-operators/amendments.md)

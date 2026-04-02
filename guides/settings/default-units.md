@@ -4,7 +4,7 @@
 * **Default Payload Weight Unit** - This is your usual weight unit.
 * **Passenger Weight Presets** - You may add and edit as many Passenger weight presets as you like.  Two sample presets were added to your account when you were set up.
 
-Passenger presets are used when editing passenger weights. See [passenger-weights.md](../bookings-operators/passenger-weights.md "mention")to view a tour.
+Passenger presets are used when editing passenger weights. See [Broken link](/broken/pages/FlrqWT8uddaUTvLInFW0 "mention")to view a tour.
 
 ![](<../../.gitbook/assets/passenger weight.png>)
 
