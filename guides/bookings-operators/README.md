@@ -68,6 +68,10 @@ Each booking has several tabs:
 
 ## Quick Links
 
+{% content-ref url="booking-builder.md" %}
+[booking-builder.md](booking-builder.md)
+{% endcontent-ref %}
+
 {% content-ref url="create-a-booking-from-a-quote.md" %}
 [create-a-booking-from-a-quote.md](create-a-booking-from-a-quote.md)
 {% endcontent-ref %}
