@@ -2,6 +2,11 @@
 
 * [👋 Welcome](README.md)
 
+## What's New
+
+* [What's New](whats-new/README.md)
+  * [April 2026](whats-new/april-2026.md)
+
 ## Overview
 
 * [💡 What we do](overview/what-we-do.md)
