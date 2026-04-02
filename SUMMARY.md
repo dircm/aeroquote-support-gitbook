@@ -16,6 +16,7 @@
 
 * [📊 Dashboard](guides/dashboard/README.md)
   * [🤖 AI Assistant (Beta)](guides/dashboard/ai-assistant.md)
+  * [Bookings Dashboard](guides/dashboard/bookings-dashboard.md)
 * [✈️ Aircraft](guides/aircraft/README.md)
   * [Aircraft Details](guides/aircraft/aircraft-details.md)
   * [Flight Performance](guides/aircraft/flight-performance.md)
