@@ -122,6 +122,52 @@ The Passengers & Cargo tab shows:
 
 ---
 
+## QR Code Boarding Passes
+
+Generate QR code boarding passes for passengers and include them in customer emails and flight manifests.
+
+### Enabling QR Boarding Passes
+
+1. Open the booking
+2. Go to the **Send** tab
+3. Toggle on **Include QR code boarding passes**
+4. Send the booking confirmation — each passenger receives a unique QR code
+
+### Scanning at the Aircraft
+
+Crew use the AeroQuote mobile app to scan boarding passes:
+1. Open the flight in the mobile app
+2. Tap the QR scanner
+3. Scan the passenger's boarding pass
+4. The passenger is automatically checked in
+
+The scanner handles duplicate scans gracefully and works across flights in the same booking.
+
+---
+
+## Passenger Check-In
+
+Passengers can be checked in for their flights, either by scanning QR boarding passes or manually via the mobile app.
+
+### Manual Check-In (Mobile App)
+
+1. Open the flight in the AeroQuote mobile app
+2. View the passenger list
+3. Tap each passenger to toggle their check-in status
+
+### Check-In Tracking
+
+Check-in progress is visible on:
+- The **Bookings Dashboard** — each booking card shows a check-in progress bar
+- The **mobile app** — passenger list with check-in status
+- The **activity feed** — check-in events stream in real time
+
+{% hint style="info" %}
+All check-in activity is audited — who checked in each passenger and when.
+{% endhint %}
+
+---
+
 ## Per-Leg Management
 
 For multi-leg trips, you can have different passengers/cargo on each leg:

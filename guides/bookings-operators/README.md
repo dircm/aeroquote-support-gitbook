@@ -41,11 +41,11 @@ Use filters to find specific bookings by date range, status, or customer.
 
 A typical booking flows through these stages:
 
-1. **Created** — Quote converted to booking
-2. **Confirmed** — Details finalized with customer
-3. **Crew Assigned** — Flight crew allocated
-4. **Passengers Added** — Manifest completed
-5. **In Progress** — Flight(s) underway
+1. **Confirmed** — Quote converted to booking, details finalized
+2. **Crew Assigned** — Flight crew allocated
+3. **Passengers Added** — Manifest completed
+4. **In Progress** — Flight(s) underway
+5. **Ground Time** — Between legs on a multi-leg trip
 6. **Completed** — All flights finished
 
 ---
@@ -56,8 +56,8 @@ Each booking has several tabs:
 
 | Section | Purpose |
 |---------|---------|
-| [**Details**](booking-details.md) | Basic booking information |
-| [**Itinerary**](booking-itinerary.md) | Flight legs and timing |
+| **Details** | Basic booking information |
+| **Itinerary** | Flight legs and timing |
 | [**Passengers & Cargo**](passengers-and-cargo.md) | Manifest management |
 | [**Crew**](crew-assignment.md) | Crew allocation |
 | [**Status**](booking-status.md) | Flight status tracking |
