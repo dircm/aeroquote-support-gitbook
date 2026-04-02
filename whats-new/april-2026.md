@@ -58,7 +58,7 @@ A full-screen, dark-mode operations display built for dispatch offices and ops r
 * **Summary cards** — Count of in-progress, upcoming, and ground time bookings
 * **Auto-refresh** — Dashboard stays current without manual intervention
 
-Read more. Access the Bookings Dashboard from the [Dashboard](../guides/dashboard/bookings-dashboard.md) page.
+Access the [Bookings Dashboard ](../guides/dashboard/bookings-dashboard.md)from the [Dashboard](../guides/dashboard/bookings-dashboard.md) page.
 
 ***
 
@@ -95,4 +95,4 @@ See [Custom Routes & Route Library](../guides/custom-items/custom-routes-and-rou
 
 ## Availability
 
-Bookings & Flight Tracking is **free until April 30, 2026** during the evaluation period. After that, it's available as a paid module from **Settings → Modules**.
+Bookings & Flight Tracking is **free until May 31, 2026** during the evaluation period. After that, it's available as a paid module from **Settings → Modules**.
