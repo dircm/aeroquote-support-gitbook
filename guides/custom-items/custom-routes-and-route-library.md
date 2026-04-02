@@ -79,9 +79,27 @@ The Quote Builder also supports loading routes, following the same process:
 When a custom route is loaded:
 
 * **Distance** is calculated by summing the straight-line distance between each consecutive waypoint along the route (using the haversine formula)
-* **Duration** is derived from the total route distance and the selected aircraft's performance profile
+* **Duration** is derived from the total route distance and the selected aircraft's performance profile — unless a custom duration has been set (see below)
 
 This means a scenic flight that departs and returns to the same airport will have an accurate duration based on the actual route flown, rather than showing zero.
+
+### Custom Durations per Aircraft
+
+You can override the calculated flight duration for any route on a per-aircraft basis. This is useful when real-world experience shows a consistent difference from the calculated estimate — for example, routes with known headwinds, altitude restrictions, or helicopter operations where speed profiles differ.
+
+#### Setting a Custom Duration
+
+1. Navigate to **Custom Items → Custom Routes**
+2. Click on the route
+3. In the **Custom Durations** section, you'll see your fleet listed
+4. Enter a duration (in minutes) for any aircraft that needs a custom time
+5. Click **Save**
+
+When this route is loaded into a Request or Quote, AeroQuote uses the custom duration instead of calculating from the aircraft's speed profile. Aircraft without a custom duration continue to use the calculated value.
+
+{% hint style="info" %}
+Custom durations apply wherever the route is used — Requests, the Quote Builder, and individual quote flight items. They take priority over both the standard performance calculation and the iFlightPlanner estimate.
+{% endhint %}
 
 ### Frequently Asked Questions
 
