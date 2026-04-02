@@ -7,35 +7,35 @@ coverY: -162
 # 📅 Bookings (Operators)
 
 {% hint style="warning" %}
-Bookings are included in Operator Subscriptions only.
+Bookings are included in the Bookings Module which is a paid upgrade. [modules.md](../settings/modules.md "mention")
 {% endhint %}
 
 Bookings represent confirmed flights. Once a customer accepts a quote, convert it to a booking to manage the full flight lifecycle — crew, passengers, cargo, and status updates.
 
----
+***
 
 ## Accessing Bookings
 
 From the sidebar, click **Bookings** to view your bookings list.
 
----
+***
 
 ## Booking List
 
 The Bookings page shows all bookings with:
 
-| Column | Description |
-|--------|-------------|
+| Column        | Description                 |
+| ------------- | --------------------------- |
 | **Reference** | Booking ID/reference number |
-| **Customer** | Customer name |
-| **Route** | Origin → Destination |
-| **Date** | Flight date |
-| **Aircraft** | Assigned aircraft |
-| **Status** | Current booking status |
+| **Customer**  | Customer name               |
+| **Route**     | Origin → Destination        |
+| **Date**      | Flight date                 |
+| **Aircraft**  | Assigned aircraft           |
+| **Status**    | Current booking status      |
 
 Use filters to find specific bookings by date range, status, or customer.
 
----
+***
 
 ## Booking Lifecycle
 
@@ -48,23 +48,23 @@ A typical booking flows through these stages:
 5. **Ground Time** — Between legs on a multi-leg trip
 6. **Completed** — All flights finished
 
----
+***
 
 ## Booking Sections
 
 Each booking has several tabs:
 
-| Section | Purpose |
-|---------|---------|
-| **Details** | Basic booking information |
-| **Itinerary** | Flight legs and timing |
-| [**Passengers & Cargo**](passengers-and-cargo.md) | Manifest management |
-| [**Crew**](crew-assignment.md) | Crew allocation |
-| [**Status**](booking-status.md) | Flight status tracking |
-| [**Amendments**](amendments.md) | Change history |
-| [**Send**](sending-confirmations.md) | Customer communications |
+| Section                                           | Purpose                   |
+| ------------------------------------------------- | ------------------------- |
+| **Details**                                       | Basic booking information |
+| **Itinerary**                                     | Flight legs and timing    |
+| [**Passengers & Cargo**](passengers-and-cargo.md) | Manifest management       |
+| [**Crew**](crew-assignment.md)                    | Crew allocation           |
+| [**Status**](booking-status.md)                   | Flight status tracking    |
+| [**Amendments**](amendments.md)                   | Change history            |
+| [**Send**](sending-confirmations.md)              | Customer communications   |
 
----
+***
 
 ## Quick Links
 
@@ -84,7 +84,7 @@ Each booking has several tabs:
 [booking-status.md](booking-status.md)
 {% endcontent-ref %}
 
----
+***
 
 ## Tips
 
@@ -92,7 +92,7 @@ Each booking has several tabs:
 **Keep bookings updated** — Accurate status tracking helps your team stay coordinated and keeps customers informed.
 {% endhint %}
 
-- Convert quotes to bookings promptly after acceptance
-- Add passengers as soon as you have their details
-- Assign crew early to avoid scheduling conflicts
-- Use amendments to track any changes
+* Convert quotes to bookings promptly after acceptance
+* Add passengers as soon as you have their details
+* Assign crew early to avoid scheduling conflicts
+* Use amendments to track any changes
