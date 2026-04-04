@@ -1,12 +1,10 @@
 ---
-description: Create requests, get instant estimates, and generate quotes for charter flights.
+description: Step-by-step guide to creating a Request for Operators.
 ---
 
 # Creating a Request (Operators)
 
-Requests are the starting point for every job. Use the Request page to record inbound charter enquiries, get instant cost estimates across your fleet, and generate quotes — all in one step.
-
-Looking for the Broker edition? [Find it here](creating-a-request-brokers.md).
+Requests are the first step in your quoting workflow. Use them to record inbound charter enquiries, get instant price estimates across your fleet, and generate quotes with a single click.
 
 {% embed url="https://vimeo.com/825790504" %}
 Create a Request training video
@@ -14,18 +12,18 @@ Create a Request training video
 
 ---
 
-## Opening the Request Page
+## Opening a New Request
 
 1. Click **Requests** in the sidebar
 2. Click **Add new Request**
 
-To edit an existing request, click on it from the request list.
+The Request page opens as a single workspace — details, flights, and aircraft estimates are all visible on one screen.
 
 ---
 
-## Step 1: Enter Request Details
+## Request Details
 
-The left panel captures the basic information for the enquiry.
+The top-left section captures the basic enquiry information:
 
 ### Status
 
@@ -34,198 +32,173 @@ Set the request status:
 | Status | Meaning |
 |--------|---------|
 | **Active** | Currently being worked on |
-| **Not Interested** | Customer declined or no longer needed |
-| **Callback** | Follow up with the customer later |
+| **Not Interested** | Customer declined or not proceeding |
+| **Call Back** | Follow up required |
 
-{% hint style="info" %}
-Once a quote has been generated from a request, the status is automatically set to **Quote Generated** and a link to the quote is shown instead of the status dropdown.
-{% endhint %}
+Once a quote has been generated from the request, the status shows **Quote Already Created** with a link to the quote.
 
-### Passenger Count
+### Total Passengers
 
-Enter the total number of passengers. This is used for:
-
-- Aircraft capacity validation (warnings shown if exceeded)
-- Per-passenger cost calculations
-- Airport fee estimates
+Enter the expected number of passengers. This is used to:
+- Check aircraft capacity — the estimates table flags aircraft that can't accommodate this number
+- Calculate weight-related costs
 
 ### Contact
 
-Search for an existing contact by name or email, or create a new one directly from the request page.
+Search for an existing contact by name or email. If the contact doesn't exist, you can create one inline without leaving the page.
 
-The selected contact's email and phone number are displayed below the search field. When a quote is generated, this contact is automatically linked to it.
+The contact carries through when you generate a quote — they become the main contact on the quote.
 
 ### Job Notes
 
-Add any special requirements, timing details, or customer instructions. These notes are:
+Internal notes for your team. These notes carry through to the quote when generated.
 
-- Saved with the request
-- Included in RFQ emails sent to external operators
-- Carried through to the quote as operator notes
+### Terms & Conditions Template
 
-### Terms & Conditions
-
-Select a Terms & Conditions template from your saved templates. This will be applied to the quote when generated.
+Select a T&C template from your saved templates, or leave as **Use Default Template**. This determines which terms are shown to the customer on the online quote view.
 
 ---
 
-## Step 2: Add Flight Legs
+## Interactive Map
 
-The flights section is where you build the itinerary. A map on the right updates in real time as you add legs.
-
-### Adding a Charter Flight
-
-1. **Search for the departure airport** — type an ICAO code, IATA code, or airport name
-2. **Search for the arrival airport** — same search
-3. **Set the departure date and time** — shown in the departure airport's local timezone
-4. Click **Add Flight** to add another leg after the current one
-
-{% hint style="info" %}
-When adding subsequent flights, the departure date automatically defaults to the next day at 8:00am local time.
-{% endhint %}
-
-### Adding a Return Flight
-
-Click **Add Return Flight** to add a leg with the departure and arrival reversed from the previous flight. This creates a charter leg (not a ferry).
-
-### Loading from the Route Library
-
-Click **Load Route** to search your saved routes. Selecting a route pre-fills the departure and arrival airports, and optionally the duration if a custom duration is configured for the aircraft.
-
-### Selecting an FBO / Facility
-
-If an airport has FBOs (Fixed Base Operators) on file, you can select one for departure or arrival:
-
-1. Click the facility selector on the flight leg
-2. Choose from available FBOs — each shows name, contact details, and website
-3. The selected FBO is shown on the flight leg
-
-### Ferry Legs
-
-AeroQuote **automatically calculates ferry legs** between charter flights when the aircraft needs to reposition. Ferry legs appear in the cost breakdown for each aircraft and are factored into the total price and flight time.
-
-- Ferry legs are shown with a **Ferry** badge in the flight breakdown
-- You can **remove individual ferry legs** from an aircraft's estimate if they are not needed
-- Check **Return to base before next flight** to add a return ferry between legs
-
-### Managing Flights
-
-- **Reorder** flights by dragging them
-- **Delete** a flight by clicking the delete button on that leg
+The right side of the details section shows an interactive map that updates in real time as you add flights. It displays your complete route with all departure and arrival points.
 
 ---
 
-## Step 3: Review Estimates
+## Flights
 
-Once you have at least one complete flight (departure, arrival, and date), AeroQuote automatically calculates cost estimates for every aircraft in your fleet. The aircraft table shows:
+The flights section sits below the details area. Add one or more charter flight legs to define the itinerary.
+
+### Adding a Flight
+
+For each flight leg, enter:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Departure Location** | Yes | Search by airport name, city, or ICAO/IATA code |
+| **Arrival Location** | Yes | Search by airport name, city, or ICAO/IATA code |
+| **Departing At** | Yes | Date and time in the departure airport's timezone |
+
+When you select a departure airport, the time defaults to 8:00 AM the next day in that airport's local timezone.
+
+### Selecting an FBO
+
+If an airport has FBO facilities on file, a **Choose Facility** link appears below the airport field. Click it to open a facility picker showing available FBOs with images and map locations.
+
+If an FBO is already selected, its name appears with an **FBO** badge — click to change it.
+
+### Route Library
+
+Click **Load Route** to search your saved routes by name. Selecting a route auto-fills the departure and arrival airports. The route displays as a read-only field showing the route name and ICAO codes.
+
+### Custom Airports
+
+If an airport isn't in the database, type its name and select the option to create a custom airport. The new airport is saved for future use.
+
+### Multi-Leg Itineraries
+
+- **Add Flight** — Adds a new flight leg after the current one
+- **Add Return Flight** — Creates a return leg with the departure and arrival airports swapped
+- **Load Route** — Search and load a pre-saved route
+- **Delete** — Remove a flight leg (click the trash icon)
+- **Drag to reorder** — Rearrange flight legs by dragging
+
+---
+
+## Aircraft Estimates
+
+Once all flights have departure and arrival locations, AeroQuote automatically calculates price estimates for every active aircraft in your fleet. The estimates table shows:
 
 | Column | Description |
 |--------|-------------|
-| **Aircraft** | Tail number/name with thumbnail image |
-| **Operator** | Shown for external aircraft |
-| **Availability** | Green if available, warnings if conflicts exist |
-| **Operational** | Warnings for range, runway, or capacity issues |
-| **Price** | Estimated total price |
-| **Charter Time** | Total charter flight duration |
-| **Ferry Time** | Total ferry/repositioning duration |
+| **Aircraft** | Image, registration, and type. Click to select. |
+| **Cautions** | Availability and operational warnings (see below) |
+| **Customer Price** | Estimated charter price |
+| **Charter Time** | Total flying time for charter legs |
+| **Ferry Time** | Positioning time to/from homebase |
 | **Flights** | Number of flight legs |
 
-### Expanding the Flight Breakdown
-
-Click on an aircraft row to expand the per-flight cost breakdown. Each flight shows:
-
-- **Flight type** — Charter or Ferry badge
-- **Route** — departure and arrival ICAO codes
-- **Departure time** — local and UTC
-- **Duration** — estimated flight time
-- **Cost items** — itemised costs (landing charges, fuel uplift, parking, etc.) with toggles to include or exclude individual costs from the total
-
-### Search and Filter
-
-Use the search field above the aircraft table to filter by aircraft registration, name, or operator.
-
----
-
-## Step 4: Review Cautions
-
-AeroQuote flags potential issues with coloured badges on each aircraft row.
-
-### Availability Warnings
-
-- **Yellow** — Aircraft has an overlapping quote for the same period
-- **Red** — Aircraft has an overlapping booking
-
-Hover over the badge to see which quotes or bookings conflict.
-
-### Operational Warnings
-
-- **Passenger capacity** — Passenger count exceeds the aircraft's maximum
-- **Runway length** — Departure or arrival runway is too short for the aircraft
-- **Aircraft range** — Flight distance exceeds the aircraft's maximum range
-- **iFlightPlanner warnings** — Routing issues from advanced flight planning calculations
-
-Hover over the badge for details.
-
-{% hint style="warning" %}
-Operational warnings are advisory — they do not prevent you from selecting the aircraft, but should be reviewed before generating a quote.
+{% hint style="info" %}
+**Estimates recalculate automatically** whenever you change a flight, add a leg, or update the passenger count. There's no need to manually trigger a recalculation.
 {% endhint %}
 
+### Selecting Aircraft
+
+Click an aircraft image to select it — a checkmark overlay appears. You can select multiple aircraft. Selected aircraft become options on the quote when you click **Generate Quote**.
+
+### Availability and Operational Cautions
+
+Each aircraft shows caution badges:
+
+**Availability cautions:**
+- **Red** — Aircraft is already scheduled in an accepted quote during this period
+- **Amber** — Aircraft is booked in a confirmed booking during this period
+- **Green** — No scheduling conflicts
+
+**Operational cautions:**
+- **Red** — Aircraft cannot complete the mission (runway too short, passenger count exceeds capacity)
+- **Amber** — Flight distance may exceed aircraft range
+- **Green** — No operational issues
+
+Click a caution badge to see the specific details.
+
+### Expandable Flight Details
+
+Click the flights count row to expand the cost breakdown for each aircraft. This shows:
+
+- Each flight leg (Charter or Ferry) with departure and arrival airports
+- Duration per leg
+- Total cost breakdown
+- Individual cost line items that can be toggled on/off, edited, or added to
+
+### External Aircraft
+
+If your fleet includes aircraft from external operators, they appear in the table with an external operator badge. You can toggle **Create RFQ** per external aircraft to send a Request for Quote to the external operator.
+
 ---
 
-## Step 5: Select Aircraft
+## Saving and Generating
 
-Check the aircraft you want to include in the quote. Each selected aircraft becomes an option on the generated quote.
-
-### External Aircraft and RFQ
-
-If you select aircraft belonging to an external operator, a **Create RFQ** toggle appears. When enabled:
-
-1. Before the quote is generated, a modal asks you to review the RFQ notes
-2. An email is sent to each external operator with the flight details and your notes
-3. A Request for Quote record is created to track responses
-
----
-
-## Step 6: Save or Generate Quote
-
-Two actions are available at the bottom of the page:
+Floating action buttons appear in the bottom-right corner:
 
 ### Save Request
 
-Saves the request without generating a quote. Use this when:
-
-- You're still waiting for customer confirmation
-- You want to come back to it later
-- You need more information before quoting
-
-The request stays in **Active** status and can be edited at any time.
+Click **Save Request** to save the current state of the request — flights, aircraft selections, notes, and contact. You can return to it later and continue working.
 
 ### Generate Quote
 
-Creates a quote with the selected aircraft as options. This:
+Once you've selected at least one aircraft, click **Generate Quote** to create a formal quote. This:
 
-1. Creates a Quote record with all flights, costs, and selected aircraft options
-2. Links the contact to the quote
-3. Updates the request status to **Quote Generated**
-4. Redirects you to the Quote Builder to finalise and send
+1. Creates a new quote with the contact, flights, and notes from the request
+2. Adds each selected aircraft as a separate option on the quote
+3. Carries over all cost estimates and flight details
+4. Opens the new quote's detail page automatically
+5. Updates the request status to **Quote Already Created**
 
-{% hint style="info" %}
-The **Generate Quote** button is disabled until you have at least one flight and one aircraft selected.
+{% hint style="success" %}
+**Generating a quote doesn't delete the request.** The request remains linked to the quote — you can always navigate back to it from the quote.
 {% endhint %}
+
+### Send Emails and Edit Quote
+
+If you've selected external aircraft with RFQ enabled, an additional option appears to **Send Emails and Edit Quote**. This sends Request for Quote emails to external operators and generates the quote in one step. You can review and edit the notes that will be included in the emails before sending.
+
+---
+
+## Duplicating a Request
+
+You can create a new request based on an existing one. This copies the flights, notes, and passenger count — useful for repeat enquiries or similar routes.
 
 ---
 
 ## Tips
 
-- Use the **Route Library** for frequently flown routes to speed up data entry
-- Review **availability warnings** to avoid double-booking aircraft
-- Add **job notes** with customer requirements — they carry through to the quote and RFQ emails
-- For multi-leg charters, add all legs before selecting aircraft so estimates include the full trip
-- You can **copy an existing request** to create a new one with the same flights and notes pre-filled
+{% hint style="info" %}
+**Requests are for speed.** Unlike the Quote Builder (which walks through steps), the Request page shows everything at once so you can get estimates in seconds. Use Requests for initial pricing, then generate a quote when you're ready to send to the customer.
+{% endhint %}
 
----
-
-## Next Steps
-
-- [Create a Quote from a Request](../quotes/create-a-quote-from-a-request-operators.md) — Generate and send a quote
-- [Custom Routes & Route Library](../custom-items/custom-routes-and-route-library.md) — Set up reusable routes
+- Enter flights first — aircraft estimates calculate automatically once departure and arrival airports are set
+- Use the Route Library for repeat routes to save time
+- Check caution badges before selecting aircraft — resolve conflicts early
+- Save frequently if you're working on a complex multi-leg itinerary
+- The contact and notes carry through to the quote, so fill them in on the request to save time later

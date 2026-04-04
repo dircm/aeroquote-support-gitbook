@@ -16,6 +16,8 @@
 
 * [🏃‍♂️ Account Setup Guide](getting-started/account-setup-guide.md)
 * [🤷‍♀️ Concepts](getting-started/concepts.md)
+* [✈️ Add Your First Aircraft](getting-started/add-your-first-aircraft.md)
+* [📝 Create Your First Quote](getting-started/create-your-first-quote.md)
 
 ## 📖 Guides
 
@@ -59,6 +61,7 @@
 * [Quotes](guides/quotes/README.md)
   * [Create a Quote from a Request (Operators)](guides/quotes/create-a-quote-from-a-request-operators.md)
   * [Create a Quote from a Request (Brokers)](guides/quotes/create-a-quote-from-a-request-brokers.md)
+  * [Creating a Quote directly](guides/quotes/creating-a-quote.md)
   * [Add a stop between two airports](guides/quotes/add-a-stop-between-two-airports.md)
   * [Edit the Price of a Quote](guides/quotes/edit-the-price-of-a-quote.md)
   * [Require T\&Cs to be accepted online](guides/quotes/require-t-and-cs-to-be-accepted-online.md)
@@ -74,8 +77,13 @@
   * [Manage RFQ Responses](guides/request-for-quote/manage-rfq-responses.md)
   * [The External Operator RFQ page](guides/request-for-quote/the-external-operator-rfq-page.md)
 * [Facilities](guides/facilities.md)
+* [📬 System Emails](guides/emails/README.md)
+  * [Quote Emails](guides/emails/quote-emails.md)
+  * [Booking Emails](guides/emails/booking-emails.md)
+  * [Admin Emails](guides/emails/admin-emails.md)
 * [📅 Bookings (Operators)](guides/bookings-operators/README.md)
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
+  * [Creating a Booking](guides/bookings-operators/booking-builder.md)
   * [👥 Passengers & Cargo](guides/bookings-operators/passengers-and-cargo.md)
   * [👨‍✈️ Crew Assignment](guides/bookings-operators/crew-assignment.md)
   * [📊 Booking Status](guides/bookings-operators/booking-status.md)
