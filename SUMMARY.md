@@ -82,6 +82,7 @@
   * [Booking Emails](guides/emails/booking-emails.md)
   * [Admin Emails](guides/emails/admin-emails.md)
 * [📅 Bookings (Operators)](guides/bookings-operators/README.md)
+  * [Creating a Booking](guides/bookings-operators/booking-builder.md)
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
   * [👥 Passengers & Cargo](guides/bookings-operators/passengers-and-cargo.md)
   * [👨‍✈️ Crew Assignment](guides/bookings-operators/crew-assignment.md)
