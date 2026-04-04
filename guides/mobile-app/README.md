@@ -10,7 +10,7 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 * **Bookings & Flights** — Browse all bookings, view flight legs with departure/arrival times, routes, and crew
 * **Passenger Management** — View contact details, edit weights, add and remove passengers on flights
 * **Passenger Check-In** — Check in passengers and cargo via toggle or QR code scanner
-* **Flight Status** — Record block off/on, departure/arrival times; receive automatic notifications from FlightRadar24/FlightAware
+* **Flight Status** — Record block off/on, departure/arrival times; receive automatic notifications from FlightRadar24
 * **Log Position & Update ETA** — Report GPS position and update estimated arrival during flights
 * **Calendar Sync** — Sync flight schedules to your device calendar
 * **Booking Sharing** — Share the customer booking link via your device's native share sheet
@@ -18,10 +18,6 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 * **Offline Support** — All operations work without internet; data syncs automatically when connectivity returns
 * **Push Notifications** — Receive real-time alerts for booking updates (with rich map images on iOS)
 * **Help & Getting Started** — In-app help guide with swipe-through pages on first launch
-
-<!-- 📸 PLACEHOLDER: Screenshot of the mobile app home screen on iPhone and Android side by side -->
-<!-- Suggested filename: .gitbook/assets/mobile-app-hero.png -->
-<!-- Dimensions: 1200x600, showing both platforms -->
 
 ## Supported Platforms
 

@@ -2,12 +2,9 @@
 
 The Dashboard is the first screen you see after signing in. It provides a quick overview of your operations.
 
-<!-- 📸 PLACEHOLDER: Screenshot of the mobile Dashboard screen showing the Next Flight card, stats, and quick actions -->
-<!-- Suggested filename: .gitbook/assets/mobile-dashboard.png -->
+## Next Booking Card
 
-## Next Flight Card
-
-The hero card at the top shows your **next upcoming flight**:
+The card at the top shows your **next upcoming booking - or flight**:
 
 * **Route** — Departure and arrival ICAO codes with city names
 * **Countdown** — Time until departure (e.g. "In 3h 24m"), or ETA countdown when in progress
