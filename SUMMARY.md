@@ -59,6 +59,7 @@
   * [Creating a Request (Operators)](guides/requests/creating-a-request-operators.md)
   * [Creating a Request (Brokers)](guides/requests/creating-a-request-brokers.md)
 * [Quotes](guides/quotes/README.md)
+  * [Creating a Quote](guides/quotes/creating-a-quote.md)
   * [Create a Quote from a Request (Operators)](guides/quotes/create-a-quote-from-a-request-operators.md)
   * [Create a Quote from a Request (Brokers)](guides/quotes/create-a-quote-from-a-request-brokers.md)
   * [Add a stop between two airports](guides/quotes/add-a-stop-between-two-airports.md)
