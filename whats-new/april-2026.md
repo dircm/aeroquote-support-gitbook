@@ -93,6 +93,28 @@ See [Custom Routes & Route Library](../guides/custom-items/custom-routes-and-rou
 
 ***
 
+## AI-Suggested Aircraft Costs
+
+When adding a new aircraft in the Aircraft Builder, AeroQuote now uses AI to suggest operating costs based on the aircraft type and your region.
+
+After entering the aircraft name and manufacturer, the system automatically generates:
+
+∙ Charter hourly rate — a suggested rate based on typical market pricing for the aircraft type in your currency and region
+
+∙ Margin percentage — a recommended charter margin
+
+∙ Operating costs — typical costs such as fuel per hour, maintenance reserves, insurance, and landing/handling fees, each with the appropriate unit (per hour, per landing, per day, etc.)
+
+A suggestions modal appears with all recommended values. You can review them and choose to Apply or Skip. Applied values are fully editable — they’re a starting point, not a lock-in.
+
+For broker accounts, the AI tailors its suggestions differently — providing a single operator hourly rate rather than a full cost breakdown, and crew costs are returned as daily rates rather than hourly.
+
+{% hint style="info" %}
+AI suggestions are estimates based on publicly available market data. Always verify costs against your actual operating expenses before sending quotes.
+{% endhint %}
+
+***
+
 ## Availability
 
 Bookings & Flight Tracking is **free until May 31, 2026** during the evaluation period. After that, it's available as a paid module from **Settings → Modules**.
