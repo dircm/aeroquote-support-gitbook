@@ -2,10 +2,14 @@
 description: >-
   The Bookings Dashboard is a real-time operations display designed to give your
   team a live overview of all flight activity. It's purpose-built for
-  wall-mounted TVs, dedicated monitors, or a second scr
+  wall-mounted TVs or a second monitor
 ---
 
 # Bookings Dashboard
+
+
+
+{% embed url="https://vimeo.com/1181068564?share=copy&fl=sv&fe=ci" %}
 
 ## Opening the Dashboard
 
