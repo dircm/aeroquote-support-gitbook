@@ -10,6 +10,8 @@ description: >-
 
 A brand new Bookings module takes your operations beyond quoting. Convert accepted quotes to bookings, manage the full flight lifecycle, and track every flight in real time.
 
+{% embed url="https://vimeo.com/1181068564?share=copy&fl=sv&fe=ci" %}
+
 ### Automatic Flight Tracking (FlightRadar24)
 
 AeroQuote detects departures and arrivals automatically using FlightRadar24 integration. No crew input needed — just assign an aircraft registration or flight number.
