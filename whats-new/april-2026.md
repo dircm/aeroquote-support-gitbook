@@ -77,8 +77,6 @@ A purpose-built app for iOS and Android, designed for crew in the field.
 
 Available on the App Store and Google Play.
 
-<figure><img src="../.gitbook/assets/imgi_1_default.png" alt=""><figcaption></figcaption></figure>
-
 ![](../.gitbook/assets/imgi_1_default.png)     <img src="../.gitbook/assets/imgi_1_en_badge_web_generic.png" alt="" data-size="original">
 
 ***
