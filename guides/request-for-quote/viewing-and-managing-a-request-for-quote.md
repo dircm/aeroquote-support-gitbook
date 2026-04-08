@@ -68,7 +68,7 @@ The Attachments button (with badge showing count) allows you to:
 * Maximum file size: 10MB per attachment
 * Attachments are automatically shared with the external operator on their RFQ page.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -1,4 +1,4 @@
-# Add Your First Aircraft
+# ✈️ Add Your First Aircraft
 
 Before you can create quotes, you need at least one aircraft in your fleet. This guide walks you through adding and configuring your first aircraft.
 
@@ -14,11 +14,11 @@ Click the **Add Aircraft** button at the top of the page. This opens the aircraf
 
 Fill in the required information:
 
-| Field | What to enter | Example |
-|-------|--------------|---------|
-| **Registration** | Your aircraft tail number | VH-XYZ, N123AB |
-| **Aircraft Type** | Select from the dropdown | King Air 350, AS350 |
-| **Homebase** | The airport where the aircraft is normally based | YBBN, KJFK |
+| Field             | What to enter                                    | Example             |
+| ----------------- | ------------------------------------------------ | ------------------- |
+| **Registration**  | Your aircraft tail number                        | VH-XYZ, N123AB      |
+| **Aircraft Type** | Select from the dropdown                         | King Air 350, AS350 |
+| **Homebase**      | The airport where the aircraft is normally based | YBBN, KJFK          |
 
 The **homebase** is important — AeroQuote uses it to calculate positioning (ferry) flights when a trip doesn't start or end at home.
 
@@ -28,9 +28,9 @@ The **homebase** is important — AeroQuote uses it to calculate positioning (fe
 
 Navigate to the **Flight Performance** tab and enter:
 
-- **Cruise Speed** — Normal cruising speed
-- **Fuel Burn Rate** — Fuel consumption per hour
-- **Range** — Maximum distance on a full tank
+* **Cruise Speed** — Normal cruising speed
+* **Fuel Burn Rate** — Fuel consumption per hour
+* **Range** — Maximum distance on a full tank
 
 If your aircraft type is in the AeroQuote database, some values may be pre-filled. Review and adjust them to match your specific aircraft.
 
@@ -38,9 +38,9 @@ If your aircraft type is in the AeroQuote database, some values may be pre-fille
 
 Navigate to the **Costings** tab. This determines how quotes are priced:
 
-- **Hourly Rate** — The per-hour charge to customers
-- **Minimum Flight Time** — Minimum chargeable hours per flight
-- **Positioning Rate** — Rate for ferry (empty) flights (can differ from the passenger rate)
+* **Hourly Rate** — The per-hour charge to customers
+* **Minimum Flight Time** — Minimum chargeable hours per flight
+* **Positioning Rate** — Rate for ferry (empty) flights (can differ from the passenger rate)
 
 You can use either **hourly rate** pricing or **margin-based** pricing depending on your business model.
 
@@ -56,5 +56,5 @@ Click **Save** to add the aircraft to your fleet. It will now appear in quote op
 
 Now that you have an aircraft, you're ready to create your first quote:
 
-- [Create Your First Quote](create-your-first-quote.md) — The complete quote workflow
-- [Cost Simulator](../guides/aircraft/cost-simulator.md) — Test your pricing before quoting live
+* [Create Your First Quote](create-your-first-quote.md) — The complete quote workflow
+* [Cost Simulator](../guides/aircraft/cost-simulator.md) — Test your pricing before quoting live

@@ -14,7 +14,7 @@ description: >-
 3. Add Phone and email and notes if desired (details will be available to air crew)
 4. Select the airport where the facility is based.  This can be a custom or normal airport.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Drag the pin and use the zoom controls to center the pin over the custom facility location
 6. Or enter an address and drag the pin for fine changes.

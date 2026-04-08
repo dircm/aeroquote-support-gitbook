@@ -2,7 +2,7 @@
 description: Step-by-step guide to creating a quote using the Quote Builder.
 ---
 
-# Creating a Quote directly
+# Creating a Quote from scratch
 
 The Quote Builder walks you through creating a quote in four steps — from selecting a customer through to choosing aircraft and reviewing pricing. You can also create quotes directly from a Request, which pre-fills the flight details.
 
@@ -10,10 +10,7 @@ The Quote Builder walks you through creating a quote in four steps — from sele
 
 ## Opening the Quote Builder
 
-There are two ways to start:
-
-* **From the Quotes page** — Click the **Create Quote** button in the top right
-* **From a Request** — Select one or more aircraft on a Request and click **Generate Quote** (flight details will be pre-filled)
+**From the Quotes page** — Click the **Create Quote** button in the top right
 
 ***
 

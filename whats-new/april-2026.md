@@ -42,7 +42,7 @@ See [Sending Confirmations](../guides/bookings-operators/sending-confirmations.m
 
 ### Ground Crew
 
-Assign ground crew to bookings — staff who support flights on the ground but are not on the flight manifest. Ground crew receive push notifications for departures and arrivals and can check in passengers via the mobile app (v2).
+Assign ground crew to bookings — staff who support flights on the ground but are not on the flight manifest. Ground crew may use the mobile app and receive notifications for departures and arrivals and can check in passengers on any booking you assign them to.
 
 See [Crew Assignment](../guides/bookings-operators/crew-assignment.md).
 
@@ -74,6 +74,10 @@ A purpose-built app for iOS and Android, designed for crew in the field.
 * **Calendar sync** — Flight legs appear in your crew's device calendar
 
 Available on the App Store and Google Play.
+
+<figure><img src="../.gitbook/assets/imgi_1_default.png" alt=""><figcaption></figcaption></figure>
+
+![](../.gitbook/assets/imgi_1_default.png)     <img src="../.gitbook/assets/imgi_1_en_badge_web_generic.png" alt="" data-size="original">
 
 ***
 
