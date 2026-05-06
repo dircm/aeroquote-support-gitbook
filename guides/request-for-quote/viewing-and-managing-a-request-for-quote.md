@@ -10,15 +10,13 @@ description: >-
 
 #### Method 1 - From the Quote Option
 
-The status of a RFQ will always be attached to the Option that uses the External Aircraft.  The banner includes a link to the RFQ, clicking it will open the RFQ page.
+The status of a RFQ will always be attached to the Option that uses the External Aircraft. The banner includes a link to the RFQ, clicking it will open the RFQ page.
 
 <figure><img src="../../.gitbook/assets/banner.png" alt=""><figcaption></figcaption></figure>
 
-
-
 #### Method 2 - From the RFQ list page
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ### Managing a RFQ
 
@@ -34,8 +32,6 @@ The status of a RFQ will always be attached to the Option that uses the External
 
 [#deleting-an-rfq](viewing-and-managing-a-request-for-quote.md#deleting-an-rfq "mention")
 
-
-
 #### Viewing the External Operator RFQ page
 
 Clicking the <img src="../../.gitbook/assets/image (6).png" alt="" data-size="line"> button will open the External Operator view on a new page.
@@ -46,8 +42,6 @@ Use this feature to:
 * Interact with the page - the page is the live version the External Operator will use.
 * Copy the page URL for sending via other methods (messages apps etc)
 
-
-
 #### Initial Send
 
 * Click the "Send Request for Quote" button to open the sending window
@@ -55,8 +49,6 @@ Use this feature to:
 * Click "Send Request" to dispatch the RFQ to the external operator
 
 {% embed url="https://screen.studio/share/aemwWU6A" %}
-
-
 
 #### Managing Attachments
 
@@ -69,8 +61,6 @@ The Attachments button (with badge showing count) allows you to:
 * Attachments are automatically shared with the external operator on their RFQ page.
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 #### Question & Answer Communication
 
@@ -90,9 +80,7 @@ Communication Flow:
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-
-
-#### &#x20;Cancelling an RFQ
+#### Cancelling an RFQ
 
 To cancel an active RFQ:
 
