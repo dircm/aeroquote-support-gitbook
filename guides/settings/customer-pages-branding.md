@@ -12,8 +12,10 @@ The pages your customers see when you share a quote or booking link with them �
 
 ## Accessing Customer Pages Branding
 
-1. Go to **Settings** from the sidebar
-2. Click the **Customer Pages** tab
+Customer Pages Branding has its own entry in the sidebar — it's not a tab inside the main Settings page.
+
+1. Open the **Customer Pages** entry in the left sidebar (look for the 🎨 paint-brush icon, near the **Settings** link)
+2. The branding editor opens, with the live preview pinned to the right side of the page
 
 ---
 
