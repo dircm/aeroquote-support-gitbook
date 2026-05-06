@@ -44,7 +44,7 @@
   * [🔐 Permissions](guides/settings/permissions.md)
   * [📜 Terms & Conditions](guides/settings/terms-and-conditions.md)
   * [💰 Custom Charges](guides/settings/custom-charges.md)
-* [🎨 Customer Pages Branding](guides/customer-pages-branding.md)
+* [🎨 Customer Pages Branding](guides/settings/customer-pages-branding.md)
 * [Contacts](guides/contacts/README.md)
   * [Add a new contact](guides/contacts/add-a-new-contact.md)
   * [Import contacts](guides/contacts/import-contacts.md)

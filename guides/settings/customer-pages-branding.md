@@ -6,16 +6,13 @@ description: >-
 
 # 🎨 Customer Pages Branding
 
-The pages your customers see when you share a quote or booking link with them — the ones at `/quotes/{id}` and `/bookings/{id}` — can be styled to match your website and trimmed to show only the sections you want them to see. All settings are per-operator and apply to every customer-facing page automatically.
+The pages your customers see when you share a quote or booking link with them can be styled to match your website and trimmed to show only the sections you want them to see.
 
 ***
 
 ## Accessing Customer Pages Branding
 
-Customer Pages Branding has its own entry in the sidebar — it's not a tab inside the main Settings page.
-
-1. Open the **Customer Pages** entry in the left sidebar (look for the 🎨 paint-brush icon, near the **Settings** link)
-2. The branding editor opens, with the live preview pinned to the right side of the page
+Customer Pages Branding has its own entry in the sidebar menu.
 
 ***
 
@@ -138,25 +135,21 @@ Use this to confirm the live result on a real customer page rather than just the
 
 ## How Branding Reaches Existing Quotes and Bookings
 
-Customer page branding is **read live** — there's no archival snapshot. Any quote or booking you've already sent picks up your new colours the moment a customer next refreshes the link. You don't need to resend or regenerate anything.
-
-This applies to every customer-facing page: ShowQuotePage, ShowBookingPage, the crew booking view, the external operator booking view, and the customer-side Request For Quote page.
+All page branding you make is **read live**. Any quote or booking you've already sent picks up your new colours the moment a customer next refreshes the link. You don't need to resend or regenerate anything.
 
 ***
 
 ## Tips
 
 {% hint style="success" %}
-**Start with the accent colour** — Most operators get 80% of the look right by setting just the primary accent. The defaults for everything else (white header, dark text, neutral footer) work well alongside almost any accent.
+**Start with the accent colour** — Most users get 80% of the look right by setting just the primary accent. The defaults for everything else (white header, dark text, neutral footer) work well alongside almost any accent.
 {% endhint %}
 
 * Keep your accent strong enough to read white text on it. The hero gradient darkens your accent toward the bottom-right corner.
-* Status badges (In Progress, Completed, Cancelled) keep their semantic colours — amber, green, red — regardless of your accent. Brand drives chrome, not the meaning of state.
-* The mobile app is unaffected by these settings. They only style the customer-facing web pages.
 
 ***
 
 ## Related
 
-* [Banner Images](settings/banner-images.md) — Images for quote PDFs and document layouts
-* [Account Settings](settings/account-settings.md) — Operator name, phone, email and website (these feed the customer-page header and footer when **Operator contact details** is enabled)
+* [Banner Images](banner-images.md) — Images for quote PDFs and document layouts
+* [Account Settings](account-settings.md) — Business name, phone, email and website (these feed the customer-page header and footer when **Operator contact details** is enabled)
