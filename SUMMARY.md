@@ -44,6 +44,7 @@
   * [🔐 Permissions](guides/settings/permissions.md)
   * [📜 Terms & Conditions](guides/settings/terms-and-conditions.md)
   * [💰 Custom Charges](guides/settings/custom-charges.md)
+  * [🧾 Tax Setup](guides/settings/tax-setup.md)
 * [🎨 Customer Pages Branding](guides/settings/customer-pages-branding.md)
 * [Contacts](guides/contacts/README.md)
   * [Add a new contact](guides/contacts/add-a-new-contact.md)
