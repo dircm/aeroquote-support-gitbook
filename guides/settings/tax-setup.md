@@ -116,6 +116,18 @@ When tax is configured, the price input on the quote builder and the booking tot
 
 ---
 
+## Cost items and tax
+
+AeroQuote computes tax from the **option price** (or booking price), not from the sum of individual cost items. Cost items are display-only — they show the customer how the price is composed, but they do not feed the tax calculation.
+
+{% hint style="warning" %}
+**Enter all cost items pre-tax.** Whether you're operating inclusive or exclusive, your cost items should reflect amounts **before** AeroQuote applies the tax breakdown. Tax is calculated once, on the final option price, and shown on its own line. If you put a manual "GST" or "VAT" row in your cost items, customers will see tax twice — once in your cost line and once in the system breakdown.
+{% endhint %}
+
+If you've been adding a manual `Tax` / `GST` / `VAT` cost item on your quotes historically as a workaround, remove those rows once you configure your tax rates — AeroQuote will itemise the tax automatically.
+
+---
+
 ## What customers see
 
 Once tax is configured, the breakdown appears in four places — all read from a per-document **snapshot** taken when the quote or booking was generated, so changing your tax rates later does not retroactively rewrite historical documents.
