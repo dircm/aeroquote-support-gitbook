@@ -137,7 +137,7 @@ Once tax is configured, the breakdown appears in four places — all read from a
 
 ### On the customer booking page
 
-Same breakdown as the quote page, rendered as a "Booking total" card. Two download buttons appear: **Download Itinerary** and either **Tax invoice** (when you have a registration number set) or **Receipt** (when you don't).
+Same breakdown as the quote page, rendered as a "Booking total" card. Two download buttons appear: **Download Itinerary** and either **Tax invoice** (when you have a registration number set) or **Receipt** (when you don't). The receipt download can be hidden per-operator — see [Hiding the receipt download](#hiding-the-receipt-download) below.
 
 ### On quote PDFs
 
@@ -150,6 +150,26 @@ This is a customer-filed proof of purchase, separate from the operational itiner
 ### On confirmation emails
 
 The customer booking confirmation email includes a totals panel mirroring the customer page, plus a download link to the receipt / tax invoice labelled correctly for your registration state.
+
+---
+
+## Hiding the receipt download
+
+If you issue formal invoices through Xero, QuickBooks or your own accounting system and don't want AeroQuote serving a competing artifact, you can hide the downloadable receipt / tax invoice per-operator.
+
+1. Go to **Settings → Customer Pages Branding**
+2. Find the **Tax invoice / receipt download (bookings only)** checkbox
+3. Uncheck it and click **Save branding**
+
+When the toggle is off:
+
+- The **Tax invoice** / **Receipt** button no longer appears on the customer booking page
+- The download link is omitted from the booking confirmation email
+- The PDF download URL itself returns a 404, so any link a customer has previously bookmarked or forwarded also stops working
+
+{% hint style="info" %}
+**The inline totals breakdown stays on either way.** Hiding the download only gates the standalone PDF artifact — customers still see the "Booking total" card on the booking page with the same inclusive / exclusive breakdown. If you want to hide the price entirely from the customer booking page, leave the booking's stored price at `0`.
+{% endhint %}
 
 ---
 
@@ -177,3 +197,4 @@ This is intentional. If you bumped GST from 10% to 15%, you don't want your cust
 - Use the **Custom** preset when your country isn't in the list, or when you need to add a non-standard rate (e.g. airport fees that the host airport collects on your behalf).
 - For Quebec operators: use the CA preset, then toggle **Compound on GST** on the provincial line — the TVQ is calculated on top of fare + GST, not on the bare fare.
 - Operators who only need a tax invoice header (and no itemised GST / VAT line) can leave the rates table empty — set just the tax invoice details on Account Settings and AeroQuote will issue tax-invoice-headed receipts without any tax breakdown.
+- If Xero or QuickBooks is already producing your formal invoices, hide the AeroQuote receipt download in Customer Pages Branding so customers aren't offered two competing documents — see [Hiding the receipt download](#hiding-the-receipt-download).
