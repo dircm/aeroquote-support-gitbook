@@ -21,11 +21,9 @@ There are two parts to tax setup, and they live in different places:
 | Setting | Where to find it | What it does |
 |---------|------------------|--------------|
 | **Tax invoice details** | Settings → [Account Settings](account-settings.md) | Legal business name, address, registration label (ABN / VAT / EIN), registration number — these appear on the tax invoice header |
-| **Tax rates & items** | Scheduled Flights → Tax Settings | Per-rate name, percentage, inclusive flag, scope (fare / surcharge / add-ons) — drives the itemised lines on the customer page and receipts |
+| **Tax rates & items** | Settings → **Tax** | Per-rate name, percentage, inclusive flag, scope (fare / surcharge / add-ons) — drives the itemised lines on the customer page and receipts |
 
-{% hint style="warning" %}
-The tax rates & items configuration page is currently part of the Scheduled Flights module. Operators on a charter-only plan can still set their tax invoice details on Account Settings, but to itemise GST / VAT lines on the customer-facing breakdown you will need the Scheduled Flights module enabled. We're working on bringing the rates editor to charter-only operators in a future release.
-{% endhint %}
+Both pages are available to every operator regardless of which modules you have enabled. Tax rates are operator-wide — the same configuration drives charter quotes / bookings, scheduled-flight ticket purchases, and tour-package bookings.
 
 ---
 
@@ -50,7 +48,7 @@ Setting a registration number flips the customer-facing PDF title from "Receipt"
 
 ## Step 2 — Set your tax rates
 
-Tax rates are configured under **Scheduled Flights → Tax Settings**. The same rates power both your scheduled-flight ticket purchases and your charter quotes / bookings — there is one tax configuration per operator.
+Tax rates are configured under **Settings → Tax**. The same rates power your charter quotes / bookings, scheduled-flight ticket purchases, and tour-package bookings — there is one tax configuration per operator.
 
 ### Pick a jurisdiction preset
 
@@ -67,7 +65,7 @@ AeroQuote ships with presets for 23 countries spanning Australia / New Zealand /
 | Africa / Indian Ocean | AO, BW, CD, KE, KM, LS, MG, MU, MW, MZ, NA, SC, SZ, TZ, ZA, ZM, ZW | Single-line standard-rate VAT / TVA / IVA, inclusive |
 | Custom | Custom | Start from scratch — useful for non-listed jurisdictions |
 
-1. Go to **Scheduled Flights → Tax Settings**
+1. Go to **Settings → Tax** from the sidebar
 2. Click the **Jurisdiction** dropdown and pick your country
 3. Click **Apply preset**
 4. Review and adjust the rates, names and inclusive flags to match your situation
@@ -178,4 +176,4 @@ This is intentional. If you bumped GST from 10% to 15%, you don't want your cust
 - Set your tax invoice details before you set rates — that way the first quote you issue carries the proper "Tax invoice" header.
 - Use the **Custom** preset when your country isn't in the list, or when you need to add a non-standard rate (e.g. airport fees that the host airport collects on your behalf).
 - For Quebec operators: use the CA preset, then toggle **Compound on GST** on the provincial line — the TVQ is calculated on top of fare + GST, not on the bare fare.
-- Pure charter operators who don't have Scheduled Flights enabled can still issue tax-invoice-headed receipts for their bookings; they just don't show an itemised GST/VAT line.
+- Operators who only need a tax invoice header (and no itemised GST / VAT line) can leave the rates table empty — set just the tax invoice details on Account Settings and AeroQuote will issue tax-invoice-headed receipts without any tax breakdown.
