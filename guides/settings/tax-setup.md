@@ -88,7 +88,7 @@ Each tax item has the following fields:
 
 ## Inclusive vs exclusive
 
-Pick one mode per tax item. The default for new items follows the **pricing mode** on your operator profile, which is also set per preset.
+The **pricing mode** dropdown at the top of the Tax page is a master switch — choosing inclusive or exclusive re-flags every tax item to match, and the live preview on the right updates instantly. The per-item inclusive toggle is what's authoritative at calculation time, so once you've set the mode you can still fine-tune individual items (see mixed mode below).
 
 ### Inclusive (Australia, New Zealand, UK, EU, most of Africa)
 
@@ -123,6 +123,8 @@ AeroQuote computes tax from the **option price** (or booking price), not from th
 {% endhint %}
 
 If you've been adding a manual `Tax` / `GST` / `VAT` cost item on your quotes historically as a workaround, remove those rows once you configure your tax rates — AeroQuote will itemise the tax automatically.
+
+Likewise, if you used the free-text **price suffix** (e.g. "Excluding Taxes" or "+ GST") to disclaim tax, you don't need to clear it. AeroQuote automatically hides the suffix on customer pages and PDFs once you configure tax rates, so customers never see a stale disclaimer next to a computed breakdown. The suffix reappears on its own if you later remove all your tax items.
 
 ---
 
