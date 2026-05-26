@@ -44,6 +44,10 @@ These four fields appear at the top of every tax invoice / receipt PDF and are j
 Setting a registration number flips the customer-facing PDF title from "Receipt" to "Tax invoice" automatically. If you leave the registration number blank, customers see a plain "Receipt" with the same totals breakdown.
 {% endhint %}
 
+### Preview before you save
+
+On **Settings → Tax**, the Tax invoice details panel has a **Preview** button. It opens a mock invoice built from your current details and a sample fare run through your tax items — so you can see exactly how the header flips between "Tax invoice" and "Receipt" and how the breakdown itemises, before saving. The preview reflects unsaved edits, so tweak a field and re-open it to check the result.
+
 ---
 
 ## Step 2 — Set your tax rates
@@ -151,7 +155,9 @@ This is a customer-filed proof of purchase, separate from the operational itiner
 
 ### On confirmation emails
 
-The customer booking confirmation email includes a totals panel mirroring the customer page, plus a download link to the receipt / tax invoice labelled correctly for your registration state.
+The customer booking confirmation email includes a totals panel mirroring the customer page, plus an optional download link to the receipt / tax invoice labelled correctly for your registration state.
+
+Whether that link is included is controlled per send. When you email a booking, the send dialog shows an **Include tax invoice in email** (or **Include receipt in email**) toggle alongside **Include QR code boarding passes**. It defaults to your Customer Pages Branding download setting (see [Hiding the receipt download](#hiding-the-receipt-download)) — so if the download is enabled, the link is included by default, and you can untick it for a one-off send. The toggle only appears when the booking has a price and the download is enabled.
 
 ---
 
@@ -166,8 +172,10 @@ If you issue formal invoices through Xero, QuickBooks or your own accounting sys
 When the toggle is off:
 
 - The **Tax invoice** / **Receipt** button no longer appears on the customer booking page
-- The download link is omitted from the booking confirmation email
+- The **Include tax invoice in email** toggle is hidden from the booking send dialog, and confirmation emails never carry the download link
 - The PDF download URL itself returns a 404, so any link a customer has previously bookmarked or forwarded also stops working
+
+When it's on, the email link defaults to included but you can still untick **Include tax invoice in email** per send.
 
 {% hint style="info" %}
 **The inline totals breakdown stays on either way.** Hiding the download only gates the standalone PDF artifact — customers still see the "Booking total" card on the booking page with the same inclusive / exclusive breakdown. If you want to hide the price entirely from the customer booking page, leave the booking's stored price at `0`.
