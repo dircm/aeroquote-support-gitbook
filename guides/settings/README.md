@@ -34,6 +34,7 @@ Some settings have dedicated pages accessible from the Settings area:
 | [**Permissions**](permissions.md) | User access control and roles |
 | [**Terms & Conditions**](terms-and-conditions.md) | Manage customer-facing T&Cs |
 | [**Custom Charges**](custom-charges.md) | Sector, landing, and duration overrides |
+| [**Tax Setup**](tax-setup.md) | GST / VAT / sales tax breakdowns on customer pages and PDFs |
 
 ---
 
