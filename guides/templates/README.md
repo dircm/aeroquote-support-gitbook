@@ -10,7 +10,57 @@ Templates let you save quote configurations that you use frequently. Instead of 
 
 ## Accessing Templates
 
-From the sidebar, click **Templates** to open the Templates list.
+From the sidebar, click **Templates** to open the Templates list. The page has two sections:
+
+- **Email Templates** — reusable wording for the email that delivers a quote (see below).
+- **Booking Templates** — saved booking layouts you can reuse.
+
+---
+
+## Quote Email Templates
+
+Email templates are the saved wording for the email that sends a quote to your customer. Pick one in the **Send** step of a quote — or set a default that's chosen for you automatically.
+
+### What you write vs. what's added for you
+
+You only write the **message in the middle**. Aeroquote wraps it automatically every time a quote is sent:
+
+| Added for you | Detail |
+|---|---|
+| **Greeting** | A personalised "Hi _\<first name\>_," line (falls back to "Hi there," when there's no named contact) |
+| **Open button — above _and_ below** | A button labelled **Open _\<your quote name\>_** (for example *Open Charter Estimate*) that links to the online quote. Because it's added automatically, a quote can never go out without a working link. |
+| **Your branding** | Operator name in the header and footer |
+| **Subject line** | Generated per quote as _\<your quote name\> \<quote code\> from \<your operator name\>_ (e.g. *Charter Estimate ACG-7 from Acme Air*). It's shown in the Send step and you can edit it before sending. |
+
+{% hint style="success" %}
+There are **no merge codes to manage** (no more `{{ quoteUrl }}` or `{{ customerName }}`). Just write your message with normal formatting — bold, links, and lists.
+{% endhint %}
+
+### Creating an email template
+
+1. On the Templates page, in **Email Templates**, click **Add Email Template**.
+2. Give it a **Name** (your team sees this when picking a template).
+3. Write the **Email body** using the formatting toolbar.
+4. Optionally tick **Use as the default template**.
+5. Click **Create**.
+
+### Editing, default, and deleting
+
+- **Edit** — change the name, body, or default flag at any time. Changes apply to future sends.
+- **Set default** — the default template is pre-selected in the Send step for new quotes. Only one template can be the default.
+- **Delete** — remove a template you no longer need. You'll always keep at least one.
+
+### Using a template when sending
+
+In a quote's **Send** step:
+
+1. Choose a template from the **Email Template** list (your default is pre-selected).
+2. Edit the **Subject** or message for this quote if you want — your edits apply to this quote only and don't change the saved template.
+3. Use **Preview** to see the finished email, then send.
+
+{% hint style="info" %}
+To save the message you've just edited as a new reusable template, use **Save as New Template** in the Send step.
+{% endhint %}
 
 ---
 
