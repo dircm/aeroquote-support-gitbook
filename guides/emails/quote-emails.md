@@ -23,6 +23,8 @@ You no longer manage merge codes like `{{ quoteUrl }}`. Just write the message â
 
 The **subject line is generated for each quote** (for example _Charter Estimate ACG-7 from Acme Air_) and is editable in the Send step before you send.
 
+The **_\<your quote name\>_** on the button and in the subject comes from your **Default Quote Title** (**Settings â†’ Quote Defaults**), which defaults to _Charter Estimate_ when left blank. See [Quote Email Templates](../templates/README.md).
+
 Manage your reusable email wording on the [Templates page](../templates/README.md). Additional contacts receive a preview-only link without accept/decline actions.
 {% endhint %}
 

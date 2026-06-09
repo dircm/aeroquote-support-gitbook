@@ -36,6 +36,15 @@ You only write the **message in the middle**. Aeroquote wraps it automatically e
 There are **no merge codes to manage** (no more `{{ quoteUrl }}` or `{{ customerName }}`). Just write your message with normal formatting — bold, links, and lists.
 {% endhint %}
 
+### Changing the button & quote-title wording
+
+The **_\<your quote name\>_** that appears on the **Open** button, in the email subject line, and as the title on the customer's online quote all come from one setting: your **Default Quote Title**.
+
+- Set it in **Settings → Quote Defaults → Default Quote Title** (e.g. *Charter Estimate*, *Flight Proposal*, *Travel Quote*).
+- **If you leave it blank, it defaults to _Charter Estimate_** — so the button reads *Open Charter Estimate* and the subject reads *Charter Estimate \<code\> from \<your company\>*.
+- Change it once and it updates everywhere: the **Open** button, the subject line, and the quote web view.
+- You can also **override it on an individual quote** if a particular quote should use a different title.
+
 ### Creating an email template
 
 1. On the Templates page, in **Email Templates**, click **Add Email Template**.
