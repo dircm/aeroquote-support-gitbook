@@ -29,9 +29,8 @@ You only write the **message in the middle**. Aeroquote wraps it automatically e
 
 | Added for you                                         | Detail                                                                                                                                                                                                            |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Greeting**                                          | A personalised "Hi _\<first name>_," line (falls back to "Hi there," when there's no named contact)                                                                                                               |
 | **Open button — above&#x20;**_**and**_**&#x20;below** | A button labelled **Open&#x20;**_**\<your quote name>**_ (for example _Open Charter Estimate_) that links to the online quote. Because it's added automatically, a quote can never go out without a working link. |
-| **Your branding**                                     | Operator name in the header and footer                                                                                                                                                                            |
+| **Your branding**                                     | Operator name in the header                                                                                                                                                                                       |
 | **Subject line**                                      | Generated per quote as _\<your quote name> \<quote code> from \<your operator name>_ (e.g. _Charter Estimate ACG-7 from Acme Air_). It's shown in the Send step and you can edit it before sending.               |
 
 {% hint style="success" %}
