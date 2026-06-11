@@ -23,7 +23,7 @@
 ## 📖 Guides
 
 * [📊 Dashboard](guides/dashboard/README.md)
-  * [🤖 AI Assistant (Beta)](guides/dashboard/ai-assistant.md)
+  * [🤖 AI Co-Worker](guides/dashboard/ai-assistant.md)
   * [Bookings Dashboard](guides/dashboard/bookings-dashboard.md)
 * [✈️ Aircraft](guides/aircraft/README.md)
   * [Aircraft Details](guides/aircraft/aircraft-details.md)
@@ -35,6 +35,7 @@
   * [Adding aircraft (with External Operator)](guides/aircraft/adding-aircraft-with-external-operator.md)
 * [⚙️ Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
+  * [Company Knowledge](guides/settings/company-knowledge.md)
   * [💳 Billing](guides/settings/billing.md)
   * [🔌 Integrations](guides/settings/integrations.md)
   * [🧩 Modules](guides/settings/modules.md)

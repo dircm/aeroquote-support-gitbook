@@ -11,7 +11,7 @@ The Dashboard is the first thing you see when you log into AeroQuote. It provide
 The Dashboard includes:
 
 - **Quick Stats** — Active requests, quotes, and bookings counts
-- **AI Assistant** — Create quotes using natural language (Beta)
+- **AI Co-Worker** — Ask questions, look up your data, and create quotes from chat
 - **Calendar View** — See scheduled quotes and bookings by date
 - **Fleet Timeline** — View aircraft availability and scheduling
 
@@ -31,15 +31,11 @@ Click **View all** on any card to jump directly to that section.
 
 ---
 
-## AI Assistant (Beta)
+## AI Co-Worker
 
-{% hint style="warning" %}
-**Beta Feature** — The AI Assistant is currently in beta. Features may change.
-{% endhint %}
+The AI Co-Worker chat bubble sits in the bottom-right of every page — including the Dashboard. Ask it how anything works, look up your quotes and bookings, or have it create and send quotes for you (with your confirmation).
 
-The AI Assistant card appears on your Dashboard, offering a quick way to create quotes using natural language.
-
-Click **Open Chat** to start a conversation. See the [AI Assistant Guide](ai-assistant.md) for full details.
+See the [AI Co-Worker Guide](ai-assistant.md) for full details.
 
 ---
 
@@ -126,6 +122,6 @@ Toggle between **Calendar** and **Fleet Timeline** using the buttons above the m
 
 ## Next Steps
 
-- [AI Assistant Guide](ai-assistant.md) — Learn to create quotes with natural language
+- [AI Co-Worker Guide](ai-assistant.md) — Your assistant on every page
 - [Creating a Request](../requests/creating-a-request-operators.md) — Start a new quote request
 - [Quote Details](../quotes/README.md) — Understanding the quote workflow
