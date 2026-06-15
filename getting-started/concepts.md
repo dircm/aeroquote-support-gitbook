@@ -44,6 +44,8 @@ Assign crew from your user database to a Booking. Once an allocation has been ma
 
 Add passenger information and assign them to some or all of the flight legs. Passenger details like contact information and weights are available to view for you and your crew assigned to the booking.
 
+New passengers added here (without linking an existing contact) are stored as "passenger"-type Contacts. These can be viewed and filtered separately in the main Contacts list (see [Contacts](concepts.md#contacts) and the [Passengers & Cargo guide](../guides/bookings-operators/passengers-and-cargo.md)).
+
 #### Job Status
 
 You may update the status of a job from **Boarding** -> **In-Progress** -> **Completed** or **Cancelled.**

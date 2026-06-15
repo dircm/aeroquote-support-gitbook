@@ -33,6 +33,8 @@ Click **Add Passenger** to open the passenger form.
 | **Phone**   | No       | Contact number                           |
 | **Notes**   | No       | Special requirements, preferences        |
 
+**Note:** If you enter details for a *new* passenger (without selecting an existing contact), AeroQuote creates a new **Contact** record with type `passenger`. These are visible in the main **Contacts** list when filtered to "Passengers" (see [Contacts](../contacts/README.md) for the distinction between main contacts and passenger-type contacts). Existing main contacts can also be selected and used as passengers.
+
 ### Step 3: Assign to Flights
 
 Select which flight legs this passenger is on:
