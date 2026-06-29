@@ -147,6 +147,8 @@ When flight tracking is enabled, AeroQuote automatically detects key flight even
 Crew can always override auto-detected times via the mobile app — **crew-confirmed times always take precedence** over automated tracking.
 {% endhint %}
 
+See the [Flight Tracking guide](../bookings-operators/flight-tracking/README.md) for configuration, mid-leg coverage recovery, multi-leg inference, and when bookings complete vs expire.
+
 #### Disabling tracking per aircraft
 
 FlightRadar24 tracking can be disabled for individual aircraft from the **Aircraft Details** page using the **FlightRadar24 Tracking** toggle. Sample aircraft created during operator signup have tracking disabled by default.

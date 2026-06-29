@@ -65,6 +65,8 @@ The mobile app shows where an ETA estimate comes from:
 
 Crew-set ETAs always take priority over automated tracking ETAs.
 
+For the full operator guide — identifiers, per-aircraft opt-out, mid-leg FR24 recovery, multi-leg inference, and the 24-hour completion rule — see [Flight Tracking](../bookings-operators/flight-tracking/README.md).
+
 ---
 
 ## Setting Up Accounting Integration

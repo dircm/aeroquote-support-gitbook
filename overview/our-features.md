@@ -39,7 +39,7 @@ Create professional, accurate quotes in minutes.
 Convert quotes to bookings and manage the full flight lifecycle.
 
 - **One-Click Conversion** — Turn accepted quotes into bookings instantly
-- **Flight Status Tracking** — Track each flight through its lifecycle
+- **Flight Tracking** — Automatic departure, arrival, and ETA via FlightRadar24; live map on the Bookings Dashboard; saved flight tracks; crew mobile confirmations; multi-leg Ground Time and stalled-rotation recovery
 - **Passenger Management** — Add passengers with weights and details per flight leg
 - **Crew Assignment** — Assign crew members to flights
 - **Cargo Tracking** — Manage cargo with weights per flight
