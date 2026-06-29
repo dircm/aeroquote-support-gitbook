@@ -61,5 +61,5 @@ Check-ins work even without an internet connection:
 This ensures boarding is never blocked by poor connectivity at remote airfields.
 
 {% hint style="success" %}
-All check-ins appear in the [Bookings Dashboard](../bookings-operators/bookings-dashboard.md) activity feed in real time, so ops staff can monitor boarding progress from the office.
+All check-ins appear in the [Bookings Dashboard](../dashboard/bookings-dashboard.md) activity feed in real time, so ops staff can monitor boarding progress from the office.
 {% endhint %}

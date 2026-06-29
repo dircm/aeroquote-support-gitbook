@@ -11,7 +11,7 @@ Your command center for daily operations.
 - **Calendar View** — See all quotes and bookings at a glance with color-coded status indicators
 - **Fleet Timeline** — Visual timeline showing aircraft availability and scheduled flights
 - **Quick Stats** — Active requests, quotes, and bookings counts
-- **AI Assistant** — Create quotes using natural language (Beta)
+- **AI Co-Worker** — Ask questions, look up your data, and act from chat
 
 {% hint style="info" %}
 The Dashboard gives you instant visibility into your entire operation without clicking through multiple screens.
@@ -39,7 +39,7 @@ Create professional, accurate quotes in minutes.
 Convert quotes to bookings and manage the full flight lifecycle.
 
 - **One-Click Conversion** — Turn accepted quotes into bookings instantly
-- **Flight Status Tracking** — Track each flight through its lifecycle
+- **Flight Tracking** — Automatic departure, arrival, and ETA via FlightRadar24; live map on the Bookings Dashboard; saved flight tracks; crew mobile confirmations; multi-leg Ground Time and stalled-rotation recovery
 - **Passenger Management** — Add passengers with weights and details per flight leg
 - **Crew Assignment** — Assign crew members to flights
 - **Cargo Tracking** — Manage cargo with weights per flight
@@ -175,23 +175,21 @@ Extend AeroQuote with your own data.
 
 ---
 
-## 🤖 AI Assistant (Beta)
+## 🤖 AI Co-Worker
 
-{% hint style="warning" %}
-**Beta Feature** — The AI Assistant is currently in beta testing.
-{% endhint %}
+An AI assistant on every page of AeroQuote.
 
-Create quotes using natural language.
-
-- **Conversational Interface** — Just describe what you need
-- **Smart Parsing** — Understands airports, dates, times, and routes
-- **Fleet Awareness** — Knows your aircraft capabilities
-- **Quick Quotes** — From conversation to quote in seconds
+- **Answers from the help centre** — with screenshots and links to the full articles
+- **Knows your data** — "what's my latest quote?", "what flights am I on this week?"
+- **Does things for you** — creates, sends, accepts and duplicates quotes, always with a confirmation card before anything happens
+- **Gets you around** — navigation buttons straight to the right page, and a guided tour for new team members
+- **Escalates to humans** — pre-drafts a support ticket when it can't help
+- **Learns your company** — admins add their own procedures via Company Knowledge
 
 **Example prompts:**
-- "Quote from KLAX to KSEA on February 15 at 9am"
-- "What aircraft can fly more than 2000 nautical miles?"
-- "Quote for a round trip Sydney to Melbourne tomorrow"
+- "Quote from Essendon to Sydney tomorrow at 9am for 3 passengers"
+- "Send quote ACG-7 to the customer"
+- "How do I add images to an aircraft?"
 
 ---
 

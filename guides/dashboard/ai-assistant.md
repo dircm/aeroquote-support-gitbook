@@ -1,192 +1,83 @@
 ---
-description: Create quotes using natural language conversation.
+description: Your AI co-worker — answers questions, looks up your data, and performs actions with your confirmation, on every page of AeroQuote.
 ---
 
-# 🤖 AI Assistant (Beta)
+# 🤖 AI Co-Worker
 
-{% hint style="warning" %}
-**Beta Feature** — The AI Assistant is currently in beta testing. Features may change, and occasional unexpected behavior may occur. We'd love your feedback!
-{% endhint %}
-
-The AI Assistant lets you create quotes by simply describing what you need in plain English. No forms to fill out — just tell it what you want.
-
----
-
-## Getting Started
-
-### Opening the AI Assistant
-
-1. From the **Dashboard**, find the **AI Assistant (Beta)** card
-2. Click **Open Chat**
-3. A chat window opens on the right side of your screen
-
-### Your First Conversation
-
-The AI Assistant greets you with example prompts to get started. Try something like:
-
-> "Quote from KLAX to KSEA on February 15 at 9am"
-
-The Assistant will:
-1. Parse the airports, date, and time
-2. Check which aircraft in your fleet can make the trip
-3. Generate a quote estimate
-4. Ask if you'd like to proceed
-
----
-
-## What You Can Ask
-
-### Quote Creation
-
-The most common use case — describe a flight and get a quote:
-
-| Example Prompt | What it does |
-|----------------|--------------|
-| "Quote from KLAX to KSEA on March 1 at 10am" | Creates a one-way quote |
-| "Round trip Sydney to Melbourne tomorrow" | Creates a return flight quote |
-| "Quote JFK to MIA for 4 passengers" | Includes passenger count |
-| "Multi-leg: LAX → SFO → SEA next Monday" | Creates multi-stop itinerary |
-
-### Fleet Questions
-
-Ask about your aircraft capabilities:
-
-| Example Prompt | What it does |
-|----------------|--------------|
-| "What aircraft can fly more than 2000nm?" | Lists capable aircraft |
-| "Which aircraft is available on Friday?" | Checks fleet availability |
-| "Show me aircraft that seat 6 or more" | Filters by capacity |
-
-### Quick Information
-
-Get fast answers about your operation:
-
-| Example Prompt | What it does |
-|----------------|--------------|
-| "How far is it from Sydney to Brisbane?" | Distance calculation |
-| "What's the flight time LAX to Vegas?" | Time estimate |
-
----
-
-## Creating a Quote Step-by-Step
-
-### 1. Describe the Flight
-
-Type a natural description:
-
-> "I need a quote from Brisbane to Sydney on February 20th at 2pm for 3 passengers"
-
-### 2. Review the Estimate
-
-The AI will respond with:
-- Identified airports
-- Date and time
-- Suggested aircraft options
-- Estimated costs
-
-### 3. Select Aircraft
-
-If multiple aircraft can make the trip, you'll see options. Tell the AI which ones to include:
-
-> "Use the King Air and the Citation"
-
-Or:
-
-> "Just the King Air"
-
-### 4. Confirm Creation
-
-Once you're happy, the AI will ask for confirmation before creating the quote. Reply:
-
-> "Yes, create the quote"
-
-### 5. Quote Created
-
-The AI provides a link to your new quote. Click to open it in the full quote editor.
-
----
-
-## Tips for Better Results
-
-{% hint style="success" %}
-**Be specific with dates and times** — "Next Tuesday at 3pm" works better than "sometime next week"
-{% endhint %}
-
-### Airport Codes vs. City Names
-
-Both work, but airport codes are more precise:
-
-- ✅ "YBBN to YSSY" — unambiguous
-- ✅ "Brisbane to Sydney" — works, AI will ask if multiple airports
-- ⚠️ "New York to LA" — may need clarification (JFK? LGA? EWR?)
-
-### Handling Ambiguity
-
-If the AI isn't sure which airport you mean, it will ask. Just clarify:
-
-> AI: "Did you mean KJFK or KLGA for New York?"
-> You: "JFK"
-
-### Date Formats
-
-The AI understands various formats:
-
-- "February 15" or "Feb 15" or "15 Feb"
-- "Next Monday" or "this Friday"
-- "Tomorrow at 9am"
-- "In 2 weeks"
-
----
-
-## Contacts
-
-When creating a quote, the AI may ask about the customer. You can:
-
-- Provide a name: "It's for John Smith"
-- Search contacts: "Look up Acme Corp"
-- Skip for now: "I'll add the contact later"
-
-If the contact doesn't exist, the AI can create one for you.
-
----
-
-## Limitations (Beta)
-
-While in beta, the AI Assistant has some limitations:
-
-- **Complex pricing adjustments** — For detailed cost editing, use the full quote editor
-- **Document attachments** — Add documents through the quote page after creation
-- **Historical lookups** — "Show me last month's quotes" isn't supported yet
-- **Booking creation** — Currently quotes only; convert to bookings through the quote page
-
----
-
-## Feedback
-
-We're actively improving the AI Assistant. If you encounter issues or have suggestions:
-
-- Note what you asked and what went wrong
-- Contact support with your feedback
-- Your input helps us make it better!
+The AI Co-Worker is a chat assistant available on **every page** of AeroQuote — look for the chat bubble in the bottom-right corner, or click the lifebuoy icon in the top bar. It answers questions from this help centre, looks up your own quotes and bookings, and can even do things for you — always with your confirmation first.
 
 {% hint style="info" %}
-**📹 Video Coming Soon**
-
-**Runsheet for Tom:**
-1. Open Dashboard, click "Open Chat" on AI Assistant card
-2. Show the welcome message with example prompts
-3. Type: "Quote from Brisbane to Sydney on February 20 at 2pm"
-4. Show the AI parsing and suggesting aircraft
-5. Select an aircraft option
-6. Confirm quote creation
-7. Click the link to show the created quote
-8. **Duration:** ~2-3 minutes
+The Co-Worker replaced the earlier dashboard "AI Assistant (Beta)" card. Everything the beta did — and much more — now lives in the chat bubble, on every page.
 {% endhint %}
+
+---
+
+## Asking Questions
+
+Ask anything about how AeroQuote works:
+
+> "How do I add images to an aircraft?"
+
+The Co-Worker answers from the help articles (including the screenshots), and attaches **Read full article** buttons so you can open the complete guide in the reader.
+
+It knows what page you're on, so "help me understand this page" gives you answers about the screen in front of you.
+
+## Looking Up Your Data
+
+The Co-Worker can see your own data — and only yours:
+
+| Example | What it does |
+| --- | --- |
+| "What's my latest quote?" | Finds your most recent quotes with status and a link |
+| "Show me quote ACG-7" | Looks a quote up by its code |
+| "What flights am I assigned to this week?" | Crew: your assigned bookings |
+| "Which aircraft can fly 2,000nm?" | Lists matching fleet aircraft |
+
+What each person can see follows their role and permissions — crew members see their assigned flights, not quotes.
+
+## Doing Things For You
+
+The Co-Worker can perform actions — but it **never acts on its own**. It prepares the action and shows you a confirmation card with the real details. Nothing happens until you press the button on the card.
+
+| Ask | What you confirm |
+| --- | --- |
+| "Send quote ACG-7 to the customer" | Recipients, subject, and PDF attachment — then **Confirm** sends it |
+| "Quote from Essendon to Sydney tomorrow 9am for 3" | Pick the airport if ambiguous, tick the aircraft options (with prices), then **Create Quote** |
+| "Mark ACG-7 as accepted" | The quote, the selected aircraft, and the new status |
+| "Duplicate quote ACG-7" | Creates a fresh draft with a new quote code |
+
+If something isn't ready — say, a quote with no contact attached — the Co-Worker tells you what's missing and can take you straight to the right screen to fix it.
+
+## Getting Around
+
+Answers often come with **navigation buttons** that open the right page directly — including deep links like opening a specific aircraft at its Images step. New team members can also take a guided **tour** of the app from the welcome message.
+
+## When You Need a Human
+
+If the Co-Worker can't solve your problem, it offers to raise a **support ticket** for you — pre-written from your conversation, so you don't have to retype anything. You review and confirm before it's sent to the AeroQuote team. Track your tickets via the lifebuoy icon at the top of the chat.
+
+---
+
+## Your Company's Own Knowledge
+
+Administrators can teach the Co-Worker your company's procedures — see [Company Knowledge](../settings/company-knowledge.md). Once added, your team can ask things like "what's our overnight allowance policy?" and get answers from *your* operations manual.
+
+---
+
+## Tips
+
+{% hint style="success" %}
+**Be specific with dates and airports** — "next Friday at 9am" and "YMEN" beat "sometime soon" and "Melbourne" (though the Co-Worker will show you airport choices when a city name is ambiguous).
+{% endhint %}
+
+* The conversation **follows you between pages** — start on the Dashboard, finish on the quote.
+* Use the 🗑 icon in the chat header to start a fresh conversation.
+* The Co-Worker only ever offers actions you have permission for.
 
 ---
 
 ## Next Steps
 
-- [Dashboard Overview](README.md) — Back to Dashboard features
-- [Quote Details](../quotes/README.md) — Working with quotes after creation
-- [Aircraft Management](../aircraft/README.md) — Configure your fleet for better AI suggestions
+* [Dashboard Overview](README.md) — back to Dashboard features
+* [Company Knowledge](../settings/company-knowledge.md) — teach the Co-Worker your procedures
+* [Creating a Request](../requests/creating-a-request-operators.md) — the classic way to build estimates

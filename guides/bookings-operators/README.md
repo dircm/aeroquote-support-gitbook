@@ -61,6 +61,7 @@ Each booking has several tabs:
 | [**Passengers & Cargo**](passengers-and-cargo.md) | Manifest management       |
 | [**Crew**](crew-assignment.md)                    | Crew allocation           |
 | [**Status**](booking-status.md)                   | Flight status tracking    |
+| [**Flight Tracking**](flight-tracking/README.md)   | Live FR24 tracking, maps, multi-leg |
 | [**Amendments**](amendments.md)                   | Change history            |
 | [**Send**](sending-confirmations.md)              | Customer communications   |
 
@@ -86,6 +87,10 @@ Each booking has several tabs:
 
 {% content-ref url="booking-status.md" %}
 [booking-status.md](booking-status.md)
+{% endcontent-ref %}
+
+{% content-ref url="flight-tracking/README.md" %}
+[flight-tracking/README.md](flight-tracking/README.md)
 {% endcontent-ref %}
 
 ***

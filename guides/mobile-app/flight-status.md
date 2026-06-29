@@ -140,4 +140,4 @@ Flight status updates from the mobile app feed directly into the **Bookings Dash
 * Booking cards update with actual times
 * Multi-leg bookings transition to **Ground Time** status between legs
 
-See the [Bookings Dashboard](../bookings-operators/bookings-dashboard.md) guide for more information.
+See the [Bookings Dashboard](../dashboard/bookings-dashboard.md) and [Flight Tracking](../bookings-operators/flight-tracking/README.md) guides for more information.
