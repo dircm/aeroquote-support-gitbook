@@ -44,11 +44,14 @@ Use this feature to:
 
 #### Initial Send
 
-* Click the "Send Request for Quote" button to open the sending window
-* Add optional External Notes that will be included in the email to provide additional context or special instructions
-* Click "Send Request" to dispatch the RFQ to the external operator
+1. Click **Send Request for Quote** to open the sending window
+2. Add optional **External Notes** for context or special instructions (included in the email)
+3. Review the recipient and attachments
+4. Click **Send Request** to dispatch the RFQ to the external operator
 
-{% embed url="https://screen.studio/share/aemwWU6A" %}
+---
+
+**Watch the walkthrough (optional):** [Screen Studio demo](https://screen.studio/share/aemwWU6A)
 
 #### Managing Attachments
 

@@ -53,20 +53,6 @@ Paste the embed code into your website where you want the form to appear. This t
 - A sidebar widget
 - A contact page
 
-{% hint style="info" %}
-**📹 Video Coming Soon**
-
-**Runsheet for Tom:**
-1. Navigate to Widgets from sidebar
-2. Show creating a new widget
-3. Configure basic fields
-4. Copy the embed code
-5. Show where it would go on a website (maybe a test page)
-6. **Duration:** ~2 minutes
-{% endhint %}
-
----
-
 ## Widget Styling
 
 Match the widget to your website's look and feel:

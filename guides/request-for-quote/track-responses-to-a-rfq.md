@@ -35,9 +35,11 @@ A RFQ status may be one of the following:
 
 
 
-#### Method 2 - View all the RFQs in the **Request for Quotes** menu.  The status is shown in the list.
+#### Method 2 - View all the RFQs in the **Request for Quotes** menu
 
-{% embed url="https://screen.studio/share/anlgB8UZ" %}
+1. Open **Request for Quotes** from the sidebar
+2. Scan the list — each card shows the current RFQ status
+3. Click a quote code to open full RFQ details
 
 Each quote appears as a card containing:
 
@@ -49,6 +51,8 @@ For quotes with multiple RFQs:\*\*
 * **Responses** - Shows ratio of responses received vs sent
 * **Lowest Price** - The lowest response price received
 * **Highest Price** - The highest response price received
+
+**Watch the walkthrough (optional):** [Screen Studio demo](https://screen.studio/share/anlgB8UZ)
 
 #### Method 3 - Receive automated emails from the External Operator.
 

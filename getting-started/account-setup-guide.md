@@ -6,14 +6,47 @@ coverY: 0
 
 # 🏃‍♂️ Account Setup Guide
 
+Get your operator account ready for quoting and bookings.
+
 {% hint style="info" %}
-**Aeroquote tip:** When setting up your account, make sure you have a copy of your business logo handy.  Access to your current terms and conditions for your customers is also great to have (but not required at this stage)
+Have your business logo and customer terms & conditions handy — you'll add these during setup.
 {% endhint %}
 
-## Account setup interactive tour
+***
 
-Check out the interactive tour of getting your account set up:
+## Step 1: Complete account settings
 
-Click the highlighted area to start the interactive tour.
+1. Go to **Settings → Account**
+2. Enter operator name, contact details, and timezone
+3. Upload your logo
+4. Save
 
-{% @arcade/embed flowId="2mJnWu8aLJA8tHlt7bzm" url="https://app.arcade.software/share/2mJnWu8aLJA8tHlt7bzm" %}
+## Step 2: Configure defaults
+
+1. Open **Settings → Default Units** — set currency, weight, and distance units
+2. Open **Settings → Terms & Conditions** — paste or upload your customer T&Cs
+3. Review **Settings → Modules** — enable Bookings, RFQ, or other paid modules you need
+
+## Step 3: Connect integrations
+
+1. Open **Settings → Integrations**
+2. Connect **Square**, **Xero**, or **QuickBooks** if you plan to invoice through AeroQuote
+3. Configure **FlightRadar24** or other tracking integrations for bookings
+
+## Step 4: Add your fleet
+
+Follow [Add Your First Aircraft](add-your-first-aircraft.md) — registration, performance, costings, and images.
+
+## Step 5: Add contacts and team
+
+1. Import or add customers under **Contacts**
+2. Add crew and office staff under **Staff**
+3. Invite login users under **Settings → Permissions**
+
+## Step 6: Create your first quote
+
+Follow [Create Your First Quote](create-your-first-quote.md) end-to-end.
+
+***
+
+**Watch the walkthrough (optional):** [Arcade — account setup tour](https://app.arcade.software/share/2mJnWu8aLJA8tHlt7bzm)
