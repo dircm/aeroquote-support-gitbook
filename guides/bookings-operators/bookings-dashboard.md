@@ -7,10 +7,6 @@ description: >-
 
 # Bookings Dashboard
 
-
-
-{% embed url="https://vimeo.com/1181068564?share=copy&fl=sv&fe=ci" %}
-
 ## Opening the Dashboard
 
 The Bookings Dashboard is accessed from the **Bookings card** on the operator Home page:
@@ -165,3 +161,7 @@ The dashboard automatically refreshes every **60 seconds**. The page also perfor
 * **Prevent sleep** — Configure your display to stay awake, or use a "keep awake" browser extension
 * **Multiple monitors** — Open the dashboard on a dedicated screen while using the main AeroQuote app on another
 * **Session timeout** — The page includes an auto-refresh meta tag to keep the session alive, no need to refresh.
+
+***
+
+**Watch the walkthrough (optional):** [Vimeo — Bookings Dashboard overview](https://vimeo.com/1181068564)

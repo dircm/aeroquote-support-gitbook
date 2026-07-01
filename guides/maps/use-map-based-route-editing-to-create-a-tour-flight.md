@@ -1,19 +1,12 @@
 ---
-description: >-
-  This guide shows you how to create a tour flight that departs and arrives from
-  the same airport using map-based route editing.
+description: This guide has moved — see map-based route editing for quotes and bookings.
 ---
 
-# Use map-based route editing to create a tour flight
+# Map-based route editing (moved)
 
-AeroQuote offers a route edit feature where you can change the route between two airports (or to and from the same airport) away from a single straight line.
+This article has been replaced with charter-focused guides that include step-by-step instructions:
 
-We will build a tour flight around the famous Sydney Harbour in this demonstration.
+* [Map-based route editing (Quotes)](../quotes/map-route-editing.md)
+* [Map-based route editing (Bookings)](../bookings-operators/map-route-editing.md)
 
-The Flight will be in a Robinson R44 based at Sydney International Airport (YSSY).
-
-The tour will depart YSSY and arrive back at the same airport.
-
-Use the interactive video below to learn how to create a Tour flight that departs and arrives from the same airport using map-based route editing.
-
-{% @arcade/embed flowId="mmSPX5AlSF9sqKnuHXCd" url="https://app.arcade.software/flows/mmSPX5AlSF9sqKnuHXCd/view" %}
+For saving and reusing routes across enquiries and quotes, see [Custom Routes & Route Library](../custom-items/custom-routes-and-route-library.md).
