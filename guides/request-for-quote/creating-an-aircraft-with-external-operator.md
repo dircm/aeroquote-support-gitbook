@@ -1,35 +1,20 @@
 ---
 description: >-
-  To use Requests for Quotes you will need at least one Aircraft with an
-  External Operator attached.
+  RFQ workflows need aircraft linked to external operators. Use the dedicated
+  aircraft guide for full steps.
 ---
 
 # Creating an Aircraft with External Operator
 
-There are two ways to add an External Operator to an Aircraft:
+RFQ responses require at least one aircraft associated with an external operator. The full step-by-step process — including the **Allow RFQ** toggle — is documented in the Aircraft guide:
 
-[#method-1-add-external-operator-when-building-new-aircraft](creating-an-aircraft-with-external-operator.md#method-1-add-external-operator-when-building-new-aircraft "mention")
+**→ [Adding aircraft (with External Operator)](../aircraft/adding-aircraft-with-external-operator.md)**
 
-[#method-2-attach-an-external-operator-to-existing-aircraft](creating-an-aircraft-with-external-operator.md#method-2-attach-an-external-operator-to-existing-aircraft "mention")
+## Quick summary
 
-### Method 1 - add External Operator when building new Aircraft
+1. Create or edit an aircraft on the **Aircraft** page
+2. Attach an **External Operator** on the aircraft details
+3. Enable **Allow RFQ** on the aircraft if it should receive request-for-quote invitations
+4. Create your RFQ and send to participating external operators
 
-You can create an Aircraft with an External Operator directly when you are building a new Aircraft.  Watch below for steps to achieve this.
-
-{% embed url="https://screen.studio/share/eafZbP94" %}
-
-
-
-### Method 2 - Attach an External Operator to existing Aircraft
-
-{% embed url="https://screen.studio/share/6MvyXy9M" %}
-
-
-
-### Allow RFQ Toggle for External Aircraft
-
-You can control whether Request For Quotes are created by default for each external aircraft in your fleet. This gives you fine-grained control over which aircraft should trigger RFQ workflows when included in quotes.
-
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
-
-You may choose to disable automatic RFQ generation for external operator whose aircraft you frequently include in quotes, but you handle pricing updated directly with them rather than through RFQs.
+For RFQ workflow after aircraft setup, see [Creating a Request For Quote](creating-a-request-for-quote.md).

@@ -52,18 +52,6 @@ Fill in the staff member's information:
 
 Click **Save** to add the staff member.
 
-{% hint style="info" %}
-**📹 Video Coming Soon**
-
-**Runsheet for Tom:**
-1. Navigate to Staff from sidebar
-2. Show the staff list (add a few test entries first)
-3. Click "Add Staff" button
-4. Fill in example details
-5. Save and show the new entry in the list
-6. **Duration:** ~60 seconds
-{% endhint %}
-
 ---
 
 ## Editing Staff
