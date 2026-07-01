@@ -24,7 +24,6 @@
 
 * [📊 Dashboard](guides/dashboard/README.md)
   * [🤖 AI Co-Worker](guides/dashboard/ai-assistant.md)
-  * [Bookings Dashboard](guides/dashboard/bookings-dashboard.md)
 * [✈️ Aircraft](guides/aircraft/README.md)
   * [Aircraft Details](guides/aircraft/aircraft-details.md)
   * [Flight Performance](guides/aircraft/flight-performance.md)
@@ -86,6 +85,7 @@
   * [Booking Emails](guides/emails/booking-emails.md)
   * [Admin Emails](guides/emails/admin-emails.md)
 * [📅 Bookings](guides/bookings-operators/README.md)
+  * [Bookings Dashboard](guides/bookings-operators/bookings-dashboard.md)
   * [Create a Booking from a Quote](guides/bookings-operators/create-a-booking-from-a-quote.md)
   * [Creating a Booking from scratch](guides/bookings-operators/booking-builder.md)
   * [👥 Passengers & Cargo](guides/bookings-operators/passengers-and-cargo.md)
