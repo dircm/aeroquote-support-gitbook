@@ -18,8 +18,8 @@ Before creating a quote, ensure you have:
 
 ## Step 2: Add Customer Details
 
-* **Contact** — Search for an existing contact or click **Add New Contact** to create one
-* **Passengers** — Enter the expected passenger count
+* **Contact** — Search for an existing *main contact* or click **Add New Contact** to create one (these are your primary CRM entries)
+* **Passengers** — Enter the expected passenger count (new passengers added later in a booking are stored as a distinct "passenger" type contact — see the [Contacts](../guides/contacts/README.md) guide for details on the distinction)
 * **Notes** — Add any relevant details (special requirements, luggage, etc.)
 
 ## Step 3: Add Flight Legs

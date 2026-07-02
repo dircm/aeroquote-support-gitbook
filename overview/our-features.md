@@ -86,12 +86,12 @@ Source aircraft from your network of operators.
 
 ## 👥 Contacts & CRM
 
-Keep your customer data organized.
+Keep your customer data organized. AeroQuote distinguishes two contact types:
 
-- **Contact Database** — Store customer details and preferences
-- **CSV Import** — Bulk import contacts from spreadsheets
-- **Quote History** — See all quotes and bookings per contact
-- **Quick Search** — Find contacts instantly
+- **Main Contacts** (type: `contact`) — Your primary CRM database for customer details, preferences, CSV import, quote/booking history per contact, and quick search.
+- **Passengers** (type: `passenger`) — Special contacts for manifests, flight assignments, weights, and check-in. New passengers added in the Passengers & Cargo step of a booking (without linking an existing contact) are created as this type. Filter the Contacts list to view "Passengers" separately.
+
+See the [Contacts guide](../guides/contacts/README.md) for details.
 
 ---
 
