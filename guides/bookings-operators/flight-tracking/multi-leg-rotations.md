@@ -65,8 +65,10 @@ If a booking sits in **Confirmed** or **Ground Time** for more than **24 hours a
 
 | Situation | Outcome |
 | --- | --- |
-| **No leg ever departed** | Booking → **Expired** (operator emailed; can revert to Confirmed) |
-| **At least one leg departed** | Remaining legs inferred when evidence exists → booking → **Completed** (not expired) |
+| **No evidence any leg flew** | Booking → **Expired** (operator emailed; can revert to Confirmed) |
+| **FR24 or crew evidence a flight occurred** | Missing legs inferred → booking → **Completed** (not expired) |
+
+Auto-run departures on their own are **not** evidence — a booking that only progressed on the timetable, with no FR24 sighting or crew confirmation, still expires.
 
 {% hint style="info" %}
 You receive a **warning email** around 12 hours before the 24-hour cutoff if the booking is still open — time to confirm legs manually or verify tracking identifiers.
