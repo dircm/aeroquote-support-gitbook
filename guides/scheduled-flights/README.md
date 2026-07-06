@@ -28,6 +28,7 @@ Behind the scenes every published departure gets a regular **Booking** and fligh
 * The **Bookings** module and the **Scheduled Flights** module both enabled — check **Settings → Modules**.
 * Airports in your directory for every stop you fly.
 * A payment provider is **optional to start**: without one the storefront runs in **test mode** (an amber **TEST MODE** banner shows, and checkout uses a one-click **Complete test booking** button — tickets, emails, manifests, and refunds all work, no money moves).
+* When you're ready to take real payments, connect **Square** or **Westpac PayWay** on the **Payment Provider** page — one provider is active at a time, and checkout, refunds, and payouts all run through it.
 
 ## Where everything lives
 
