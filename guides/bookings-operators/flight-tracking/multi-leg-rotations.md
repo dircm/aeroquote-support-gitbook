@@ -42,13 +42,20 @@ If FR24 shows the aircraft en route on leg 2's corridor, departure is recorded e
 
 If the rotation **stalled** — a leg never got departure/arrival but the booking clearly flew — AeroQuote can fill missing milestones from the **schedule** (each leg's `occurring_at` and `duration`).
 
+Inferred times respect what actually happened: when an earlier leg ran late, the following legs shift to the **real arrival plus a minimum turnaround** — a leg is never shown departing before the aircraft had landed from the previous one.
+
 **Inference only runs when there is real evidence** on the booking:
 
 * FR24 or FlightAware on a milestone, or
 * Crew manual / GPS confirmation, or
 * At least one FR24 position stored on any leg
 
-Inferred times are labelled **(estimated)** in the Status tab and can be overwritten by crew or better FR24 data later.
+**Inference waits when live detection is likely:**
+
+* If the previous leg's arrival was tracked **down to the surface** (good ADS-B coverage at that airport), the next departure is left for FR24 to detect — for up to **six hours** past the expected departure, after which inference proceeds so the booking still resolves
+* Nothing is inferred while the aircraft has an FR24 sighting in the last **30 minutes** — live tracking takes over
+
+Inferred times are labelled **(estimated)** in the Status tab. Crew updates always overwrite them, and AeroQuote keeps watching FR24 for estimated legs — if the aircraft is detected, the estimate is replaced with the **real takeoff time** automatically.
 
 A background job checks stalled bookings every **10 minutes** after the booking's end time.
 
@@ -79,7 +86,7 @@ You receive a **warning email** around 12 hours before the 24-hour cutoff if the
 With leg 1 confirmed by FR24, AeroQuote can:
 
 * Recover leg 2 via mid-route sighting
-* Infer legs 3–4 times from schedule after the rotation ends
+* Infer legs 3–4 times from schedule after the rotation ends — shifted to match any delay, and waiting for real detection first where coverage is good
 * Mark the booking **Completed** instead of **Expired**
 
 Without any FR24 or crew evidence, inference does not run — operators should record times manually on the mobile app.

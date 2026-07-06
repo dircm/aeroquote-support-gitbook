@@ -36,6 +36,8 @@ flowchart LR
 
 AeroQuote starts looking for departures from shortly before scheduled time through several hours after — and continues watching **stalled rotation legs** (multi-leg bookings in Ground Time) for up to **two days** after a leg's scheduled departure.
 
+Legs whose departure was **inferred** from the schedule stay in this watch too — if FR24 later detects the aircraft, the estimated time is replaced with the **real takeoff time** from the flight record.
+
 ### Mid-leg coverage recovery
 
 In remote areas ADS-B coverage often **starts mid-route**. When FR24 first shows an aircraft clearly **between** the leg's departure and arrival airports (but not at the gate), AeroQuote:
