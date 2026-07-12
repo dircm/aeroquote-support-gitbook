@@ -47,10 +47,12 @@ Each aircraft card shows the estimated total cost. Review these to decide which 
 
 ## Step 5: Select Aircraft and Generate Quote
 
-1. Click on the **aircraft card(s)** you want to include in the quote — you can select multiple to give the customer options
+AeroQuote can show **multiple aircraft prices on the same quote**. Each aircraft you include becomes an **option** the customer can compare. See [Options](concepts.md#options) for the full concept.
+
+1. Click the **aircraft card(s)** you want to include — select **one** aircraft for a single price, or **several** so the customer sees side-by-side options on one proposal
 2. Click **Generate Quote**
 
-AeroQuote creates a quote with all the flight details, costs, and your pricing applied.
+AeroQuote creates one quote with a separate **option** for each selected aircraft, including flight details, costs, and your pricing.
 
 ## Step 6: Review the Quote
 
