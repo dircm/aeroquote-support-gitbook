@@ -50,21 +50,45 @@ Requests have simple pipeline statuses (for example Active, Call Back, Not Inter
 
 ### Quotes
 
-**Quotes** are the commercial heart of AeroQuote. You create a quote from a [Request](concepts.md#requests) or from scratch, price one or more aircraft options, attach documents and terms, and send the proposal to the customer.
+**Quotes** are the commercial heart of AeroQuote. You create a quote from a [Request](concepts.md#requests) or from scratch, attach documents and terms, and send a single professional proposal to the customer.
 
-Quotes are where you spend most of your quoting time: itinerary, costs, margins, document layout, validity dates, and customer communications.
+A quote is not limited to one aircraft price. AeroQuote is built so you can show **multiple aircraft prices on the same quote**. We call each priced alternative an **[Option](concepts.md#options)**.
 
-**Guides:** [Quotes](../guides/quotes/README.md) · [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md)
+Quotes are where you spend most of your quoting time: itinerary, costs, margins, options, document layout, validity dates, and customer communications.
 
-#### Options
+**Guides:** [Quotes](../guides/quotes/README.md) · [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md) · [Create Your First Quote](create-your-first-quote.md)
 
-Each quote has one or more **Options**. An option is a priced alternative the customer can compare — typically different aircraft, but options can also hold non-flight packages (for example accommodation or ground transport) when you need a line-item only proposal.
+#### Options <a href="#options" id="options"></a>
 
-Customers see options on the [online quote view](concepts.md#online-quote-view) and choose a preferred option when accepting.
+AeroQuote supports showing **multiple aircraft prices to a customer on the same quote**. We call these **options**.
+
+When you build a quote from a [request](concepts.md#requests) or from scratch, you can select **one or more aircraft** to include. Each selected aircraft becomes its own **option** on that quote — with its own cost estimate, pricing, and (where relevant) itinerary details such as ferry legs. The customer receives **one** quote link, but can compare the options you chose to put in front of them.
+
+| Idea | What it means |
+| --- | --- |
+| **One quote** | One commercial proposal, one validity period, one customer conversation |
+| **One or more options** | Each option is a priced alternative on that proposal — usually a different aircraft |
+| **Customer choice** | On the [online quote view](concepts.md#online-quote-view), the customer can compare options and accept the one they want |
+
+**How options usually appear in your workflow**
+
+1. Capture the trip as a **Request** (or start a quote from scratch).
+2. Review fleet **estimates** for that itinerary.
+3. Select the aircraft you want the customer to see — one aircraft for a single-option quote, or several to offer a real choice.
+4. Generate the quote: AeroQuote creates an **option per selected aircraft**.
+5. Adjust price, costs, or document content per option as needed, then send.
+
+You can also add options that are not aircraft-only packages when you need non-flight line items (for example accommodation or ground transport), but the everyday meaning of “option” for most operators is: **another aircraft price on the same quote**.
+
+{% hint style="tip" %}
+If you only select one aircraft, the quote still has one option — you do not need multiple options for every job. Multi-option quotes are for when you want the customer to compare aircraft (or packages) side by side.
+{% endhint %}
+
+**Guides:** [Create Your First Quote](create-your-first-quote.md) · [Creating a Request (operators)](../guides/requests/creating-a-request-operators.md) · [Edit the price of a quote option](../guides/quotes/edit-the-price-of-a-quote.md)
 
 #### Online Quote view
 
-The **online quote view** is the customer-facing web page for a quote. Customers can review itinerary details, photos, maps, notes, and the options you offered; ask questions via chat; and, when you require it, accept your terms and conditions and accept the quote online.
+The **online quote view** is the customer-facing web page for a quote. Customers can review itinerary details, photos, maps, notes, and the **options** you offered; ask questions via chat; and, when you require it, accept your terms and conditions and accept a preferred option online.
 
 **Guides:** [Require T&Cs to be accepted online](../guides/quotes/require-t-and-cs-to-be-accepted-online.md) · [Customer Pages Branding](../guides/settings/customer-pages-branding.md)
 
