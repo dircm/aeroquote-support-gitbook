@@ -1,5 +1,7 @@
 ---
-description: Your AI co-worker — answers questions, looks up your data, and performs actions with your confirmation, on every page of AeroQuote.
+description: >-
+  Your AI co-worker — answers questions, looks up your data, and performs
+  actions with your confirmation, on every page of AeroQuote.
 ---
 
 # 🤖 AI Co-Worker
@@ -10,25 +12,25 @@ The AI Co-Worker is a chat assistant available on **every page** of AeroQuote �
 The Co-Worker replaced the earlier dashboard "AI Assistant (Beta)" card. Everything the beta did — and much more — now lives in the chat bubble, on every page.
 {% endhint %}
 
----
+***
 
 ## Hiding the chat bubble
 
 Prefer a cleaner screen while you work? You can hide the floating bubble from the Co-Worker panel header:
 
 1. Open the Co-Worker (bubble or lifebuoy)
-2. In the purple header, click the **eye-off** icon (tooltip: *Hide floating bubble*)
+2. In the purple header, click the **eye-off** icon (tooltip: _Hide floating bubble_)
 3. The bubble disappears from the bottom-right corner
 
 Help is still available anytime from the **lifebuoy** icon in the top bar — hiding only removes the floating bubble, not the Co-Worker itself.
 
-<figure><img src="../../.gitbook/assets/co-worker-hide-bubble.png" alt="Co-Worker header with the eye-off icon highlighted to hide the floating chat bubble"><figcaption>Click the eye-off icon in the Co-Worker header to hide the floating bubble</figcaption></figure>
+<figure><img src="../../.gitbook/assets/co-worker-hide-bubble.png" alt="Co-Worker header with the eye-off icon highlighted to hide the floating chat bubble" width="375"><figcaption><p>Click the eye-off icon in the Co-Worker header to hide the floating bubble</p></figcaption></figure>
 
 {% hint style="info" %}
 The bubble is also positioned so it no longer covers slide-over actions (for example **Save** on flight details). You can leave it visible without blocking those controls.
 {% endhint %}
 
----
+***
 
 ## Asking Questions
 
@@ -44,12 +46,12 @@ It knows what page you're on, so "help me understand this page" gives you answer
 
 The Co-Worker can see your own data — and only yours:
 
-| Example | What it does |
-| --- | --- |
-| "What's my latest quote?" | Finds your most recent quotes with status and a link |
-| "Show me quote ACG-7" | Looks a quote up by its code |
-| "What flights am I assigned to this week?" | Crew: your assigned bookings |
-| "Which aircraft can fly 2,000nm?" | Lists matching fleet aircraft |
+| Example                                    | What it does                                         |
+| ------------------------------------------ | ---------------------------------------------------- |
+| "What's my latest quote?"                  | Finds your most recent quotes with status and a link |
+| "Show me quote ACG-7"                      | Looks a quote up by its code                         |
+| "What flights am I assigned to this week?" | Crew: your assigned bookings                         |
+| "Which aircraft can fly 2,000nm?"          | Lists matching fleet aircraft                        |
 
 What each person can see follows their role and permissions — crew members see their assigned flights, not quotes.
 
@@ -57,12 +59,12 @@ What each person can see follows their role and permissions — crew members see
 
 The Co-Worker can perform actions — but it **never acts on its own**. It prepares the action and shows you a confirmation card with the real details. Nothing happens until you press the button on the card.
 
-| Ask | What you confirm |
-| --- | --- |
-| "Send quote ACG-7 to the customer" | Recipients, subject, and PDF attachment — then **Confirm** sends it |
+| Ask                                                | What you confirm                                                                              |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| "Send quote ACG-7 to the customer"                 | Recipients, subject, and PDF attachment — then **Confirm** sends it                           |
 | "Quote from Essendon to Sydney tomorrow 9am for 3" | Pick the airport if ambiguous, tick the aircraft options (with prices), then **Create Quote** |
-| "Mark ACG-7 as accepted" | The quote, the selected aircraft, and the new status |
-| "Duplicate quote ACG-7" | Creates a fresh draft with a new quote code |
+| "Mark ACG-7 as accepted"                           | The quote, the selected aircraft, and the new status                                          |
+| "Duplicate quote ACG-7"                            | Creates a fresh draft with a new quote code                                                   |
 
 If something isn't ready — say, a quote with no contact attached — the Co-Worker tells you what's missing and can take you straight to the right screen to fix it.
 
@@ -74,13 +76,13 @@ Answers often come with **navigation buttons** that open the right page directly
 
 If the Co-Worker can't solve your problem, it offers to raise a **support ticket** for you — pre-written from your conversation, so you don't have to retype anything. You review and confirm before it's sent to the AeroQuote team. Track your tickets via the lifebuoy icon at the top of the chat.
 
----
+***
 
 ## Your Company's Own Knowledge
 
-Administrators can teach the Co-Worker your company's procedures — see [Company Knowledge](../settings/company-knowledge.md). Once added, your team can ask things like "what's our overnight allowance policy?" and get answers from *your* operations manual.
+Administrators can teach the Co-Worker your company's procedures — see [Company Knowledge](../settings/company-knowledge.md). Once added, your team can ask things like "what's our overnight allowance policy?" and get answers from _your_ operations manual.
 
----
+***
 
 ## Tips
 
@@ -93,10 +95,10 @@ Administrators can teach the Co-Worker your company's procedures — see [Compan
 * Use the **eye-off** icon in the chat header to hide the floating bubble; reopen Co-Worker from the lifebuoy in the top bar.
 * The Co-Worker only ever offers actions you have permission for.
 
----
+***
 
 ## Next Steps
 
-* [Dashboard Overview](README.md) — back to Dashboard features
+* [Dashboard Overview](./) — back to Dashboard features
 * [Company Knowledge](../settings/company-knowledge.md) — teach the Co-Worker your procedures
 * [Creating a Request](../requests/creating-a-request-operators.md) — the classic way to build estimates
