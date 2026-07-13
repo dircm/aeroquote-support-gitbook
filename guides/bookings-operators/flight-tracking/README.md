@@ -1,5 +1,7 @@
 ---
-description: Live flight tracking for bookings — automatic detection via FlightRadar24, crew mobile updates, maps, and multi-leg rotation handling.
+description: >-
+  Live flight tracking for bookings — automatic detection via FlightRadar24,
+  crew mobile updates, maps, and multi-leg rotation handling.
 ---
 
 # 📡 Flight Tracking
@@ -10,19 +12,19 @@ Flight tracking connects your **bookings** to live aircraft data so departures, 
 Flight tracking requires the **Bookings** module (or **Scheduled Flights** / **Tour Packages**, which include bookings access) and the **Flight Tracking** toggle in **Settings → Integrations**.
 {% endhint %}
 
----
+***
 
 ## What you get
 
-| Capability | Where you see it |
-| --- | --- |
-| **Automatic block off, departure, arrival** | Booking Status tab, Bookings Dashboard, mobile push notifications |
-| **Live position & ETA** | Bookings Dashboard map, booking Status tab, mobile app |
-| **Saved flight track** | Itinerary map, completed booking cards, mobile track view |
-| **Crew overrides** | Mobile app — confirmed times always win over automation |
-| **Multi-leg rotations** | Ground Time status between legs; stalled-leg recovery when coverage is patchy |
+| Capability                                  | Where you see it                                                              |
+| ------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Automatic block off, departure, arrival** | Booking Status tab, Bookings Dashboard, mobile push notifications             |
+| **Live position & ETA**                     | Bookings Dashboard map, booking Status tab, mobile app                        |
+| **Saved flight track**                      | Itinerary map, completed booking cards, mobile track view                     |
+| **Crew overrides**                          | Mobile app — confirmed times always win over automation                       |
+| **Multi-leg rotations**                     | Ground Time status between legs; stalled-leg recovery when coverage is patchy |
 
----
+***
 
 ## How tracking identifies your flight
 
@@ -36,25 +38,25 @@ Invalid or placeholder values (e.g. `TBA`, `SAMPLE`) are ignored. Individual air
 
 The booking **Details** tab shows a readiness badge per aircraft: tracking on, off (account/aircraft), invalid format, or no recent FR24 history.
 
----
+***
 
 ## Data sources (and who wins)
 
 Every milestone records **where the time came from**:
 
-| Source | Typical origin |
-| --- | --- |
-| **App (Manual)** | Crew confirmed in the mobile app |
-| **FlightRadar24** | Automatic ADS-B detection |
-| **App (GPS)** | Mobile geofence / speed detection |
-| **Inferred** | System filled a gap on a stalled rotation (schedule-based, only when FR24 or crew evidence exists elsewhere on the booking) |
-| **Auto run** | Scheduled-flight auto-run on published departures (timetable-driven; crew and FR24 take precedence) |
+| Source            | Typical origin                                                                                                              |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **App (Manual)**  | Crew confirmed in the mobile app                                                                                            |
+| **FlightRadar24** | Automatic ADS-B detection                                                                                                   |
+| **App (GPS)**     | Mobile geofence / speed detection                                                                                           |
+| **Inferred**      | System filled a gap on a stalled rotation (schedule-based, only when FR24 or crew evidence exists elsewhere on the booking) |
+| **Auto run**      | Scheduled-flight auto-run on published departures (timetable-driven; crew and FR24 take precedence)                         |
 
 **Precedence:** crew manual → FlightRadar24 → GPS → inferred → auto run. Higher-trust sources are never overwritten by lower-trust ones.
 
 Positions on the map may be labelled **(estimated)** when they come from **simulation** (scheduled auto-run gap-fill) or when milestone times use **inferred** / **auto run**.
 
----
+***
 
 ## Guides in this section
 
@@ -70,11 +72,11 @@ Positions on the map may be labelled **(estimated)** when they come from **simul
 [multi-leg-rotations.md](multi-leg-rotations.md)
 {% endcontent-ref %}
 
----
+***
 
 ## Related guides
 
 * [Booking Status](../booking-status.md) — Status tab timeline
-* [Bookings Dashboard](../../dashboard/bookings-dashboard.md) — Ops-room live map
+* [Bookings Dashboard](../bookings-dashboard.md) — Ops-room live map
 * [Flight Status (Mobile)](../../mobile-app/flight-status.md) — Crew confirmations and manual entry
 * [Integrations](../../settings/integrations.md) — Enable the Flight Tracking toggle

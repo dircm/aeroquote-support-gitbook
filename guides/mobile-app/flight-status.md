@@ -2,8 +2,7 @@
 
 Record flight departures and arrivals from the mobile app — either by confirming automated flight tracking notifications or by manually entering times.
 
-<!-- 📸 PLACEHOLDER: Screenshot of the Flight Status section showing Block Off/Departed/Arrived/Block On buttons and confirmation bottom sheet -->
-<!-- Suggested filename: .gitbook/assets/mobile-flight-status.png -->
+<figure><img src="../../.gitbook/assets/confirmdeparture1.png" alt=""><figcaption></figcaption></figure>
 
 ## How It Works
 
@@ -140,4 +139,4 @@ Flight status updates from the mobile app feed directly into the **Bookings Dash
 * Booking cards update with actual times
 * Multi-leg bookings transition to **Ground Time** status between legs
 
-See the [Bookings Dashboard](../dashboard/bookings-dashboard.md) and [Flight Tracking](../bookings-operators/flight-tracking/README.md) guides for more information.
+See the [Bookings Dashboard](../bookings-operators/bookings-dashboard.md) and [Flight Tracking](../bookings-operators/flight-tracking/) guides for more information.

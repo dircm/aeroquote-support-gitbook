@@ -51,13 +51,13 @@ Each flight leg has a status that updates as events are recorded:
 
 Every status event is tagged with its source, so you always know how it was recorded:
 
-| Source            | Description                               |
-| ----------------- | ----------------------------------------- |
-| **FlightRadar24** | Automatically detected by flight tracking |
-| **App (Manual)**  | Crew confirmed via the mobile app         |
-| **App (GPS)**     | Detected by GPS on the crew's device      |
+| Source            | Description                                                                                                                 |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **FlightRadar24** | Automatically detected by flight tracking                                                                                   |
+| **App (Manual)**  | Crew confirmed via the mobile app                                                                                           |
+| **App (GPS)**     | Detected by GPS on the crew's device                                                                                        |
 | **Inferred**      | Schedule-based fill on stalled rotations (only when FR24 or crew evidence exists on the booking) — shown as **(estimated)** |
-| **Auto run**      | Timetable-driven scheduled departures — shown as **(estimated)** |
+| **Auto run**      | Timetable-driven scheduled departures — shown as **(estimated)**                                                            |
 
 {% hint style="info" %}
 **Crew input always takes priority.** If a crew member confirms a departure or arrival time via the mobile app, that time takes precedence over any automatic tracking data.
@@ -145,7 +145,7 @@ View the full audit trail in the [Amendments](amendments.md) section.
 
 ## Next Steps
 
-* [Flight Tracking](flight-tracking/README.md) — Full guide: configuration, FR24 detection, multi-leg inference, completion vs expiry
-* [Bookings Dashboard](../dashboard/bookings-dashboard.md) — Live ops map
+* [Flight Tracking](flight-tracking/) — Full guide: configuration, FR24 detection, multi-leg inference, completion vs expiry
+* [Bookings Dashboard](bookings-dashboard.md) — Live ops map
 * [Amendments](amendments.md) — View full change history
 * [Sending Confirmations](sending-confirmations.md) — Customer communications and completion emails

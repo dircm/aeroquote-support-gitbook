@@ -1,4 +1,4 @@
-# Flight Time Limitations (FTL)
+# ⏱️ Flight Time Limits
 
 When **FTL / Crew Limits** is enabled, AeroQuote tracks crew duty, flight hours, and compliance against configurable profiles.
 

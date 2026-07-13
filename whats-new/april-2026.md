@@ -60,7 +60,7 @@ A full-screen, dark-mode operations display built for dispatch offices and ops r
 * **Summary cards** — Count of in-progress, upcoming, and ground time bookings
 * **Auto-refresh** — Dashboard stays current without manual intervention
 
-Access the [Bookings Dashboard ](../guides/dashboard/bookings-dashboard.md)from the [Dashboard](../guides/dashboard/bookings-dashboard.md) page.
+Access the [Bookings Dashboard ](../guides/bookings-operators/bookings-dashboard.md)from the [Dashboard](../guides/bookings-operators/bookings-dashboard.md) page.
 
 ***
 
@@ -77,7 +77,7 @@ A purpose-built app for iOS and Android, designed for crew in the field.
 
 Available on the App Store and Google Play.
 
-![](../.gitbook/assets/imgi_1_default.png)     <img src="../.gitbook/assets/imgi_1_en_badge_web_generic.png" alt="" data-size="original">
+![](../.gitbook/assets/imgi_1_default.png) ![](../.gitbook/assets/imgi_1_en_badge_web_generic.png)
 
 ***
 

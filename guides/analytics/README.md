@@ -1,4 +1,4 @@
-# Analytics
+# 📈 Analytics
 
 The **Analytics** page gives managers a snapshot of booking performance, fleet utilisation, on-time performance, and popular routes.
 

@@ -2,6 +2,8 @@
 
 The Dashboard is the first screen you see after signing in. It provides a quick overview of your operations.
 
+<figure><img src="../../.gitbook/assets/dash1.png" alt=""><figcaption></figcaption></figure>
+
 ## Next Booking Card
 
 The card at the top shows your **next upcoming booking - or flight**:

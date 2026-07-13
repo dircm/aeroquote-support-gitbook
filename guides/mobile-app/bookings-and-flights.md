@@ -1,7 +1,6 @@
 # Bookings & Flights
 
-<!-- 📸 PLACEHOLDER: Screenshot of the Bookings list screen with aircraft filter chips visible -->
-<!-- Suggested filename: .gitbook/assets/mobile-bookings-list.png -->
+<figure><img src="../../.gitbook/assets/bookings1.png" alt=""><figcaption></figcaption></figure>
 
 ## Bookings List
 
@@ -27,9 +26,6 @@ Tap a booking to see its details, including all flight legs. Each flight leg is 
 ## Flight Detail
 
 The Flight Detail screen is the heart of flight operations in the app. It shows everything about a single flight leg:
-
-<!-- 📸 PLACEHOLDER: Screenshot of the Flight Detail screen showing route info, aircraft card, map, and passenger manifest -->
-<!-- Suggested filename: .gitbook/assets/mobile-flight-detail.png -->
 
 ### Route Information
 

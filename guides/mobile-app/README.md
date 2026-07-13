@@ -2,7 +2,9 @@
 
 Available on the [App Store](https://apps.apple.com/au/app/aeroquote/id6467820969) and [Google Play.](https://play.google.com/store/apps/details?id=com.aeroquote.aeroquotecrew\&pcampaignid=web_share)
 
-![](../../.gitbook/assets/imgi_1_default.png)     <img src="../../.gitbook/assets/imgi_1_en_badge_web_generic.png" alt="" data-size="original">
+<div align="left"><img src="../../.gitbook/assets/imgi_1_default.png" alt="" width="90"></div>
+
+<div align="left"><img src="../../.gitbook/assets/imgi_1_en_badge_web_generic.png" alt="" width="162"></div>
 
 The AeroQuote Crew mobile app gives your team access to bookings, flight details, passenger check-in, and real-time notifications — all from their phone.
 

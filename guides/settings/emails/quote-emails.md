@@ -14,20 +14,20 @@ These emails are sent during the quoting process — from sending a quote to a c
 
 ### Quote Sent to Customer
 
-|             |                                                                                                                                                                                                                                                                                                           |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Trigger** | User-initiated — operator sends quote from the Send step                                                                                                                                                                                                                                                  |
-| **Sent to** | Primary contact and/or additional contacts                                                                                                                                                                                                                                                                |
-| **Content** | Your chosen email wording, wrapped automatically by Aeroquote: an **Open** button above **and** below your message that links to the online quote view, and your operator branding. You pick the wording from your saved [email templates](../templates/) and can tweak it for this quote before sending. |
+|             |                                                                                                                                                                                                                                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Trigger** | User-initiated — operator sends quote from the Send step                                                                                                                                                                                                                                                     |
+| **Sent to** | Primary contact and/or additional contacts                                                                                                                                                                                                                                                                   |
+| **Content** | Your chosen email wording, wrapped automatically by Aeroquote: an **Open** button above **and** below your message that links to the online quote view, and your operator branding. You pick the wording from your saved [email templates](../../templates/) and can tweak it for this quote before sending. |
 
 {% hint style="info" %}
 You no longer manage merge codes like `{{ quoteUrl }}`. Just write the message — the greeting and the **Open&#x20;**_**\<your quote name>**_ buttons are added for you, so a quote can never go out without a working link.
 
 The **subject line is generated for each quote** (for example _Charter Estimate ACG-7 from Acme Air_) and is editable in the Send step before you send.
 
-The _**\<your quote name>**_ on the button and in the subject comes from your **Default Quote Title** (**Settings → Quote Defaults**), which defaults to _Charter Estimate_ when left blank. See [Quote Email Templates](../templates/).
+The _**\<your quote name>**_ on the button and in the subject comes from your **Default Quote Title** (**Settings → Quote Defaults**), which defaults to _Charter Estimate_ when left blank. See [Quote Email Templates](../../templates/).
 
-Manage your reusable email wording on the [Templates page](../templates/). Additional contacts receive a preview-only link without accept/decline actions.
+Manage your reusable email wording on the [Templates page](../../templates/). Additional contacts receive a preview-only link without accept/decline actions.
 {% endhint %}
 
 ### Quote Comment Reply to Customer

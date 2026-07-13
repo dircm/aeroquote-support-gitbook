@@ -1,4 +1,4 @@
-# Maps & route editing
+# 🗺️ Maps
 
 Map-based route editing lets you adjust flight paths with waypoints instead of a straight line between airports.
 
