@@ -54,5 +54,3 @@ Follow [Add Your First Aircraft](add-your-first-aircraft.md) — registration, p
 Follow [Create Your First Quote](create-your-first-quote.md) end-to-end.
 
 ***
-
-**Watch the walkthrough (optional):** [Arcade — account setup tour](https://app.arcade.software/share/2mJnWu8aLJA8tHlt7bzm)
