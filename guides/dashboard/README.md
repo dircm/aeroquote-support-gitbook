@@ -33,7 +33,7 @@ Click **View all** on any card to jump directly to that section.
 
 ## AI Co-Worker
 
-The AI Co-Worker chat bubble sits in the bottom-right of every page — including the Dashboard. Ask it how anything works, look up your quotes and bookings, or have it create and send quotes for you (with your confirmation).
+The AI Co-Worker chat bubble sits in the bottom-right of every page — including the Dashboard. Ask it how anything works, look up your quotes and bookings, or have it create and send quotes for you (with your confirmation). You can hide the floating bubble from the Co-Worker header (eye-off icon); help remains available from the lifebuoy in the top bar.
 
 See the [AI Co-Worker Guide](ai-assistant.md) for full details.
 

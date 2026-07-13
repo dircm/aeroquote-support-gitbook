@@ -12,6 +12,24 @@ The Co-Worker replaced the earlier dashboard "AI Assistant (Beta)" card. Everyth
 
 ---
 
+## Hiding the chat bubble
+
+Prefer a cleaner screen while you work? You can hide the floating bubble from the Co-Worker panel header:
+
+1. Open the Co-Worker (bubble or lifebuoy)
+2. In the purple header, click the **eye-off** icon (tooltip: *Hide floating bubble*)
+3. The bubble disappears from the bottom-right corner
+
+Help is still available anytime from the **lifebuoy** icon in the top bar — hiding only removes the floating bubble, not the Co-Worker itself.
+
+<figure><img src="../../.gitbook/assets/co-worker-hide-bubble.png" alt="Co-Worker header with the eye-off icon highlighted to hide the floating chat bubble"><figcaption>Click the eye-off icon in the Co-Worker header to hide the floating bubble</figcaption></figure>
+
+{% hint style="info" %}
+The bubble is also positioned so it no longer covers slide-over actions (for example **Save** on flight details). You can leave it visible without blocking those controls.
+{% endhint %}
+
+---
+
 ## Asking Questions
 
 Ask anything about how AeroQuote works:
@@ -72,6 +90,7 @@ Administrators can teach the Co-Worker your company's procedures — see [Compan
 
 * The conversation **follows you between pages** — start on the Dashboard, finish on the quote.
 * Use the 🗑 icon in the chat header to start a fresh conversation.
+* Use the **eye-off** icon in the chat header to hide the floating bubble; reopen Co-Worker from the lifebuoy in the top bar.
 * The Co-Worker only ever offers actions you have permission for.
 
 ---
