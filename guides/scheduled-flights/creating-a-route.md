@@ -54,9 +54,20 @@ A **Route preview** banner above the timeline shows the full ICAO chain at a gla
 On the **Basics** tab, **Visibility** controls whether the route is sold publicly:
 
 * **Public** *(default)* — listed on your storefront and sold through the ticket flow. Manual publishing lands departures in **Draft** so you can review before customers see them; auto-extend publishes directly.
-* **Private** — hidden from the storefront entirely (customers get a 404). Use for FIFO contracts, government tasking, or recurring charter-style jobs. Departures still appear on the **Flight Board** and **Departures** list with a "Private" badge, each backed by a normal **Booking** where you load passengers and cargo manually. Private departures materialise straight to **Published** — there's nothing to gate.
+* **Private** — hidden from the storefront entirely (customers get a 404). Use for FIFO contracts, government tasking, or recurring charter-style jobs. Departures still appear on the **Flight Board** and **Departures** list with a "Private" badge, each backed by a normal **Booking** where you load passengers and cargo manually. Private departures materialise straight to **Published** — there's nothing to gate. On private departures you can also **Add many** passengers in one go (see [Day-of Operations](day-of-operations.md)).
 
 You can switch visibility at any time; existing departures keep their current status.
+
+## Offer return tickets on the storefront (optional)
+
+On the **Basics** tab, tick **Offer return tickets on storefront** when customers should be able to buy outbound + return in a single checkout.
+
+* When enabled, shoppers pick **One-way** or **Return** on the public departure page
+* Return customers then choose a **return flight** that boards after the outbound arrives (reverse direction on the same route)
+* **Return fares are the sum of each leg’s normal segment fare** — there is no separate “return special” price
+* Leave the box unticked for one-way-only sales (the storefront hides trip-type controls)
+
+See [Storefront & Custom Domain](storefront-and-custom-domain.md) for the customer path.
 
 ## Flight number (optional)
 

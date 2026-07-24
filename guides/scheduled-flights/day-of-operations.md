@@ -43,11 +43,26 @@ Open the modal from the **Flight Board** or **Departures** row menu (**… → A
 1. **Receipt email** — where the confirmation lands; no customer account needed
 2. **Segment** — on multi-stop routes pick the actual origin and destination (defaults to the full route)
 3. **Fare class** — any active class, including operator-only ones tagged "(operator-only)"
-4. **Passengers** — at least one; add more with **+ Add another passenger**
+4. **Passengers** — at least one; add more with **+ Add another passenger** (or use **Add many** on private routes — see below)
 5. **Payment notes** — free-text audit trail visible only to staff (e.g. "Cash on board, $80 — receipt #4421", "NSW Govt voucher VR-7788")
 6. Click to issue the booking
 
 The purchase is marked **Paid** immediately — your payment provider is never charged; payment is handled offline and the notes field is your audit trail. The customer receives the standard confirmation email with wallet passes, the booking counts against seat inventory straight away, and it's stamped as an operator-manual booking so you can separate it from public sales in reporting.
+
+### Bulk add passengers (private routes)
+
+On **private** routes, the add-passenger modal can open in **Add many** table mode (you can switch back to the detailed single-passenger form anytime):
+
+1. Open **Add passenger…** on a private departure
+2. Choose **Add many** if it isn’t already selected
+3. Fill a row per person — **name**, optional **passenger weight**, optional **bag weight**
+4. Start typing a name to search prior contacts; picking a match can prefill known weight
+5. Watch the **running seat count** (hard-capped by remaining seats) and **total weight** as you go
+6. Issue the tickets — same manual/paid flow as a single add; you land back on the departure page with seats and tickets refreshed
+
+{% hint style="info" %}
+**Add many** is for private (non-storefront) routes only. Public routes keep the detailed passenger form so checkout field requirements (passport, DOB, etc.) stay enforced.
+{% endhint %}
 
 ## Reschedule a departure
 

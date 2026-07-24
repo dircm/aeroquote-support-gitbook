@@ -63,6 +63,21 @@ Before sharing the URL, run the happy path yourself:
 5. Confirm you land on the ticket page with a QR code, and the confirmation email arrives with the booking reference
 6. Open the departure under **Scheduled Flights → Departures** and confirm the purchase, passenger, and Activity entries are all there
 
+## Return tickets (optional)
+
+If the route has **Offer return tickets on storefront** enabled (route editor → **Basics**), the public departure page shows **One-way** / **Return**:
+
+1. Customer selects the **outbound** departure and fare as usual
+2. If they choose **Return**, they continue to **Choose your return flight** — only published reverse departures that leave after outbound arrival are listed
+3. If no return is available, they can **Continue as one-way** or pick another outbound date
+4. Checkout shows **outbound + return** fares (additive segment prices) and issues both legs in one payment
+
+{% hint style="info" %}
+Return is optional per route. One-way-only routes hide the trip-type control entirely.
+{% endhint %}
+
+When you test a return-enabled route, complete one **return** booking as well as a one-way, and confirm both legs appear under the correct departures.
+
 ## What your customers receive
 
 Every completed checkout (test or real) delivers:
