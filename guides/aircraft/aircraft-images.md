@@ -6,7 +6,7 @@ description: Add photos to showcase your aircraft in quotes.
 
 Add photos of your aircraft to make quotes more impressive. Professional images help customers visualize the experience and build confidence in your service.
 
----
+***
 
 ## Accessing Aircraft Images
 
@@ -14,21 +14,21 @@ Add photos of your aircraft to make quotes more impressive. Professional images 
 2. Click on an aircraft
 3. Select the **Images** tab
 
----
+***
 
 ## Types of Images
 
 Consider including a variety of shots:
 
-| Image Type | Purpose |
-|------------|---------|
-| **Exterior** | Show the aircraft's appearance |
-| **Interior Cabin** | Display seating and comfort |
-| **Cockpit** | Modern avionics and safety |
-| **Seating Detail** | Leather, configuration |
-| **Amenities** | Refreshment area, workspace |
+| Image Type         | Purpose                        |
+| ------------------ | ------------------------------ |
+| **Exterior**       | Show the aircraft's appearance |
+| **Interior Cabin** | Display seating and comfort    |
+| **Cockpit**        | Modern avionics and safety     |
+| **Seating Detail** | Leather, configuration         |
+| **Amenities**      | Refreshment area, workspace    |
 
----
+***
 
 ## Uploading Images
 
@@ -39,18 +39,20 @@ Click the **Upload Image** or **Add Image** button.
 ### Step 2: Select File
 
 Choose an image file:
-- **Formats:** JPG, PNG, WebP
-- **Recommended size:** 1920x1080 or larger
-- **Orientation:** Landscape works best for documents
+
+* **Formats:** JPG, PNG, WebP
+* **Recommended size:** 1920x1080 or larger
+* **Orientation:** Landscape works best for documents
 
 ### Step 3: Set as Primary (Optional)
 
-Mark one image as the **Primary** image. This is used:
-- As the main image in quotes
-- In fleet listings
-- As the default when space is limited
+USe the reorder button to set one image as the **Primary** image by positioning the image as the left-most image. This is used:
 
----
+* As the main image in quotes
+* In fleet listings
+* As the default when space is limited
+
+***
 
 ## Add from a URL
 
@@ -66,28 +68,27 @@ The URL must be publicly reachable (no login wall). Private or expiring links ma
 
 When you add an aircraft with a registration, AeroQuote may also offer an automatic photo match (e.g. from public spotting libraries). You can accept that suggestion or upload/URL your own images instead.
 
----
+***
 
 ## Image Order
 
 Arrange images in your preferred order:
-- Drag and drop to reorder
-- First image (or primary) appears most prominently
-- Order affects how images appear in quote documents
 
----
+* Use the reorder buttons to move an image (left is a higher order)
+* First image (or primary) appears most prominently and is the left-most image
+* Order affects how images appear in quote documents
+
+***
 
 ## Using Images in Quotes
 
 Aircraft images can appear in:
 
-- **Quote documents** — Professional PDFs sent to customers
-- **Online quote view** — When customers view quotes in browser
-- **Fleet showcases** — Marketing materials
+* **Quote documents** — Professional PDFs sent to customers
+* **Online quote view** — When customers view quotes in browser
+* **Fleet showcases** — Marketing materials
 
-The Document Builder lets you choose which images to include in each quote.
-
----
+***
 
 ## Image Quality Tips
 
@@ -96,19 +97,21 @@ The Document Builder lets you choose which images to include in each quote.
 {% endhint %}
 
 ### Do:
-- Use professional or high-quality photos
-- Ensure good lighting
-- Show the aircraft clean and polished
-- Include people for scale (with permission)
-- Update photos after refurbishment
+
+* Use professional or high-quality photos
+* Ensure good lighting
+* Show the aircraft clean and polished
+* Include people for scale (with permission)
+* Update photos after refurbishment
 
 ### Don't:
-- Use blurry or pixelated images
-- Show dirty or cluttered interiors
-- Include identifiable people without consent
-- Use obviously outdated photos
 
----
+* Use blurry or pixelated images
+* Show dirty or cluttered interiors
+* Include identifiable people without consent
+* Use obviously outdated photos
+
+***
 
 ## Managing Images
 
@@ -127,18 +130,18 @@ The Document Builder lets you choose which images to include in each quote.
 Deleting an image removes it from future quotes. Existing generated PDFs keep their images.
 {% endhint %}
 
----
+***
 
 ## Tips
 
-- Update images seasonally or after any interior changes
-- Have at least 3-5 quality images per aircraft
-- Include both wide shots and detail shots
-- Consider professional aviation photography services
+* Update images seasonally or after any interior changes
+* Have at least 3-5 quality images per aircraft
+* Include both wide shots and detail shots
+* Consider professional aviation photography services
 
----
+***
 
 ## Next Steps
 
-- [Aircraft Details](aircraft-details.md) — Update basic information
-- [Banner Images](../settings/banner-images.md) — General image library
+* [Aircraft Details](aircraft-details.md) — Update basic information
+* [Banner Images](../settings/banner-images.md) — General image library
