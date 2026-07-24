@@ -99,7 +99,7 @@ Straight-line planned routes are replaced on list views once `track_saved` is se
 
 ## Estimated positions (scheduled flights)
 
-On **scheduled routes** with **Auto run departures** enabled, AeroQuote can draw a simulated straight-line track between airports when FR24 has not reported a position in the last few minutes. These points are labelled **(estimated)** on the Flight Board and dashboard.
+On **scheduled routes** with **Auto run departures** enabled, AeroQuote can draw a simulated straight-line track between airports when FR24 has not reported a position in the last few minutes. These points are labelled **(estimated)** on the Flight Board and dashboard. See the [Scheduled Flights guides](../../scheduled-flights/README.md) for the module itself.
 
 Charter bookings do not use auto-run simulation; they rely on FR24, crew GPS/manual updates, or [inferred milestones](multi-leg-rotations.md) when a rotation stalls.
 
