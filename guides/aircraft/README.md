@@ -36,7 +36,11 @@ Click any aircraft to view and edit its details.
 
 1. Click **Add Aircraft** from the Aircraft list
 2. Complete the setup wizard (see sections below)
-3. Save the aircraft
+3. Finish the wizard to add the aircraft to your fleet
+
+{% hint style="info" %}
+**Tip:** Enter the **registration** early in the wizard — AeroQuote can look up and apply the aircraft type for you (you can cancel the lookup or change the type anytime). On Costings later, use **Suggest costs for me** for a first-pass rate and cost setup.
+{% endhint %}
 
 ---
 

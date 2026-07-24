@@ -26,6 +26,28 @@ The Details section contains basic information about your aircraft that identifi
 
 ---
 
+## Registration type lookup (Add Aircraft)
+
+When you **Add Aircraft** and enter a **Registration**, AeroQuote can guess the type for you:
+
+1. Enter the tail number in the builder (e.g. `VH-ABC`)
+2. A progress panel appears while AeroQuote checks available flight data, then AI if needed
+3. **Cancel lookup** anytime if you prefer to choose the type yourself
+4. On a solid match, the type is applied and a short “Guessed …” banner is shown — you can still change the type
+5. If nothing reliable is found, the panel closes with no banner (no empty “null” suggestions)
+
+{% hint style="info" %}
+Lookup lookup is optional. You can always search and select the aircraft type manually.
+{% endhint %}
+
+---
+
+## Auto-save
+
+On the **Details** step, edits save automatically shortly after you change a field (same pattern on **Flight Performance**). There is no separate Save button. A short success toast confirms each save.
+
+---
+
 ## Optional Information
 
 | Field | Description |

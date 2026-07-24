@@ -16,6 +16,12 @@ The Flight Performance section contains the technical data AeroQuote uses to cal
 
 ---
 
+## Auto-save
+
+Changes on this step save automatically after you finish editing a field. There is no separate Save button. A short confirmation toast appears when a save succeeds.
+
+---
+
 ## Key Performance Fields
 
 ### Speed

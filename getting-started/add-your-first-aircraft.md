@@ -16,9 +16,13 @@ Fill in the required information:
 
 | Field             | What to enter                                    | Example             |
 | ----------------- | ------------------------------------------------ | ------------------- |
-| **Registration**  | Your aircraft tail number                        | VH-XYZ, N123AB      |
-| **Aircraft Type** | Select from the dropdown                         | King Air 350, AS350 |
+| **Registration**  | Your aircraft tail number (optional but recommended) | VH-XYZ, N123AB  |
+| **Aircraft Type** | Select from the dropdown, or let AeroQuote guess from registration | King Air 350, AS350 |
 | **Homebase**      | The airport where the aircraft is normally based | YBBN, KJFK          |
+
+### Type from registration
+
+When you enter a **Registration**, AeroQuote can look up the aircraft type for you. A short progress panel shows while the lookup runs (you can **Cancel lookup** anytime). If a confident match is found, the type is applied automatically; if not, choose the type yourself as usual.
 
 The **homebase** is important — AeroQuote uses it to calculate positioning (ferry) flights when a trip doesn't start or end at home.
 
@@ -44,13 +48,17 @@ Navigate to the **Costings** tab. This determines how quotes are priced:
 
 You can use either **hourly rate** pricing or **margin-based** pricing depending on your business model.
 
+**Tip:** On an existing aircraft’s Costings step you can click **Suggest costs for me** to review AI-suggested rates and operating costs, then apply or skip. See [Costings](../guides/aircraft/costings.md).
+
 ## Step 6: Add Aircraft Images (Optional)
 
-Navigate to the **Images** tab to upload photos of your aircraft. These appear in quote documents sent to customers and help make a professional first impression.
+Navigate to the **Images** tab to upload photos of your aircraft (or add a photo from a public image URL). These appear in quote documents sent to customers and help make a professional first impression.
 
-## Step 7: Save
+## Step 7: Finish the wizard
 
-Click **Save** to add the aircraft to your fleet. It will now appear in quote options when you create requests.
+Use **Next** through the remaining steps and complete the builder to add the aircraft to your fleet. When you later edit Details or Performance, changes **auto-save** as you leave each field — there is no separate Save button on those steps.
+
+The aircraft will appear in quote options when you create requests.
 
 ## What's Next?
 

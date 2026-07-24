@@ -16,6 +16,23 @@ The Costings section defines how AeroQuote calculates prices for this aircraft. 
 
 ***
 
+## Suggest costs for me
+
+If you are setting up a new type or refreshing rates, use AI suggestions instead of starting from a blank form:
+
+1. On the **Costings** step, click **Suggest costs for me**
+2. Wait while AeroQuote builds suggestions for your aircraft type and region
+3. Review the modal — suggested hourly rate and/or margin, plus typical operating costs (fuel, maintenance, crew daily rates, handling, etc., depending on operator vs broker context)
+4. Choose **Yes, Apply** to fill rates and add cost lines, or **Skip** to leave costs unchanged
+
+You can edit or delete any applied line afterwards. Suggestions are estimates only — always check them against your own figures.
+
+{% hint style="success" %}
+**Good first pass** — Use suggestions to seed costings quickly, then tune amounts and remove anything that does not apply to your operation.
+{% endhint %}
+
+***
+
 ## Pricing Models
 
 AeroQuote supports different pricing strategies:
