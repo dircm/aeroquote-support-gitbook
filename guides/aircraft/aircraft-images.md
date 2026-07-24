@@ -52,6 +52,22 @@ Mark one image as the **Primary** image. This is used:
 
 ---
 
+## Add from a URL
+
+If the photo already lives on the web (your site, a CDN, or a public image link):
+
+1. Use the **Add from URL** option on the Images step
+2. Paste a **public HTTPS** image URL
+3. Confirm — AeroQuote fetches the image and attaches it to the aircraft
+
+{% hint style="info" %}
+The URL must be publicly reachable (no login wall). Private or expiring links may fail to download.
+{% endhint %}
+
+When you add an aircraft with a registration, AeroQuote may also offer an automatic photo match (e.g. from public spotting libraries). You can accept that suggestion or upload/URL your own images instead.
+
+---
+
 ## Image Order
 
 Arrange images in your preferred order:
