@@ -64,6 +64,15 @@ Click **Send to Customer** to open the preview modal. Here you can:
 
 Click **Send Now** to deliver the email. The system records when the email was last sent — this timestamp is shown beneath the Send to Customer button.
 
+### Email tracking (customer sends)
+
+Customer booking emails are tracked automatically:
+
+* **Mail status** on the bookings list moves **Sent → Opened → Viewed** as the customer engages  
+* Under **Send to Customer**, you see last sent time, current status, and open / link-click detail for recent sends  
+
+Crew and external-operator emails are not included in this tracking. See [Email Tracking](../settings/emails/email-tracking.md) for caveats (e.g. image-blocking clients may not report opens).
+
 ***
 
 ## Sending to Crew

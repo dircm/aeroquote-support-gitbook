@@ -24,6 +24,10 @@ These emails are sent during the booking lifecycle — from confirmation through
 The booking link can be sent as a **Basic View** (itinerary only) or **Detailed View** (includes passenger list and visible amendments). This is controlled per-contact group via toggles on the Send tab. See [Sending Confirmations](../../bookings-operators/sending-confirmations.md) for details.
 {% endhint %}
 
+{% hint style="success" %}
+**Email tracking** — Customer booking emails record **Sent**, **Opened** (inbox), and **Viewed** (customer opened the booking link). See the booking list mail status and the Send tab tracking summary. Full details: [Email Tracking](email-tracking.md).
+{% endhint %}
+
 ### Booking Comment Reply to Customer
 
 |             |                                                                                                          |
