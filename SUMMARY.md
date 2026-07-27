@@ -54,6 +54,7 @@
     * [Quote Emails](guides/settings/emails/quote-emails.md)
     * [Booking Emails](guides/settings/emails/booking-emails.md)
     * [Admin Emails](guides/settings/emails/admin-emails.md)
+    * [🆕 Email Tracking](guides/settings/emails/email-tracking.md)
 * [🎨 Customer Pages Branding](guides/settings/customer-pages-branding.md)
 * [Contacts](guides/contacts/README.md)
   * [Add a new contact](guides/contacts/add-a-new-contact.md)

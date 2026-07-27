@@ -30,6 +30,10 @@ The _**\<your quote name>**_ on the button and in the subject comes from your **
 Manage your reusable email wording on the [Templates page](../../templates/). Additional contacts receive a preview-only link without accept/decline actions.
 {% endhint %}
 
+{% hint style="success" %}
+**Email tracking** — Customer quote emails record **Sent**, **Opened** (inbox), and **Viewed** (customer opened the quote link). See status on the quotes list, the Send and Status steps, and Dashboard metrics. Full details: [Email Tracking](email-tracking.md).
+{% endhint %}
+
 ### Quote Comment Reply to Customer
 
 |             |                                                                                                        |

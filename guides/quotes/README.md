@@ -22,3 +22,5 @@ To get started, learn how to create a quote using the Quote Builder — or creat
 {% content-ref url="create-a-quote-from-a-request-brokers.md" %}
 [create-a-quote-from-a-request-brokers.md](create-a-quote-from-a-request-brokers.md)
 {% endcontent-ref %}
+
+After you send a quote, you can track whether the customer opened the email and the quote link — see [Email Tracking](../settings/emails/email-tracking.md).

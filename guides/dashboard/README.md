@@ -19,15 +19,20 @@ The Dashboard includes:
 
 ## Quick Stats
 
-At the top of the Dashboard, you'll see three key metrics:
+At the top of the Dashboard, metric cards summarise recent activity (typically the **last 30 days**, with a comparison to the prior period where shown). Depending on your permissions and modules, you may see:
 
 | Metric | What it shows |
 |--------|---------------|
-| **Active Requests** | Quote requests awaiting your response |
-| **Active Quotes** | Quotes sent to customers, pending acceptance |
-| **Active Bookings** | Confirmed bookings in progress |
+| **Quotes Created** | New quotes created in the period |
+| **Quote Acceptances** | Quotes accepted by customers |
+| **Bookings Created** | New charter bookings (when the Bookings module is on) |
+| **Quote Emails Sent** | Customer quote emails sent |
+| **Email Opens** | Quote emails that recorded an inbox open |
+| **Link Clicks** | Quote emails where the customer opened the quote link |
 
-Click **View all** on any card to jump directly to that section.
+**Email Opens** and **Link Clicks** come from [Email Tracking](../settings/emails/email-tracking.md) on customer quote emails. Opens can under-report when the recipient’s email app blocks images.
+
+Click **View all** on cards that link through to jump to quotes or bookings.
 
 ---
 

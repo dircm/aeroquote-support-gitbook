@@ -10,11 +10,12 @@ AeroQuote sends emails automatically in response to events, on a schedule, or wh
 
 ## Email Categories
 
-| Category                                | Description                                                                             |
-| --------------------------------------- | --------------------------------------------------------------------------------------- |
-| [**Quote Emails**](quote-emails.md)     | Emails related to quotes — sent to customers, operators, and external operators         |
-| [**Booking Emails**](booking-emails.md) | Emails related to bookings — sent to customers, crew, operators, and external operators |
-| [**Admin Emails**](admin-emails.md)     | Account, subscription, and integration emails — sent to operators                       |
+| Category                                      | Description                                                                             |
+| --------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [**Quote Emails**](quote-emails.md)           | Emails related to quotes — sent to customers, operators, and external operators         |
+| [**Booking Emails**](booking-emails.md)       | Emails related to bookings — sent to customers, crew, operators, and external operators |
+| [**Admin Emails**](admin-emails.md)           | Account, subscription, and integration emails — sent to operators                       |
+| [**Email Tracking**](email-tracking.md)       | Open and link-click tracking for customer quote and booking emails                      |
 
 ***
 
