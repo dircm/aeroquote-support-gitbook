@@ -24,8 +24,8 @@ The Route Library lets you save commonly flown routes so they can be reused acro
 
 #### Creating a Route
 
-1. Navigate to **Custom Items → Custom Routes** from the sidebar
-2. Click **Add Route**
+1. Navigate to **Custom Items** in the sidebar, then scroll to the **Custom Routes** section
+2. Click **Add Custom Route**
 3. Give your route a descriptive name (e.g. "Sydney Harbour Scenic" or "Great Ocean Road Tour")
 4. Set the **Departure Airport** and **Arrival Airport**
    * For scenic flights that return to the same airport, set both to the same location
