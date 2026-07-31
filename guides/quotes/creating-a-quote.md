@@ -89,11 +89,18 @@ Click **Next** to continue.
 
 ## Step 3: Aircraft
 
-Select one or more aircraft to include as options on the quote. Do this by clicking on the aircraft image. Each selected aircraft becomes a separate option for the customer to choose from.
+Add one or more aircraft to estimate and include as options on the quote. Each added aircraft becomes a separate option for the customer to choose from. AeroQuote does **not** estimate the full fleet until you add aircraft.
 
-### Available Aircraft
+### Adding aircraft
 
-The builder calculates pricing for every aircraft in your fleet based on the flights you entered:
+1. With an empty list, click **+ Add Aircraft to see estimates**
+2. In the modal, pick aircraft by thumbnail and details (already-added aircraft are hidden)
+3. Use **+ Add Aircraft** in the header or **+ Add more Aircraft** under the list when more of the fleet remains
+4. Remove an aircraft from the list when you no longer want it estimated or quoted
+
+### Estimate columns
+
+For each **added** aircraft, the builder calculates pricing from the flights you entered:
 
 | Column             | Description                             |
 | ------------------ | --------------------------------------- |
@@ -103,11 +110,9 @@ The builder calculates pricing for every aircraft in your fleet based on the fli
 | **Charter Time**   | Total flying time for charter legs      |
 | **Ferry Time**     | Total positioning time to/from homebase |
 
-Click an aircraft image to select it. If you select multiple aircraft, each will becomes a separate option on the quote.
+### Search in the add modal
 
-### Search and Filter
-
-Use the search box to filter aircraft by registration, name, or external operator.
+Use the search field in the add-aircraft modal to filter by registration, name, or external operator.
 
 ### Availability and Operational Cautions
 
@@ -186,8 +191,8 @@ Once the customer accepts, you can [convert the quote to a booking](../bookings-
 **Creating from a Request?** [Learn here.](create-a-quote-from-a-request-operators.md)
 {% endhint %}
 
-* Complete the Flights step accurately — aircraft pricing, ferry times, and cautions are all calculated from these details
+* Complete the Flights step accurately — aircraft pricing, ferry times, and cautions are calculated from these details for the aircraft you add
 * Use the Route Library for repeat routes to save time and ensure consistency
-* Select multiple aircraft to give your customer options — each becomes a separate option they can compare
+* Add multiple aircraft to give your customer options — each becomes a separate option they can compare
 * Check caution badges before finalising — availability conflicts and operational issues are easier to resolve before sending the quote
 * Use the cost breakdown editor to fine-tune estimates on the Aircraft step rather than editing after creation

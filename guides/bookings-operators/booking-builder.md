@@ -76,11 +76,18 @@ Click **Next** to continue.
 
 ## Step 3: Aircraft
 
-Select one or more aircraft for this booking.
+Add one or more aircraft for this booking. Estimates run only for aircraft you add — not the full fleet automatically.
 
-### Available Aircraft
+### Adding aircraft
 
-The builder displays your fleet with calculated estimates based on the flights you entered:
+1. With an empty list, click **+ Add Aircraft to see estimates**
+2. In the modal, choose aircraft by thumbnail and details (already-added aircraft are excluded)
+3. Use **+ Add Aircraft** or **+ Add more Aircraft** when more of the fleet is still available
+4. Remove an aircraft from the list if it should not be on the booking
+
+### Estimate columns
+
+For each **added** aircraft, the builder shows estimates based on the flights you entered:
 
 | Column           | Description                                       |
 | ---------------- | ------------------------------------------------- |
@@ -89,7 +96,7 @@ The builder displays your fleet with calculated estimates based on the flights y
 | **Charter Time** | Total flying time for all legs                    |
 | **Ferry Time**   | Positioning time to/from homebase (if applicable) |
 
-Click an aircraft image to select it. You can select multiple aircraft if the booking requires more than one.
+You can add multiple aircraft if the booking requires more than one.
 
 ### Availability and Operational Cautions
 

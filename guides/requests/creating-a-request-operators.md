@@ -4,7 +4,7 @@ description: Step-by-step guide to creating a Request for Operators.
 
 # Creating a Request (Operators)
 
-Requests are the first step in your quoting workflow. Use them to record inbound charter enquiries, get instant price estimates across your fleet, and generate quotes with a single click.
+Requests are the first step in your quoting workflow. Use them to record inbound charter enquiries, **add the aircraft you want estimates for**, compare prices, and generate quotes with a single click.
 
 {% embed url="https://vimeo.com/825790504" %}
 Create a Request training video
@@ -108,11 +108,20 @@ If an airport isn't in the database, type its name and select the option to crea
 
 ## Aircraft Estimates
 
-Once all flights have departure and arrival locations, AeroQuote automatically calculates price estimates for every active aircraft in your fleet. The estimates table shows:
+Estimates are calculated only for aircraft you **add** to the request — not the entire fleet at once.
+
+### Adding aircraft
+
+1. With no aircraft chosen, click **+ Add Aircraft to see estimates**
+2. In the modal, pick an aircraft (thumbnails and details). Aircraft already on the list are omitted
+3. After at least one is added, use **+ Add Aircraft** (header) or **+ Add more Aircraft** (below the list) when more of the fleet is available
+4. Remove an aircraft with the remove control on its row if you no longer want it estimated
+
+Once flights have departure and arrival locations, AeroQuote calculates price estimates for each **added** aircraft. The estimates table shows:
 
 | Column             | Description                                       |
 | ------------------ | ------------------------------------------------- |
-| **Aircraft**       | Image, registration, and type. Click to select.   |
+| **Aircraft**       | Image, registration, and type                     |
 | **Cautions**       | Availability and operational warnings (see below) |
 | **Customer Price** | Estimated charter price                           |
 | **Charter Time**   | Total flying time for charter legs                |
@@ -120,12 +129,12 @@ Once all flights have departure and arrival locations, AeroQuote automatically c
 | **Flights**        | Number of flight legs                             |
 
 {% hint style="info" %}
-**Estimates recalculate automatically** whenever you change a flight, add a leg, or update the passenger count. There's no need to manually trigger a recalculation.
+**Estimates recalculate automatically** for the aircraft on the list whenever you change a flight, add a leg, or update date/time. Unchosen fleet aircraft are not estimated.
 {% endhint %}
 
-### Selecting Aircraft
+### Quote options
 
-Click an aircraft image to select it — a checkmark overlay appears. You can select multiple aircraft. Selected aircraft become options on the quote when you click **Generate Quote**.
+Aircraft on the estimates list are the ones included when you click **Generate Quote** — each becomes a separate option on the quote.
 
 ### Availability and Operational Cautions
 
@@ -200,8 +209,8 @@ You can create a new request based on an existing one. This copies the flights, 
 **Requests are for speed.** Unlike the Quote Builder (which walks through steps), the Request page shows everything at once so you can get estimates in seconds. Use Requests for initial pricing, then generate a quote when you're ready to send to the customer.
 {% endhint %}
 
-* Enter flights first — aircraft estimates calculate automatically once departure and arrival airports are set
+* Add the aircraft you want to compare, then enter or refine flights — estimates run only for that set
 * Use the Route Library for repeat routes to save time
-* Check caution badges before selecting aircraft — resolve conflicts early
+* Check caution badges on added aircraft — resolve conflicts early
 * Save frequently if you're working on a complex multi-leg itinerary
 * The contact and notes carry through to the quote, so fill them in on the request to save time later

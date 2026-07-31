@@ -38,7 +38,7 @@ Cost breakdowns are now visible at the estimate stage — on both the **Requests
 
 ### Viewing Flight Costs on Estimates
 
-When you calculate estimates for a request, each aircraft option shows all charter and ferry flights with an expandable cost breakdown:
+When you calculate estimates for a request (for the aircraft you have **added**), each aircraft option shows all charter and ferry flights with an expandable cost breakdown:
 
 <figure><img src="../../.gitbook/assets/costs_intro.png" alt=""><figcaption></figcaption></figure>
 

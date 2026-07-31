@@ -1,11 +1,12 @@
 ---
 description: >-
-  Use the Request estimator to compare aircraft costs before generating a quote.
+  Use the Request estimator to compare aircraft costs after choosing which
+  aircraft to estimate, then generate a quote.
 ---
 
 # Using the Estimator
 
-The **Estimator** (Request page) calculates costs across your fleet for a set of flight legs. Use it to compare aircraft options before you click **Generate Quote**.
+The **Estimator** (Request page) calculates costs for the **aircraft you add** for a set of flight legs. Use it to compare options before you click **Generate Quote**. Estimates are not run for the full fleet until you choose aircraft.
 
 ***
 
@@ -15,31 +16,39 @@ The **Estimator** (Request page) calculates costs across your fleet for a set of
 2. Click **Add New Request**, or open an existing request
 3. Enter customer details and flight legs (departure, arrival, date/time)
 
-## Step 2: Review automatic estimates
+## Step 2: Add aircraft to estimate
 
-Once legs are entered, AeroQuote calculates estimates for each aircraft in your fleet:
+Until you add aircraft, the estimates area shows **+ Add Aircraft to see estimates**.
+
+1. Click **+ Add Aircraft to see estimates** (or **+ Add Aircraft** / **+ Add more Aircraft** once some are already added)
+2. In the modal, review aircraft thumbnails and details
+3. Click an aircraft to add it — already-added aircraft do not appear in the list
+4. Repeat for each option you want to compare
+
+{% hint style="info" %}
+You can add aircraft before or after the route is complete. Estimates appear for chosen aircraft once departure and arrival are set on each leg.
+{% endhint %}
+
+## Step 3: Review estimates
+
+For each **chosen** aircraft, AeroQuote calculates:
 
 * Block time and distance (including positioning/ferry legs where applicable)
 * Fuel, landing, parking, and sector charges
 * Total estimated cost per aircraft
 
-Click column headers to sort by cost, aircraft, or duration.
+Expand a row for the flight/routing breakdown and cost lines. Remove an aircraft from the list when you no longer want it estimated.
 
-## Step 3: Compare aircraft options
+## Step 4: Compare and adjust
 
-1. Review the estimate row for each aircraft
-2. Click a row to expand cost breakdowns (fuel, fees, margin)
-3. Use **Project maintenance impact** (if shown) to see maintenance cautions for the proposed dates
-
-## Step 4: Adjust the enquiry
-
-* **Add Flight** / **Add Return Flight** — build multi-leg or return trips
-* **Load Route** — apply a saved route from the Route Library
-* Edit leg times or airports — estimates refresh automatically
+1. Review estimate rows for the aircraft you added
+2. Expand flights to see cost breakdowns (fuel, fees, margin)
+3. Use maintenance or operational cautions when shown for the proposed dates
+4. **Add Flight** / **Add Return Flight**, **Load Route**, or edit times and airports — estimates **refresh only for the aircraft still on the list**
 
 ## Step 5: Generate a quote
 
-1. Select the aircraft row you want to quote
+1. Ensure at least one aircraft remains in the estimates list (chosen aircraft are the ones that become quote options)
 2. Click **Generate Quote**
 3. Complete the Quote Builder and create the quote
 
@@ -48,5 +57,5 @@ See [Create a Quote from a Request (Operators)](../quotes/create-a-quote-from-a-
 ***
 
 {% hint style="success" %}
-**Tip:** If no estimates appear, check that aircraft have flight performance data and costings configured.
+**Tip:** If no estimates appear after adding aircraft, check that the route has departure and arrival on each leg, and that aircraft have flight performance data and costings configured.
 {% endhint %}
