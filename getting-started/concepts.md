@@ -40,7 +40,7 @@ For whole-aircraft charter work, AeroQuote follows this job flow:
 
 ### Requests
 
-**Requests** record inbound charter enquiries. You capture the customer, passenger count, notes, and itinerary, and AeroQuote produces **live price estimates** across your fleet (including ferry/positioning where relevant).
+**Requests** record inbound charter enquiries. You capture the customer, passenger count, notes, and itinerary, **add the aircraft you want to price**, and AeroQuote produces **live price estimates** for that set (including ferry/positioning where relevant).
 
 From a request you can generate a [Quote](concepts.md#quotes) with pre-filled legs and aircraft. Brokers also use the request as the starting point to send [Requests for Quote (RFQ)](concepts.md#external-operators-and-rfq) to external operators.
 
@@ -73,9 +73,9 @@ When you build a quote from a [request](concepts.md#requests) or from scratch, y
 **How options usually appear in your workflow**
 
 1. Capture the trip as a **Request** (or start a quote from scratch).
-2. Review fleet **estimates** for that itinerary.
-3. Select the aircraft you want the customer to see — one aircraft for a single-option quote, or several to offer a real choice.
-4. Generate the quote: AeroQuote creates an **option per selected aircraft**.
+2. **Add aircraft** to estimate for that itinerary (not the full fleet by default).
+3. Review **estimates** for the aircraft you added — one for a single-option quote, or several to offer a real choice.
+4. Generate the quote: AeroQuote creates an **option per added aircraft**.
 5. Adjust price, costs, or document content per option as needed, then send.
 
 You can also add options that are not aircraft-only packages when you need non-flight line items (for example accommodation or ground transport), but the everyday meaning of “option” for most operators is: **another aircraft price on the same quote**.

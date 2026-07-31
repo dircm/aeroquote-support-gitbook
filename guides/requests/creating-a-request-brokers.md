@@ -42,13 +42,18 @@ Capture the enquiry basics in the top-left section:
 
 ## Flights
 
-Add one or more **Charter** flight legs — departure, arrival, date and time. As you add legs, the estimates table recalculates live for every aircraft in your virtual fleet.
+Add one or more **Charter** flight legs — departure, arrival, date and time.
 
 ***
 
 ## Reviewing Estimates and Selecting Aircraft
 
-Each aircraft row shows the estimated cost for the full itinerary, including ferry legs from its home base. Tick the **include** checkbox on each aircraft you want in the quote.
+Estimates run only for aircraft you **add** — not every external aircraft at once.
+
+1. Click **+ Add Aircraft to see estimates** (or **+ Add Aircraft** / **+ Add more Aircraft** when some are already on the list)
+2. Choose aircraft from the modal (thumbnails and details). Already-added aircraft are excluded
+3. With a complete route, each added row shows the estimated cost for the full itinerary, including ferry legs from home base
+4. Changing legs recalculates only the aircraft still on the list
 
 {% hint style="success" %}
 Each included external aircraft has a **Create RFQ** toggle. Leave it on to automatically send that operator a Request for Quote when you generate; turn it off to include the aircraft without contacting the operator. The default per aircraft is set on the aircraft itself — see [Adding Aircraft with an External Operator](../request-for-quote/creating-an-aircraft-with-external-operator.md).

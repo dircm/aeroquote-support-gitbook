@@ -1,10 +1,10 @@
 ---
-description: Record inbound charter enquiries, estimate across your fleet instantly, and generate quotes with one click.
+description: Record inbound charter enquiries, estimate chosen aircraft, and generate quotes with one click.
 ---
 
 # Requests
 
-Requests form the first step of a [job flow](../../getting-started/concepts.md#job-flow). Use them to record inbound charter enquiries, get **live price estimates across your whole fleet** as you type the itinerary, and generate a polished quote with a single click.
+Requests form the first step of a [job flow](../../getting-started/concepts.md#job-flow). Use them to record inbound charter enquiries, **add the aircraft you want to price**, get live estimates for that set as you refine the itinerary, and generate a polished quote with a single click.
 
 {% hint style="info" %}
 In a hurry? You can also just ask the [AI Co-Worker](../dashboard/ai-assistant.md): *"Quote from Essendon to Sydney tomorrow 9am for 3 passengers"* — it walks you through aircraft selection and creates the quote for you.

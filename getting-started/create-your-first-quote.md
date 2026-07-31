@@ -34,25 +34,29 @@ Repeat for additional legs if the trip has multiple flights (e.g., a return jour
 
 **Tip:** AeroQuote automatically adds positioning (ferry) flights if the trip doesn't start or end at your aircraft's homebase. You'll see these in the estimates.
 
-## Step 4: Review Estimates
+## Step 4: Add Aircraft and Review Estimates
 
-Once your flights are entered, AeroQuote automatically calculates cost estimates for each aircraft in your fleet:
+AeroQuote does not estimate every aircraft until you choose them.
+
+1. Click **+ Add Aircraft to see estimates**
+2. Pick one or more aircraft from the modal (thumbnails and details)
+3. With flights entered, estimates appear for those aircraft only:
 
 * **Flight time** — Based on aircraft speed and route distance
 * **Fuel costs** — Calculated from fuel burn rate and current fuel prices
 * **Landing fees** — Based on airport and aircraft weight
 * **Positioning costs** — Ferry flight costs to/from homebase
 
-Each aircraft card shows the estimated total cost. Review these to decide which aircraft to quote.
+Add more with **+ Add Aircraft** or **+ Add more Aircraft** if you want extra options. Changing the route recalculates only the aircraft on the list.
 
-## Step 5: Select Aircraft and Generate Quote
+## Step 5: Generate Quote
 
-AeroQuote can show **multiple aircraft prices on the same quote**. Each aircraft you include becomes an **option** the customer can compare. See [Options](concepts.md#options) for the full concept.
+AeroQuote can show **multiple aircraft prices on the same quote**. Each aircraft you added becomes an **option** the customer can compare. See [Options](concepts.md#options) for the full concept.
 
-1. Click the **aircraft card(s)** you want to include — select **one** aircraft for a single price, or **several** so the customer sees side-by-side options on one proposal
+1. Keep the aircraft you want on the estimates list — **one** for a single price, or **several** for side-by-side options
 2. Click **Generate Quote**
 
-AeroQuote creates one quote with a separate **option** for each selected aircraft, including flight details, costs, and your pricing.
+AeroQuote creates one quote with a separate **option** for each added aircraft, including flight details, costs, and your pricing.
 
 ## Step 6: Review the Quote
 
