@@ -18,12 +18,12 @@ The Quote Builder walks you through creating a quote in four steps — from sele
 
 Set the customer and basic quote information.
 
-### Contact
+### Contact (optional)
 
-Search for an existing contact by name or email. Start typing and select from the dropdown.
+Search by name or email using **Add contact (search name or email)**. Start typing and select from the dropdown.
 
 {% hint style="info" %}
-If the contact doesn't exist yet, you can create one inline without leaving the builder.
+If the contact doesn't exist yet, you can create one inline without leaving the builder. You can also leave contact blank and add main contacts later on the quote **Quote Details** step.
 {% endhint %}
 
 ### Job Notes (optional)
@@ -36,7 +36,7 @@ Enter the expected number of passengers. This is used to check aircraft capacity
 
 ### Terms & Conditions Template (optional)
 
-Select a T\&C template from your saved templates. If left blank, your operator's default template is used. These terms are displayed to the customer when they view the quote online.
+Select a T\&C template from your saved templates. If you leave **Use Default Template**, your operator's default template is used. These terms are displayed to the customer when they view the quote online.
 
 Click **Next** to continue.
 
@@ -46,25 +46,29 @@ Click **Next** to continue.
 
 Build the flight itinerary by adding one or more flight legs.
 
+### No date yet (TBC)
+
+If the customer only wants a price, tick **Customer just wants a price — no travel date yet (TBC)**. Dates are hidden from the customer (shown as TBD). You can set a real date later from the quote.
+
 ### Adding a Flight
 
 For each flight leg, enter:
 
-| Field                     | Required | Description                                             |
-| ------------------------- | -------- | ------------------------------------------------------- |
-| **Departure airport**     | Yes      | Search by airport name, city, or ICAO/IATA code         |
-| **Arrival airport**       | Yes      | Search by airport name, city, or ICAO/IATA code         |
-| **Departure date & time** | Yes      | Rough date and time in the departure airport's timezone |
+| Field | Required | Description |
+| --- | --- | --- |
+| **Departure Location** | Yes | Search by airport name, city, or ICAO/IATA code |
+| **Arrival Location** | Yes | Search by airport name, city, or ICAO/IATA code |
+| **Departure date & time** | Yes\* | Rough date and time in the departure location's timezone (\*not required when TBC is on) |
 
-When you select an airport, the departure time defaults to 8:00 AM the next day in that airport's local timezone.
+When you select a location, the departure time defaults to 8:00 AM the next day in that airport's local timezone.
 
 ### Selecting an FBO
 
-If an airport has FBO facilities on file, a facility selector appears after selecting the airport. Choose the appropriate FBO for departure or arrival — this information appears on the quote sent to the customer.
+If a location has FBO facilities on file, use **Choose Facility** (or the FBO link) after selecting the airport. Choose the appropriate FBO for departure or arrival — this information can appear on the quote sent to the customer.
 
 ### Route Library
 
-Click **Load Route** to search your saved routes. Selecting a route auto-fills the departure and arrival airports, saving time on frequently quoted routes.
+Click **Load Route** to search your saved routes. Selecting a route auto-fills the departure and arrival locations, saving time on frequently quoted routes.
 
 ### Custom Airports
 
@@ -73,14 +77,14 @@ If an airport isn't in the database, you can create it inline from the search dr
 ### Multi-Leg Itineraries
 
 * **Add Flight** — Adds a new flight leg after the current one
-* **Add Return Flight** — Creates a return leg with the departure and arrival airports swapped
+* **Add Return Flight** — Creates a return leg with the departure and arrival locations swapped
 * **Delete** — Removes a flight leg
 * **Drag to reorder** — Rearrange flight legs by dragging them into the correct order
 
 The interactive map updates as you add flights, showing your complete route.
 
 {% hint style="info" %}
-**Return to homebase** — Check this box on a flight to automatically include a ferry positioning flight back to the aircraft's homebase in the pricing calculation.
+**Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation.
 {% endhint %}
 
 Click **Next** to continue.
@@ -94,7 +98,7 @@ Add one or more aircraft to estimate and include as options on the quote. Each a
 ### Adding aircraft
 
 1. With an empty list, click **+ Add Aircraft to see estimates**
-2. In the modal, pick aircraft by thumbnail and details (already-added aircraft are hidden)
+2. In the **Add Aircraft** modal, pick aircraft by thumbnail and details (already-added aircraft are hidden)
 3. Use **+ Add Aircraft** in the header or **+ Add more Aircraft** under the list when more of the fleet remains
 4. Remove an aircraft from the list when you no longer want it estimated or quoted
 
@@ -102,17 +106,17 @@ Add one or more aircraft to estimate and include as options on the quote. Each a
 
 For each **added** aircraft, the builder calculates pricing from the flights you entered:
 
-| Column             | Description                             |
-| ------------------ | --------------------------------------- |
-| **Aircraft**       | Registration, type, and image           |
-| **Customer Price** | Estimated price to the customer         |
-| **Cost to You**    | Your estimated operating cost           |
-| **Charter Time**   | Total flying time for charter legs      |
-| **Ferry Time**     | Total positioning time to/from homebase |
+| Column | Description |
+| --- | --- |
+| **Name** | Registration / tail and image |
+| **Customer Price estimate** | Estimated price to the customer |
+| **Cost to you estimate** | Your estimated operating cost |
+| **Charter Time** | Total flying time for charter legs |
+| **Ferry Time** | Total positioning time to/from homebase |
 
 ### Search in the add modal
 
-Use the search field in the add-aircraft modal to filter by registration, name, or external operator.
+Use **Search aircraft** in the add-aircraft modal to filter by registration, name, or external operator.
 
 ### Availability and Operational Cautions
 
@@ -173,10 +177,12 @@ Click **Create Quote** to finalise. AeroQuote creates the quote with all selecte
 
 ## After Creating a Quote
 
-The quote is created in **Draft** status. From the quote detail page you can:
+The quote is created in **Draft** status and opens on the **Quote Details** step. From there you can:
 
+* Move between **Quote Details**, **Options** / **Flight**, **Documents**, and **Send** using the top tabs — see [Quote Details Page](quote-details-page/)
 * Edit pricing, add or remove options, and adjust cost line items — see [Edit the Price of a Quote](edit-the-price-of-a-quote.md)
 * Manage individual cost items — see [Cost Management](cost-management.md)
+* Preview or download a printable itinerary — see [View or print the full quote itinerary](view-or-print-quote-itinerary.md)
 * Send the quote to the customer with your document template attached
 * Set a quote validity date — see [Edit Quote Valid Till Date](quote-details-page/edit-quote-valid-till-date.md)
 * Require T\&C acceptance online — see [Require T\&Cs to be Accepted Online](require-t-and-cs-to-be-accepted-online.md)
