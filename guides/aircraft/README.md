@@ -39,7 +39,7 @@ Click any aircraft to view and edit its details.
 3. Finish the wizard to add the aircraft to your fleet
 
 {% hint style="info" %}
-**Tip:** Enter the **registration** early in the wizard — AeroQuote can look up and apply the aircraft type for you (you can cancel the lookup or change the type anytime). On Costings later, use **Suggest costs for me** for a first-pass rate and cost setup.
+**Tip:** Enter the **registration** early in the wizard — AeroQuote can look up and apply the aircraft type for you (you can cancel the lookup or change the type anytime). Type search also looks up the advanced model catalogue first; native types appear only if that search is empty. On Costings later, use **Suggest costs for me** for a first-pass rate and cost setup.
 {% endhint %}
 
 ---
@@ -50,8 +50,9 @@ Each aircraft has several configuration tabs:
 
 | Section | Purpose |
 |---------|---------|
-| [**Details**](aircraft-details.md) | Registration, type, homebase, basic info |
-| [**Flight Performance**](flight-performance.md) | Speed, range, fuel burn rates |
+| [**Details**](aircraft-details.md) | Registration, type, homebase, advanced model link / change / revert |
+| [**Advanced performance**](advanced-performance.md) | Model search, planning engine, fuel burn on estimates |
+| [**Flight Performance**](flight-performance.md) | Speed, range, fuel burn rates (standard / native path) |
 | [**Costings**](costings.md) | Hourly rates, positioning costs, minimums |
 | [**Cost Simulator**](cost-simulator.md) | Test pricing before going live |
 | [**Images**](aircraft-images.md) | Photos for quotes and documents |
@@ -62,6 +63,10 @@ Each aircraft has several configuration tabs:
 
 {% content-ref url="aircraft-details.md" %}
 [aircraft-details.md](aircraft-details.md)
+{% endcontent-ref %}
+
+{% content-ref url="advanced-performance.md" %}
+[advanced-performance.md](advanced-performance.md)
 {% endcontent-ref %}
 
 {% content-ref url="flight-performance.md" %}

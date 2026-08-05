@@ -1,7 +1,8 @@
 ---
 description: >-
   Use the Request estimator to compare aircraft costs after choosing which
-  aircraft to estimate, then generate a quote.
+  aircraft to estimate, review internal fuel burn when shown, then generate a
+  quote.
 ---
 
 # Using the Estimator
@@ -34,10 +35,25 @@ You can add aircraft before or after the route is complete. Estimates appear for
 For each **chosen** aircraft, AeroQuote calculates:
 
 * Block time and distance (including positioning/ferry legs where applicable)
-* Fuel, landing, parking, and sector charges
+* Fuel, landing, parking, and sector charges (as cost lines)
 * Total estimated cost per aircraft
+* **Fuel** (burn) column when the aircraft uses an **advanced performance model** — planned burn for the sector, for your team only
 
-Expand a row for the flight/routing breakdown and cost lines. Remove an aircraft from the list when you no longer want it estimated.
+Expand a row for the flight/routing breakdown, per-leg fuel where shown, and cost lines. Remove an aircraft from the list when you no longer want it estimated.
+
+### Fuel burn column (internal)
+
+| Detail | Behaviour |
+| ------ | --------- |
+| Where | Request estimator, Quote Builder, Booking Builder |
+| Audience | Your team only — **not** on customer quote views or PDFs |
+| Unit | **Settings → Localization** (default fuel unit, e.g. L or gal) |
+| **—** | Plan did not return a burn figure for that leg; times can still be valid |
+| **est.** | Burn derived from cruise performance × time when a full plan figure was missing |
+
+Fuel burn is a **planning estimate**, not a guarantee of uplift. Pricing still follows your rates and cost rules. Aircraft on **standard AeroQuote performance** may show **—** in the Fuel column.
+
+See [Advanced performance models](../aircraft/advanced-performance.md).
 
 ## Step 4: Compare and adjust
 

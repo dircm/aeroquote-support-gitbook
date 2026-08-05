@@ -5,6 +5,7 @@
 ## What's New
 
 * [What's New](whats-new/README.md)
+  * [August 2026](whats-new/august-2026.md)
   * [July 2026](whats-new/july-2026.md)
   * [June 2026](whats-new/june-2026.md)
   * [April 2026](whats-new/april-2026.md)
@@ -29,6 +30,7 @@
   * [Understanding Analytics](guides/analytics/understanding-analytics.md)
 * [✈️ Aircraft](guides/aircraft/README.md)
   * [Aircraft Details](guides/aircraft/aircraft-details.md)
+  * [Advanced performance models](guides/aircraft/advanced-performance.md)
   * [Flight Performance](guides/aircraft/flight-performance.md)
   * [🆕 Costings](guides/aircraft/costings.md)
     * [🆕 Cost Types](guides/aircraft/cost-types.md)

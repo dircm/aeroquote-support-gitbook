@@ -4,7 +4,11 @@ description: Configure speed, range, and fuel consumption data.
 
 # Flight Performance
 
-The Flight Performance section contains the technical data AeroQuote uses to calculate flight times and fuel costs. Accurate data here means accurate quotes.
+The Flight Performance section holds the technical data used for **standard AeroQuote** flight times and fuel cost inputs. Accurate data here means accurate quotes for aircraft that are not on an advanced performance model.
+
+{% hint style="info" %}
+If **Details** shows **Using advanced performance model**, estimates use the linked advanced model for planning. The Performance tab then reflects that advanced data rather than the manual fields below. See [Advanced performance models](advanced-performance.md).
+{% endhint %}
 
 ---
 
@@ -18,7 +22,7 @@ The Flight Performance section contains the technical data AeroQuote uses to cal
 
 ## Auto-save
 
-Changes on this step save automatically after you finish editing a field. There is no separate Save button. A short confirmation toast appears when a save succeeds.
+On the **manual** performance form, changes save automatically after you finish editing a field. There is no separate Save button. A short confirmation toast appears when a save succeeds.
 
 ---
 
@@ -54,21 +58,29 @@ Use realistic cruise speeds for your typical operations. Published max speeds ar
 
 ## How Performance Data is Used
 
-When you create a quote, AeroQuote uses this data to:
+### Standard AeroQuote performance
 
-1. **Calculate flight time** — Distance ÷ cruise speed
-2. **Estimate fuel needed** — Flight time × fuel burn rate
-3. **Check range** — Can this aircraft make the trip non-stop?
-4. **Determine fuel costs** — Fuel needed × fuel price at airport
+When the aircraft is **not** on an advanced model (or after **Revert**), estimates use these fields to:
+
+1. **Calculate flight time** — Distance and your cruise / climb inputs  
+2. **Estimate fuel needed** — Flight time × fuel burn rate  
+3. **Check range** — Can this aircraft make the trip non-stop?  
+4. **Determine fuel costs** — Fuel needed × fuel price at airport  
+
+### Advanced performance model
+
+When **Details** shows **Using advanced performance model**, sector times and distances are planned with the linked model (winds, climb, and descent). Internal estimate screens may also show a **Fuel** column. Customer quotes and PDFs do not show that fuel burn column.
+
+See [Advanced performance models](advanced-performance.md) and [Using the Estimator](../requests/using-the-estimator.md).
 
 ---
 
 ## Performance Templates
 
-When you select an aircraft type, AeroQuote may provide default performance values based on typical specifications. You can:
+When you select a **native AeroQuote aircraft type** (including the fallback after an empty advanced catalogue search), AeroQuote may provide default performance values based on typical specifications. You can:
 
-- **Accept defaults** — Use the template values
-- **Customize** — Adjust for your specific aircraft's performance
+- **Accept defaults** — Use the template values  
+- **Customize** — Adjust for your specific aircraft's performance  
 
 {% hint style="warning" %}
 Templates are starting points. Your aircraft's actual performance may differ based on age, configuration, and modifications.
@@ -101,5 +113,6 @@ Some advanced configurations include:
 
 ## Next Steps
 
+- [Advanced performance models](advanced-performance.md) — Link or change the planning model
 - [Costings](costings.md) — Configure pricing and hourly rates
 - [Cost Simulator](cost-simulator.md) — Test your settings

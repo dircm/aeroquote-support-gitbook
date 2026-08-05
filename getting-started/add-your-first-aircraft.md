@@ -17,12 +17,22 @@ Fill in the required information:
 | Field             | What to enter                                    | Example             |
 | ----------------- | ------------------------------------------------ | ------------------- |
 | **Registration**  | Your aircraft tail number (optional but recommended) | VH-XYZ, N123AB  |
-| **Aircraft Type** | Select from the dropdown, or let AeroQuote guess from registration | King Air 350, AS350 |
+| **Aircraft type / model** | Search the advanced model catalogue, or use native type if search is empty; registration can also guess a type | Citation CJ4, C25C, King Air 350 |
 | **Homebase**      | The airport where the aircraft is normally based | YBBN, KJFK          |
 
 ### Type from registration
 
 When you enter a **Registration**, AeroQuote can look up the aircraft type for you. A short progress panel shows while the lookup runs (you can **Cancel lookup** anytime). If a confident match is found, the type is applied automatically; if not, choose the type yourself as usual.
+
+### Search aircraft database
+
+Type search uses **Search aircraft database (iFlightPlanner)** first:
+
+1. Enter at least **2 characters** (make, model, or ICAO code)
+2. Pick a model from the list when results appear — this links advanced performance data when available
+3. If **no models are found**, use **Select AeroQuote aircraft type (fallback)** and continue with standard performance fields
+
+You can later **Change model** or **Link model** from **Aircraft → Details**. See [Advanced performance models](../guides/aircraft/advanced-performance.md).
 
 The **homebase** is important — AeroQuote uses it to calculate positioning (ferry) flights when a trip doesn't start or end at home.
 
@@ -30,13 +40,16 @@ The **homebase** is important — AeroQuote uses it to calculate positioning (fe
 
 ## Step 4: Configure Flight Performance
 
-Navigate to the **Flight Performance** tab and enter:
+Navigate to the **Flight Performance** tab.
 
-* **Cruise Speed** — Normal cruising speed
-* **Fuel Burn Rate** — Fuel consumption per hour
-* **Range** — Maximum distance on a full tank
+* If you selected an **advanced model**, performance may come from that model (see the green status on **Details**).
+* If you used a **native AeroQuote type**, enter or review:
 
-If your aircraft type is in the AeroQuote database, some values may be pre-filled. Review and adjust them to match your specific aircraft.
+  * **Cruise Speed** — Normal cruising speed  
+  * **Fuel Burn Rate** — Fuel consumption per hour  
+  * **Range** — Maximum distance on a full tank  
+
+If defaults were pre-filled from a type template, review and adjust them to match your specific aircraft.
 
 ## Step 5: Set Up Costings
 
@@ -65,4 +78,5 @@ The aircraft will appear in quote options when you create requests.
 Now that you have an aircraft, you're ready to create your first quote:
 
 * [Create Your First Quote](create-your-first-quote.md) — The complete quote workflow
+* [Advanced performance models](../guides/aircraft/advanced-performance.md) — Link, change, or revert the planning model
 * [Cost Simulator](../guides/aircraft/cost-simulator.md) — Test your pricing before quoting live

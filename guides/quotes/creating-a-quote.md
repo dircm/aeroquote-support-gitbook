@@ -113,6 +113,7 @@ For each **added** aircraft, the builder calculates pricing from the flights you
 | **Cost to you estimate** | Your estimated operating cost |
 | **Charter Time** | Total flying time for charter legs |
 | **Ferry Time** | Total positioning time to/from homebase |
+| **Fuel** | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views/PDFs). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 ### Search in the add modal
 
