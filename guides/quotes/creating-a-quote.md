@@ -78,10 +78,14 @@ If an airport isn't in the database, you can create it inline from the search dr
 
 * **Add Flight** — Adds a new flight leg after the current one
 * **Add Return Flight** — Creates a return leg with the departure and arrival locations swapped
-* **Delete** — Removes a flight leg
+* **Delete** — Removes a flight leg from the **builder** itinerary (before the quote is created)
 * **Drag to reorder** — Rearrange flight legs by dragging them into the correct order
 
 The interactive map updates as you add flights, showing your complete route.
+
+{% hint style="info" %}
+**Editing flights after the quote exists?** On **Quote → Options**, use **Add Option** (top-left) to add another aircraft — you can auto-generate legs from existing charter flights. Deleting a **middle** leg can optionally stitch the previous destination to the next departure. See [Add a Quote Option](add-a-quote-option.md).
+{% endhint %}
 
 {% hint style="info" %}
 **Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation.
@@ -200,6 +204,7 @@ Click **Create Quote** to finalise. AeroQuote creates the quote with all selecte
 The quote is created in **Draft** status and opens on the **Quote Details** step. From there you can:
 
 * Move between **Quote Details**, **Options** / **Flight**, **Documents**, and **Send** using the top tabs — see [Quote Details Page](quote-details-page/)
+* Add another aircraft option (and optionally auto-generate flight legs from existing charter legs) — see [Add a Quote Option](add-a-quote-option.md)
 * Edit pricing, add or remove options, and adjust cost line items — see [Edit the Price of a Quote](edit-the-price-of-a-quote.md)
 * Manage individual cost items — see [Cost Management](cost-management.md)
 * Preview or download a printable itinerary — see [View or print the full quote itinerary](view-or-print-quote-itinerary.md)

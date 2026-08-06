@@ -19,7 +19,7 @@ Use the tabs at the top of the quote to move between builder steps:
 | Tab (label) | What you do there |
 | --- | --- |
 | **Quote Details** | Status, contacts, validity, T&Cs, job notes, generate booking / invoice |
-| **Options** (or **Flight** when there is only one option) | Edit itinerary, costs, and pricing; toggle **Admin View** / **Customer View** |
+| **Options** (or **Flight** when there is only one option) | Edit itinerary, costs, and pricing; **Add Option** (top-left, Admin View); toggle **Admin View** / **Customer View**. See [Add a Quote Option](../add-a-quote-option.md) |
 | **Documents** | Build the customer-facing PDF package and preview / download it |
 | **Summary** | Review before send (when available) |
 | **Send** | Email the quote and attachments to the customer |
@@ -123,6 +123,7 @@ See [Accounting Integration](../../accounting-integration/).
 ## Related guides
 
 * [View or print the full quote itinerary](../view-or-print-quote-itinerary.md)
+* [Add a Quote Option](../add-a-quote-option.md)
 * [Creating a Quote from scratch](../creating-a-quote.md)
 * [Cost Management](../cost-management.md)
 * [Using Documents in a Quote](../../documents/using-documents-in-a-quote.md)

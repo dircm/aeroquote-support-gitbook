@@ -75,6 +75,10 @@ If you need to adjust the price:
 * Add or remove line items
 * Override the total price directly
 
+### Adding another aircraft option
+
+On the **Options** step, use **Add Option** (top-left) to add a second aircraft. If charter legs already exist on another option, you can **auto-generate** a full estimated itinerary for the new aircraft. See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
+
 ## Step 7: Build the Quote Document
 
 The **Document Builder** lets you control exactly what the customer sees:

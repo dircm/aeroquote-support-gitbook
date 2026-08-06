@@ -77,6 +77,7 @@
   * [Create a Quote from a Request (Operators)](guides/quotes/create-a-quote-from-a-request-operators.md)
   * [Create a Quote from a Request (Brokers)](guides/quotes/create-a-quote-from-a-request-brokers.md)
   * [Creating a Quote from scratch](guides/quotes/creating-a-quote.md)
+  * [Add a Quote Option](guides/quotes/add-a-quote-option.md)
   * [Add a stop between two airports](guides/quotes/add-a-stop-between-two-airports.md)
   * [Edit the Price of a Quote option](guides/quotes/edit-the-price-of-a-quote.md)
   * [Require T\&Cs to be accepted online](guides/quotes/require-t-and-cs-to-be-accepted-online.md)

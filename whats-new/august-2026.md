@@ -2,7 +2,8 @@
 description: >-
   Advanced performance models for more realistic flight times (winds, climb and
   descent), model search when adding aircraft, internal fuel burn on estimates
-  and on saved quotes and bookings for your team.
+  and on saved quotes and bookings for your team, plus auto-generate option
+  flight legs and smarter middle-leg delete on quotes.
 ---
 
 # August 2026
@@ -92,12 +93,33 @@ See [Advanced performance models](../guides/aircraft/advanced-performance.md), [
 
 ***
 
+## Quote Options: auto-generate legs and smarter flight delete
+
+On an open quote’s **Options** step:
+
+### Add Option (top-left)
+
+**Add Option** is in the **top-left** of the Options toolbar (same row as **Admin View** / **Customer View**), not under the itinerary.
+
+### Auto-generate flight legs for a new option
+
+When you create a **new option** with an **aircraft**, and another option on the quote already has **charter** legs, AeroQuote asks whether to **auto-generate a full estimated itinerary** for the new aircraft from those charter legs (including ferry positioning and costs). Choose **Generate legs** or **Skip**.
+
+### Delete a middle flight — stitch previous destination
+
+When you **delete a flight leg** that sits between two other legs, AeroQuote asks whether to **update the previous flight’s destination** to the **next flight’s departure** (and recalculate that leg’s times/costs), or **delete only**.
+
+See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
+
+***
+
 ## What you need to do
 
 Nothing required for most accounts once advanced models are linked for your fleet.
 
 1. On **Aircraft → Details**, confirm the green **Using advanced performance model** banner for tails that should use the new engine — or **Link model** / **Change model** if something looks wrong  
 2. On a Request or Quote Builder, add an aircraft and check block times on a familiar route  
+
 3. Glance at the **Fuel** column on internal estimates (team only)  
 4. Create a quote and open **Options** — check **Charter / Ferry / Fuel** on the option header and **· Fuel** on each leg  
 5. After converting to a booking, confirm fuel on **Itinerary** and (if used) the crew manifest  
