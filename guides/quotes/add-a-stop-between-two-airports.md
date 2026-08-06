@@ -76,6 +76,7 @@ Check:
 
 ## Related
 
+* [Add a Quote Option](add-a-quote-option.md) — add another aircraft option, auto-generate legs, or delete a middle leg with optional route stitch
 * [Adding a stop in a booking](../bookings-operators/adding-a-stop-between-two-airports-in-a-booking.md) — same idea on operational bookings
 * [Default units](../settings/default-units.md) — default parking duration used when a stop is added
 * [Map-based route editing (Quotes)](map-route-editing.md) — change the flight path without adding a landing
