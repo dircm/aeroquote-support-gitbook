@@ -99,6 +99,8 @@ For each **added** aircraft, the builder shows estimates based on the flights yo
 
 You can add multiple aircraft if the booking requires more than one.
 
+After the booking is created, planned burn (when stored) appears next to **duration** on the booking **Itinerary**, on the crew itinerary link, and under duration on the **flight manifest** PDF. It is not shown on customer booking pages.
+
 ### Availability and Operational Cautions
 
 The builder checks for potential issues and displays caution indicators:

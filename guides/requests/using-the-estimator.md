@@ -53,7 +53,7 @@ Expand a row for the flight/routing breakdown, per-leg fuel where shown, and cos
 
 Fuel burn is a **planning estimate**, not a guarantee of uplift. Pricing still follows your rates and cost rules. Aircraft on **standard AeroQuote performance** may show **—** in the Fuel column.
 
-See [Advanced performance models](../aircraft/advanced-performance.md).
+When you **Generate Quote** (or create a booking from the same kind of estimate), planned burn for advanced-performance aircraft is **saved on each flight leg**. You will see it again next to duration on the quote Options and Details steps, on the booking itinerary, and on crew/manifest views — still internal only. See [Advanced performance models](../aircraft/advanced-performance.md).
 
 ## Step 4: Compare and adjust
 

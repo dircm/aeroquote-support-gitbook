@@ -68,15 +68,19 @@ For trips with multiple legs, you can:
 
 ## Ground Crew
 
-Ground crew are staff who support flights on the ground — handling baggage, coordinating ground services, or meeting aircraft — but are not part of the flight manifest.
+Ground crew are staff who support flights on the ground — handling baggage, coordinating ground services, or meeting aircraft — but are not part of the flight crew roster in the same way as pilots.
 
-### &#x20; Assigning Ground Crew
+### Assigning Ground Crew
 
-Ground crew are assigned separately from air crew on the Passengers & Cargo tab. They appear with an amber <mark style="color:$warning;">**Ground**</mark> badge.
+Ground crew are assigned on the booking **Crew** tab (and related flight assignment controls). They appear with a ground crew designation separately from air crew.
 
 {% hint style="info" %}
-Ground crew passenger check-in requires the v2 mobile app (April 2026+). Operators using the earlier version of the app should upgrade to enable this.                                                                                                                   &#x20;
+Ground crew passenger check-in requires the v2 mobile app (April 2026+). Operators using the earlier version of the app should upgrade to enable this.
 {% endhint %}
+
+### Send itinerary to ground crew
+
+**Send to Crew** includes **ground crew** as well as air crew. If only ground crew is assigned (common for some broker workflows), you can still open the crew itinerary preview and send the email, as long as they have an email address on file. See [Sending Confirmations](sending-confirmations.md).
 
 ***
 
@@ -84,9 +88,9 @@ Ground crew passenger check-in requires the v2 mobile app (April 2026+). Operato
 
 Assigned crew members receive:
 
-* Email notification of assignment
-* Access to view booking details
-* **Push notifications** via the mobile app for departure and arrival alerts
+* Access to the crew booking itinerary via **Send to Crew** (air and ground crew with email)
+* Access to view booking details and download the flight manifest
+* **Push notifications** via the mobile app for departure and arrival alerts (where applicable)
 
 {% hint style="info" %}
 Crew must have the AeroQuote mobile app installed to receive push notifications. Notifications are sent automatically when departures and arrivals are detected by flight tracking or confirmed by crew.

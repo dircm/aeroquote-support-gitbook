@@ -78,14 +78,32 @@ See [Flight Performance](flight-performance.md).
 
 ## Estimates and fuel burn
 
+### Live estimates (before you save a quote)
+
 On **Requests**, **Quote Builder**, and **Booking Builder**, after you add aircraft:
 
 * Times and distances for advanced-model aircraft use the new planning engine  
 * A **Fuel** column may show planned burn for those aircraft  
 
-**Fuel burn is internal only** — not on customer quote views or PDFs. Unit comes from **Settings → Localization** (default fuel unit). Blank cells or **est.** are explained in [Using the Estimator](../requests/using-the-estimator.md).
+### Saved quotes and bookings (planned burn)
+
+When you **create a quote or booking** from that estimate, planned burn is stored on each flight leg with duration. Your team can see it later without re-running estimates:
+
+| Where | Display |
+| ----- | ------- |
+| Quote **Options** | Per leg next to duration; option header **Charter** / **Ferry** / **Fuel** totals (left of the option title) |
+| Quote **Details** | Per leg next to duration; **Total fuel** under the option flight table when data exists |
+| Booking **Itinerary** | Per leg next to duration |
+| Crew itinerary link | Per leg next to duration |
+| **Flight manifest** PDF | Planned fuel under duration |
+
+**Fuel burn is internal only** — not on customer quote/booking views or customer PDFs. Unit comes from **Settings → Localization** (default fuel unit). Blank cells or **est.** are explained in [Using the Estimator](../requests/using-the-estimator.md).
 
 Pricing and margins still follow your **Costings** and quote rules.
+
+{% hint style="info" %}
+Quotes and bookings created **before** planned burn was stored will not show fuel until you re-estimate or create them again from a new plan. Editing only duration on a leg keeps the last planned burn figure (it is not recalculated automatically).
+{% endhint %}
 
 ---
 
@@ -103,4 +121,6 @@ Pricing and margins still follow your **Costings** and quote rules.
 * [Flight Performance](flight-performance.md)  
 * [Add Your First Aircraft](../../getting-started/add-your-first-aircraft.md)  
 * [Using the Estimator](../requests/using-the-estimator.md)  
+* [Creating a Quote from scratch](../quotes/creating-a-quote.md)  
+* [Booking Manifests](../bookings-operators/booking-manifests.md)  
 * [August 2026 What's New](../../whats-new/august-2026.md)  

@@ -16,6 +16,8 @@ You can create a booking directly from any accepted quote. This pre-fills the Bo
 
 Your new booking opens automatically on the booking detail page.
 
+If the quote legs had **planned fuel burn** from an advanced performance estimate, that figure is copied onto the booking flights. You will see it next to duration on **Itinerary** and on crew/manifest views (not on the customer booking page). See [Advanced performance models](../aircraft/advanced-performance.md).
+
 {% hint style="info" %}
 You can also create bookings from scratch (without a quote) using the **Create Booking** button on the Bookings page. See [Creating a Booking](booking-builder.md) for the full step-by-step guide.
 {% endhint %}

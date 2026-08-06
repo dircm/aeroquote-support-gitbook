@@ -115,6 +115,25 @@ For each **added** aircraft, the builder calculates pricing from the flights you
 | **Ferry Time** | Total positioning time to/from homebase |
 | **Fuel** | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views/PDFs). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
+After you create the quote, those figures can also appear on the saved itinerary (see below).
+
+### After the quote is created — planned burn on Options
+
+On **Quote → Options**, for each option:
+
+* Each flight leg can show duration and **· Fuel …** (internal) when burn was stored from the estimate  
+* The **option title bar** (left side, above the banner) summarises:
+
+| Metric | Meaning |
+| ------ | ------- |
+| **Charter** | Total charter flight time for the option |
+| **Ferry** | Total ferry / positioning time for the option |
+| **Fuel** | Total planned fuel burn for legs that have a stored figure (or **—** if none) |
+
+**Quote → Details** shows fuel next to duration in the flight table and **Total fuel** under the option when data exists.
+
+None of this planned burn appears on customer quote views or customer PDFs.
+
 ### Search in the add modal
 
 Use **Search aircraft** in the add-aircraft modal to filter by registration, name, or external operator.

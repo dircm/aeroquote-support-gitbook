@@ -1,8 +1,8 @@
 ---
 description: >-
   Advanced performance models for more realistic flight times (winds, climb and
-  descent), model search when adding aircraft, and internal fuel burn on
-  estimates.
+  descent), model search when adding aircraft, internal fuel burn on estimates
+  and on saved quotes and bookings for your team.
 ---
 
 # August 2026
@@ -53,14 +53,42 @@ Requests, the **Quote Builder**, and the **Booking Builder** can show a **Fuel**
 
 ### Important limits
 
-* **Internal only** — for your team on estimate screens. **Not** on customer quote views or customer PDFs
-* Unit follows **Settings → Localization** (default fuel unit for prices, e.g. litres or gallons)
-* Figures are a **planning estimate**, not a guarantee of uplift or actual burn
-* Pricing still follows your rates and cost rules
-* Blank (**—**) can mean the plan did not return a fuel figure for that leg; times and distances can still be valid
-* **est.** means burn was derived from cruise performance × time when a full plan figure was not available
+* **Internal only** — for your team. **Not** on customer quote or booking views, or customer PDFs  
+* Unit follows **Settings → Localization** (default fuel unit for prices, e.g. litres or gallons)  
+* Figures are a **planning estimate**, not a guarantee of uplift or actual burn  
+* Pricing still follows your rates and cost rules  
+* Blank (**—**) can mean the plan did not return a fuel figure for that leg; times and distances can still be valid  
+* **est.** means burn was derived from cruise performance × time when a full plan figure was not available  
 
 See [Using the Estimator](../guides/requests/using-the-estimator.md), [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md), and [Default Units](../guides/settings/default-units.md).
+
+***
+
+## Planned fuel burn on quotes and bookings
+
+When you create a quote or booking from an advanced-performance estimate, AeroQuote can **save planned fuel burn on each flight leg** (alongside duration). You no longer need to re-run the estimator just to see burn for that itinerary.
+
+### Where your team sees it
+
+| Place | What you see |
+| ----- | ------------ |
+| **Quote → Options** | On each leg: duration and **· Fuel …**. On the option title bar (left): **Charter** time, **Ferry** time, and **Fuel** total for the option |
+| **Quote → Details** | Fuel next to duration in the flight table; option **Total fuel** under the table when legs have data |
+| **Booking → Itinerary** | Fuel next to duration on each flight |
+| **Crew booking link** | Fuel next to duration (team / crew view) |
+| **Flight manifest PDF** | Planned fuel under duration on each leg |
+
+### What is not shown to customers
+
+Customer quote links, customer booking pages, and customer quote PDFs do **not** include planned fuel burn.
+
+### Notes
+
+* Only **new** estimates written after this feature is live store burn on legs. Older quotes/bookings stay blank until you re-estimate or recreate them from a fresh plan.  
+* Changing only the **duration** on a saved leg does **not** clear or rescale planned burn (it keeps the last planned figure).  
+* Changing your fuel unit under Localization updates how burn is **displayed**; stored values stay in the plan’s original unit.  
+
+See [Advanced performance models](../guides/aircraft/advanced-performance.md), [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md), and [Booking Manifests](../guides/bookings-operators/booking-manifests.md).
 
 ***
 
@@ -71,5 +99,7 @@ Nothing required for most accounts once advanced models are linked for your flee
 1. On **Aircraft → Details**, confirm the green **Using advanced performance model** banner for tails that should use the new engine — or **Link model** / **Change model** if something looks wrong  
 2. On a Request or Quote Builder, add an aircraft and check block times on a familiar route  
 3. Glance at the **Fuel** column on internal estimates (team only)  
-4. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
-5. Contact support with the registration and route if a model is missing or times look off  
+4. Create a quote and open **Options** — check **Charter / Ferry / Fuel** on the option header and **· Fuel** on each leg  
+5. After converting to a booking, confirm fuel on **Itinerary** and (if used) the crew manifest  
+6. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
+7. Contact support with the registration and route if a model is missing or times look off  

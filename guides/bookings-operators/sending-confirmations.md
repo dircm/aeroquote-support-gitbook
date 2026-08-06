@@ -21,7 +21,7 @@ You will see three send buttons at the top of the page:
 | Action                         | Recipients                                             | When to use                                       |
 | ------------------------------ | ------------------------------------------------------ | ------------------------------------------------- |
 | **Send to Customer**           | Main contacts and additional recipients on the booking | After creating or updating a booking              |
-| **Send to Crew**               | All crew members assigned to the booking               | After assigning crew and finalising the itinerary |
+| **Send to Crew**               | Air crew and ground crew assigned to the booking (with an email address) | After assigning crew and finalising the itinerary |
 | **Send to External Operators** | External operators whose aircraft are assigned         | When using aircraft from another operator         |
 
 {% hint style="info" %}
@@ -77,9 +77,16 @@ Crew and external-operator emails are not included in this tracking. See [Email 
 
 ## Sending to Crew
 
-Click **Send to Crew** to open a preview of the crew booking view. This shows the itinerary grouped by aircraft with crew-specific flight assignments.
+Click **Send to Crew (preview)** to open a preview of the crew booking view. This shows the itinerary for **air crew** and **ground crew** assigned to the booking.
 
-Crew emails are sent to all crew members assigned to the booking who have an email address on file.
+* Recipients are everyone on the **Crew** tab as air crew or ground crew who has an email address on file  
+* Preview uses a signed crew itinerary link (same style of view crew open from their email)  
+* Crew can download the **flight manifest** from that itinerary; when planned fuel burn was stored on legs, it appears under duration on the manifest (internal planning figure only)  
+* If no air or ground crew is assigned yet, the preview explains that and **Send Now** stays unavailable until someone is added  
+
+{% hint style="info" %}
+Brokers and operators who only assign **ground crew** can still preview and send the crew itinerary — ground crew are included the same way as air crew for this send path.
+{% endhint %}
 
 ***
 
