@@ -13,10 +13,15 @@ A **flight manifest** lists passengers, crew, cargo, and flight legs for a booki
 
 * Booking code and operator details
 * Flight legs with times, airports, and aircraft
+* **Planned duration** per leg; when available, **planned fuel burn** under duration (internal planning figure from advanced performance estimates — same unit preference as Settings → Localization; may show **est.**)
 * Passenger names, weights, and check-in status where recorded
 * Crew assignments per leg
 * Cargo items and weights
 * Facilities and notes relevant to crew
+
+{% hint style="info" %}
+Planned fuel burn appears only when it was stored on the flight leg (typically from an advanced performance estimate). Older bookings or native-only legs may show duration without a fuel line.
+{% endhint %}
 
 ## Crew manifest (signed link)
 

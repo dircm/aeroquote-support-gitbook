@@ -95,8 +95,11 @@ For each **added** aircraft, the builder shows estimates based on the flights yo
 | **Price**        | Estimated charter price                           |
 | **Charter Time** | Total flying time for all legs                    |
 | **Ferry Time**   | Positioning time to/from homebase (if applicable) |
+| **Fuel**         | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 You can add multiple aircraft if the booking requires more than one.
+
+After the booking is created, planned burn (when stored) appears next to **duration** on the booking **Itinerary**, on the crew itinerary link, and under duration on the **flight manifest** PDF. It is not shown on customer booking pages.
 
 ### Availability and Operational Cautions
 

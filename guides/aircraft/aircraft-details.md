@@ -76,12 +76,33 @@ Set the homebase to where the aircraft is normally parked overnight. This ensure
 
 ## Aircraft Type
 
-Selecting the correct aircraft type is crucial because it:
+Selecting the correct type is crucial because it:
 
-- Determines available performance data templates
+- Determines performance data and which planning engine is used for estimates
 - Affects fuel burn calculations
 - Influences landing fee estimates
 - Sets passenger expectations
+
+When you **Add Aircraft**, AeroQuote searches the advanced model catalogue first. Native AeroQuote types are available only if that search returns no matches. See [Advanced performance models](advanced-performance.md) and [Add Your First Aircraft](../../getting-started/add-your-first-aircraft.md).
+
+---
+
+## Advanced performance model (Details)
+
+On **Details**, a banner shows whether this aircraft uses advanced planning:
+
+| State | What you see | Actions |
+|-------|----------------|---------|
+| Linked | Green **Using advanced performance model** | **Change model**, **Revert** |
+| Not linked | Blue prompt to link a model | **Link model** |
+
+* **Change model** / **Update model** — pick a different catalogue model without recreating the aircraft  
+* **Revert** / **Revert?** — return this aircraft to **standard AeroQuote performance data**  
+* **Link model** — first-time attach of an advanced model  
+
+You can edit **Aircraft Name** and other identity fields as usual; changing the advanced model does not replace the registration.
+
+Full detail: [Advanced performance models](advanced-performance.md).
 
 ---
 
@@ -99,5 +120,6 @@ Inactive aircraft don't appear in quote options but their historical data is pre
 
 ## Next Steps
 
+- [Advanced performance models](advanced-performance.md) — Link, change, or revert models
 - [Flight Performance](flight-performance.md) — Configure speed and fuel data
 - [Costings](costings.md) — Set up pricing
