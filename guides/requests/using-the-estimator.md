@@ -34,12 +34,16 @@ You can add aircraft before or after the route is complete. Estimates appear for
 
 For each **chosen** aircraft, AeroQuote calculates:
 
-* Block time and distance (including positioning/ferry legs where applicable)
+* Block time and distance for the **legs on the request** (charter legs you entered, plus any **homebase ferry** legs you accepted from the amber banners)
 * Fuel, landing, parking, and sector charges (as cost lines)
 * Total estimated cost per aircraft
 * **Fuel** (burn) column when the aircraft uses an **advanced performance model** — planned burn for the sector, for your team only
 
 Expand a row for the flight/routing breakdown, per-leg fuel where shown, and cost lines. Remove an aircraft from the list when you no longer want it estimated.
+
+### Homebase ferry banners
+
+If a selected aircraft has a homebase and the route does not start or end there, amber **Yes, add ferry** / **No** banners appear on the Request. Positioning legs are added to the itinerary **only when you accept**. Declining keeps estimates on charter legs only. See [Creating a Request (Operators)](creating-a-request-operators.md#homebase-ferry-banners-optional).
 
 ### Fuel burn column (internal)
 

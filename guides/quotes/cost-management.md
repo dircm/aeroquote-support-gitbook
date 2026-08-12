@@ -73,15 +73,15 @@ If you change the charter flights (add, remove, or modify a route), the estimate
 
 ### Removing Ferry Flights
 
-The estimator automatically adds ferry flights when an aircraft needs to reposition (e.g. fly from its homebase to the charter departure point). You can remove unwanted ferry flights:
+On **Requests**, **Quote Builder**, and **Booking Builder**, homebase positioning is **opt-in** via amber ferry banners (**Yes, add ferry** / **No**). Only accepted ferries appear on the itinerary and in estimates. You can still remove a ferry after it was added:
 
-1. Expand the flights under an aircraft option
+1. Expand the flights under an aircraft option (or remove the ferry row on the builder flights list)
 2. Find a ferry flight (marked with an amber **Ferry** badge)
 3. Click the **X** button on the right side of the ferry flight row ![](<../../.gitbook/assets/Screenshot 2026-03-17 at 5.17.42 pm.png>)
 4. The ferry flight is removed and all totals (cost and ferry time) update immediately
 
-{% hint style="warning" %}
-Removed ferry flights will reappear if the estimates are recalculated (e.g. when you add or change a charter flight), since the flight plan has changed.
+{% hint style="info" %}
+If you remove a ferry that came from a banner, that ferry stays off unless you accept the banner again. On saved **quote options**, removing ferries and recalculating follows the option’s itinerary and estimate rules.
 {% endhint %}
 
 ### Per-Passenger Charges

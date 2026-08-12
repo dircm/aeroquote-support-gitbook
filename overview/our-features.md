@@ -25,7 +25,7 @@ Create professional, accurate quotes in minutes.
 
 - **Automatic Cost Estimation** — Fuel, landing fees, parking, and sector charges calculated automatically
 - **Multiple Aircraft Options** — Generate quotes for different aircraft in your fleet simultaneously
-- **Ferry Flight Handling** — Automatic positioning flight calculations based on homebase
+- **Ferry Flight Handling** — Optional homebase positioning via Yes/No banners; costs calculated when ferries are included
 - **Flexible Pricing** — Hourly rates or margin-based pricing models
 - **Document Builder** — Drag-and-drop quote document creation with your branding
 - **Online Quote View** — Send beautiful, interactive quotes customers can view and accept online

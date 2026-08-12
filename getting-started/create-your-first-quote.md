@@ -32,7 +32,7 @@ Click **Add Flight** to add your first flight leg:
 
 Repeat for additional legs if the trip has multiple flights (e.g., a return journey).
 
-**Tip:** AeroQuote automatically adds positioning (ferry) flights if the trip doesn't start or end at your aircraft's homebase. You'll see these in the estimates.
+**Tip:** If the trip doesn't start or end at the aircraft homebase, amber **ferry** banners ask whether to add positioning legs (**Yes, add ferry** or **No**). Estimates only include those ferries after you accept.
 
 ## Step 4: Add Aircraft and Review Estimates
 
@@ -45,7 +45,7 @@ AeroQuote does not estimate every aircraft until you choose them.
 * **Flight time** — Based on aircraft speed and route distance
 * **Fuel costs** — Calculated from fuel burn rate and current fuel prices
 * **Landing fees** — Based on airport and aircraft weight
-* **Positioning costs** — Ferry flight costs to/from homebase
+* **Positioning costs** — Ferry flight costs for any homebase ferries you accepted
 
 Add more with **+ Add Aircraft** or **+ Add more Aircraft** if you want extra options. Changing the route recalculates only the aircraft on the list.
 
