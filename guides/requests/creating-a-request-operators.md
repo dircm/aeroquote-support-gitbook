@@ -104,23 +104,21 @@ If an airport isn't in the database, type its name and select the option to crea
 * **Delete** — Remove a flight leg (click the trash icon)
 * **Drag to reorder** — Rearrange flight legs by dragging
 
-### Homebase ferry banners (optional)
+### Repositioning (ferry) flights toggle
 
-When at least one **added** aircraft has a **homebase**, and your charter route does not start and/or end there, amber banners can appear above the flights list:
+Above the flights list, use:
 
-| Banner | When it appears | What Yes does |
-| --- | --- | --- |
-| Ferry **to** the first departure | Homebase ≠ first charter origin | Inserts a **Ferry** leg: homebase → first departure |
-| Ferry **back** to homebase | Homebase ≠ last charter destination | Inserts a **Ferry** leg: last destination → homebase |
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
 
-* Choose **Yes, add ferry** or **No** for each banner independently
-* Ferry legs are marked with a **Ferry** badge, carry **no passengers**, and are included in estimates once accepted
-* If you decline, estimates use **only the charter legs you entered** (no automatic homebase positioning)
-* Deleting an accepted ferry leg is the same as declining that ferry for this request
-* With multiple aircraft selected, homebase is taken from the **first added aircraft that has a homebase set**
+| Toggle | What estimates include |
+| --- | --- |
+| **On** (default) | Classic behaviour — for each estimated aircraft with a homebase, AeroQuote adds positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs **you entered** — no homebase ferry legs in the estimate |
+
+Changing the toggle recalculates estimates for the aircraft on the list. You can still remove individual ferry rows from an expanded estimate when the toggle is on.
 
 {% hint style="info" %}
-Homebase ferries are **opt-in**. AeroQuote no longer injects them into the Request itinerary until you accept a banner. You can still remove ferry rows later from the expanded estimate if needed.
+This control is an **opt-out** from automatic homebase positioning. Leave it on unless you want charter-only pricing for the legs you typed.
 {% endhint %}
 
 ***

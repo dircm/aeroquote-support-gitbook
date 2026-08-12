@@ -52,8 +52,8 @@ Estimates run only for aircraft you **add** — not every external aircraft at o
 
 1. Click **+ Add Aircraft to see estimates** (or **+ Add Aircraft** / **+ Add more Aircraft** when some are already on the list)
 2. Choose aircraft from the modal (thumbnails and details). Already-added aircraft are excluded
-3. If homebase does not match the route start/end, answer the amber **ferry** banners (**Yes, add ferry** or **No**) — positioning is optional, not automatic
-4. With a complete route, each added row shows the estimated cost for the itinerary (including any ferries you accepted)
+3. Leave **Automatically add repositioning (ferry) flights for Aircraft with a homebase** **on** for classic estimates with homebase positioning, or turn it **off** for charter-only legs
+4. With a complete route, each added row shows the estimated cost for the itinerary
 5. Changing legs recalculates only the aircraft still on the list
 
 {% hint style="success" %}

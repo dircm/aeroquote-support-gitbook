@@ -40,7 +40,7 @@ For whole-aircraft charter work, AeroQuote follows this job flow:
 
 ### Requests
 
-**Requests** record inbound charter enquiries. You capture the customer, passenger count, notes, and itinerary, **add the aircraft you want to price**, and AeroQuote produces **live price estimates** for that set. Homebase ferry legs are optional — accept or decline the amber banners when the route does not start or end at homebase.
+**Requests** record inbound charter enquiries. You capture the customer, passenger count, notes, and itinerary, **add the aircraft you want to price**, and AeroQuote produces **live price estimates** for that set. Homebase repositioning ferries are included by default; turn **Automatically add repositioning (ferry) flights…** **off** for charter-only estimates.
 
 From a request you can generate a [Quote](concepts.md#quotes) with pre-filled legs and aircraft. Brokers also use the request as the starting point to send [Requests for Quote (RFQ)](concepts.md#external-operators-and-rfq) to external operators.
 

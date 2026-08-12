@@ -83,30 +83,25 @@ If an airport isn't in the database, you can create it inline from the search dr
 
 The interactive map updates as you add flights, showing your complete route.
 
-### Homebase ferry banners (optional)
+### Repositioning (ferry) flights toggle
 
-When you have **added aircraft** with a homebase, and the charter route does not start and/or end there, amber banners appear on the **Flights** step (and again on the **Aircraft** step if still undecided):
+On the **Flights** step:
 
-| Banner | Meaning |
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+| Toggle | What estimates include |
 | --- | --- |
-| Ferry **to** first departure | Homebase → first charter origin |
-| Ferry **back** to homebase | Last charter destination → homebase |
+| **On** (default) | Classic behaviour — homebase positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs you entered |
 
-* **Yes, add ferry** inserts a **Ferry** leg into the builder itinerary (0 passengers; shown with a Ferry badge)
-* **No** leaves the itinerary as charter-only for estimates
-* Homebase is taken from the **first selected aircraft that has a homebase**
-* You can delete an accepted ferry leg later; that counts as declining that ferry
-
-{% hint style="info" %}
-Positioning is **opt-in** in Quote Builder. Estimates do not auto-inject homebase ferries until you accept a banner.
-{% endhint %}
+Changing the toggle recalculates estimates for aircraft you have added.
 
 {% hint style="info" %}
 **Editing flights after the quote exists?** On **Quote → Options**, use **Add Option** (top-left) to add another aircraft — you can auto-generate legs from existing charter flights. Deleting a **middle** leg can optionally stitch the previous destination to the next departure. See [Add a Quote Option](add-a-quote-option.md).
 {% endhint %}
 
 {% hint style="info" %}
-**Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation (separate from the homebase ferry banners above).
+**Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation (separate from the homebase ferry toggle above).
 {% endhint %}
 
 Click **Next** to continue.
@@ -134,7 +129,7 @@ For each **added** aircraft, the builder calculates pricing from the flights you
 | **Customer Price estimate** | Estimated price to the customer |
 | **Cost to you estimate** | Your estimated operating cost |
 | **Charter Time** | Total flying time for charter legs |
-| **Ferry Time** | Total positioning time for accepted homebase ferry legs (if any) |
+| **Ferry Time** | Total positioning time to/from homebase when ferry auto-add is on (if applicable) |
 | **Fuel** | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views/PDFs). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 After you create the quote, those figures can also appear on the saved itinerary (see below).

@@ -70,23 +70,18 @@ Click **Load Route** to search your saved routes. Selecting a route auto-fills t
 
 The interactive map updates as you add flights, showing your complete route.
 
-### Homebase ferry banners (optional)
+### Repositioning (ferry) flights toggle
 
-When you have **added aircraft** with a homebase, and the charter route does not start and/or end there, amber banners appear on the **Flights** step (and again on the **Aircraft** step if still undecided):
+On the **Flights** step:
 
-| Banner | Meaning |
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+| Toggle | What estimates include |
 | --- | --- |
-| Ferry **to** first departure | Homebase → first charter origin |
-| Ferry **back** to homebase | Last charter destination → homebase |
+| **On** (default) | Classic behaviour — homebase positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs you entered |
 
-* **Yes, add ferry** inserts a **Ferry** leg into the builder itinerary (0 passengers; Ferry badge)
-* **No** keeps estimates on charter legs only
-* Homebase is taken from the **first selected aircraft that has a homebase**
-* Deleting an accepted ferry leg is treated as declining that ferry
-
-{% hint style="info" %}
-Homebase ferries are **opt-in** in Booking Builder — they are not auto-added until you accept a banner.
-{% endhint %}
+Changing the toggle recalculates estimates for aircraft you have added.
 
 Click **Next** to continue.
 
@@ -112,7 +107,7 @@ For each **added** aircraft, the builder shows estimates based on the flights yo
 | **Aircraft**     | Registration, type, and image                     |
 | **Price**        | Estimated charter price                           |
 | **Charter Time** | Total flying time for all legs                    |
-| **Ferry Time**   | Positioning time for accepted homebase ferry legs (if any) |
+| **Ferry Time**   | Positioning time to/from homebase when ferry auto-add is on (if applicable) |
 | **Fuel**         | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 You can add multiple aircraft if the booking requires more than one.
