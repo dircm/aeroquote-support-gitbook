@@ -1,8 +1,8 @@
 ---
 description: >-
   Adding stops between flights can be used to add a technical stop (example: a
-  fuel uplift) or if the customer requests it.  AeroQuote makes this process so
-  easy.
+  fuel uplift) or if the customer requests it. AeroQuote ranks suggested stops
+  by how well they sit on track and shows a preview map.
 ---
 
 # Add a stop between two airports
@@ -10,6 +10,10 @@ description: >-
 Use **Add a Stop** when you need an intermediate airport on an existing quote leg — for example a fuel uplift, a tech stop, or a passenger pick-up or drop mid-route. AeroQuote splits the leg into two flights and recalculates times, distance, and costs.
 
 {% embed url="https://screen.studio/share/TMBN9ahw" %}
+
+{% hint style="warning" %}
+**Video note:** The embedded walkthrough may still show an older “distance from midpoint” list only. The product now ranks suggestions by **on-track quality**, shows **off-track** and **detour** figures, and includes a **map** of the leg with hover previews. Re-record the screen.studio video when you can.
+{% endhint %}
 
 ## Prerequisites
 
@@ -31,7 +35,7 @@ Use **Add a Stop** when you need an intermediate airport on an existing quote le
 3. The label changes to **Add a Stop**
 4. Click the **+** / **Add a Stop** control
 
-The **Insert a stop between:** dialog opens. It shows the current departure and arrival airports for that leg.
+The **Insert a stop between:** dialog opens. It shows the current departure and arrival airports for that leg, a list of **suggested airports**, and a **route map** of the sector.
 
 ## Step 3: Choose the intermediate airport
 
@@ -39,13 +43,24 @@ Pick the stop airport in either of these ways:
 
 ### Use a suggested airport
 
-1. Review the **Suggested airports and dist from midpoint** list
-2. Click a suggestion (ICAO, name, and distance from the route midpoint are shown)
+Suggestions are ranked for **how well they sit on the great-circle track** toward the destination (not only “closest to the geometric midpoint”).
+
+1. Review **Suggested airports · best on track toward destination**
+2. Each row shows ICAO, name, and metrics such as:
+   * **NM mid** — distance from the route midpoint search point
+   * **NM off track** — how far the airport sits from the straight track
+   * **+NM detour** — extra great-circle distance vs flying the leg nonstop
+3. Hover a suggestion to **preview it on the map** (green marker)
+4. Click a suggestion to insert that airport
+
+### Filter airport types
+
+Use the airport type checkboxes (large / medium / small / heliport / custom) to narrow the suggestion list if needed.
 
 ### Search for any airport
 
 1. In the search field, type the airport name or ICAO code
-2. Click the airport in the results list
+2. Click the airport in the results list (hover previews on the map when coordinates are known)
 
 Selecting an airport closes the dialog and inserts the stop.
 

@@ -114,6 +114,19 @@ See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
 
 ***
 
+## Add a Stop: on-track ranking and map preview
+
+On **Quote → Options**, **Add a Stop** still splits one leg into two via an intermediate airport — but suggestions and the dialog are smarter:
+
+* Suggested airports are ranked by **on-track quality** toward the destination (cross-track / detour), not only “closest to the geometric midpoint”
+* Each suggestion can show **NM mid**, **NM off track**, and **detour**
+* The dialog includes a **route map**; hover a suggestion to preview the stop
+* Airport **type filters** (large / medium / small / heliport / custom) narrow the list
+
+See [Add a stop between two airports](../guides/quotes/add-a-stop-between-two-airports.md).
+
+***
+
 ## Homebase ferry auto-add toggle
 
 On **Requests**, **Quote Builder**, and **Booking Builder**, use:
@@ -145,3 +158,4 @@ Nothing required for most accounts once advanced models are linked for your flee
 6. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
 7. Contact support with the registration and route if a model is missing or times look off  
 8. On a Request or Quote/Booking Builder, use the ferry auto-add toggle if you need charter-only estimates without homebase positioning  
+
