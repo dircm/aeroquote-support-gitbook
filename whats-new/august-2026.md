@@ -149,5 +149,3 @@ Nothing required for most accounts once advanced models are linked for your flee
 7. Contact support with the registration and route if a model is missing or times look off  
 8. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
 
-8. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
-
