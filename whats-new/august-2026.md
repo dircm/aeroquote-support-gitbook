@@ -113,6 +113,19 @@ See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
 
 ***
 
+## Add a Stop: on-track ranking and map preview
+
+On **Quote → Options**, **Add a Stop** still splits one leg into two via an intermediate airport — but suggestions and the dialog are smarter:
+
+* Suggested airports are ranked by **on-track quality** toward the destination (cross-track / detour), not only “closest to the geometric midpoint”
+* Each suggestion can show **NM mid**, **NM off track**, and **detour**
+* The dialog includes a **route map**; hover a suggestion to preview the stop
+* Airport **type filters** (large / medium / small / heliport / custom) narrow the list
+
+See [Add a stop between two airports](../guides/quotes/add-a-stop-between-two-airports.md).
+
+***
+
 ## What you need to do
 
 Nothing required for most accounts once advanced models are linked for your fleet.
