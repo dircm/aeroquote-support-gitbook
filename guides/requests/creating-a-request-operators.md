@@ -104,6 +104,23 @@ If an airport isn't in the database, type its name and select the option to crea
 * **Delete** — Remove a flight leg (click the trash icon)
 * **Drag to reorder** — Rearrange flight legs by dragging
 
+### Repositioning (ferry) flights toggle
+
+Above the flights list, use:
+
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+| Toggle | What estimates include |
+| --- | --- |
+| **On** (default) | Classic behaviour — for each estimated aircraft with a homebase, AeroQuote adds positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs **you entered** — no homebase ferry legs in the estimate |
+
+Changing the toggle recalculates estimates for the aircraft on the list. You can still remove individual ferry rows from an expanded estimate when the toggle is on.
+
+{% hint style="info" %}
+This control is an **opt-out** from automatic homebase positioning. Leave it on unless you want charter-only pricing for the legs you typed.
+{% endhint %}
+
 ***
 
 ## Aircraft Estimates

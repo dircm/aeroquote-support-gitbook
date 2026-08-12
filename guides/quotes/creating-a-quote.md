@@ -83,12 +83,25 @@ If an airport isn't in the database, you can create it inline from the search dr
 
 The interactive map updates as you add flights, showing your complete route.
 
+### Repositioning (ferry) flights toggle
+
+On the **Flights** step:
+
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+| Toggle | What estimates include |
+| --- | --- |
+| **On** (default) | Classic behaviour — homebase positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs you entered |
+
+Changing the toggle recalculates estimates for aircraft you have added.
+
 {% hint style="info" %}
 **Editing flights after the quote exists?** On **Quote → Options**, use **Add Option** (top-left) to add another aircraft — you can auto-generate legs from existing charter flights. Deleting a **middle** leg can optionally stitch the previous destination to the next departure. See [Add a Quote Option](add-a-quote-option.md).
 {% endhint %}
 
 {% hint style="info" %}
-**Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation.
+**Return to base before next flight** — Check this box on a flight to include a ferry positioning flight back to the aircraft's homebase before the next leg in the pricing calculation (separate from the homebase ferry toggle above).
 {% endhint %}
 
 Click **Next** to continue.
@@ -116,7 +129,7 @@ For each **added** aircraft, the builder calculates pricing from the flights you
 | **Customer Price estimate** | Estimated price to the customer |
 | **Cost to you estimate** | Your estimated operating cost |
 | **Charter Time** | Total flying time for charter legs |
-| **Ferry Time** | Total positioning time to/from homebase |
+| **Ferry Time** | Total positioning time to/from homebase when ferry auto-add is on (if applicable) |
 | **Fuel** | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views/PDFs). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 After you create the quote, those figures can also appear on the saved itinerary (see below).

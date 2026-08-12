@@ -3,7 +3,8 @@ description: >-
   Advanced performance models for more realistic flight times (winds, climb and
   descent), model search when adding aircraft, internal fuel burn on estimates
   and on saved quotes and bookings for your team, auto-generate option flight
-  legs, smarter middle-leg delete on quotes, and Trip Builder (BETA).
+  legs, smarter middle-leg delete on quotes, Add a Stop ranking, homebase ferry
+  auto-add toggle on Requests and builders, and Trip Builder (BETA).
 ---
 
 # August 2026
@@ -113,6 +114,37 @@ See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
 
 ***
 
+## Add a Stop: on-track ranking and map preview
+
+On **Quote → Options**, **Add a Stop** still splits one leg into two via an intermediate airport — but suggestions and the dialog are smarter:
+
+* Suggested airports are ranked by **on-track quality** toward the destination (cross-track / detour), not only “closest to the geometric midpoint”
+* Each suggestion can show **NM mid**, **NM off track**, and **detour**
+* The dialog includes a **route map**; hover a suggestion to preview the stop
+* Airport **type filters** (large / medium / small / heliport / custom) narrow the list
+
+See [Add a stop between two airports](../guides/quotes/add-a-stop-between-two-airports.md).
+
+***
+
+## Homebase ferry auto-add toggle
+
+On **Requests**, **Quote Builder**, and **Booking Builder**, use:
+
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+* **On** (default) — classic estimates: homebase positioning ferries when the route does not start and/or end at homebase  
+* **Off** — estimates use only the charter legs you entered  
+
+See:
+
+* [Creating a Request (Operators)](../guides/requests/creating-a-request-operators.md#repositioning-ferry-flights-toggle)
+* [Using the Estimator](../guides/requests/using-the-estimator.md)
+* [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md)
+* [Creating a Booking](../guides/bookings-operators/booking-builder.md)
+
+***
+
 ## Trip Builder (BETA)
 
 **Trip Builder** is a full-screen wizard for multi-leg trips with **IFP fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts**. Plan the trip, then create a **Request** or **Quote** from the result.
@@ -147,5 +179,6 @@ Nothing required for most accounts once advanced models are linked for your flee
 5. After converting to a booking, confirm fuel on **Itinerary** and (if used) the crew manifest  
 6. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
 7. Contact support with the registration and route if a model is missing or times look off  
-8. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
+8. On a Request or Quote/Booking Builder, use the ferry auto-add toggle if you need charter-only estimates without homebase positioning  
+9. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
 

@@ -70,6 +70,19 @@ Click **Load Route** to search your saved routes. Selecting a route auto-fills t
 
 The interactive map updates as you add flights, showing your complete route.
 
+### Repositioning (ferry) flights toggle
+
+On the **Flights** step:
+
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+| Toggle | What estimates include |
+| --- | --- |
+| **On** (default) | Classic behaviour — homebase positioning ferries when the route does not start and/or end at homebase |
+| **Off** | Only the charter legs you entered |
+
+Changing the toggle recalculates estimates for aircraft you have added.
+
 Click **Next** to continue.
 
 ***
@@ -94,7 +107,7 @@ For each **added** aircraft, the builder shows estimates based on the flights yo
 | **Aircraft**     | Registration, type, and image                     |
 | **Price**        | Estimated charter price                           |
 | **Charter Time** | Total flying time for all legs                    |
-| **Ferry Time**   | Positioning time to/from homebase (if applicable) |
+| **Ferry Time**   | Positioning time to/from homebase when ferry auto-add is on (if applicable) |
 | **Fuel**         | Planned fuel burn for advanced-performance aircraft (internal only; not on customer views). Unit from Settings → Localization. May show **—** or **est.** — see [Using the Estimator](../requests/using-the-estimator.md) |
 
 You can add multiple aircraft if the booking requires more than one.
