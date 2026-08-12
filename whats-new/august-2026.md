@@ -2,8 +2,9 @@
 description: >-
   Advanced performance models for more realistic flight times (winds, climb and
   descent), model search when adding aircraft, internal fuel burn on estimates
-  and on saved quotes and bookings for your team, plus auto-generate option
-  flight legs and smarter middle-leg delete on quotes.
+  and on saved quotes and bookings for your team, auto-generate option flight
+  legs, smarter middle-leg delete on quotes, Add a Stop ranking, and a
+  homebase ferry auto-add toggle on Requests and builders.
 ---
 
 # August 2026
@@ -126,6 +127,24 @@ See [Add a stop between two airports](../guides/quotes/add-a-stop-between-two-ai
 
 ***
 
+## Homebase ferry auto-add toggle
+
+On **Requests**, **Quote Builder**, and **Booking Builder**, use:
+
+**Automatically add repositioning (ferry) flights for Aircraft with a homebase**
+
+* **On** (default) — classic estimates: homebase positioning ferries when the route does not start and/or end at homebase  
+* **Off** — estimates use only the charter legs you entered  
+
+See:
+
+* [Creating a Request (Operators)](../guides/requests/creating-a-request-operators.md#repositioning-ferry-flights-toggle)
+* [Using the Estimator](../guides/requests/using-the-estimator.md)
+* [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md)
+* [Creating a Booking](../guides/bookings-operators/booking-builder.md)
+
+***
+
 ## What you need to do
 
 Nothing required for most accounts once advanced models are linked for your fleet.
@@ -138,3 +157,5 @@ Nothing required for most accounts once advanced models are linked for your flee
 5. After converting to a booking, confirm fuel on **Itinerary** and (if used) the crew manifest  
 6. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
 7. Contact support with the registration and route if a model is missing or times look off  
+8. On a Request or Quote/Booking Builder, use the ferry auto-add toggle if you need charter-only estimates without homebase positioning  
+
