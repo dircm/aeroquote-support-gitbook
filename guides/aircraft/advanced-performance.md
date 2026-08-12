@@ -122,5 +122,6 @@ Quotes and bookings created **before** planned burn was stored will not show fue
 * [Add Your First Aircraft](../../getting-started/add-your-first-aircraft.md)  
 * [Using the Estimator](../requests/using-the-estimator.md)  
 * [Creating a Quote from scratch](../quotes/creating-a-quote.md)  
+* [Trip Builder (BETA)](../trip-builder/README.md) — fuel/range planning for advanced-model aircraft  
 * [Booking Manifests](../bookings-operators/booking-manifests.md)  
 * [August 2026 What's New](../../whats-new/august-2026.md)  

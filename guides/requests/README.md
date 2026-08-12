@@ -10,6 +10,10 @@ Requests form the first step of a [job flow](../../getting-started/concepts.md#j
 In a hurry? You can also just ask the [AI Co-Worker](../dashboard/ai-assistant.md): *"Quote from Essendon to Sydney tomorrow 9am for 3 passengers"* — it walks you through aircraft selection and creates the quote for you.
 {% endhint %}
 
+{% hint style="info" %}
+**Trip Builder (BETA)** — On the Requests list (with **Preview features** on), open the amber **Trip Builder** card to plan fuel range and stops, then create a Request. See [Trip Builder (BETA)](../trip-builder/README.md).
+{% endhint %}
+
 ## Request Statuses
 
 | Status | Meaning |

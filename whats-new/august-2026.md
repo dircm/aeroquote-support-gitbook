@@ -2,8 +2,8 @@
 description: >-
   Advanced performance models for more realistic flight times (winds, climb and
   descent), model search when adding aircraft, internal fuel burn on estimates
-  and on saved quotes and bookings for your team, plus auto-generate option
-  flight legs and smarter middle-leg delete on quotes.
+  and on saved quotes and bookings for your team, auto-generate option flight
+  legs, smarter middle-leg delete on quotes, and Trip Builder (BETA).
 ---
 
 # August 2026
@@ -113,6 +113,28 @@ See [Add a Quote Option](../guides/quotes/add-a-quote-option.md).
 
 ***
 
+## Trip Builder (BETA)
+
+**Trip Builder** is a full-screen wizard for multi-leg trips with **IFP fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts**. Plan the trip, then create a **Request** or **Quote** from the result.
+
+### Where to open it
+
+* **Requests** list — promo card **Open Trip Builder** → create a **Request**
+* **Quotes** list — same promo → **Create Quote** or **Open Quote Builder**
+
+Requires operator **Preview features** (Account Settings). Aircraft must use an **advanced performance model** with fuel capacity.
+
+### What you can do
+
+* Setup passengers, crew, cargo, and optional **comfort endurance**
+* Build the route with TBC dates and optional **homebase ferry** Yes/No prompts
+* **Plan & stops** — auto-plan on first visit, **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel)
+* **Review** indicative commercial costs and suggested fuel uplifts
+
+Full walkthrough: [Trip Builder (BETA)](../guides/trip-builder/README.md).
+
+***
+
 ## What you need to do
 
 Nothing required for most accounts once advanced models are linked for your fleet.
@@ -125,3 +147,7 @@ Nothing required for most accounts once advanced models are linked for your flee
 5. After converting to a booking, confirm fuel on **Itinerary** and (if used) the crew manifest  
 6. Adjust display units under **Settings → Localization** if you prefer gallons or litres  
 7. Contact support with the registration and route if a model is missing or times look off  
+8. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
+
+8. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
+
