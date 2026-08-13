@@ -11,7 +11,7 @@ In a hurry? You can also just ask the [AI Co-Worker](../dashboard/ai-assistant.m
 {% endhint %}
 
 {% hint style="info" %}
-**Trip Builder (BETA)** — On the Requests list (with **Preview features** on), open the amber **Trip Builder** card to plan fuel range and stops, then create a Request. See [Trip Builder (BETA)](../trip-builder/README.md).
+**Trip Builder (BETA)** — On the Requests list (with **Preview features** on), open the amber **Trip Builder** card to plan fuel range and stops, then create a Request or **Save as Custom Trip**. See [Trip Builder (BETA)](../trip-builder/README.md) and [Custom Trips (BETA)](../custom-items/custom-trips.md).
 {% endhint %}
 
 ## Request Statuses

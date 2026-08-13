@@ -124,6 +124,7 @@
   * [Custom Airports](guides/custom-items/custom-airports.md)
   * [Custom Facilities](guides/custom-items/custom-facilities.md)
   * [Custom Routes & Route Library](guides/custom-items/custom-routes-and-route-library.md)
+  * [🆕 Custom Trips (BETA)](guides/custom-items/custom-trips.md)
 * [🔌 Widgets](guides/widgets/README.md)
 * [📱 Mobile App](guides/mobile-app/README.md)
   * [Dashboard](guides/mobile-app/dashboard.md)

@@ -12,7 +12,7 @@ Quotes are the second step of a [customer flow](../../getting-started/concepts.m
 To get started, learn how to create a quote using the Quote Builder — or create one quickly from a [Request](../requests/).
 
 {% hint style="info" %}
-**Trip Builder (BETA)** — On the Quotes list (with **Preview features** on), open **Trip Builder** to plan fuel range and stops, then **Create Quote** or **Open Quote Builder**. See [Trip Builder (BETA)](../trip-builder/README.md).
+**Trip Builder (BETA)** — On the Quotes list (with **Preview features** on), open **Trip Builder** to plan fuel range and stops, then **Create Quote**, **Open Quote Builder**, or **Save as Custom Trip**. Reopen saved trips from [Custom Trips (BETA)](../custom-items/custom-trips.md). See [Trip Builder (BETA)](../trip-builder/README.md).
 {% endhint %}
 
 {% content-ref url="creating-a-quote.md" %}

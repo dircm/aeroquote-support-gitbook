@@ -1,13 +1,13 @@
 ---
 description: >-
   Plan multi-leg trips with IFP fuel range, payload, optional comfort
-  endurance, fuel stops, and create a Request or Quote — Trip Builder is in
-  BETA for operators with Preview features.
+  endurance, fuel stops, create a Request or Quote, or save a Custom Trip —
+  Trip Builder is in BETA for operators with Preview features.
 ---
 
 # Trip Builder (BETA)
 
-**Trip Builder** plans a full multi-leg trip with **fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts** using advanced (iFlightPlanner) performance — then creates a **Request** or **Quote** from that plan.
+**Trip Builder** plans a full multi-leg trip with **fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts** using advanced (iFlightPlanner) performance — then creates a **Request** or **Quote**, or saves a reusable **Custom Trip**.
 
 {% hint style="warning" %}
 **BETA** — Trip Builder is available when your operator has **Preview features** enabled (Account Settings). Behaviour may change as we refine fuel-stop suggestions, comfort rules, and cost preview.
@@ -21,7 +21,7 @@ description: >-
 | --- | --- |
 | **Preview features** | Operator setting **Preview features** must be **on** (Account Settings). Without it, the Trip Builder promo card does not appear. |
 | **Aircraft** | Only **active** aircraft with an **advanced performance model** (IFP) and usable **fuel capacity** appear in the aircraft list. |
-| **Permissions** | No separate Trip Builder permission — you need access to the **Requests** or **Quotes** list pages. |
+| **Permissions** | No separate Trip Builder permission — you need access to **Requests**, **Quotes**, or **Custom Items**. |
 
 See [Advanced performance models](../aircraft/advanced-performance.md) if an aircraft is missing from the list.
 
@@ -35,12 +35,15 @@ Trip Builder is **not** a sidebar menu item. It opens as a full-screen wizard fr
 | --- | --- |
 | **Requests** list | A **Request** with the planned flights and the selected aircraft |
 | **Quotes** list | A **Quote** (or open **Quote Builder** with the plan preloaded) |
+| **Custom Items → Custom Trips** | A reusable **Custom Trip**, or a **Quote** from a saved trip |
 
-On those pages, look for the amber promo card:
+On Requests and Quotes, look for the amber promo card:
 
 * Title: **Trip Builder** + **BETA**
 * Copy: *Create accurate trips with full fuel planning and uplift costs, now in BETA.*
 * Button: **Open Trip Builder**
+
+On **Custom Items**, the **Custom Trips** section (BETA pill) is only shown when Preview features is on. See [Custom Trips (BETA)](../custom-items/custom-trips.md).
 
 ***
 
@@ -51,9 +54,9 @@ On those pages, look for the amber promo card:
 | **1** | **Setup** — Aircraft & payload | Choose aircraft, passengers, crew, cargo, optional comfort endurance |
 | **2** | **Route** — Flights | Origins, destinations, times (or TBC), optional homebase ferries |
 | **3** | **Plan & stops** | Run fuel/range plan, insert fuel or voluntary stops |
-| **4** | **Review** | Costs preview, fuel uplifts, create Request or Quote |
+| **4** | **Review** | Costs preview, fuel uplifts, create Request or Quote, or save a Custom Trip |
 
-Use **Next** / **Back** / **Close**. Create actions appear only on **Review** when the plan is complete.
+Use **Next** / **Back** / **Close**. Create and save actions appear only on **Review** when the plan is complete.
 
 ***
 
@@ -184,10 +187,32 @@ When the plan is complete you see **Ready to create**.
 | --- | --- |
 | **Requests** list | **Create a Request** — new request with planned flights and **this aircraft only**, then the Request / estimator |
 | **Quotes** list | **Create Quote** (primary) — estimate, save, open the quote; or **Open Quote Builder** — preload flights and aircraft for edit before save |
+| **Custom Items → Add Custom Trip** | **Save as Custom Trip** only — no dates, no Create Quote |
+| Any of the above (Preview on) | **Save as Custom Trip** — unique title; you stay in the wizard (except author mode, which closes after save) |
 
 {% hint style="info" %}
 Trip Builder always materialises **one aircraft** — the tail you selected on Setup. For multi-option quotes, add more aircraft after creation on the Request estimator or Quote Options.
 {% endhint %}
+
+***
+
+## Custom Trips (BETA)
+
+Save a flyable plan as a reusable route under **Custom Items**.
+
+### Save from Requests or Quotes
+
+On **Review**, with Preview features on, click **Save as Custom Trip**. Enter a **unique title** (unique for your operator). The route thumbnail is the planned map. You can still create the Request or Quote afterwards.
+
+### Add from Custom Items
+
+**Custom Items → Custom Trips → Add Custom Trip** opens Trip Builder in **author** mode: dates are not used, and Review only offers **Save as Custom Trip**. Finish the wizard and save. Trip Builder then closes.
+
+### Create a quote from a saved trip
+
+On the Custom Trips list, **Create quote from this trip** opens Trip Builder as from the Quotes list, with **all saved stops preloaded**. Adjust payload, confirm the route, re-plan if needed, then **Create Quote** or **Open Quote Builder**.
+
+Full detail: [Custom Trips (BETA)](../custom-items/custom-trips.md).
 
 ***
 
@@ -209,3 +234,4 @@ Trip Builder always materialises **one aircraft** — the tail you selected on S
 * [Creating a Quote from scratch](../quotes/creating-a-quote.md)
 * [Add a stop between two airports](../quotes/add-a-stop-between-two-airports.md)
 * [Advanced performance models](../aircraft/advanced-performance.md)
+* [Custom Trips (BETA)](../custom-items/custom-trips.md)

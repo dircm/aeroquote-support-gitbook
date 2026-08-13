@@ -4,7 +4,8 @@ description: >-
   descent), model search when adding aircraft, internal fuel burn on estimates
   and on saved quotes and bookings for your team, auto-generate option flight
   legs, smarter middle-leg delete on quotes, Add a Stop ranking, homebase ferry
-  auto-add toggle on Requests and builders, and Trip Builder (BETA).
+  auto-add toggle on Requests and builders, Trip Builder (BETA), and
+  Custom Trips (BETA).
 ---
 
 # August 2026
@@ -153,6 +154,7 @@ See:
 
 * **Requests** list — promo card **Open Trip Builder** → create a **Request**
 * **Quotes** list — same promo → **Create Quote** or **Open Quote Builder**
+* **Custom Items → Custom Trips** (Preview only, BETA pill) — save or reopen a reusable route
 
 Requires operator **Preview features** (Account Settings). Aircraft must use an **advanced performance model** with fuel capacity.
 
@@ -162,8 +164,10 @@ Requires operator **Preview features** (Account Settings). Aircraft must use an 
 * Build the route with TBC dates and optional **homebase ferry** Yes/No prompts
 * **Plan & stops** — auto-plan on first visit, **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel)
 * **Review** indicative commercial costs and suggested fuel uplifts
+* **Save as Custom Trip** (unique title, route thumbnail) from Review, or **Add Custom Trip** from Custom Items (dates not stored)
+* **Create quote from this trip** — Trip Builder opens like the Quotes list, with saved stops and aircraft preloaded
 
-Full walkthrough: [Trip Builder (BETA)](../guides/trip-builder/README.md).
+Full walkthrough: [Trip Builder (BETA)](../guides/trip-builder/README.md) · [Custom Trips (BETA)](../guides/custom-items/custom-trips.md).
 
 ***
 
@@ -181,4 +185,6 @@ Nothing required for most accounts once advanced models are linked for your flee
 7. Contact support with the registration and route if a model is missing or times look off  
 8. On a Request or Quote/Booking Builder, use the ferry auto-add toggle if you need charter-only estimates without homebase positioning  
 9. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
+10. Save a flyable plan as a **Custom Trip** and reopen it from **Custom Items → Custom Trips**  
+
 

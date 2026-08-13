@@ -178,9 +178,9 @@ A **Request for Quote (RFQ)** is the message (and tracking workflow) you send to
 
 **Facilities** are FBOs or meeting points attached to airports on a flight leg. Customers see where to meet on online views; crew see handling details on operational documents.
 
-**Custom items** extend AeroQuote data for your operation: custom airports, custom facilities, custom routes (and route library), and custom charge/duration overrides where configured.
+**Custom items** extend AeroQuote data for your operation: custom airports, custom facilities, custom routes (and route library), custom trips (Trip Builder, Preview / BETA), and custom charge/duration overrides where configured.
 
-**Guides:** [Using Facilities](../guides/quotes/using-facilities.md) · [Custom Items](../guides/custom-items/README.md)
+**Guides:** [Using Facilities](../guides/quotes/using-facilities.md) · [Custom Items](../guides/custom-items/README.md) · [Custom Trips (BETA)](../guides/custom-items/custom-trips.md)
 
 ## Analytics
 
