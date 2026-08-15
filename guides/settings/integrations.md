@@ -24,13 +24,13 @@ The Integrations tab lets you connect AeroQuote to external services like accoun
 | **Xero** | Automatic invoice creation and sync |
 | **QuickBooks** | Invoice sync with QuickBooks Online |
 
-### Other Integrations
+### Flight Tracking
 
 | Integration | Description |
 |-------------|-------------|
-| **Aircraft / performance database** | Route planning, performance models, and facility data |
-| **Firestore** | Real-time mobile app sync |
-| **FlightRadar24 / FlightAware** | Automatic flight departure, arrival, and ETA detection |
+| **Flight Tracking** | Automatic departure, arrival, and ETA detection (FlightRadar24, with FlightAware as a source on some flights) |
+
+There is no operator setting for aircraft performance data. Model search and flight-time planning are built into AeroQuote (Add Aircraft, Aircraft Details, Trip Builder).
 
 ---
 
