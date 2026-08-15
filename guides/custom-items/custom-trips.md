@@ -59,7 +59,7 @@ Titles must be unique for your operator (case-insensitive).
 3. The **route is preloaded** with every saved stop (including fuel/via stops)
 4. **Setup** — the saved aircraft is selected when it is still available; confirm payload
 5. **Route** — confirm the legs (set dates here). The saved **parking gap** is preloaded if you overrode the operator default
-6. **Plan & stops** — check the trip is still within range; adjust stops or departure times if needed
+6. **Plan & stops** — check the trip is still within range; adjust stops or [departure times](../trip-builder/README.md#changing-departure-times) if needed. To use a different tail, go **Back** to Setup and [change the aircraft](../trip-builder/README.md#changing-the-aircraft) (that drops the plan so you re-plan)
 7. **Review** — **Create Quote** or **Open Quote Builder** as usual. You can also **Save as Custom Trip** again under a new unique title.
 
 ***

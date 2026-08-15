@@ -22,11 +22,15 @@ Fill in the required information:
 
 ### Type from registration
 
-When you enter a **Registration**, AeroQuote can look up the aircraft type for you. A short progress panel shows while the lookup runs (you can **Cancel lookup** anytime). If a confident match is found, the type is applied automatically; if not, choose the type yourself as usual.
+When you enter a **Registration**, AeroQuote looks up the type, then **searches the aircraft database** for that ICAO (or model name). A short progress panel shows while the lookup runs (you can **Cancel lookup** anytime).
+
+* **One** database model — that performance model is selected
+* **Several** models — pick one from the list (**Next** stays off until you do)
+* **No** database match — a unique native AeroQuote type may be applied, or you pick one
 
 ### Search aircraft database
 
-Type search uses **Search aircraft database (iFlightPlanner)** first:
+Type search uses **Search aircraft database** first:
 
 1. Enter at least **2 characters** (make, model, or ICAO code)
 2. Pick a model from the list when results appear — this links advanced performance data when available

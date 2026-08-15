@@ -28,7 +28,7 @@ The Integrations tab lets you connect AeroQuote to external services like accoun
 
 | Integration | Description |
 |-------------|-------------|
-| **iFlightPlanner** | Route planning and facility data |
+| **Aircraft / performance database** | Route planning, performance models, and facility data |
 | **Firestore** | Real-time mobile app sync |
 | **FlightRadar24 / FlightAware** | Automatic flight departure, arrival, and ETA detection |
 

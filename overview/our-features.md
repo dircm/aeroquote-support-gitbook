@@ -26,7 +26,7 @@ Create professional, accurate quotes in minutes.
 - **Automatic Cost Estimation** — Fuel, landing fees, parking, and sector charges calculated automatically
 - **Multiple Aircraft Options** — Generate quotes for different aircraft in your fleet simultaneously
 - **Ferry Flight Handling** — Homebase positioning on by default; toggle off for charter-only estimates
-- **Trip Builder (BETA)** — Multi-leg fuel/range planning with payload, parking-gap override, schedule edits, fuel or published-range stops, create Request or Quote, or save a Custom Trip (Preview features)
+- **Trip Builder (BETA)** — Multi-leg fuel/range planning with payload, change aircraft or departure times, parking-gap override, fuel or published-range stops, create Request or Quote, or save a Custom Trip (Preview features)
 - **Flexible Pricing** — Hourly rates or margin-based pricing models
 - **Document Builder** — Drag-and-drop quote document creation with your branding
 - **Online Quote View** — Send beautiful, interactive quotes customers can view and accept online

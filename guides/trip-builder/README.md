@@ -1,13 +1,13 @@
 ---
 description: >-
-  Plan multi-leg trips with IFP fuel range, payload, optional comfort
-  endurance, fuel stops, create a Request or Quote, or save a Custom Trip —
-  Trip Builder is in BETA for operators with Preview features.
+  Plan multi-leg trips with fuel range, payload, optional comfort endurance,
+  fuel stops, create a Request or Quote, or save a Custom Trip — Trip Builder
+  is in BETA for operators with Preview features.
 ---
 
 # Trip Builder (BETA)
 
-**Trip Builder** plans a full multi-leg trip with **fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts** using advanced (iFlightPlanner) performance — then creates a **Request** or **Quote**, or saves a reusable **Custom Trip**.
+**Trip Builder** plans a full multi-leg trip with **fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts** when the aircraft has a linked **performance model** — then creates a **Request** or **Quote**, or saves a reusable **Custom Trip**. Aircraft without a performance model still plan **times** from AeroQuote performance; fuel calculations are unavailable.
 
 {% hint style="warning" %}
 **BETA** — Trip Builder is available when your operator has **Preview features** enabled (Account Settings). Behaviour may change as we refine fuel-stop suggestions, comfort rules, and cost preview.
@@ -20,7 +20,7 @@ description: >-
 | Requirement | Detail |
 | --- | --- |
 | **Preview features** | Operator setting **Preview features** must be **on** (Account Settings). Without it, the Trip Builder promo card does not appear. |
-| **Aircraft** | Only **active** aircraft with an **advanced performance model** (IFP) appear in the list. A usable **fuel tank** is best (full fuel-stop and uplift estimates). If the model has **no tank data**, Trip Builder still plans times and uses the aircraft **maximum range** (or cruise range) as the hop limit. |
+| **Aircraft** | **Active** aircraft appear if they have a linked **performance model**, or AeroQuote **cruise TAS / quoting speed**. A usable **fuel tank** on the performance model is best (full fuel-stop and uplift estimates). If the model has **no tank data**, Trip Builder still plans times and uses the aircraft **maximum range** (or cruise range) as the hop limit. Native tails show **AeroQuote times** — fuel calculations are unavailable. |
 | **Permissions** | No separate Trip Builder permission — you need access to **Requests**, **Quotes**, or **Custom Items**. |
 
 See [Advanced performance models](../aircraft/advanced-performance.md) if an aircraft is missing from the list.
@@ -62,18 +62,35 @@ Use **Next** / **Back** / **Close**. Create and save actions appear only on **Re
 
 ## Step 1: Setup (Aircraft & payload)
 
-1. Select an **Aircraft (IFP advanced)** from the list
+1. Search **Aircraft** by registration or name. Each result shows **Advanced times** (linked performance model) or **AeroQuote times** (native performance)
 2. Set **Passengers** and **Avg passenger weight** (uses your operator weight unit)
 3. Set **Crew** and **Avg crew weight** — crew count is remembered as a default for that aircraft
 4. Optional **Cargo weight**
 5. Optional **Limit hop length (comfort endurance)** — hours between **1** and **18** (off by default)
 6. Review **Payload total** — calculated from pax + crew + cargo; edit if needed, or **Revert to calculated**
 
+The hint under the aircraft field: tails with a linked performance model plan **fuel and range** when tank data exists. Other aircraft use **AeroQuote times**; **fuel calculations are unavailable**.
+
 {% hint style="info" %}
 **Comfort endurance** is a **preference**, not a hard fuel or range limit. On the plan step you can continue when a leg is only over comfort; legs that need a **fuel** or **range** stop still require a stop.
 {% endhint %}
 
 Click **Next** when an aircraft is selected.
+
+### Changing the aircraft
+
+You can change the tail on **Setup** at any time — use **Back** from Route, Plan & stops, or Review.
+
+When you pick a different aircraft, Trip Builder:
+
+* Drops the current fuel/range plan (you will **Plan trip** again)
+* Removes **homebase ferry** legs and asks the Yes/No ferry prompts again (the new tail may have a different homebase)
+* Reloads that aircraft’s saved **crew** default
+* If you were already on **Review**, you are taken back to **Plan & stops** so you cannot create from a stale plan
+
+Then go through **Route** (confirm ferries) and **Plan trip**. If the new tail has no performance model, expect the amber **Fuel calculations are unavailable for this aircraft** banner — times still use AeroQuote performance.
+
+Trip Builder always plans **one aircraft**. For a multi-option quote, create the trip first, then add more aircraft on the Request estimator or Quote Options.
 
 ***
 
@@ -116,6 +133,39 @@ Click **Next** when every charter leg has origin and destination, and the first 
 
 ***
 
+## Changing departure times
+
+You can set and change times on **Route** and again on **Plan & stops → Schedule**. Times are **schedule only** — they do not recalculate fuel or range until you change the aircraft, route, payload, or click **Re-plan trip**.
+
+### On Route
+
+* **First charter** — **Departing at** is required unless TBC is on. Time is in **origin local time**. If you go to Plan & stops and come **Back**, that time is still shown
+* **Later charters** — optional departing-at. Leave it empty to auto-chain from previous **arrival + parking**. Type a time only when you want a specific later departure
+* **TBC** — clears departing-at on every flight and drops the current plan (you must plan again)
+* **Custom Trip author** mode — departing-at is not used (dates are not saved)
+
+### On Plan & stops → Schedule
+
+When dates are set, **Schedule** lists every planned leg (charters, fuel/via stops, and ferries):
+
+* **Departs** — first charter uses your Route time; later charters can **override** the auto time
+* **Arrives** — departure plus planned flight time, in **destination local time**
+* Fuel-stop and ferry times stay **auto** (not editable)
+* **Use auto** on a later charter clears your override so the parking chain is used again
+
+### Adjust onward flights?
+
+If a later typed time (or a wider **Parking between flights**) would sit inside the parking gap, Trip Builder opens **Adjust onward flights?** — the same idea as Quote Options:
+
+* **Apply changes** — move later flights forward
+* **Keep current times** — leave the overlap
+
+### When you must re-plan
+
+Change **aircraft**, **origins/destinations**, **payload**, **comfort endurance**, or **TBC**, then use **Plan trip** / **Re-plan trip**. Changing only a departure time does **not** throw away the fuel plan.
+
+***
+
 ## Step 3: Plan & stops
 
 ### Auto-plan
@@ -131,21 +181,14 @@ While recalculating you may see **Adjusting plan…** / *Recalculating route and
 | **Trip is within range** | Fuel (or published-range) plan is complete for all legs |
 | **Trip is within fuel range** (amber) | Fuel is OK, but a leg is **over comfort preference** — you may continue or **Add stop** |
 | **Fuel stop needed** | At least one leg exceeds practical fuel range — pick a stop before **Next** |
-| **Range stop needed** | The IFP model has **no tank data**, and a hop is longer than the aircraft **maximum range** — pick a stop before **Next** |
-| **No iFlightPlanner tank data** (blue) | Hop limits use this aircraft’s published maximum range. **Fuel uplifts are not estimated** |
+| **Fuel calculations are unavailable for this aircraft** (amber) | Native / AeroQuote times — hop times use cruise TAS or quoting speed; fuel uplifts are not estimated |
+| **Range stop needed** | The performance model has **no tank data**, and a hop is longer than the aircraft **maximum range** — pick a stop before **Next** |
+| **No tank data in the performance model** (blue) | Hop limits use this aircraft’s published maximum range. **Fuel uplifts are not estimated** |
 | **Times and costs only** (amber) | No tank and no published range — times/costs still plan; range and fuel stops are off |
 
 ### Schedule
 
-When dates are set, **Schedule** lists each planned leg (including fuel stops and ferries):
-
-* **Departs** — first charter is your Route time; later charters can **override** the auto time (previous arrival + parking)
-* **Arrives** — previous departure plus planned flight time (destination local time)
-* Fuel-stop and ferry times stay auto (not editable)
-* **Use auto** on a later charter clears your override so the parking chain is used again
-* Changing a later time that crowds the parking gap opens the same **Adjust onward flights?** modal as Route
-
-TBC and Custom Trip author mode show no travel dates here.
+See [Changing departure times](#changing-departure-times). TBC and Custom Trip author mode show no travel dates here.
 
 ### Legs table
 
@@ -207,7 +250,7 @@ When the plan is complete you see **Ready to create**.
 * Per-leg figures such as required fuel, ramp max, route burn, arrive-with, TOW, LW, payload (as shown in product)
 * **Suggested fuel uplift at each airport** — origin typically no uplift; intermediate stops show uplift and approximate cost
 * **Show fuel providers and prices** opens a modal with providers/prices and an uplift calculator
-* Without iFlightPlanner **tank** data, uplifts are **not** estimated (the plan still has times and, if published range is set, hop limits)
+* Without **tank** data on the performance model (or on native AeroQuote tails), uplifts are **not** estimated (the plan still has times and, if published range is set, hop limits)
 
 ### Create
 
@@ -246,12 +289,13 @@ Full detail: [Custom Trips (BETA)](../custom-items/custom-trips.md).
 
 ## Tips
 
-* Link and confirm **advanced performance** on each tail before using Trip Builder — see [Advanced performance models](../aircraft/advanced-performance.md)
+* Link and confirm a **performance model** on each tail you want fuel/range for — see [Advanced performance models](../aircraft/advanced-performance.md). Native tails still appear as **AeroQuote times**
 * If a model has **no tank**, set **maximum range** (or cruise range) on the aircraft so Plan & stops can still flag hops that are too long
 * Set aircraft **homebase** so ferry prompts are meaningful
 * Use **Parking between flights** on Route when the operator default is not right for this trip
 * Use **comfort endurance** for passenger-friendly hop lengths; ignore the amber comfort banner when fuel is already OK
 * Prefer **Find fuel stop** when the plan says fuel or range is short; use **Add stop** for voluntary vias
+* To change the tail after you have started planning, go **Back** to Setup — that drops the plan and ferry answers
 * Change later departures on **Plan & stops → Schedule** when you want a specific time; Trip Builder asks before moving onward flights
 * Treat **Review** commercial totals as indicative — refine pricing on the Request or Quote after create
 * Planning can take a few seconds on long multi-stop routes

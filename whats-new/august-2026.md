@@ -38,13 +38,13 @@ See [Advanced performance models](../guides/aircraft/advanced-performance.md) an
 
 ## Aircraft type search when adding aircraft
 
-When you **Add Aircraft**, type search looks up the advanced model catalogue first (labelled **Search aircraft database (iFlightPlanner)** in the product).
+When you **Add Aircraft**, type search looks up the **aircraft database** first (labelled **Search aircraft database**).
 
 * Type at least **2 characters** (make, model, or ICAO). Two-character terms search ICAO only for an exact match
 * Pick a model from the results to continue with advanced performance data when available
 * If **no models are found**, you can choose a **native AeroQuote aircraft type** (fallback) and finish setup as usual
 
-Registration type lookup (guess from tail number) still works the same way.
+Entering a **registration** looks up the type, then searches the aircraft database for that ICAO. One match is selected automatically; several matches stay listed until you pick; a native type is applied only if the database search misses.
 
 See [Add Your First Aircraft](../getting-started/add-your-first-aircraft.md).
 
@@ -148,7 +148,7 @@ See:
 
 ## Trip Builder (BETA)
 
-**Trip Builder** is a full-screen wizard for multi-leg trips with **IFP fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts**. Plan the trip, then create a **Request** or **Quote** from the result.
+**Trip Builder** is a full-screen wizard for multi-leg trips with **fuel range**, **payload**, **max ramp fuel**, and **fuel-stop uplifts** (when the aircraft has a linked **performance model**). Plan the trip, then create a **Request** or **Quote** from the result.
 
 ### Where to open it
 
@@ -156,16 +156,17 @@ See:
 * **Quotes** list — same promo → **Create Quote** or **Open Quote Builder**
 * **Custom Items → Custom Trips** (Preview only, BETA pill) — save or reopen a reusable route
 
-Requires operator **Preview features** (Account Settings). Aircraft must use an **advanced performance model**. A fuel tank is best; if the model has **no tank**, hop limits use the aircraft **maximum range**.
+Requires operator **Preview features** (Account Settings). **Active** aircraft appear if they have a performance model (**Advanced times**) or AeroQuote cruise TAS / quoting speed (**AeroQuote times**). A fuel tank is best; if the model has **no tank**, hop limits use the aircraft **maximum range**. Native tails plan times only — fuel calculations are unavailable.
 
 ### What you can do
 
 * Setup passengers, crew, cargo, and optional **comfort endurance**
+* **Change the aircraft** on Setup (Back from later steps) — that drops the plan and ferry answers so you re-plan for the new tail
 * Build the route with TBC dates, **Parking between flights** (per-trip override of the operator default), and optional **homebase ferry** Yes/No prompts
 * **How to use this page?** on Route explains origin, destination, and intermediate stops
-* **Departing at** on the first charter is kept if you leave Route and come back; later legs can use an optional time
+* **Change departure times** on Route and on **Plan & stops → Schedule** without wiping the fuel plan; the first charter time is kept if you leave Route and come back
 * **Adjust onward flights?** asks before moving later flights that would overlap the parking gap (**Apply changes** or **Keep current times**)
-* **Plan & stops** — auto-plan on first visit, **Schedule** (see and change departures), **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel or range)
+* **Plan & stops** — auto-plan on first visit, **Schedule**, **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel or range)
 * Models with no tank show a **range** banner and skip fuel-uplift estimates
 * **Review** indicative commercial costs and suggested fuel uplifts (when tank data exists)
 * **Save as Custom Trip** (unique title, route thumbnail, parking override) from Review, or **Add Custom Trip** from Custom Items (dates not stored)
@@ -191,7 +192,9 @@ Nothing required for most accounts once advanced models are linked for your flee
 9. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
 10. On Route, set **Parking between flights** and a later departing-at time — confirm **Adjust onward flights?** when the gap is tight  
 11. On Plan & stops, check **Schedule** and change a later departure without re-planning fuel  
-12. Try a tail whose IFP model has **no tank** but has **maximum range** — expect a range banner, not a hard stop  
-13. Save a flyable plan as a **Custom Trip** and reopen it from **Custom Items → Custom Trips**  
+12. Go **Back** to Setup, pick a different tail, and confirm ferries plus **Plan trip** run again  
+13. Try a tail whose performance model has **no tank** but has **maximum range** — expect a range banner, not a hard stop  
+14. Try a native tail (AeroQuote times) — expect **Fuel calculations are unavailable** and times still plan  
+15. Save a flyable plan as a **Custom Trip** and reopen it from **Custom Items → Custom Trips**  
 
 

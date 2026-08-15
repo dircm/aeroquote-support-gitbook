@@ -98,7 +98,7 @@ You can override the calculated flight duration for any route on a per-aircraft 
 When this route is loaded into a Request or Quote, AeroQuote uses the custom duration instead of calculating from the aircraft's speed profile. Aircraft without a custom duration continue to use the calculated value.
 
 {% hint style="info" %}
-Custom durations apply wherever the route is used — Requests, the Quote Builder, and individual quote flight items. They take priority over both the standard performance calculation and the iFlightPlanner estimate.
+Custom durations apply wherever the route is used — Requests, the Quote Builder, and individual quote flight items. They take priority over both the standard performance calculation and the estimation engine.
 {% endhint %}
 
 ### Frequently Asked Questions
