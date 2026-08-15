@@ -156,16 +156,20 @@ See:
 * **Quotes** list — same promo → **Create Quote** or **Open Quote Builder**
 * **Custom Items → Custom Trips** (Preview only, BETA pill) — save or reopen a reusable route
 
-Requires operator **Preview features** (Account Settings). Aircraft must use an **advanced performance model** with fuel capacity.
+Requires operator **Preview features** (Account Settings). Aircraft must use an **advanced performance model**. A fuel tank is best; if the model has **no tank**, hop limits use the aircraft **maximum range**.
 
 ### What you can do
 
 * Setup passengers, crew, cargo, and optional **comfort endurance**
-* Build the route with TBC dates and optional **homebase ferry** Yes/No prompts
-* **Plan & stops** — auto-plan on first visit, **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel)
-* **Review** indicative commercial costs and suggested fuel uplifts
-* **Save as Custom Trip** (unique title, route thumbnail) from Review, or **Add Custom Trip** from Custom Items (dates not stored)
-* **Create quote from this trip** — Trip Builder opens like the Quotes list, with saved stops and aircraft preloaded
+* Build the route with TBC dates, **Parking between flights** (per-trip override of the operator default), and optional **homebase ferry** Yes/No prompts
+* **How to use this page?** on Route explains origin, destination, and intermediate stops
+* **Departing at** on the first charter is kept if you leave Route and come back; later legs can use an optional time
+* **Adjust onward flights?** asks before moving later flights that would overlap the parking gap (**Apply changes** or **Keep current times**)
+* **Plan & stops** — auto-plan on first visit, **Schedule** (see and change departures), **Find fuel stop** / **Add stop**, map colours (blue OK / amber comfort / red fuel or range)
+* Models with no tank show a **range** banner and skip fuel-uplift estimates
+* **Review** indicative commercial costs and suggested fuel uplifts (when tank data exists)
+* **Save as Custom Trip** (unique title, route thumbnail, parking override) from Review, or **Add Custom Trip** from Custom Items (dates not stored)
+* **Create quote from this trip** — Trip Builder opens like the Quotes list, with saved stops, aircraft, and parking preloaded
 
 Full walkthrough: [Trip Builder (BETA)](../guides/trip-builder/README.md) · [Custom Trips (BETA)](../guides/custom-items/custom-trips.md).
 
@@ -185,6 +189,9 @@ Nothing required for most accounts once advanced models are linked for your flee
 7. Contact support with the registration and route if a model is missing or times look off  
 8. On a Request or Quote/Booking Builder, use the ferry auto-add toggle if you need charter-only estimates without homebase positioning  
 9. If **Preview features** is on, try **Trip Builder** from the Requests or Quotes list on a familiar long sector  
-10. Save a flyable plan as a **Custom Trip** and reopen it from **Custom Items → Custom Trips**  
+10. On Route, set **Parking between flights** and a later departing-at time — confirm **Adjust onward flights?** when the gap is tight  
+11. On Plan & stops, check **Schedule** and change a later departure without re-planning fuel  
+12. Try a tail whose IFP model has **no tank** but has **maximum range** — expect a range banner, not a hard stop  
+13. Save a flyable plan as a **Custom Trip** and reopen it from **Custom Items → Custom Trips**  
 
 

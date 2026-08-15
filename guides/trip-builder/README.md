@@ -20,7 +20,7 @@ description: >-
 | Requirement | Detail |
 | --- | --- |
 | **Preview features** | Operator setting **Preview features** must be **on** (Account Settings). Without it, the Trip Builder promo card does not appear. |
-| **Aircraft** | Only **active** aircraft with an **advanced performance model** (IFP) and usable **fuel capacity** appear in the aircraft list. |
+| **Aircraft** | Only **active** aircraft with an **advanced performance model** (IFP) appear in the list. A usable **fuel tank** is best (full fuel-stop and uplift estimates). If the model has **no tank data**, Trip Builder still plans times and uses the aircraft **maximum range** (or cruise range) as the hop limit. |
 | **Permissions** | No separate Trip Builder permission — you need access to **Requests**, **Quotes**, or **Custom Items**. |
 
 See [Advanced performance models](../aircraft/advanced-performance.md) if an aircraft is missing from the list.
@@ -52,8 +52,8 @@ On **Custom Items**, the **Custom Trips** section (BETA pill) is only shown when
 | Step | Name | Purpose |
 | --- | --- | --- |
 | **1** | **Setup** — Aircraft & payload | Choose aircraft, passengers, crew, cargo, optional comfort endurance |
-| **2** | **Route** — Flights | Origins, destinations, times (or TBC), optional homebase ferries |
-| **3** | **Plan & stops** | Run fuel/range plan, insert fuel or voluntary stops |
+| **2** | **Route** — Flights | Origins, destinations, times (or TBC), parking gap, optional homebase ferries |
+| **3** | **Plan & stops** | Run fuel/range plan, insert fuel or range stops, review and edit the schedule |
 | **4** | **Review** | Costs preview, fuel uplifts, create Request or Quote, or save a Custom Trip |
 
 Use **Next** / **Back** / **Close**. Create and save actions appear only on **Review** when the plan is complete.
@@ -70,7 +70,7 @@ Use **Next** / **Back** / **Close**. Create and save actions appear only on **Re
 6. Review **Payload total** — calculated from pax + crew + cargo; edit if needed, or **Revert to calculated**
 
 {% hint style="info" %}
-**Comfort endurance** is a **preference**, not a hard fuel limit. On the plan step you can continue when a leg is only over comfort; legs that need **fuel** still require a stop.
+**Comfort endurance** is a **preference**, not a hard fuel or range limit. On the plan step you can continue when a leg is only over comfort; legs that need a **fuel** or **range** stop still require a stop.
 {% endhint %}
 
 Click **Next** when an aircraft is selected.
@@ -81,9 +81,19 @@ Click **Next** when an aircraft is selected.
 
 Build the charter itinerary Trip Builder will plan.
 
+### How to use this page?
+
+On the Flights header, **How to use this page?** opens a short note: add the intended charter departure (it does not need to be the aircraft homebase) and destination, plus any intermediate stops you already plan to use. The next step checks the legs and suggests fuel (or range) stops if needed.
+
 ### No date yet (TBC)
 
 Tick **Customer just wants a price — no travel date yet (TBC)** if the customer only wants a price. Departure times show as TBD until you set real dates later.
+
+### Parking between flights
+
+Set **Parking between flights** (hours and minutes) for the gap after each arrival before the next departure (later charters, fuel stops, and ferries). It seeds from the operator default. After you change it, **Use operator default** appears. This override is **for this trip only** — it does not change Account Settings.
+
+If a later flight already has a time you typed, and the new parking gap would crowd that time, Trip Builder opens **Adjust onward flights?** (same idea as Quote Options). Choose **Apply changes** to move later flights forward, or **Keep current times** to leave the overlap.
 
 ### Homebase ferry prompts
 
@@ -92,13 +102,14 @@ If the aircraft has a **homebase** that does not match the first origin and/or l
 * **Yes, add ferry** — insert a **Ferry** leg (homebase → origin, and/or destination → homebase)
 * **No** — plan without that positioning leg
 
-Ferry rows show a **Ferry** badge. Origin/destination are locked; ferries carry no passengers, crew, or cargo. Schedule uses arrival plus your default parking duration.
+Ferry rows show a **Ferry** badge. Origin/destination are locked; ferries carry no passengers, crew, or cargo. Schedule uses arrival plus the parking gap above.
 
 ### Flights
 
 * **+ Add flight** — add another sector (origin prefilled from the previous destination)
 * Set **origin** and **destination** (search by name or ICAO/IATA)
-* **Departing at** on the first charter leg (required unless TBC); later legs can use an optional anchor time in origin local time
+* **Departing at** on the first charter leg (required unless TBC), in origin local time. If you go to Plan & stops and come back, that time is still shown
+* Later legs can use an **optional** departing-at time. Leave it empty to auto-chain from previous arrival + parking. If you set a time that sits inside the parking gap, **Adjust onward flights?** asks before moving later flights
 * You can remove non-ferry flights (keep at least one charter sector)
 
 Click **Next** when every charter leg has origin and destination, and the first departure is set (or TBC is on).
@@ -109,7 +120,7 @@ Click **Next** when every charter leg has origin and destination, and the first 
 
 ### Auto-plan
 
-The **first time** you open this step (with no plan yet), Trip Builder **plans automatically**. After that, use **Plan trip** or **Re-plan trip** when you change the route or payload.
+The **first time** you open this step (with no plan yet), Trip Builder **plans automatically**. After that, use **Plan trip** or **Re-plan trip** when you change the route or payload. Changing a departure time on this step does **not** throw away the plan.
 
 While recalculating you may see **Adjusting plan…** / *Recalculating route and fuel range…*
 
@@ -117,9 +128,24 @@ While recalculating you may see **Adjusting plan…** / *Recalculating route and
 
 | Status | Meaning |
 | --- | --- |
-| **Trip is within range** | Fuel plan is complete for all legs |
+| **Trip is within range** | Fuel (or published-range) plan is complete for all legs |
 | **Trip is within fuel range** (amber) | Fuel is OK, but a leg is **over comfort preference** — you may continue or **Add stop** |
 | **Fuel stop needed** | At least one leg exceeds practical fuel range — pick a stop before **Next** |
+| **Range stop needed** | The IFP model has **no tank data**, and a hop is longer than the aircraft **maximum range** — pick a stop before **Next** |
+| **No iFlightPlanner tank data** (blue) | Hop limits use this aircraft’s published maximum range. **Fuel uplifts are not estimated** |
+| **Times and costs only** (amber) | No tank and no published range — times/costs still plan; range and fuel stops are off |
+
+### Schedule
+
+When dates are set, **Schedule** lists each planned leg (including fuel stops and ferries):
+
+* **Departs** — first charter is your Route time; later charters can **override** the auto time (previous arrival + parking)
+* **Arrives** — previous departure plus planned flight time (destination local time)
+* Fuel-stop and ferry times stay auto (not editable)
+* **Use auto** on a later charter clears your override so the parking chain is used again
+* Changing a later time that crowds the parking gap opens the same **Adjust onward flights?** modal as Route
+
+TBC and Custom Trip author mode show no travel dates here.
 
 ### Legs table
 
@@ -127,13 +153,14 @@ Each leg shows distance/time, required fuel, and status such as:
 
 * **OK**
 * **Fuel stop required**
+* **Range stop required** — over aircraft maximum range (no-tank models)
 * **Over comfort preference**
 
 Per leg:
 
 | Action | When to use |
 | --- | --- |
-| **Find fuel stop** | Fuel failed — pick a stop that keeps the hop within range |
+| **Find fuel stop** | Fuel or range failed — pick a stop that keeps the hop within tank or published range |
 | **Add stop** | Voluntary intermediate airport (e.g. comfort or customer via) |
 | **Remove stop** | Remove an intermediate stop you added (endpoints stay fixed) |
 
@@ -161,7 +188,7 @@ The map shows the planned route with airport markers:
 
 Hover suggestions in the stop picker to preview a stop on the map.
 
-**Next** is blocked while any leg still needs a fuel stop. Comfort-only issues do **not** block **Next**.
+**Next** is blocked while any leg still needs a fuel or range stop. Comfort-only issues do **not** block **Next**.
 
 ***
 
@@ -180,6 +207,7 @@ When the plan is complete you see **Ready to create**.
 * Per-leg figures such as required fuel, ramp max, route burn, arrive-with, TOW, LW, payload (as shown in product)
 * **Suggested fuel uplift at each airport** — origin typically no uplift; intermediate stops show uplift and approximate cost
 * **Show fuel providers and prices** opens a modal with providers/prices and an uplift calculator
+* Without iFlightPlanner **tank** data, uplifts are **not** estimated (the plan still has times and, if published range is set, hop limits)
 
 ### Create
 
@@ -210,7 +238,7 @@ On **Review**, with Preview features on, click **Save as Custom Trip**. Enter a 
 
 ### Create a quote from a saved trip
 
-On the Custom Trips list, **Create quote from this trip** opens Trip Builder as from the Quotes list, with **all saved stops preloaded**. Adjust payload, confirm the route, re-plan if needed, then **Create Quote** or **Open Quote Builder**.
+On the Custom Trips list, **Create quote from this trip** opens Trip Builder as from the Quotes list, with **all saved stops preloaded** and the trip’s **parking gap** if you overrode it. Adjust payload, confirm the route, re-plan if needed, then **Create Quote** or **Open Quote Builder**.
 
 Full detail: [Custom Trips (BETA)](../custom-items/custom-trips.md).
 
@@ -219,9 +247,12 @@ Full detail: [Custom Trips (BETA)](../custom-items/custom-trips.md).
 ## Tips
 
 * Link and confirm **advanced performance** on each tail before using Trip Builder — see [Advanced performance models](../aircraft/advanced-performance.md)
+* If a model has **no tank**, set **maximum range** (or cruise range) on the aircraft so Plan & stops can still flag hops that are too long
 * Set aircraft **homebase** so ferry prompts are meaningful
+* Use **Parking between flights** on Route when the operator default is not right for this trip
 * Use **comfort endurance** for passenger-friendly hop lengths; ignore the amber comfort banner when fuel is already OK
-* Prefer **Find fuel stop** when the plan says fuel is short; use **Add stop** for voluntary vias
+* Prefer **Find fuel stop** when the plan says fuel or range is short; use **Add stop** for voluntary vias
+* Change later departures on **Plan & stops → Schedule** when you want a specific time; Trip Builder asks before moving onward flights
 * Treat **Review** commercial totals as indicative — refine pricing on the Request or Quote after create
 * Planning can take a few seconds on long multi-stop routes
 

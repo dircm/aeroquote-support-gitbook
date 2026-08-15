@@ -6,7 +6,7 @@ description: >-
 
 # Custom Trips (BETA)
 
-A **Custom Trip** is a reusable Trip Builder route: airports and fuel/via stops, with a **unique title** and a **map thumbnail** of the route.
+A **Custom Trip** is a reusable Trip Builder route: airports and fuel/via stops, with a **unique title** and a **map thumbnail** of the route. If you overrode **Parking between flights** on Route, that parking gap is saved with the trip.
 
 {% hint style="warning" %}
 **BETA** — Custom Trips appear under **Custom Items** only when **Preview features** is on (Account Settings). Dates are **not** stored on a custom trip.
@@ -58,8 +58,8 @@ Titles must be unique for your operator (case-insensitive).
 2. Trip Builder opens as if you started from the **Quotes** list
 3. The **route is preloaded** with every saved stop (including fuel/via stops)
 4. **Setup** — the saved aircraft is selected when it is still available; confirm payload
-5. **Route** — confirm the legs (set dates here)
-6. **Plan & stops** — check the trip is still within range; adjust stops if needed
+5. **Route** — confirm the legs (set dates here). The saved **parking gap** is preloaded if you overrode the operator default
+6. **Plan & stops** — check the trip is still within range; adjust stops or departure times if needed
 7. **Review** — **Create Quote** or **Open Quote Builder** as usual. You can also **Save as Custom Trip** again under a new unique title.
 
 ***
