@@ -9,7 +9,7 @@ description: >-
 Advanced performance models improve how AeroQuote plans **flight time** and **distance** for estimates on Requests, Quotes, and Bookings. They use climb and descent profiles and route winds rather than only simple still-air assumptions.
 
 {% hint style="info" %}
-In the product you may also see **iFlightPlanner** on search labels and help text. Customer-facing quotes and PDFs do not depend on that name — they show your usual prices and itinerary.
+The product labels this **Search aircraft database** / **performance model**. Customer-facing quotes and PDFs show your usual prices and itinerary.
 {% endhint %}
 
 ---
@@ -27,8 +27,8 @@ You can mix both modes in one fleet.
 ## Adding an aircraft (type search)
 
 1. Go to **Aircraft** → **Add Aircraft**
-2. Enter **Registration** if you want (optional type lookup still runs as before)
-3. In **Search aircraft database (iFlightPlanner)**, type make, model, or ICAO (minimum 2 characters)
+2. Enter **Registration** if you want — lookup searches the aircraft database for that ICAO before applying a native type
+3. In **Search aircraft database**, type make, model, or ICAO (minimum 2 characters)
 4. Select a model from the list — advanced performance data is used when the catalogue has profiles for that model
 5. If no models match, use **Select AeroQuote aircraft type (fallback)** and continue with native performance fields
 
@@ -122,5 +122,6 @@ Quotes and bookings created **before** planned burn was stored will not show fue
 * [Add Your First Aircraft](../../getting-started/add-your-first-aircraft.md)  
 * [Using the Estimator](../requests/using-the-estimator.md)  
 * [Creating a Quote from scratch](../quotes/creating-a-quote.md)  
+* [Trip Builder (BETA)](../trip-builder/README.md) — fuel/range planning for aircraft with a performance model (uses published maximum range if the model has no tank); native tails plan AeroQuote times only  
 * [Booking Manifests](../bookings-operators/booking-manifests.md)  
 * [August 2026 What's New](../../whats-new/august-2026.md)  
