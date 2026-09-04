@@ -86,7 +86,15 @@ With the auto-add toggle **on**, removed ferry flights can reappear if estimates
 
 ### Per-Passenger Charges
 
-If an aircraft has per-passenger sector charges configured, these now appear as a separate **Per Passenger Charge** line item on each charter flight, rather than being hidden inside the flight cost total. This makes it easy to see and adjust passenger-related costs independently.
+If an aircraft has per-passenger sector charges configured, these appear as a separate **Per Passenger Charge** line item on each charter flight — on estimates, the quote **Options** cost list, and the quote **Summary** step — rather than being hidden inside the Flight Costs total.
+
+The amount is shown on the right. The calculation (rate × passengers, and the sector) appears as an explanation under the line.
+
+If the aircraft has **more than one** per-passenger cost (for example a segment fee and a security fee), every explanation is listed under the same **Per Passenger Charge** row. The amount is the total of those fees. Flight Costs is reduced by that total so the sector is not counted twice.
+
+{% hint style="info" %}
+Per-passenger charges stay **hidden from the customer** until you turn on the eye icon for that line. See [Customer Visibility](#customer-visibility).
+{% endhint %}
 
 ***
 
@@ -112,11 +120,15 @@ When expanded, you'll see each cost line item:
 
 ### Flight Cost Breakdown
 
-The **Flight Costs** line item rolls up all of an aircraft's sector charges (hourly rates, per-landing fees, distance charges, etc.) into a single total. To see what makes up the total:
+The **Flight Costs** line item rolls up an aircraft's sector charges (hourly rates, per-landing fees, distance charges, and similar) into a single total. Per-passenger aircraft costs are **not** inside this total — they have their own line (see [Per-Passenger Charges](#per-passenger-charges)).
+
+To see what makes up Flight Costs:
 
 1. Click the **Flight Costs** row in the cost list
 2. The individual charge calculations expand below, showing each charge name, rate, and how it was calculated (e.g. "Charter (A$200.00 per hour \* 2:30) = A$500.00")
 3. The item count shows next to the name (e.g. "Flight Costs (3)")
+
+If a **minimum sector charge** is configured on the aircraft and the calculated sector cost is below that floor, the breakdown includes **Minimum charge applied** with the minimum amount. The underlying charge lines still appear so you can see what was calculated before the minimum was used.
 
 {% hint style="info" %}
 If you mark **Flight Costs** as visible to the customer, the individual charge breakdown also appears on the customer quote page and in PDF quotes.
@@ -314,11 +326,12 @@ If no ground time rate is configured for an aircraft, no ground time charges wil
 The **Summary** step of the quote builder shows a complete cost breakdown for each option:
 
 * Option-level costs (day charges, overnight charges, custom charges)
-* Per-flight cost breakdowns with all line items
+* Per-flight cost breakdowns with all line items, including **Flight Costs**, **Landing Charges**, **Parking Charges**, and **Per Passenger Charge** where they apply
+* Explanations under each line (hourly rates, airport fees, per-passenger calculations, and **Minimum charge applied** when a sector minimum is used)
 * Ground time charges between flights
-* Total cost per option
+* Total sector cost per flight and total cost per option
 
-This gives you a clear picture of where costs come from before setting your price.
+Use Summary to confirm amounts such as a per-passenger segment fee are visible as their own line before you send.
 
 ***
 

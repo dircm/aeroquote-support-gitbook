@@ -21,7 +21,7 @@ Use the tabs at the top of the quote to move between builder steps:
 | **Quote Details** | Status, contacts, validity, T&Cs, job notes, generate booking / invoice |
 | **Options** (or **Flight** when there is only one option) | Edit itinerary, costs, and pricing; **Add Option** (top-left, Admin View); toggle **Admin View** / **Customer View**. See [Add a Quote Option](../add-a-quote-option.md) |
 | **Documents** | Build the customer-facing PDF package and preview / download it |
-| **Summary** | Review before send (when available) |
+| **Summary** | Review the cost breakdown per option (including per-passenger charges) before you send |
 | **Send** | Email the quote and attachments to the customer |
 | **Status** | Comments, questions, and status history |
 

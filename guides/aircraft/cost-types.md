@@ -36,6 +36,8 @@ Charged per passenger on each charter sector. Use this for costs that scale with
 
 **How it's calculated:** per-passenger rate × number of passengers × number of charter sectors
 
+On quotes, these appear as a **Per Passenger Charge** line with the amount and calculation — not inside **Flight Costs**. If you add more than one per-passenger cost, all of them are listed under that line. See [Cost Management](../quotes/cost-management.md#per-passenger-charges).
+
 {% hint style="info" %}
 Per-passenger charges only apply to charter flights, not ferry/repositioning flights.
 {% endhint %}

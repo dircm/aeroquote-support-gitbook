@@ -6,6 +6,10 @@ description: The latest features and improvements in AeroQuote.
 
 Stay up to date with the latest features, improvements, and changes in AeroQuote.
 
+{% content-ref url="september-2026.md" %}
+[september-2026.md](september-2026.md)
+{% endcontent-ref %}
+
 {% content-ref url="august-2026.md" %}
 [august-2026.md](august-2026.md)
 {% endcontent-ref %}
