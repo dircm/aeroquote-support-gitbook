@@ -34,6 +34,10 @@ Manage your reusable email wording on the [Templates page](../../templates/). Ad
 **Email tracking** — Customer quote emails record **Sent**, **Opened** (inbox), and **Viewed** (customer opened the quote link). See status on the quotes list, the Send and Status steps, and Dashboard metrics. Full details: [Email Tracking](email-tracking.md).
 {% endhint %}
 
+{% hint style="info" %}
+**AI-assisted draft** — On the quote Send step you can optionally click **Generate** to draft the subject and body with Grok (tones, optional options-as-text, snippets). Generate does not run on Send; you can always edit before sending. See [AI-assisted quote email](../../quotes/ai-assisted-email.md).
+{% endhint %}
+
 ### Quote Comment Reply to Customer
 
 |             |                                                                                                        |

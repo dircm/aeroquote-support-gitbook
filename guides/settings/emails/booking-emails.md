@@ -28,6 +28,10 @@ The booking link can be sent as a **Basic View** (itinerary only) or **Detailed 
 **Email tracking** — Customer booking emails record **Sent**, **Opened** (inbox), and **Viewed** (customer opened the booking link). See the booking list mail status and the Send tab tracking summary. Full details: [Email Tracking](email-tracking.md).
 {% endhint %}
 
+{% hint style="info" %}
+**AI-assisted notes** — In the Send to Customer modal you can optionally **Generate** customer notes with Grok (tones and snippets). The email layout stays fixed. See [AI-assisted customer email](../../bookings-operators/ai-assisted-customer-email.md).
+{% endhint %}
+
 ### Booking Comment Reply to Customer
 
 |             |                                                                                                          |
