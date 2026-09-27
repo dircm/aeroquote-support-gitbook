@@ -22,7 +22,7 @@ The Billing page shows:
 - **Current Plan** — Your active subscription tier
 - **Billing Period** — Monthly or annual billing cycle
 - **Next Payment** — When your next payment is due
-- **Payment Method** — Card on file
+- **Payment Information** — The card on file, including the last four digits and expiry date
 
 ---
 
@@ -51,14 +51,37 @@ Downgrading may disable features not available on lower plans. Make sure you und
 
 ---
 
-## Payment Methods
+## Payment Information
 
-### Updating Your Card
+The card on file is in the **Payment Information** section. The same section is available while the subscription is active, while a cancellation is still inside its grace period, and after the subscription has ended.
 
-1. Find the **Payment Method** section
-2. Click **Update**
-3. Enter new card details
-4. Save changes
+### Replacing the card on file
+
+1. Open **Settings → Billing**
+2. In **Payment Information**, click **Change Payment Information**
+3. Enter the new card
+4. Click **Update Payment Information**
+
+**Keep Existing Payment Method** closes the form and leaves the current card in place.
+
+### Adding a card
+
+If no card is saved, the section says so. The card form may already be open.
+
+1. Click **Add a card** if the form is closed
+2. Enter the card
+3. Click **Save card**
+
+### When the last payment failed
+
+Billing shows **Outstanding payment** instead of the plan list.
+
+1. Save a working card in **Payment Information**. AeroQuote pays the open invoice with that card.
+2. If a card is already on file, click **Retry payment** to charge it again.
+
+{% hint style="info" %}
+A declined card stays on this page with the reason. Enter a different card and try again. After the invoice is paid, the current plan is shown again. If the subscription has fully ended, save a card and then choose a plan. **Subscribe** uses the card on file.
+{% endhint %}
 
 ### Payment History
 
