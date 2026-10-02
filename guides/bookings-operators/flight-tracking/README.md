@@ -34,6 +34,8 @@ For each flight leg, AeroQuote looks up the aircraft on FlightRadar24 using, in 
 
 Invalid or placeholder values (e.g. `TBA`, `SAMPLE`) are ignored. Individual aircraft can opt out via **FlightRadar24 Tracking** on the aircraft record.
 
+Before departure, AeroQuote also looks up the **booked route** (origin to destination). If FlightRadar24 has filed a different tail from your fleet on that city pair, this leg can be swapped automatically — or held and emailed if that tail is already on another booking. See [Automatic Detection](automatic-detection.md).
+
 The booking **Details** tab shows a readiness badge per aircraft: tracking on, off (account/aircraft), invalid format, or no recent FR24 history.
 
 ---

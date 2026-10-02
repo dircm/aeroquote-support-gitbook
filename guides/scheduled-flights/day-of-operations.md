@@ -32,6 +32,10 @@ For sales KPIs (gross sales, load factor, busiest routes) use **Scheduled Flight
 
 A caution engine flags problems — red for overlapping assignments or insufficient rest, amber for approaching rolling block-hour limits or an aircraft-type mismatch. Cautions warn rather than block; overrides are recorded in the audit trail.
 
+### When a flight plan names a different tail
+
+In the hours before departure, AeroQuote asks FlightRadar24 who is filed **from this leg's origin to its destination**. One other tail from your fleet, free that day, is swapped onto **this leg** and you are emailed. If that tail is already on another open booking the same day, nothing is swapped and the email names both bookings. Crew, airports, and passengers are not changed by the swap. Full rules: [Automatic Detection](../bookings-operators/flight-tracking/automatic-detection.md).
+
 On the **Crew** tab, selecting a crew member pre-ticks their existing roster and shows an **Assigned** badge on rows they already operate, so the button always reflects the genuine delta (e.g. *"Assign … to 5 new departures"*). A secondary button removes the selected crew from ticked departures they're already on.
 
 ## Issue a manual booking
@@ -104,7 +108,7 @@ The departure page doubles as the flight's operational manifest — every passen
 
 ## The Activity card
 
-Every action above — publishes, refunds, reschedules, cancellations, edits — is logged on the departure's **Activity** card with who did it and what changed. Use it when a colleague asks who refunded a ticket, or an auditor wants the record of a data correction.
+Every action above — publishes, refunds, reschedules, cancellations, edits — is logged on the departure's **Activity** card with who did it and what changed. The same card records an automatic aircraft change from a flight plan ("Aircraft … assigned from flight plan"), and booking milestones on the linked leg: passenger check-in, off blocks, departure, arrival, and on blocks. Use it when a colleague asks who refunded a ticket, which tail was filed, or when the aircraft left the gate.
 
 ## Next steps
 

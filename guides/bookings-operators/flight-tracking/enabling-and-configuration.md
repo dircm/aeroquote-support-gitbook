@@ -14,7 +14,7 @@ description: Turn on flight tracking, configure aircraft identifiers, and unders
 The toggle is turned on automatically when you subscribe to Bookings in many cases. Operators on older accounts can ask support to verify `flight_tracking_enabled` if the toggle is missing.
 
 {% hint style="warning" %}
-Without a valid aircraft identifier (registration or flight number), AeroQuote cannot match your leg to FlightRadar24. Check the **Details** tab on each booking before departure day.
+Without a valid aircraft identifier (registration or flight number), the two-minute position poll cannot follow the leg. The planned-route check can still match a fleet tail from the booked origin and destination. See [Automatic Detection](automatic-detection.md).
 {% endhint %}
 
 ---
