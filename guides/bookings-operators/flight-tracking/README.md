@@ -9,7 +9,7 @@ description: >-
 Flight tracking connects your **bookings** to live aircraft data so departures, arrivals, ETAs, and flight paths update automatically — with crew able to confirm or override anything from the mobile app.
 
 {% hint style="info" %}
-Flight tracking requires the **Bookings** module (or **Scheduled Flights** / **Tour Packages**, which include bookings access) and the **Flight Tracking** toggle in **Settings → Integrations**.
+Flight tracking requires the **Flights** module (or **Scheduled Flights** / **Tour Packages**, which include bookings access) and the **Flight Tracking** toggle in **Settings → Integrations**.
 {% endhint %}
 
 ***
@@ -18,8 +18,8 @@ Flight tracking requires the **Bookings** module (or **Scheduled Flights** / **T
 
 | Capability                                  | Where you see it                                                              |
 | ------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Automatic block off, departure, arrival** | Booking Status tab, Bookings Dashboard, mobile push notifications             |
-| **Live position & ETA**                     | Bookings Dashboard map, booking Status tab, mobile app                        |
+| **Automatic block off, departure, arrival** | Booking Status tab, Flights Dashboard, mobile push notifications             |
+| **Live position & ETA**                     | Flights Dashboard map, booking Status tab, mobile app                        |
 | **Saved flight track**                      | Itinerary map, completed booking cards, mobile track view                     |
 | **Crew overrides**                          | Mobile app — confirmed times always win over automation                       |
 | **Multi-leg rotations**                     | Ground Time status between legs; stalled-leg recovery when coverage is patchy |
@@ -77,6 +77,6 @@ Positions on the map may be labelled **(estimated)** when they come from **simul
 ## Related guides
 
 * [Booking Status](../booking-status.md) — Status tab timeline
-* [Bookings Dashboard](../bookings-dashboard.md) — Ops-room live map
+* [Flights Dashboard](../bookings-dashboard.md) — Ops-room live map
 * [Flight Status (Mobile)](../../mobile-app/flight-status.md) — Crew confirmations and manual entry
 * [Integrations](../../settings/integrations.md) — Enable the Flight Tracking toggle

@@ -130,13 +130,13 @@ All flight status operations work offline:
 You never need to wait for a network connection to record flight events. All operations update the UI instantly and sync in the background.
 {% endhint %}
 
-## Live Bookings Dashboard
+## Live Flights Dashboard
 
-Flight status updates from the mobile app feed directly into the **Bookings Dashboard** — a real-time ops display designed for TV screens and wall monitors. When a departure or arrival is confirmed:
+Flight status updates from the mobile app feed directly into the **Flights Dashboard** — a real-time ops display designed for TV screens and wall monitors. When a departure or arrival is confirmed:
 
 * The flight appears on the **live map** with the actual track
 * The **activity feed** shows the departure/arrival event in real time
 * Booking cards update with actual times
 * Multi-leg bookings transition to **Ground Time** status between legs
 
-See the [Bookings Dashboard](../bookings-operators/bookings-dashboard.md) and [Flight Tracking](../bookings-operators/flight-tracking/) guides for more information.
+See the [Flights Dashboard](../bookings-operators/bookings-dashboard.md) and [Flight Tracking](../bookings-operators/flight-tracking/) guides for more information.

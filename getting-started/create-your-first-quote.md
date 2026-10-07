@@ -116,7 +116,7 @@ The customer receives an email with a link to view the quote online, where they 
 | View all quotes    | Quotes in sidebar                    |
 | Edit a sent quote  | Open quote > Edit                    |
 | Resend a quote     | Open quote > Send > Resend           |
-| Convert to booking | Open accepted quote > Create Booking |
+| Convert to booking | Open accepted quote > Create Flight |
 
 ***
 

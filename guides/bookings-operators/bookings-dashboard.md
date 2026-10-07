@@ -1,18 +1,18 @@
 ---
 description: >-
-  The Bookings Dashboard is a real-time operations display designed to give your
+  The Flights Dashboard is a real-time operations display designed to give your
   team a live overview of all flight activity. It's purpose-built for
   wall-mounted TVs or a second monitor
 ---
 
-# Bookings Dashboard
+# Flights Dashboard
 
 ## Opening the Dashboard
 
-The Bookings Dashboard is accessed from the **Bookings card** on the operator Home page:
+The Flights Dashboard is accessed from the **Flights card** on the operator Home page:
 
 1. Log in to AeroQuote
-2. From the Home dashboard, find the **Bookings** summary card (shows total bookings, in-progress count, and upcoming count)
+2. From the Home dashboard, find the **Flights** summary card (shows total flights, in-progress count, and upcoming count)
 3. Click the **Dashboard** link (with TV icon) on the right side of the card footer — it opens in a **new browser tab**
 
 The Dashboard link is only visible to users with **Manager**, **Account Administrator**, or **Chief Pilot** roles .
@@ -27,9 +27,9 @@ The dashboard uses a dark theme optimised for large displays and low-light envir
 
 The dashboard layout consists of:
 
-1. **In-progress Bookings** — in-progress booking card&#x20;
+1. **In-progress flights** — in-progress flight card&#x20;
 2. **Flight Map** — Auto adjusting Non-interactive map
-3. **Other Booking Cards** — Ground Time, Upcoming, and Recently Completed in that order below any in-progress bookings
+3. **Other flight cards** — Ground Time, Upcoming, and Recently Completed in that order below any in-progress flights
 
 ### Activity Feed
 
@@ -54,7 +54,7 @@ Events from **recently completed bookings** (within the last 2 hours) are includ
 
 ### Flight Map
 
-<figure><img src="../../.gitbook/assets/Bookings Dashboard map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Flights Dashboard map.png" alt=""><figcaption></figcaption></figure>
 
 The map auto-adapts and zooms to tracks based on flight status:
 
@@ -164,4 +164,4 @@ The dashboard automatically refreshes every **60 seconds**. The page also perfor
 
 ***
 
-**Watch the walkthrough (optional):** [Vimeo — Bookings Dashboard overview](https://vimeo.com/1181068564)
+**Watch the walkthrough (optional):** [Vimeo — Flights Dashboard overview](https://vimeo.com/1181068564)
