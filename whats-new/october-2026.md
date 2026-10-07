@@ -20,7 +20,7 @@ Charter work is still there. The new name makes room for other flying you alread
 * The operations screen is the **Flights Dashboard**
 * Settings → Modules lists **Flights & Flight Tracking**
 
-When you create a flight, the first step is **Type**. Charter still collects the customer contact and notes. Repositioning, maintenance, and training hide those fields so the record stays operational.
+When you create a flight, the first step is **Type**. Charter still collects the customer contact and notes. Repositioning, maintenance, training, and private hide those fields so the record stays operational. Private is for owner or personal flying.
 
 Existing charter flights, crew, passengers, tracking, and customer pages keep working. Customer confirmations still go out as they do today.
 

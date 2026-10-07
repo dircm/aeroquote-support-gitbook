@@ -10,7 +10,7 @@ coverY: -162
 Flights are included in the Flights & Flight Tracking module, which is a paid upgrade. [modules.md](../settings/modules.md "mention")
 {% endhint %}
 
-Flights are confirmed flying — charter, repositioning, maintenance, training, and more. Once a customer accepts a quote, convert it to a flight to manage the full lifecycle: crew, passengers, cargo, and status.
+Flights are confirmed flying — charter, repositioning, maintenance, training, private, and more. Once a customer accepts a quote, convert it to a flight to manage the full lifecycle: crew, passengers, cargo, and status.
 
 This module used to be called Bookings. The name is now Flights so the same list can hold other types of flying alongside charter. See [October 2026](../../whats-new/october-2026.md).
 
@@ -28,7 +28,7 @@ The Flights page shows all flights with:
 
 | Column        | Description                 |
 | ------------- | --------------------------- |
-| **Type**      | Charter, repositioning, maintenance, training |
+| **Type**      | Charter, repositioning, maintenance, training, private |
 | **Reference** | Flight code                 |
 | **Customer**  | Customer name (charter)     |
 | **Route**     | Origin → Destination        |

@@ -94,7 +94,7 @@ The **online quote view** is the customer-facing web page for a quote. Customers
 
 ### Flights
 
-**Flights** are confirmed flying — the operational step after an accepted [Quote](concepts.md#quotes). You can also create a flight from scratch when there is no prior quote. The list used to be called Bookings. It is now Flights so charter can sit beside training, maintenance, private, and other work.
+**Flights** are confirmed flying — the operational step after an accepted [Quote](concepts.md#quotes). You can also create a flight from scratch when there is no prior quote. The list used to be called Bookings. It is now Flights so charter can sit beside repositioning, maintenance, training, and private flying.
 
 {% hint style="info" %}
 Flights require the **Flights & Flight Tracking** module (a paid add-on). See [Modules](../guides/settings/modules.md).

@@ -39,7 +39,7 @@ Create professional, accurate quotes in minutes.
 Convert quotes to flights and manage the full flight lifecycle.
 
 - **One-Click Conversion** — Turn accepted quotes into flights instantly
-- **Flight types** — Charter, repositioning, maintenance, and training, with more types coming
+- **Flight types** — Charter, repositioning, maintenance, training, and private
 - **Flight Tracking** — Automatic departure, arrival, and ETA; live map on the Flights Dashboard; saved flight tracks; crew mobile confirmations; multi-leg Ground Time and stalled-rotation recovery
 - **Passenger Management** — Add passengers with weights and details per flight leg
 - **Crew Assignment** — Assign crew members to flights

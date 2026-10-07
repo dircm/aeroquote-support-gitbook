@@ -24,8 +24,9 @@ Choose the kind of flying this record is for:
 | **Repositioning** | Moving the aircraft with no charter customer. |
 | **Maintenance** | A maintenance or engineering flight. |
 | **Training** | A training flight. |
+| **Private** | Owner or personal flying, with no charter customer. |
 
-Charter is the default. Repositioning, maintenance, and training hide contact and customer notes so the record stays operational. More types (private, other) are coming so all of your flying can live in this list.
+Charter is the default. Repositioning, maintenance, training, and private hide contact and customer notes so the record stays operational.
 
 Click **Next** to continue.
 
