@@ -1,7 +1,7 @@
 ---
 description: >-
-  Bookings is now Flights. The name change makes room for other flight types
-  including training, maintenance, private, and other work.
+  Bookings is now Flights, and circuit hops within 10 minutes are stored as
+  one recorded flight with no track.
 ---
 
 # October 2026
@@ -25,3 +25,13 @@ When you create a flight, the first step is **Type**. Charter still collects the
 Existing charter flights, crew, passengers, tracking, and customer pages keep working. Customer confirmations still go out as they do today.
 
 See [Flights](../guides/bookings-operators/README.md) and [Creating a Flight](../guides/bookings-operators/booking-builder.md).
+
+## Circuit training is one recorded flight
+
+When the same aircraft lands and takes off again **within 10 minutes**, at the same airport, AeroQuote stores the hops as one recorded flight. The type is **No track recorded**. A gap of 10 minutes or more starts a new flight.
+
+A Hayward helicopter detail that flew 02:34–02:45 and then 02:54–03:05 is one flight. If the second takeoff is 02:59, that is a separate flight.
+
+The session runs from the first takeoff to the last landing. The minutes are the airborne time added up, without the pauses on the ground. There is no map. You can still open the row on **Recorded flights** and choose **Training**, or tick several separate rows and convert them together.
+
+See [Circuit sessions](../guides/bookings-operators/flight-tracking/circuit-sessions.md).

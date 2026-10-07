@@ -21,6 +21,7 @@ Flight tracking requires the **Flights** module (or **Scheduled Flights** / **To
 | **Automatic block off, departure, arrival** | Booking Status tab, Flights Dashboard, mobile push notifications             |
 | **Live position & ETA**                     | Flights Dashboard map, booking Status tab, mobile app                        |
 | **Saved flight track**                      | Itinerary map, completed booking cards, mobile track view                     |
+| **Circuit session**                         | Recorded flights. Hops under 10 minutes apart become one flight, with no map |
 | **Crew overrides**                          | Mobile app — confirmed times always win over automation                       |
 | **Multi-leg rotations**                     | Ground Time status between legs; stalled-leg recovery when coverage is patchy |
 
@@ -70,6 +71,10 @@ Positions on the map may be labelled **(estimated)** when they come from **simul
 
 {% content-ref url="multi-leg-rotations.md" %}
 [multi-leg-rotations.md](multi-leg-rotations.md)
+{% endcontent-ref %}
+
+{% content-ref url="circuit-sessions.md" %}
+[circuit-sessions.md](circuit-sessions.md)
 {% endcontent-ref %}
 
 ***
