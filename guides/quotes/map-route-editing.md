@@ -11,7 +11,7 @@ Use the route editor when a flight leg needs waypoints — coastal tracking, noi
 ## Prerequisites
 
 * A quote with at least one flight leg that has **departure** and **arrival** airports selected
-* The **Bookings** module is not required — route editing works on quotes
+* The **Flights** module is not required — route editing works on quotes
 
 To save a route for reuse across enquiries and quotes, see [Custom Routes & Route Library](../custom-items/custom-routes-and-route-library.md).
 

@@ -2,7 +2,7 @@
 description: Track flight progress through status updates and automatic flight tracking.
 ---
 
-# 📊 Booking Status
+# 📊 Flight Status
 
 The Status tab tracks each flight through its lifecycle — from block off to block on. Status updates can come from crew via the mobile app, or automatically from FlightRadar24 integration.
 
@@ -10,8 +10,8 @@ The Status tab tracks each flight through its lifecycle — from block off to bl
 
 ## Accessing Status
 
-1. Go to **Bookings** from the sidebar
-2. Click on a booking
+1. Go to **Flights** from the sidebar
+2. Click on a flight
 3. Select the **Status** tab
 
 ***
@@ -79,7 +79,7 @@ When Flight Tracking is enabled in **Settings → Integrations**, AeroQuote auto
 
 * Live position updates with altitude, speed, and heading
 * ETA updates as the flight progresses
-* Position trail visible on the Bookings Dashboard map
+* Position trail visible on the Flights Dashboard map
 
 ### Arrival Detection
 
@@ -107,7 +107,7 @@ Manual updates from the app are also available for ETA changes when conditions c
 
 ## Status on the Dashboard
 
-The **Bookings Dashboard** provides a real-time operations view:
+The **Flights Dashboard** provides a real-time operations view:
 
 * **Live flight map** — Aircraft positions with registration labels and position trails
 * **Booking cards** — Altitude, speed, ETA, and check-in progress for active flights
@@ -146,6 +146,6 @@ View the full audit trail in the [Amendments](amendments.md) section.
 ## Next Steps
 
 * [Flight Tracking](flight-tracking/) — Full guide: configuration, FR24 detection, multi-leg inference, completion vs expiry
-* [Bookings Dashboard](bookings-dashboard.md) — Live ops map
+* [Flights Dashboard](bookings-dashboard.md) — Live ops map
 * [Amendments](amendments.md) — View full change history
 * [Sending Confirmations](sending-confirmations.md) — Customer communications and completion emails

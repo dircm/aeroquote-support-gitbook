@@ -25,7 +25,7 @@ At the top of the Dashboard, metric cards summarise recent activity (typically t
 |--------|---------------|
 | **Quotes Created** | New quotes created in the period |
 | **Quote Acceptances** | Quotes accepted by customers |
-| **Bookings Created** | New charter bookings (when the Bookings module is on) |
+| **Flights Created** | New flights (when the Flights module is on) |
 | **Quote Emails Sent** | Customer quote emails sent |
 | **Email Opens** | Quote emails that recorded an inbox open |
 | **Link Clicks** | Quote emails where the customer opened the quote link |

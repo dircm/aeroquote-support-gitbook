@@ -8,7 +8,7 @@ description: Turn on flight tracking, configure aircraft identifiers, and unders
 
 ## Prerequisites
 
-1. **Bookings access** — Subscribe to the Bookings module, or use Scheduled Flights / Tour Packages (these include bookings functionality).
+1. **Bookings access** — Subscribe to the Flights module, or use Scheduled Flights / Tour Packages (these include bookings functionality).
 2. **Flight Tracking toggle** — **Settings → Integrations → Flight Tracking** → ON.
 
 The toggle is turned on automatically when you subscribe to Bookings in many cases. Operators on older accounts can ask support to verify `flight_tracking_enabled` if the toggle is missing.
@@ -50,7 +50,7 @@ Crew mobile updates still work when FR24 tracking is disabled on the aircraft.
 
 | Step | Action |
 | --- | --- |
-| 1 | Confirm Bookings module is active (**Settings → Modules**) |
+| 1 | Confirm Flights module is active (**Settings → Modules**) |
 | 2 | Enable **Flight Tracking** (**Settings → Integrations**) |
 | 3 | Ensure each active aircraft has a valid **registration** |
 | 4 | Assign crew to legs that should receive push notifications |

@@ -11,7 +11,7 @@ description: >-
 
 ## Step 1: Open the booking itinerary
 
-1. Go to **Bookings** and open a booking
+1. Go to **Flights** and open a booking
 2. Select the **Itinerary** step
 
 ## Step 2: Add a general item

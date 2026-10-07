@@ -1,22 +1,40 @@
 ---
-description: Step-by-step guide to creating a booking using the Booking Builder.
+description: Step-by-step guide to creating a flight using the flight builder.
 ---
 
-# Creating a Booking
+# Creating a Flight
 
-The Booking Builder walks you through creating a booking in five steps — from selecting a customer through to assigning passengers, cargo, and crew. You can also create bookings directly from accepted quotes.
-
-***
-
-## Opening the Booking Builder
-
-**From the Bookings page** — Click the **Create Booking** button in the top right
+The flight builder walks you through creating a flight — type, details, itinerary, aircraft, passengers, cargo, and crew. You can also create flights directly from accepted quotes.
 
 ***
 
-## Step 1: Booking Details
+## Opening the flight builder
 
-Set the customer and any notes for the booking.
+**From the Flights page** — Click the **Create Flight** button in the top right
+
+***
+
+## Step 1: Type
+
+Choose the kind of flying this record is for:
+
+| Type | When to use it |
+| ---- | -------------- |
+| **Charter** | Customer flying. Contact and customer notes are required. |
+| **Repositioning** | Moving the aircraft with no charter customer. |
+| **Maintenance** | A maintenance or engineering flight. |
+| **Training** | A training flight. |
+| **Private** | Owner or personal flying, with no charter customer. |
+
+Charter is the default. Repositioning, maintenance, training, and private hide contact and customer notes so the record stays operational.
+
+Click **Next** to continue.
+
+***
+
+## Step 2: Flight Details
+
+Set the customer and any notes. Charter requires a contact before you can continue.
 
 ### Contact
 
@@ -38,7 +56,7 @@ Click **Next** to continue.
 
 ***
 
-## Step 2: Flights
+## Step 3: Flights
 
 Build the flight itinerary by adding one or more flight legs.
 
@@ -87,7 +105,7 @@ Click **Next** to continue.
 
 ***
 
-## Step 3: Aircraft
+## Step 4: Aircraft
 
 Add one or more aircraft for this booking. Estimates run only for aircraft you add — not the full fleet automatically.
 
@@ -129,7 +147,7 @@ Click **Next** to continue.
 
 ***
 
-## Step 4: Passengers, Cargo & Crew
+## Step 5: Passengers, Cargo & Crew
 
 This step is optional — you can add passengers, cargo, and crew now or after the booking is created.
 
@@ -162,9 +180,9 @@ Click **Next** to continue.
 
 ***
 
-## Step 5: Booking Summary
+## Step 6: Flight Summary
 
-Review all the details before creating the booking:
+Review all the details before creating the flight:
 
 * **Contact** — Name, email, and phone
 * **Passengers** — Names and weights
@@ -175,11 +193,11 @@ Review all the details before creating the booking:
 Use the step indicators at the top to jump back to any previous step if you need to make changes.
 {% endhint %}
 
-Click **Create Booking** to finalise. AeroQuote creates the booking, assigns all passengers, cargo, crew, and ground crew, then opens the new booking's detail page.
+Click **Create Flight** to finalise. AeroQuote creates the flight, assigns all passengers, cargo, crew, and ground crew, then opens the new flight's detail page.
 
 ***
 
-## After Creating a Booking
+## After Creating a Flight
 
 Once created, you can:
 

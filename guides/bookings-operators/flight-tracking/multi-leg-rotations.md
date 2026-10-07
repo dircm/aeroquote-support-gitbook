@@ -20,7 +20,7 @@ This prevents leg 3 from picking up FR24 data while leg 2 is still airborne.
 | **Ground Time** | Current leg(s) finished; a future leg is still scheduled |
 | **Completed** | Every leg is completed |
 
-The [Bookings Dashboard](../../dashboard/bookings-dashboard.md) map shows completed legs as a faded trail, the aircraft at the current airport, and a dashed line to the next destination during Ground Time.
+The [Flights Dashboard](../../dashboard/bookings-dashboard.md) map shows completed legs as a faded trail, the aircraft at the current airport, and a dashed line to the next destination during Ground Time.
 
 ---
 

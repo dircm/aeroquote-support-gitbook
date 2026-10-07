@@ -4,44 +4,47 @@ cover: ../../.gitbook/assets/bookingbanner.png
 coverY: -162
 ---
 
-# 📅 Bookings (Operators)
+# 📅 Flights (Operators)
 
 {% hint style="warning" %}
-Bookings are included in the Bookings Module which is a paid upgrade. [modules.md](../settings/modules.md "mention")
+Flights are included in the Flights & Flight Tracking module, which is a paid upgrade. [modules.md](../settings/modules.md "mention")
 {% endhint %}
 
-Bookings represent confirmed flights. Once a customer accepts a quote, convert it to a booking to manage the full flight lifecycle — crew, passengers, cargo, and status updates.
+Flights are confirmed flying — charter, repositioning, maintenance, training, private, and more. Once a customer accepts a quote, convert it to a flight to manage the full lifecycle: crew, passengers, cargo, and status.
+
+This module used to be called Bookings. The name is now Flights so the same list can hold other types of flying alongside charter. See [October 2026](../../whats-new/october-2026.md).
 
 ***
 
-## Accessing Bookings
+## Accessing Flights
 
-From the sidebar, click **Bookings** to view your bookings list.
+From the sidebar, click **Flights** to view your flights list.
 
 ***
 
-## Booking List
+## Flights List
 
-The Bookings page shows all bookings with:
+The Flights page shows all flights with:
 
 | Column        | Description                 |
 | ------------- | --------------------------- |
-| **Reference** | Booking ID/reference number |
-| **Customer**  | Customer name               |
+| **Type**      | Charter, repositioning, maintenance, training, private |
+| **Reference** | Flight code                 |
+| **Customer**  | Customer name (charter)     |
 | **Route**     | Origin → Destination        |
 | **Date**      | Flight date                 |
 | **Aircraft**  | Assigned aircraft           |
-| **Status**    | Current booking status      |
+| **Status**    | Current flight status       |
 
-Use filters to find specific bookings by date range, status, or customer.
+Use filters to find flights by type, date range, status, or customer.
 
 ***
 
-## Booking Lifecycle
+## Flight Lifecycle
 
-A typical booking flows through these stages:
+A typical flight flows through these stages:
 
-1. **Confirmed** — Quote converted to booking, details finalized
+1. **Confirmed** — Quote converted to a flight, details finalized
 2. **Crew Assigned** — Flight crew allocated
 3. **Passengers Added** — Manifest completed
 4. **In Progress** — Flight(s) underway
@@ -50,18 +53,18 @@ A typical booking flows through these stages:
 
 ***
 
-## Booking Sections
+## Flight Sections
 
-Each booking has several tabs:
+Each flight has several tabs:
 
 | Section                                           | Purpose                   |
 | ------------------------------------------------- | ------------------------- |
-| **Details**                                       | Basic booking information |
+| **Details**                                       | Basic flight information  |
 | **Itinerary**                                     | Flight legs and timing    |
 | [**Passengers & Cargo**](passengers-and-cargo.md) | Manifest management       |
 | [**Crew**](crew-assignment.md)                    | Crew allocation           |
 | [**Status**](booking-status.md)                   | Flight status tracking    |
-| [**Flight Tracking**](flight-tracking/README.md)   | Live FR24 tracking, maps, multi-leg |
+| [**Flight Tracking**](flight-tracking/README.md)   | Live tracking, maps, multi-leg |
 | [**Amendments**](amendments.md)                   | Change history            |
 | [**Send**](sending-confirmations.md)              | Customer communications   |
 
@@ -98,10 +101,10 @@ Each booking has several tabs:
 ## Tips
 
 {% hint style="success" %}
-**Keep bookings updated** — Accurate status tracking helps your team stay coordinated and keeps customers informed.
+**Keep flights updated** — Accurate status tracking helps your team stay coordinated and keeps customers informed.
 {% endhint %}
 
-* Convert quotes to bookings promptly after acceptance
+* Convert quotes to flights promptly after acceptance
 * Add passengers as soon as you have their details
 * Assign crew early to avoid scheduling conflicts
 * Use amendments to track any changes

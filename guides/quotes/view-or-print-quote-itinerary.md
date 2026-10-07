@@ -80,7 +80,7 @@ This PDF includes main contacts, selected option aircraft, and flight rows (depa
 | Still quoting | **Documents** PDF or **Customer View** on the quote |
 | Already booked | Open the **booking** — customer itinerary / confirmation is managed on the booking (and customer page), not only on the original quote |
 
-Generating a booking from a quote: [Create a Booking from a Quote](../bookings-operators/create-a-booking-from-a-quote.md).
+Generating a booking from a quote: [Create a Flight from a Quote](../bookings-operators/create-a-booking-from-a-quote.md).
 
 ***
 

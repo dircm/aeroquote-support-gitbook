@@ -19,7 +19,7 @@ The Modules tab lets you customize which features are active in your AeroQuote a
 
 | Module | Type | Description |
 |--------|------|-------------|
-| **Bookings & Flight Tracking** | Paid | Manage bookings, track flights, assign crew and passengers, and access analytics |
+| **Flights & Flight Tracking** | Paid | Manage flights, track them, assign crew and passengers, and access analytics |
 | **Request for Quote (RFQ)** | Free | Enable broker-style RFQ workflows to source aircraft from external operators |
 
 ---
@@ -35,7 +35,7 @@ Modules are labelled with a **Free** or **Paid** badge on the module card.
 
 ## Subscribing to a Paid Module
 
-1. Find the module you want to enable (e.g. **Bookings & Flight Tracking**)
+1. Find the module you want to enable (e.g. **Flights & Flight Tracking**)
 2. Click **Enable**
 3. A confirmation modal will appear showing the pricing and your billing period
 4. Click **Subscribe** to add the module to your subscription
@@ -53,7 +53,7 @@ Your Stripe subscription is updated automatically. The module cost will appear o
 4. Click **Unsubscribe** to remove the module from your subscription
 
 {% hint style="warning" %}
-Unsubscribing removes access to bookings, flight tracking, and analytics features. Your existing booking data is preserved and will be accessible if you re-subscribe later.
+Unsubscribing removes access to flights, flight tracking, and analytics features. Your existing flight data is preserved and will be accessible if you re-subscribe later.
 {% endhint %}
 
 ---
@@ -72,7 +72,7 @@ Disabling a free module hides it from the interface but doesn't delete any data.
 
 ## Grace Period
 
-If you had access to the Bookings module during the free evaluation period, you will see a banner on your dashboard prompting you to subscribe before the grace period ends.
+If you had access to the Flights module during the free evaluation period, you will see a banner on your dashboard prompting you to subscribe before the grace period ends.
 
 - The banner shows pricing in your billing currency
 - Click **Subscribe** to go directly to the Modules page

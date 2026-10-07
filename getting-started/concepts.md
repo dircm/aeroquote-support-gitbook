@@ -12,10 +12,10 @@ AeroQuote accounts are built around an **operator** (your company). Within that 
 
 | Role | Typical focus |
 | --- | --- |
-| **Operator** | You fly your own fleet. You quote from aircraft you control and, with the Bookings module, manage confirmed flights end-to-end. |
+| **Operator** | You fly your own fleet. You quote from aircraft you control and, with the Flights module, manage confirmed flights end-to-end. |
 | **Broker** | You source aircraft from other companies. You use **External Operators**, **RFQ** (Request for Quote), and estimated costs rather than only your own fleet. |
 
-Some accounts mix both. The same job flow (Request → Quote → Booking) applies; brokers lean more on RFQ and external aircraft.
+Some accounts mix both. The same job flow (Request → Quote → Flight) applies; brokers lean more on RFQ and external aircraft.
 
 ## Modules
 
@@ -25,9 +25,9 @@ Common modules you will meet by name:
 
 | Module | What it unlocks (conceptually) |
 | --- | --- |
-| **Bookings & Flight Tracking** | Bookings, crew/passenger ops, flight tracking, analytics, and related operational tools (paid) |
+| **Flights & Flight Tracking** | Flights, crew/passenger ops, flight tracking, analytics, and related operational tools (paid) |
 | **Request for Quote (RFQ)** | Broker-style bulk RFQs to external operators (free; often included on broker plans) |
-| **Scheduled Flights (RPT)** | Seat-selling on published routes and a public storefront (paid; depends on Bookings) |
+| **Scheduled Flights (RPT)** | Seat-selling on published routes and a public storefront (paid; depends on Flights) |
 | **FTL / Crew Limits** | Flight- and duty-time compliance tracking for crew (enabled separately when available) |
 
 If a feature is module-dependent, it is noted below. See [Modules](../guides/settings/modules.md) for enabling and billing detail.
@@ -92,17 +92,17 @@ The **online quote view** is the customer-facing web page for a quote. Customers
 
 **Guides:** [Require T&Cs to be accepted online](../guides/quotes/require-t-and-cs-to-be-accepted-online.md) · [Customer Pages Branding](../guides/settings/customer-pages-branding.md)
 
-### Bookings
+### Flights
 
-**Bookings** are confirmed flights — the operational step after an accepted [Quote](concepts.md#quotes). You can also create a booking from scratch when there is no prior quote.
+**Flights** are confirmed flying — the operational step after an accepted [Quote](concepts.md#quotes). You can also create a flight from scratch when there is no prior quote. The list used to be called Bookings. It is now Flights so charter can sit beside repositioning, maintenance, training, and private flying.
 
 {% hint style="info" %}
-Bookings require the **Bookings & Flight Tracking** module (a paid add-on). See [Modules](../guides/settings/modules.md).
+Flights require the **Flights & Flight Tracking** module (a paid add-on). See [Modules](../guides/settings/modules.md).
 {% endhint %}
 
-A booking holds the itinerary, aircraft, crew, passengers, cargo, status, communications, and change history. Scheduled-flight departures (when that module is enabled) are also backed by bookings so the same operational tools apply.
+A flight holds the itinerary, aircraft, crew, passengers, cargo, status, communications, and change history. Scheduled-flight departures (when that module is enabled) use the same operational tools.
 
-**Guides:** [Bookings](../guides/bookings-operators/README.md) · [Create a Booking from a Quote](../guides/bookings-operators/create-a-booking-from-a-quote.md)
+**Guides:** [Flights](../guides/bookings-operators/README.md) · [Create a Flight from a Quote](../guides/bookings-operators/create-a-booking-from-a-quote.md)
 
 #### Crew Assignment
 
@@ -142,7 +142,7 @@ The **online booking view** is the customer-facing page for a confirmed booking.
 
 #### Flight Tracking
 
-**Flight Tracking** connects bookings to live aircraft data (primarily FlightRadar24). Departures, arrivals, ETAs, and flight paths can update automatically; crew can confirm or override times from the mobile app. Tracking requires the Bookings module (or modules that include bookings access) and the Flight Tracking toggle under Settings → Integrations.
+**Flight Tracking** connects flights to live aircraft data (primarily FlightRadar24 or FlightAware). Departures, arrivals, ETAs, and flight paths can update automatically; crew can confirm or override times from the mobile app. Tracking requires the Flights module and the Flight Tracking toggle under Settings → Integrations.
 
 **Guides:** [Flight Tracking](../guides/bookings-operators/flight-tracking/README.md) · [Integrations](../guides/settings/integrations.md)
 
@@ -182,7 +182,7 @@ A **Request for Quote (RFQ)** is the message (and tracking workflow) you send to
 
 ## Analytics
 
-**Analytics** (under the Bookings area) summarises operational performance over a period you choose — booking volumes, status mix, top routes, on-time performance, and fleet utilisation. It requires the Bookings module and appropriate permissions.
+**Analytics** (under Flights) summarises operational performance over a period you choose — flight volumes, status mix, top routes, on-time performance, and fleet utilisation. It requires the Flights module and appropriate permissions.
 
 **Guide:** [Understanding Analytics](../guides/analytics/understanding-analytics.md)
 
@@ -206,10 +206,10 @@ The **AeroQuote Crew** mobile app is for pilots, crew, and ops staff in the fiel
 
 ## Scheduled Flights
 
-**Scheduled Flights** (RPT) is a paid module for selling **seats** on recurring routes via a branded storefront, rather than quoting the whole aircraft. Published departures still materialise as [Bookings](concepts.md#bookings), so crew, manifests, tracking, and the mobile app work the same way as charter.
+**Scheduled Flights** (RPT) is a paid module for selling **seats** on recurring routes via a branded storefront, rather than quoting the whole aircraft. Published departures still materialise as [Flights](concepts.md#flights), so crew, manifests, tracking, and the mobile app work the same way as charter.
 
 {% hint style="info" %}
-Requires the Bookings module plus the Scheduled Flights module. Enable both under Settings → Modules when available on your plan.
+Requires the Flights module plus the Scheduled Flights module. Enable both under Settings → Modules when available on your plan.
 {% endhint %}
 
 ## Accounting Integration
