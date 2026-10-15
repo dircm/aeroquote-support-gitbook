@@ -1,38 +1,40 @@
 ---
-description: Step-by-step guide to creating a booking using the Booking Builder.
+description: Step-by-step guide to creating a flight using the flight builder.
 ---
 
-# Creating a Booking
+# Creating a Flight
 
-The Booking Builder walks you through creating a booking in five steps — from selecting a customer through to assigning passengers, cargo, and crew. You can also create bookings directly from accepted quotes.
-
-***
-
-## Opening the Booking Builder
-
-**From the Bookings page** — Click the **Create Booking** button in the top right
+The flight builder walks you through creating a flight — type, details, itinerary, aircraft, passengers, cargo, and crew. You can also create flights directly from accepted quotes.
 
 ***
 
-## Step 1: Booking Details
+## Opening the flight builder
 
-Set the customer and any notes for the booking.
+**From the Flights page** — Click the **Create Flight** button in the top right
 
-### Contact
+***
 
-Search for an existing contact by name or email. Start typing and select from the dropdown.
+## Step 1: Type
+
+The first step is labelled **Type**. Choose the kind of flying, then add the person this record needs.
+
+| Type | When to use it |
+| ---- | -------------- |
+| **Charter** | Customer flying. A contact is required, and customer notes stay on this type. |
+| **Repositioning** | Moving the aircraft. No customer contact. |
+| **Maintenance** | A maintenance or engineering flight. No customer contact. |
+| **Training** | A training flight. A student is required before **Next**. |
+| **Private** | Owner or personal flying. No customer contact. |
+
+Charter is the default. Internal notes are on every type. Customer notes are charter only.
+
+### Contact or student
+
+For charter, search for a contact by name or email. For training, the same field asks for the student. Start typing and select from the dropdown.
 
 {% hint style="info" %}
-If the contact doesn't exist yet, you can create one inline without leaving the builder.
+If the person doesn't exist yet, you can create them inline without leaving the builder.
 {% endhint %}
-
-### Internal Notes (optional)
-
-Notes visible only to your team. Use these for operational reminders, special instructions, or coordination details.
-
-### Customer Notes (optional)
-
-Notes that will be visible to the customer on confirmations and the online booking view. Your operator's default notes are pre-filled here — edit or remove as needed.
 
 Click **Next** to continue.
 
@@ -129,9 +131,9 @@ Click **Next** to continue.
 
 ***
 
-## Step 4: Passengers, Cargo & Crew
+## Step 4: Passengers and Cargo
 
-This step is optional — you can add passengers, cargo, and crew now or after the booking is created.
+This step is optional — you can add passengers and cargo now or after the flight is created.
 
 ### Passengers
 
@@ -144,9 +146,13 @@ Add cargo items with a name and weight. You can:
 * Search your **cargo presets** for commonly carried items
 * Create a custom cargo entry with name, weight, and handling notes
 
-### Crew
+Click **Next** to continue.
 
-Search your staff list to assign air crew (pilots and cabin crew) to the booking.
+***
+
+## Step 5: Crew
+
+Search your staff list to assign air crew (pilots and cabin crew) to the flight. You can also do this after the flight is created.
 
 ### Ground Crew
 
@@ -162,9 +168,9 @@ Click **Next** to continue.
 
 ***
 
-## Step 5: Booking Summary
+## Step 6: Booking Summary
 
-Review all the details before creating the booking:
+Review all the details before creating the flight:
 
 * **Contact** — Name, email, and phone
 * **Passengers** — Names and weights
@@ -175,11 +181,11 @@ Review all the details before creating the booking:
 Use the step indicators at the top to jump back to any previous step if you need to make changes.
 {% endhint %}
 
-Click **Create Booking** to finalise. AeroQuote creates the booking, assigns all passengers, cargo, crew, and ground crew, then opens the new booking's detail page.
+Click **Create Flight** to finalise. AeroQuote creates the flight, assigns all passengers, cargo, crew, and ground crew, then opens the new flight's detail page.
 
 ***
 
-## After Creating a Booking
+## After Creating a Flight
 
 Once created, you can:
 

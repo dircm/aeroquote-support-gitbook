@@ -80,7 +80,7 @@ See [Flight Performance](flight-performance.md).
 
 ### Live estimates (before you save a quote)
 
-On **Requests**, **Quote Builder**, and **Booking Builder**, after you add aircraft:
+On **Requests**, **Quote Builder**, and **flight builder**, after you add aircraft:
 
 * Times and distances for advanced-model aircraft use the new planning engine  
 * A **Fuel** column may show planned burn for those aircraft  

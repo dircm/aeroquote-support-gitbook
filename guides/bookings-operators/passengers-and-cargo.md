@@ -10,7 +10,7 @@ The Passengers & Cargo section lets you build complete manifests for each flight
 
 ## Accessing Passengers & Cargo
 
-1. Go to **Bookings** from the sidebar
+1. Go to **Flights** from the sidebar
 2. Click on a booking
 3. Select the **Passengers & Cargo** tab
 
@@ -165,7 +165,7 @@ Passengers can be checked in for their flights, either by scanning QR boarding p
 
 Check-in progress is visible on:
 
-* The **Bookings Dashboard** — each booking card shows a check-in progress bar
+* The **Flights Dashboard** — each booking card shows a check-in progress bar
 * The **mobile app** — passenger list with check-in status
 * The **activity feed** — check-in events stream in real time
 

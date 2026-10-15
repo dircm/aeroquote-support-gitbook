@@ -44,7 +44,7 @@ On your first visit, a **help guide** slides down from the top of the Dashboard 
 Use the bottom tab bar to navigate between the main sections:
 
 * **Dashboard** — This screen
-* **Bookings** — All your bookings
+* **Flights** — All your bookings
 * **Aircraft** — Your fleet
 * **Profile** — Account info and sign out
 

@@ -10,7 +10,7 @@ The Amendments section provides a complete audit trail of all changes made to a 
 
 ## Accessing Amendments
 
-1. Go to **Bookings** from the sidebar
+1. Go to **Flights** from the sidebar
 2. Click on a booking
 3. Select the **Amendments** tab
 
