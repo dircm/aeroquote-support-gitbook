@@ -25,7 +25,7 @@ Common modules you will meet by name:
 
 | Module | What it unlocks (conceptually) |
 | --- | --- |
-| **Flights & Flight Tracking** | Flights, crew/passenger ops, flight tracking, analytics, and related operational tools (paid) |
+| **Bookings Module** | Shown in the sidebar as **Flights**. Crew, passengers, flight tracking, and analytics (paid) |
 | **Request for Quote (RFQ)** | Broker-style bulk RFQs to external operators (free; often included on broker plans) |
 | **Scheduled Flights (RPT)** | Seat-selling on published routes and a public storefront (paid; depends on Flights) |
 | **FTL / Crew Limits** | Flight- and duty-time compliance tracking for crew (enabled separately when available) |
@@ -97,7 +97,7 @@ The **online quote view** is the customer-facing web page for a quote. Customers
 **Flights** are confirmed flying — the operational step after an accepted [Quote](concepts.md#quotes). You can also create a flight from scratch when there is no prior quote. The list used to be called Bookings. It is now Flights so charter can sit beside repositioning, maintenance, training, and private flying.
 
 {% hint style="info" %}
-Flights require the **Flights & Flight Tracking** module (a paid add-on). See [Modules](../guides/settings/modules.md).
+Flights require the **Bookings Module** (a paid add-on). The Settings card keeps that name. See [Modules](../guides/settings/modules.md).
 {% endhint %}
 
 A flight holds the itinerary, aircraft, crew, passengers, cargo, status, communications, and change history. Scheduled-flight departures (when that module is enabled) use the same operational tools.

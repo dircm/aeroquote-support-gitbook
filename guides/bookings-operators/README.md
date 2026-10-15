@@ -7,7 +7,7 @@ coverY: -162
 # 📅 Flights (Operators)
 
 {% hint style="warning" %}
-Flights are included in the Flights & Flight Tracking module, which is a paid upgrade. [modules.md](../settings/modules.md "mention")
+Flights are included in the Bookings Module, which is a paid upgrade. The Settings card still uses that name. [modules.md](../settings/modules.md "mention")
 {% endhint %}
 
 Flights are confirmed flying — charter, repositioning, maintenance, training, private, and more. Once a customer accepts a quote, convert it to a flight to manage the full lifecycle: crew, passengers, cargo, and status.

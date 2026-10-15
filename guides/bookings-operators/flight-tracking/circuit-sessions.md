@@ -25,6 +25,6 @@ No map is drawn for these flights. Each hop is only a short loop at the field, a
 
 ## Turning a session into a training flight
 
-On **Recorded flights**, open the session and choose **Training**. That creates one training flight from it.
+On **Flight Logs**, open the session and choose **Training**. Training asks for the student, then creates one training flight from the session.
 
 Hops that stayed separate, because the gap was 10 minutes or more, can still be ticked together and converted with **Training**. They become one training flight.

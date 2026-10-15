@@ -16,47 +16,31 @@ The flight builder walks you through creating a flight — type, details, itiner
 
 ## Step 1: Type
 
-Choose the kind of flying this record is for:
+The first step is labelled **Type**. Choose the kind of flying, then add the person this record needs.
 
 | Type | When to use it |
 | ---- | -------------- |
-| **Charter** | Customer flying. Contact and customer notes are required. |
-| **Repositioning** | Moving the aircraft with no charter customer. |
-| **Maintenance** | A maintenance or engineering flight. |
-| **Training** | A training flight. |
-| **Private** | Owner or personal flying, with no charter customer. |
+| **Charter** | Customer flying. A contact is required, and customer notes stay on this type. |
+| **Repositioning** | Moving the aircraft. No customer contact. |
+| **Maintenance** | A maintenance or engineering flight. No customer contact. |
+| **Training** | A training flight. A student is required before **Next**. |
+| **Private** | Owner or personal flying. No customer contact. |
 
-Charter is the default. Repositioning, maintenance, training, and private hide contact and customer notes so the record stays operational.
+Charter is the default. Internal notes are on every type. Customer notes are charter only.
 
-Click **Next** to continue.
+### Contact or student
 
-***
-
-## Step 2: Flight Details
-
-Set the customer and any notes. Charter requires a contact before you can continue.
-
-### Contact
-
-Search for an existing contact by name or email. Start typing and select from the dropdown.
+For charter, search for a contact by name or email. For training, the same field asks for the student. Start typing and select from the dropdown.
 
 {% hint style="info" %}
-If the contact doesn't exist yet, you can create one inline without leaving the builder.
+If the person doesn't exist yet, you can create them inline without leaving the builder.
 {% endhint %}
-
-### Internal Notes (optional)
-
-Notes visible only to your team. Use these for operational reminders, special instructions, or coordination details.
-
-### Customer Notes (optional)
-
-Notes that will be visible to the customer on confirmations and the online booking view. Your operator's default notes are pre-filled here — edit or remove as needed.
 
 Click **Next** to continue.
 
 ***
 
-## Step 3: Flights
+## Step 2: Flights
 
 Build the flight itinerary by adding one or more flight legs.
 
@@ -105,7 +89,7 @@ Click **Next** to continue.
 
 ***
 
-## Step 4: Aircraft
+## Step 3: Aircraft
 
 Add one or more aircraft for this booking. Estimates run only for aircraft you add — not the full fleet automatically.
 
@@ -147,9 +131,9 @@ Click **Next** to continue.
 
 ***
 
-## Step 5: Passengers, Cargo & Crew
+## Step 4: Passengers and Cargo
 
-This step is optional — you can add passengers, cargo, and crew now or after the booking is created.
+This step is optional — you can add passengers and cargo now or after the flight is created.
 
 ### Passengers
 
@@ -162,9 +146,13 @@ Add cargo items with a name and weight. You can:
 * Search your **cargo presets** for commonly carried items
 * Create a custom cargo entry with name, weight, and handling notes
 
-### Crew
+Click **Next** to continue.
 
-Search your staff list to assign air crew (pilots and cabin crew) to the booking.
+***
+
+## Step 5: Crew
+
+Search your staff list to assign air crew (pilots and cabin crew) to the flight. You can also do this after the flight is created.
 
 ### Ground Crew
 
@@ -180,7 +168,7 @@ Click **Next** to continue.
 
 ***
 
-## Step 6: Flight Summary
+## Step 6: Booking Summary
 
 Review all the details before creating the flight:
 

@@ -19,7 +19,7 @@ The Modules tab lets you customize which features are active in your AeroQuote a
 
 | Module | Type | Description |
 |--------|------|-------------|
-| **Flights & Flight Tracking** | Paid | Manage flights, track them, assign crew and passengers, and access analytics |
+| **Bookings Module** | Paid | The sidebar and flight list call this **Flights**. The card on this page is still labelled Bookings Module. |
 | **Request for Quote (RFQ)** | Free | Enable broker-style RFQ workflows to source aircraft from external operators |
 
 ---
@@ -35,7 +35,7 @@ Modules are labelled with a **Free** or **Paid** badge on the module card.
 
 ## Subscribing to a Paid Module
 
-1. Find the module you want to enable (e.g. **Flights & Flight Tracking**)
+1. Find the module you want to enable (the card is labelled **Bookings Module**)
 2. Click **Enable**
 3. A confirmation modal will appear showing the pricing and your billing period
 4. Click **Subscribe** to add the module to your subscription
@@ -72,10 +72,10 @@ Disabling a free module hides it from the interface but doesn't delete any data.
 
 ## Grace Period
 
-If you had access to the Flights module during the free evaluation period, you will see a banner on your dashboard prompting you to subscribe before the grace period ends.
+If you had access during the free evaluation period, the dashboard banner says **Bookings & Flight Tracking will soon be a paid upgrade.**
 
-- The banner shows pricing in your billing currency
-- Click **Subscribe** to go directly to the Modules page
+- The banner shows the end date, and the price when it is available
+- It links to **Settings › Modules**
 - Once you subscribe, the banner disappears
 - If you don't subscribe before the grace period ends, the module will be disabled
 
