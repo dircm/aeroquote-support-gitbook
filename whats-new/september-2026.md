@@ -1,11 +1,21 @@
 ---
 description: >-
-  Per-passenger sector fees show as their own quote cost line, every passenger
-  fee explanation is kept, and Flight Costs shows when a minimum sector charge
-  is applied.
+  AI-assisted email for quotes and bookings, plus clearer per-passenger and
+  minimum sector costs on quotes.
 ---
 
 # September 2026
+
+## AI-assisted email
+
+Optionally draft customer email wording with Grok when sending quotes and bookings.
+
+* **Quotes** — on the Send step, **Generate** drafts subject and HTML body (tones, optional options-as-text, snippets). Always editable; Send still works if Generate fails. See [AI-assisted quote email](../guides/quotes/ai-assisted-email.md).
+* **Bookings** — on **Send to Customer**, **Generate** drafts **customer notes** only (same tones and snippets idea). Layout, recipients, detailed view, and QR options are unchanged. See [AI-assisted customer email](../guides/bookings-operators/ai-assisted-customer-email.md).
+
+{% hint style="info" %}
+Generate is optional and does not run on Send. It does not auto-learn from your edits.
+{% endhint %}
 
 ## Clearer per-passenger and minimum costs
 

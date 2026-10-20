@@ -58,6 +58,7 @@ Click **Send to Customer** to open the preview modal. Here you can:
 
 * **Preview** the customer booking view exactly as the recipient will see it
 * **Edit Customer Booking Notes** — add or update notes that appear in the customer's email (e.g. special instructions, payment details, or a personal message)
+* **Optionally Generate** those notes with Grok — see [AI-assisted customer email](ai-assisted-customer-email.md)
 * **Include QR code boarding passes** — toggle this on to attach scannable boarding passes for each passenger in the email (requires [Bookings V2](../../whats-new/april-2026.md))
 
 ### Step 4: Send
@@ -103,6 +104,7 @@ Emails are sent to external operators who have an email address on file.
 You can add custom notes to the customer email. These appear in the email body above the booking link.
 
 * **Per-booking notes** — edit in the send confirmation modal before each send
+* **AI-assisted draft** — optionally use **Generate** to draft the notes (tones and snippets); always editable before send — [AI-assisted customer email](ai-assisted-customer-email.md)
 * **Default notes** — set a default message for all new bookings in **Settings → Default Units** under the "Default Booking Customer Notes" field
 
 ***
@@ -188,6 +190,7 @@ The completion email is fully automatic — no manual action is required. It fir
 
 ## Next Steps
 
+* [AI-assisted customer email](ai-assisted-customer-email.md) — Draft customer notes with Grok
 * [Booking Status](booking-status.md) — Track and update flight status
 * [Passengers & Cargo](passengers-and-cargo.md) — Manage the passenger and cargo manifest
 * [Crew Assignment](crew-assignment.md) — Assign crew to flights
