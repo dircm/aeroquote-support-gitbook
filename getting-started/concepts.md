@@ -44,9 +44,11 @@ For whole-aircraft charter work, AeroQuote follows this job flow:
 
 From a request you can generate a [Quote](concepts.md#quotes) with pre-filled legs and aircraft. Brokers also use the request as the starting point to send [Requests for Quote (RFQ)](concepts.md#external-operators-and-rfq) to external operators.
 
+With **Preview features** on, [Trip Builder (BETA)](../guides/trip-builder/README.md) can plan fuel range and stops, then create a Request from the Requests list.
+
 Requests have simple pipeline statuses (for example Active, Call Back, Not Interested, or Quote Already Created).
 
-**Guides:** [Requests](../guides/requests/README.md) · [Using the Estimator](../guides/requests/using-the-estimator.md)
+**Guides:** [Requests](../guides/requests/README.md) · [Using the Estimator](../guides/requests/using-the-estimator.md) · [Trip Builder (BETA)](../guides/trip-builder/README.md)
 
 ### Quotes
 
@@ -56,7 +58,7 @@ A quote is not limited to one aircraft price. AeroQuote is built so you can show
 
 Quotes are where you spend most of your quoting time: itinerary, costs, margins, options, document layout, validity dates, and customer communications.
 
-**Guides:** [Quotes](../guides/quotes/README.md) · [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md) · [Create Your First Quote](create-your-first-quote.md)
+**Guides:** [Quotes](../guides/quotes/README.md) · [Creating a Quote from scratch](../guides/quotes/creating-a-quote.md) · [Create Your First Quote](create-your-first-quote.md) · [Trip Builder (BETA)](../guides/trip-builder/README.md)
 
 #### Options <a href="#options" id="options"></a>
 
@@ -176,9 +178,9 @@ A **Request for Quote (RFQ)** is the message (and tracking workflow) you send to
 
 **Facilities** are FBOs or meeting points attached to airports on a flight leg. Customers see where to meet on online views; crew see handling details on operational documents.
 
-**Custom items** extend AeroQuote data for your operation: custom airports, custom facilities, custom routes (and route library), and custom charge/duration overrides where configured.
+**Custom items** extend AeroQuote data for your operation: custom airports, custom facilities, custom routes (and route library), custom trips (Trip Builder, Preview / BETA), and custom charge/duration overrides where configured.
 
-**Guides:** [Using Facilities](../guides/quotes/using-facilities.md) · [Custom Items](../guides/custom-items/README.md)
+**Guides:** [Using Facilities](../guides/quotes/using-facilities.md) · [Custom Items](../guides/custom-items/README.md) · [Custom Trips (BETA)](../guides/custom-items/custom-trips.md)
 
 ## Analytics
 

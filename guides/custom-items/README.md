@@ -14,3 +14,4 @@ Custom items include:
 * Custom Sector Durations - automatically override a calculated flight duration for a given sector
 * Custom Landing Charges - apply a change when an aircraft, or all aircraft, arrive at an Airport
 * [Custom Routes & Route Library](custom-routes-and-route-library.md) — save scenic and multi-waypoint routes for reuse on enquiries and quotes
+* [Custom Trips (BETA)](custom-trips.md) — save a Trip Builder itinerary (Preview features) and create a quote from it later
