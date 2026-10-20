@@ -12,6 +12,8 @@ Bookings are included in the Bookings Module which is a paid upgrade. [modules.m
 
 Bookings represent confirmed flights. Once a customer accepts a quote, convert it to a booking to manage the full flight lifecycle — crew, passengers, cargo, and status updates.
 
+Selling individual seats on recurring routes instead of whole-aircraft charters? See the [Scheduled Flights guides](../scheduled-flights/README.md) — every published departure is backed by a booking, so everything here still applies.
+
 ***
 
 ## Accessing Bookings
