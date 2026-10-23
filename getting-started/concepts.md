@@ -154,7 +154,7 @@ The **online booking view** is the customer-facing page for a confirmed booking.
 
 ## Contacts
 
-**Contacts** are your customer and passenger database. They are the main people on requests, quotes, and bookings, and can be imported in bulk. When a contact is used as a passenger, keeping weight and details up to date improves payload calculations.
+**Contacts** are your customer and passenger database. They are the main people on requests, quotes, and bookings, and can be imported in bulk or exported to Excel. When a contact is used as a passenger, keeping weight and details up to date improves payload calculations.
 
 **Guide:** [Contacts](../guides/contacts/README.md)
 
