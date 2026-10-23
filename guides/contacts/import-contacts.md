@@ -7,3 +7,5 @@ The CSV file must be correctly formatted, otherwise, AeroQuote may reject the en
 {% endhint %}
 
 To start a CSV import, click the **Import CSV** button ![](<../../.gitbook/assets/import CSV button.png>)
+
+The **Export** spreadsheet is a full download and is not accepted here. Use the sample CSV. See [Export contacts](export-contacts.md).

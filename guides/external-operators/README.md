@@ -15,3 +15,7 @@ External Operators can be associated with Aircraft in your database allowing you
 {% content-ref url="../contacts/import-contacts.md" %}
 [import-contacts.md](../contacts/import-contacts.md)
 {% endcontent-ref %}
+
+{% content-ref url="../contacts/export-contacts.md" %}
+[export-contacts.md](../contacts/export-contacts.md)
+{% endcontent-ref %}

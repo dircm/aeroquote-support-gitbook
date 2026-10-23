@@ -62,6 +62,7 @@
 * [Contacts](guides/contacts/README.md)
   * [Add a new contact](guides/contacts/add-a-new-contact.md)
   * [Import contacts](guides/contacts/import-contacts.md)
+  * [Export contacts](guides/contacts/export-contacts.md)
 * [👨‍💼 Staff](guides/staff/README.md)
 * [External Operators](guides/external-operators/README.md)
   * [Add a new External Operator](guides/external-operators/add-a-new-external-operator.md)
