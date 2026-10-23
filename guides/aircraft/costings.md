@@ -91,6 +91,49 @@ See [Cost Types](cost-types.md) for a detailed explanation of each cost type, ho
 
 ***
 
+## Airport Charges (Movement Charges)
+
+AeroQuote can add published airport charges (also called landing or movement charges) to your quotes automatically. This is set **per aircraft** on the **Costings** step and is **off by default**.
+
+<!-- TODO: add screenshot of the "Automatically calculate airport charges" switch and default charge fields on the Costings step -->
+
+### Automatically calculate airport charges
+
+Turn on **Automatically calculate airport charges** to have AeroQuote add the published charges for each airport on the itinerary, where we hold them:
+
+* **Landing / movement charges**
+* **Passenger charges**
+* **Parking charges**
+
+How the charges are applied:
+
+* **Departing charges** are applied at the departure airport, and **arriving charges** at the arrival airport
+* Where an airport publishes a business or general aviation (GA) rate, that rate is used
+* Each charge appears as its own explanation line in the quote, so you can see exactly what has been added
+
+{% hint style="info" %}
+**Not available on all airports.** Coverage currently includes airports in **Australia** and the **United Kingdom**, and we're adding more. Costs are checked and updated monthly.
+{% endhint %}
+
+### Default airport arrival and departure charges
+
+When the switch is on, two optional fields appear underneath it:
+
+| Field                                | When it applies                                                    |
+| ------------------------------------ | ------------------------------------------------------------------ |
+| **Default airport arrival charge**   | Charged at the arrival airport                                     |
+| **Default airport departure charge** | Charged at the departure airport                                   |
+
+These defaults are only used when an airport has **no airport charge records at all** and you have **no custom charge** for that field at that airport. They're a handy fallback for smaller strips that aren't in our database yet.
+
+In the quote they appear as **Default airport arrival charge $xxx** and **Default airport departure charge $xxx**. Leave a field blank or enter 0 and nothing is charged.
+
+{% hint style="success" %}
+**Negotiated rates?** Use a [Custom Airport Movement Charge](../custom-items/custom-airport-movement-charges.md) to set your own landing, departure, parking or passenger charges at a specific airport. Custom charges apply even when the automatic switch is off.
+{% endhint %}
+
+***
+
 ## Minimum Customer Price
 
 Set a **floor price** for this aircraft to ensure quotes never fall below a minimum amount, regardless of how the price is calculated.
@@ -129,7 +172,7 @@ For a typical quote, AeroQuote calculates:
 1. **Flight time** × Hourly rate
 2. **+ Positioning costs** (if needed)
 3. **+ Fuel costs** (based on performance data)
-4. **+ Landing/handling fees** (from airport database)
+4. **+ Airport movement/landing charges** (automatic airport charges, your custom airport movement charges, or your aircraft defaults — see [Airport Charges](#airport-charges-movement-charges))
 5. **+ Additional charges** (overnight, etc.)
 6. **= Total quote cost**
 
@@ -151,5 +194,6 @@ For a typical quote, AeroQuote calculates:
 ## Next Steps
 
 * [Cost Types](cost-types.md) — Detailed guide to each cost type and when to use it
+* [Custom Airport Movement Charges](../custom-items/custom-airport-movement-charges.md) — Set your own charges at specific airports
 * [Cost Simulator](cost-simulator.md) — Test your pricing configuration
 * [Flight Performance](flight-performance.md) — Verify performance data

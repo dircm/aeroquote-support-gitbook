@@ -123,6 +123,7 @@
   * [Map route editing (legacy URL)](guides/maps/use-map-based-route-editing-to-create-a-tour-flight.md)
 * [Custom Items](guides/custom-items/README.md)
   * [Custom Airports](guides/custom-items/custom-airports.md)
+  * [Custom Airport Movement Charges](guides/custom-items/custom-airport-movement-charges.md)
   * [Custom Facilities](guides/custom-items/custom-facilities.md)
   * [Custom Routes & Route Library](guides/custom-items/custom-routes-and-route-library.md)
 * [🔌 Widgets](guides/widgets/README.md)

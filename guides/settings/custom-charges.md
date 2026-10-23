@@ -1,5 +1,5 @@
 ---
-description: Override default pricing with custom sector and landing charges.
+description: Override default pricing with custom sector and airport movement (landing) charges.
 ---
 
 # 💰 Custom Charges
@@ -19,9 +19,9 @@ Override costs for specific routes (origin → destination pairs).
 - Competitive rates for specific markets
 - Promotional pricing
 
-### 2. Custom Landing Charges
+### 2. Custom Airport Movement Charges (formerly Custom Landing Charges)
 
-Override landing fees at specific airports.
+Override landing (movement), departure, parking and passenger charges at specific airports. See [Custom Airport Movement Charges](../custom-items/custom-airport-movement-charges.md) for full details.
 
 **Use cases:**
 - Negotiated rates at home base
@@ -56,14 +56,16 @@ Sector charges can be one-way or round-trip. Specify the direction or create two
 
 ---
 
-## Adding Custom Landing Charges
+## Adding Custom Airport Movement Charges
 
-1. Click **Add Landing Charge**
-2. Enter:
-   - **Airport** — The airport code
-   - **Aircraft Type** — Which aircraft (or all)
-   - **Charge Amount** — Your negotiated landing fee
-3. Click **Save**
+1. Go to **Custom Items** and click **Add Custom Airport Movement Charge**
+2. Choose the **Aircraft** (or **Apply to all aircraft.**) and the **Airport**
+3. Fill in any of: **Landing (arrival) charge**, **Departure charge**, **Parking charge per 24 hours**, **Arrival charge per passenger**, **Departure charge per passenger**
+4. Click **Save**
+
+{% hint style="info" %}
+Each filled field overrides only its matching automatic airport charge; blank fields fall back to the automatic charges, then the aircraft defaults. Enter 0 to make a charge free. See [Custom Airport Movement Charges](../custom-items/custom-airport-movement-charges.md).
+{% endhint %}
 
 ---
 

@@ -12,5 +12,5 @@ Custom items include:
 * [Custom Facilities](custom-facilities.md) - attach a customer meeting location or FBO to an Airport
 * Custom Sector Charges - automatically override flight costs for a given sector
 * Custom Sector Durations - automatically override a calculated flight duration for a given sector
-* Custom Landing Charges - apply a change when an aircraft, or all aircraft, arrive at an Airport
+* [Custom Airport Movement Charges](custom-airport-movement-charges.md) (formerly Custom Landing Charges) - set your own landing, departure, parking and passenger charges at an airport, for one aircraft or all aircraft
 * [Custom Routes & Route Library](custom-routes-and-route-library.md) — save scenic and multi-waypoint routes for reuse on enquiries and quotes
