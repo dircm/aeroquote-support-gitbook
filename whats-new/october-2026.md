@@ -22,7 +22,7 @@ Charter work is still there. The new name makes room for other flying you alread
 
 Settings → Modules still labels the card **Bookings Module**. The grace-period banner still says **Bookings & Flight Tracking**.
 
-When you create a flight, the first step is **Type**. Charter still asks for the customer contact and customer notes. Repositioning, maintenance, and private do not ask for a contact. Private is for owner or personal flying. **Training** is on the step and labelled **Coming soon**, so it cannot be chosen in the builder yet. You can still turn a Flight Log into a training flight, and that path asks for the student.
+When you create a flight, the first step is **Type**. The choices are Charter, Repositioning, Maintenance, and Private. Charter still asks for the customer contact and customer notes. The other three do not ask for a contact. Private is for owner or personal flying. Training is not on this step yet. It will come with a training module. You can still turn a Flight Log into a training flight, and that path asks for the student.
 
 Existing charter flights, crew, passengers, tracking, and customer pages keep working. Customer confirmations still go out as they do today.
 

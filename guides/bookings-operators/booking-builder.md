@@ -23,8 +23,9 @@ The first step is labelled **Type**. Choose the kind of flying, then add the per
 | **Charter** | Customer flying. A contact is required, and customer notes stay on this type. |
 | **Repositioning** | Moving the aircraft. No customer contact. |
 | **Maintenance** | A maintenance or engineering flight. No customer contact. |
-| **Training** | Shown as **Coming soon**. It cannot be selected in the builder yet. |
 | **Private** | Owner or personal flying. No customer contact. |
+
+Training is not offered here yet. It will come with a training module. A Flight Log can still be converted to a training flight, and that path asks for the student.
 
 Charter is the default. Internal notes are on every type. Customer notes are charter only.
 
