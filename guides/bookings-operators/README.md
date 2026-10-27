@@ -28,7 +28,7 @@ The Flights page shows all flights with:
 
 | Column        | Description                 |
 | ------------- | --------------------------- |
-| **Type**      | Charter, repositioning, maintenance, training, private |
+| **Type**      | Charter, repositioning, maintenance, or private. Training is Coming soon in the builder, and can still be created from a Flight Log. |
 | **Reference** | Flight code                 |
 | **Customer**  | Customer name (charter)     |
 | **Route**     | Origin → Destination        |

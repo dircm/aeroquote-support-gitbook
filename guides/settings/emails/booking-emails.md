@@ -12,6 +12,15 @@ These emails are sent during the booking lifecycle — from confirmation through
 
 ## Customer Emails
 
+### Departure reminders
+
+These are optional. Nothing is sent until you turn a reminder on and save it. You can write two for charter flights and two for scheduled flights. Each one has days and hours before departure, a subject, and a message. Type `{operator}` where you want your operator name.
+
+| | |
+| --- | --- |
+| **Charter** | **Settings → Charter Flight defaults**. Sent to the primary contact. A link to their booking page is added at the end. |
+| **Scheduled** | **Scheduled Flights → Branding → Booking email**. Sent to each paid passenger. A link to that passenger's ticket is added at the end. |
+
 ### Booking Confirmation
 
 |             |                                                                                                                                                                                       |

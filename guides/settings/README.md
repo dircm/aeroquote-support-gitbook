@@ -15,10 +15,12 @@ Settings is organized into several tabs:
 | Tab | Purpose |
 |-----|---------|
 | [**Account Settings**](account-settings.md) | Company details, logo, contact info |
+| **Localization** | Default currency, date format, head-office timezone, and fuel unit |
 | [**Billing**](billing.md) | Subscription management and payment |
 | [**Integrations**](integrations.md) | Connect Xero, QuickBooks, and other services |
 | [**Modules**](modules.md) | Enable/disable app features |
-| [**Default Units**](default-units.md) | Distance, volume, weight preferences |
+| **Charter Flight defaults** | Charter reminder emails, passenger and cargo weights, parking time, and crew duty defaults. This used to be labelled Booking defaults. |
+| [**Default Units**](default-units.md) | Older combined page. Currency is now under Localization. |
 | [**Fuel Discounts**](fuel-discounts.md) | Set up negotiated fuel pricing |
 | [**Banner Images**](banner-images.md) | Image library for quotes |
 | [**General Items Images**](general-items-images.md) | Images for catering, transport, etc. |

@@ -23,14 +23,14 @@ The first step is labelled **Type**. Choose the kind of flying, then add the per
 | **Charter** | Customer flying. A contact is required, and customer notes stay on this type. |
 | **Repositioning** | Moving the aircraft. No customer contact. |
 | **Maintenance** | A maintenance or engineering flight. No customer contact. |
-| **Training** | A training flight. A student is required before **Next**. |
+| **Training** | Shown as **Coming soon**. It cannot be selected in the builder yet. |
 | **Private** | Owner or personal flying. No customer contact. |
 
 Charter is the default. Internal notes are on every type. Customer notes are charter only.
 
-### Contact or student
+### Contact
 
-For charter, search for a contact by name or email. For training, the same field asks for the student. Start typing and select from the dropdown.
+For charter, search for a contact by name or email. Start typing and select from the dropdown. A training flight created from **Flight Logs** asks for the student instead.
 
 {% hint style="info" %}
 If the person doesn't exist yet, you can create them inline without leaving the builder.

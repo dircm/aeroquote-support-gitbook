@@ -1,6 +1,6 @@
 # Default Units
 
-* **Default Currency** - this is the currency your quotes and bookings will use. All quote cost calculations that may be in other currencies will be converted to your default currency at the time of calculation.
+* **Default Currency** — set this under **Settings → Localization**, which now sits before Billing. This is the currency your quotes and flights will use. Quote costs in other currencies are converted to it when the price is calculated.
 * **Default Payload Weight Unit** - This is your usual weight unit.
 * **Passenger Weight Presets** - You may add and edit as many Passenger weight presets as you like. Two sample presets were added to your account when you were set up.
 

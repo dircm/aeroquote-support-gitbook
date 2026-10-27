@@ -22,11 +22,26 @@ Charter work is still there. The new name makes room for other flying you alread
 
 Settings → Modules still labels the card **Bookings Module**. The grace-period banner still says **Bookings & Flight Tracking**.
 
-When you create a flight, the first step is **Type**. Charter still asks for the customer contact and customer notes. Training asks for a student before you can continue. Repositioning, maintenance, and private do not ask for a contact. Private is for owner or personal flying.
+When you create a flight, the first step is **Type**. Charter still asks for the customer contact and customer notes. Repositioning, maintenance, and private do not ask for a contact. Private is for owner or personal flying. **Training** is on the step and labelled **Coming soon**, so it cannot be chosen in the builder yet. You can still turn a Flight Log into a training flight, and that path asks for the student.
 
 Existing charter flights, crew, passengers, tracking, and customer pages keep working. Customer confirmations still go out as they do today.
 
 See [Flights](../guides/bookings-operators/README.md) and [Creating a Flight](../guides/bookings-operators/booking-builder.md).
+
+### Settings order and charter defaults
+
+**Localization** now sits before **Billing**. **Default Currency** is on Localization, with the date format, timezone, and fuel unit.
+
+The step that was **Booking defaults** is labelled **Charter Flight defaults**. Charter departure reminders are written there.
+
+### Departure reminders
+
+You can turn on two reminders for charter flights and two for scheduled flights. Each one has days and hours before departure, a subject, and a message. Nothing is sent until **Send this reminder** is on and you save.
+
+* Charter reminders: **Settings → Charter Flight defaults**. They go to the primary contact. The link to their booking page is added at the end.
+* Scheduled reminders: **Scheduled Flights → Branding → Booking email**. They go to each paid passenger. The link to that passenger's ticket is added at the end.
+
+Type `{operator}` where you want your operator name. See [Booking Emails](../guides/settings/emails/booking-emails.md).
 
 ## Circuit training is one recorded flight
 
