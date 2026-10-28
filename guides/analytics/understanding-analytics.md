@@ -9,7 +9,7 @@ Use Analytics to review how your operation is performing over time — booking v
 
 ## Prerequisites
 
-* **Bookings** module enabled
+* **Flights** module enabled
 * User role with manager-level booking access
 
 ***
@@ -56,7 +56,7 @@ Hover chart segments for exact values where supported.
 
 ## Step 6: Drill into operations
 
-Analytics is a reporting view — to act on a booking, open **Bookings** from the sidebar and search by code or route.
+Analytics is a reporting view — to act on a booking, open **Flights** from the sidebar and search by code or route.
 
 ***
 

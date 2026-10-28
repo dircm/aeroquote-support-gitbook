@@ -4,7 +4,7 @@ description: >-
   needs waypoints beyond a straight line between airports.
 ---
 
-# Map-based route editing (Bookings)
+# Map-based route editing (Flights)
 
 After a quote converts to a booking, you can still refine flight paths on the **Itinerary** step. The route editor works the same way as on quotes — distance and duration follow the waypoints you draw.
 

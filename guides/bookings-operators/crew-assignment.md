@@ -10,7 +10,7 @@ The Crew section lets you assign pilots, co-pilots, and cabin crew to each fligh
 
 ## Accessing Crew Assignment
 
-1. Go to **Bookings** from the sidebar
+1. Go to **Flights** from the sidebar
 2. Click on a booking
 3. Navigate to the crew assignment area (often within Itinerary or a dedicated Crew tab)
 
@@ -108,7 +108,7 @@ Assigned crew can use the AeroQuote mobile app (iOS and Android) to:
 * Update ETAs from the field
 * Record flight status even offline — data syncs when connectivity returns
 
-All actions from the mobile app sync to the Bookings Dashboard and your team in real time.
+All actions from the mobile app sync to the Flights Dashboard and your team in real time.
 
 ***
 

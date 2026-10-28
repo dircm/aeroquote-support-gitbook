@@ -29,7 +29,7 @@ Have your business logo and customer terms & conditions handy — you'll add the
 
 ## Step 3: Configure defaults
 
-1. Open **Settings → Default Units** — set currency, weight, and distance units
+1. Open **Settings → Localization** — set currency, date format, timezone, and fuel unit
 2. Open **Settings → Terms & Conditions** — paste or upload your customer T\&Cs
 3. Review **Settings → Modules** — enable Bookings, RFQ, or other paid modules you need
 

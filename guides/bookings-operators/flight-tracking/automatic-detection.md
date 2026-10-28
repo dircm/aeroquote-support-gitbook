@@ -54,10 +54,10 @@ This prevents a leg from staying blank when the aircraft departed but was never 
 
 | Situation | Polling behaviour |
 | --- | --- |
-| **Bookings Dashboard or Flight Board open** | Full position trail every ~2 minutes |
+| **Flights Dashboard or Flight Board open** | Full position trail every ~2 minutes |
 | **No ops display open** | Lighter polling — ETA milestones and arrival checks only |
 
-Opening the [Bookings Dashboard](../../dashboard/bookings-dashboard.md) signals that your team wants live trails on the map.
+Opening the [Flights Dashboard](../../dashboard/bookings-dashboard.md) signals that your team wants live trails on the map.
 
 ---
 

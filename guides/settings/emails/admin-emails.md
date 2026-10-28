@@ -34,13 +34,13 @@ These emails relate to your AeroQuote account, subscription, and third-party int
 | **Sent to** | Operator                                                                                 |
 | **Content** | Cancellation confirmation, cancellation date, and who initiated the cancellation.        |
 
-### Bookings Module Deactivated
+### Flights module Deactivated
 
 |             |                                                                                                                        |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Trigger** | Automatic — sent when the Bookings & Flight Tracking module is deactivated for non-payment after the grace period ends |
+| **Trigger** | Automatic — sent when the module is deactivated for non-payment after the grace period ends. The subject is **Flights & Flight Tracking module has been disabled**. |
 | **Sent to** | Operator                                                                                                               |
-| **Content** | Notification that the Bookings module has been deactivated.                                                            |
+| **Content** | The email says the module has been disabled. On Settings → Modules the card is still labelled **Bookings Module**.    |
 
 ***
 

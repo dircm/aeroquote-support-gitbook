@@ -49,7 +49,7 @@ On the Request flights section, **Automatically add repositioning (ferry) flight
 
 | Detail | Behaviour |
 | ------ | --------- |
-| Where | Request estimator, Quote Builder, Booking Builder |
+| Where | Request estimator, Quote Builder, flight builder |
 | Audience | Your team only — **not** on customer quote views or PDFs |
 | Unit | **Settings → Localization** (default fuel unit, e.g. L or gal) |
 | **—** | Plan did not return a burn figure for that leg; times can still be valid |

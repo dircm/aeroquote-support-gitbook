@@ -3,7 +3,7 @@ description: >-
   Access crew and external-operator flight manifests for operational bookings.
 ---
 
-# Booking Manifests
+# Flight Manifests
 
 A **flight manifest** lists passengers, crew, cargo, and flight legs for a booking. Crew and external operators download manifests from their portals; operators access signed manifest links from operational surfaces.
 

@@ -12,7 +12,7 @@ The **Send** tab lets you communicate booking details to customers, crew members
 
 ## Accessing the Send Tab
 
-1. Go to **Bookings** from the sidebar
+1. Go to **Flights** from the sidebar
 2. Click on a booking
 3. Select the **Send** tab
 

@@ -52,7 +52,7 @@ Available actions depend on the current quote status (shown as **Quote Status �
 | **Accept Quote** | Created / In progress | Marks the quote as accepted |
 | **Cancel Accept** | Accepted / partial payment / paid | Returns the quote toward in-progress so you can keep editing |
 | **Mark as Paid** | Created through partial payment | Marks the quote paid (accounting can also set this when an invoice is paid) |
-| **Generate a Booking** | Bookings module enabled | Opens **Create Booking from Quote** — pick the first charter date and option(s). After success, status becomes **Booking Generated**. [Learn more](../../bookings-operators/create-a-booking-from-a-quote.md). |
+| **Generate a Flight** | Flights module enabled | Opens **Create Flight from Quote** — pick the first charter date and option(s). After success, status becomes **Booking Generated**. [Learn more](../../bookings-operators/create-a-booking-from-a-quote.md). |
 | **Generate another new Booking** | Already booking-generated | Creates an additional booking from the same quote |
 
 {% hint style="warning" %}
@@ -127,4 +127,4 @@ See [Accounting Integration](../../accounting-integration/).
 * [Creating a Quote from scratch](../creating-a-quote.md)
 * [Cost Management](../cost-management.md)
 * [Using Documents in a Quote](../../documents/using-documents-in-a-quote.md)
-* [Create a Booking from a Quote](../../bookings-operators/create-a-booking-from-a-quote.md)
+* [Create a Flight from a Quote](../../bookings-operators/create-a-booking-from-a-quote.md)
