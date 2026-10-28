@@ -1,7 +1,7 @@
 ---
 description: >-
   Bookings is now Flights, and circuit hops within 10 minutes are stored as
-  one recorded flight with no track.
+  one recorded flight with no track.  Download your full contact list as an Excel spreadsheet.
 ---
 
 # October 2026
@@ -52,3 +52,13 @@ A Hayward helicopter detail that flew 02:34–02:45 and then 02:54–03:05 is on
 The session runs from the first takeoff to the last landing. The minutes are the airborne time added up, without the pauses on the ground. There is no map. You can still open the row on **Flight Logs** and choose **Training**. Training asks for the student. Hops that stayed separate can be ticked together and converted the same way.
 
 See [Circuit sessions](../guides/bookings-operators/flight-tracking/circuit-sessions.md).
+
+## Export contacts to Excel
+
+**Contacts** has an **Export** button next to **Import CSV**.
+
+The download is an Excel file of the contacts for the operator you are signed in to. It includes name, email, phone, notes, company, weight, gender, passport, date of birth, and extra email addresses.
+
+This file is a copy for your own records. It is not the import template. Uploading it with **Import CSV** is rejected.
+
+See [Export contacts](../guides/contacts/export-contacts.md).

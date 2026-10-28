@@ -25,6 +25,7 @@ From this page, you can:
 
 * **Add new Contact** - Click this button to add a new contact. [See how](add-a-new-contact.md)
 * **Import CSV** - use this feature to upload a CSV of contacts. [See how](import-contacts.md)
+* **Export** - download every contact as an Excel spreadsheet. [See how](export-contacts.md)
 * **Search** - search for contacts by name, email, company name, phone, or notes.
 * Edit a Contact - click the <img src="../../.gitbook/assets/contact edit button.png" alt="" data-size="line">button to open the edit contact window.
 
@@ -36,4 +37,8 @@ From this page, you can:
 
 {% content-ref url="import-contacts.md" %}
 [import-contacts.md](import-contacts.md)
+{% endcontent-ref %}
+
+{% content-ref url="export-contacts.md" %}
+[export-contacts.md](export-contacts.md)
 {% endcontent-ref %}

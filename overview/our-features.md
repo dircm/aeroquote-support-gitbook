@@ -91,6 +91,7 @@ Keep your customer data organized.
 
 - **Contact Database** — Store customer details and preferences
 - **CSV Import** — Bulk import contacts from spreadsheets
+- **Excel Export** — Download the full contact list, including company, passport, and extra email addresses
 - **Quote History** — See all quotes and bookings per contact
 - **Quick Search** — Find contacts instantly
 
