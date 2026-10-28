@@ -1,7 +1,8 @@
 ---
 description: >-
-  Bookings is now Flights, and circuit hops within 10 minutes are stored as
-  one recorded flight with no track.  Download your full contact list as an Excel spreadsheet.
+  Bookings is now Flights, and circuit hops within 10 minutes are stored as one
+  recorded flight with no track.  Download your full contact list as an Excel
+  spreadsheet.
 ---
 
 # October 2026
@@ -14,19 +15,18 @@ Charter work is still there. The new name makes room for other flying you alread
 
 ### What you will see
 
-* The sidebar says **Flights**
-* The list is **Flights**, and the button is **Create Flight**
-* Quotes use **Generate a Flight**
+* The sidebar says **Flights** rather than **Bookings**
+* Quotes use **Generate a Charter Flight - just like before**
 * The operations screen is the **Flights Dashboard**
-* Recorded flights are **Flight Logs**
+* See your Flightaware flights in the new **Flight Logs**
 
 Settings → Modules still labels the card **Bookings Module**. The grace-period banner still says **Bookings & Flight Tracking**.
 
-When you create a flight, the first step is **Type**. The choices are Charter, Repositioning, Maintenance, and Private. Charter still asks for the customer contact and customer notes. The other three do not ask for a contact. Private is for owner or personal flying. Training is not on this step yet. It will come with a training module. You can still turn a Flight Log into a training flight, and that path asks for the student.
+When you create a flight, the first step is **Type**. The choices are Charter, Repositioning, Maintenance, and Private. Charter still asks for the customer contact and customer notes. The other three do not ask for a contact. Private is for owner or personal flying.
 
 Existing charter flights, crew, passengers, tracking, and customer pages keep working. Customer confirmations still go out as they do today.
 
-See [Flights](../guides/bookings-operators/README.md) and [Creating a Flight](../guides/bookings-operators/booking-builder.md).
+See [Flights](../guides/bookings-operators/) and [Creating a Flight](../guides/bookings-operators/booking-builder.md).
 
 ### Settings order and charter defaults
 
