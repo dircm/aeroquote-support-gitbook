@@ -69,7 +69,7 @@ The homebase is important for quote calculations:
 - **Availability** — Fleet timeline assumes aircraft are at homebase when not scheduled
 
 {% hint style="info" %}
-Set the homebase to where the aircraft is normally parked overnight. This ensures accurate positioning cost calculations.
+Set the homebase to where the aircraft is normally parked overnight. This ensures accurate positioning cost calculations. For a floating fleet, turn on [Start the ferry from the calculated airport](calculated-ferry-origin.md) so quotes can start the repositioning leg from where the aircraft is likely to be.
 {% endhint %}
 
 ---

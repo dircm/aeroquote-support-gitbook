@@ -1,8 +1,8 @@
 ---
 description: >-
   Bookings is now Flights, and circuit hops within 10 minutes are stored as one
-  recorded flight with no track.  Download your full contact list as an Excel
-  spreadsheet.
+  recorded flight with no track. Download your full contact list as an Excel
+  spreadsheet. Quotes can start a ferry from the calculated airport.
 ---
 
 # October 2026
@@ -62,3 +62,13 @@ The download is an Excel file of the contacts for the operator you are signed in
 This file is a copy for your own records. It is not the import template. Uploading it with **Import CSV** is rejected.
 
 See [Export contacts](../guides/contacts/export-contacts.md).
+
+## Start the ferry from the calculated airport
+
+**Start the ferry from the calculated airport** is off for every aircraft until you turn it on. While it is off, a repositioning leg still starts at the aircraft home base.
+
+A floating fleet is rarely sitting at one home base. The next charter often starts from wherever the aircraft finished its last job. If every quote still ferries from home base, the price includes an empty leg the aircraft may not fly. Projecting the likely airport lets you compare aircraft on the trip they would actually fly. A shorter ferry usually means a lower price for the customer, and an aircraft that would have looked too expensive from home base can win the job.
+
+Turn the switch on from the aircraft record, or while you are adding an aircraft. The home base field is cleared and greyed out. With the switch on, a quote uses the latest finished flight in AeroQuote when the aircraft will have been free there for at least **Projected airport ground time** (**Settings → Charter Flight defaults**). Otherwise it uses the last airport FlightAware placed the aircraft at.
+
+See [Start the ferry from the calculated airport](../guides/aircraft/calculated-ferry-origin.md).
