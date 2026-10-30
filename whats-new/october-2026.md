@@ -2,16 +2,16 @@
 description: >-
   Bookings is now Flights, and circuit hops within 10 minutes are stored as one
   recorded flight with no track. Download your full contact list as an Excel
-  spreadsheet. Quotes can start a ferry from the calculated airport.
+  spreadsheet. Quotes can start a ferry from the
 ---
 
 # October 2026
 
-## Bookings is now Flights
+## Bookings are now Flights
 
 The **Bookings** module is now **Flights**.
 
-Charter work is still there. The new name makes room for other flying you already do — training, maintenance, private, and other flights — alongside charter, in the same list and the same tracker.
+Charter bookings are still there. The new name makes room for other flying you already do — training, maintenance, private, and other flights — alongside charter, in the same list and the same tracker.
 
 ### What you will see
 
@@ -38,10 +38,10 @@ The step that was **Booking defaults** is labelled **Charter Flight defaults**. 
 
 You can turn on two reminders for charter flights and two for scheduled flights. Each one has days and hours before departure, a subject, and a message. Nothing is sent until **Send this reminder** is on and you save.
 
-* Charter reminders: **Settings → Charter Flight defaults**. They go to the primary contact. The link to their booking page is added at the end.
+* Charter reminders: **Settings → Charter Flight defaults**. They go to the primary contacts on a flight. The link to their booking page is added at the end.
 * Scheduled reminders: **Scheduled Flights → Branding → Booking email**. They go to each paid passenger. The link to that passenger's ticket is added at the end.
 
-Type `{operator}` where you want your operator name. See [Booking Emails](../guides/settings/emails/booking-emails.md).
+See [Booking Emails](../guides/settings/emails/booking-emails.md).
 
 ## Circuit training is one recorded flight
 
