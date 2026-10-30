@@ -32,6 +32,7 @@
   * [Understanding Analytics](guides/analytics/understanding-analytics.md)
 * [✈️ Aircraft](guides/aircraft/README.md)
   * [Aircraft Details](guides/aircraft/aircraft-details.md)
+  * [Calculated ferry origin](guides/aircraft/calculated-ferry-origin.md)
   * [Advanced performance models](guides/aircraft/advanced-performance.md)
   * [Flight Performance](guides/aircraft/flight-performance.md)
   * [🆕 Costings](guides/aircraft/costings.md)
