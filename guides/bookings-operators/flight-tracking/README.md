@@ -22,6 +22,7 @@ Flight tracking requires the **Flights** module (or **Scheduled Flights** / **To
 | **Live position & ETA**                     | Flights Dashboard map, booking Status tab, mobile app                        |
 | **Saved flight track**                      | Itinerary map, completed booking cards, mobile track view                     |
 | **Circuit session**                         | Flight Logs. Hops under 10 minutes apart become one flight, with no map |
+| **Flight Logs**                             | [Flight Logs](flight-logs.md). Hours flown over the last 7, 30 and 90 days, plus booked flights (read-only) |
 | **Crew overrides**                          | Mobile app — confirmed times always win over automation                       |
 | **Multi-leg rotations**                     | Ground Time status between legs; stalled-leg recovery when coverage is patchy |
 

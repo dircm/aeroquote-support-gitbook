@@ -114,6 +114,7 @@
   * [Automatic Detection](guides/bookings-operators/flight-tracking/automatic-detection.md)
   * [Multi-leg Rotations](guides/bookings-operators/flight-tracking/multi-leg-rotations.md)
   * [Circuit sessions](guides/bookings-operators/flight-tracking/circuit-sessions.md)
+  * [Flight Logs](guides/bookings-operators/flight-tracking/flight-logs.md)
 * [📝 Amendments](guides/bookings-operators/amendments.md)
   * [📧 Sending Confirmations](guides/bookings-operators/sending-confirmations.md)
 * [⏱️ Flight Time Limits](guides/ftl/README.md)
