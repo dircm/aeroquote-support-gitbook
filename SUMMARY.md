@@ -89,6 +89,7 @@
   * [Using Facilities](guides/quotes/using-facilities.md)
   * [Map-based route editing](guides/quotes/map-route-editing.md)
   * [View or print the full quote itinerary](guides/quotes/view-or-print-quote-itinerary.md)
+  * [Archive and unarchive quotes](guides/quotes/archive-and-unarchive-quotes.md)
   * [Quote Details Page](guides/quotes/quote-details-page/README.md)
     * [Edit Quote valid till date](guides/quotes/quote-details-page/edit-quote-valid-till-date.md)
 * [Request For Quote](guides/request-for-quote/README.md)
