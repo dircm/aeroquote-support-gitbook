@@ -162,6 +162,8 @@ When adding costs to a **flight item**, you can choose from:
 
 When adding costs to an **option** (General Option Costs), only **Other Cost** is available — flight-specific costs like fuel and landing charges belong on individual flights.
 
+General Option Costs have the same **eye icon** as flight costs. Mark one as visible and it appears in the **Included Costs** section of the customer's quote page and in the quote PDF. See [Customer Visibility](#customer-visibility).
+
 ### Adding a Landing, Parking, or Ground Time Charge
 
 1. Click **Add Cost** → select the charge type
@@ -247,7 +249,9 @@ You can control which cost items are visible to your customers on their quote pa
 
 ### Toggling Customer Visibility
 
-1. Expand the cost breakdown on a flight item
+The eye toggle works on flight cost items and on **General Option Costs**.
+
+1. Expand the cost breakdown on a flight item, or open the **General Option Costs** list on an option
 2. Hover over a cost item to reveal the **eye icon** ![](../../.gitbook/assets/hide.png)
 3. Click the eye icon to toggle visibility:
    * **Blue eye** — visible to the customer (icon stays visible persistently)
@@ -255,7 +259,13 @@ You can control which cost items are visible to your customers on their quote pa
 
 ### What the Customer Sees
 
-When one or more cost items are marked as visible, a **Included Costs** section appears on the customer's quote page. This section shows only the costs you've chosen to share — along with the cost name, amount, and any explanatory notes.
+When one or more cost items are marked as visible, an **Included Costs** section appears on the customer's quote page, as its own section on each option card. Visible flight costs are listed under each flight's route, followed by any visible General Option Costs. This section shows only the costs you've chosen to share, with each cost's name and amount.
+
+The same visible costs are itemised in the **quote PDF**, under each option before the option total.
+
+### Turning the Cost Breakdown Off
+
+The **Cost breakdown (quotes only)** setting under **Settings → Customer Pages** (Element visibility) controls the Included Costs on both the quote page and the PDF. It is on by default. When it is off, customers see no itemised costs anywhere, even for costs marked visible.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-03-17 at 8.43.17 pm.png" alt=""><figcaption></figcaption></figure>
 
