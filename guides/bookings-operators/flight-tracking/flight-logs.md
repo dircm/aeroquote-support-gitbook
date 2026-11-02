@@ -105,3 +105,20 @@ Sometimes AeroQuote closes a flight because FlightAware never reported a landing
 | **Arrival unconfirmed** | FlightAware stopped tracking the flight before it reported a landing. | **Mark as landed** and enter the landing time. |
 | **Expired** | The flight is long overdue and no landing was reported. | **Mark as landed** and enter the landing time. |
 | **Not flown** | The flight never departed, or you marked it **Not flown**. | **Mark as landed** if it did fly. |
+
+## Flights to and from custom airports
+
+FlightAware has no airport code for a private strip or other custom airport. For those flights it sends no destination, or sends a position instead of a code. AeroQuote now matches the flight to your booking when that position is within about 10 nm of the custom airport you booked. Departures from a custom airport are matched the same way.
+
+The aircraft (by registration, flight number or alert) and the date still have to match. If FlightAware reports a different real airport from the one you booked, the flight isn't matched to the booking. It appears on Flight Logs instead.
+
+## Link to existing booking
+
+Sometimes a flight that was already booked still appears on Flight Logs as unmatched. To fix that, select the flight and choose **Link to existing booking**. Then pick the booked leg and click **Link**. Only legs on the same aircraft within two days of the flight are listed.
+
+When you link a flight:
+
+* its times are copied onto the leg, and the booking is updated as if FlightAware had matched the flight;
+* any hours you already confirmed move to the leg, so they are not counted twice;
+* no new booking is created;
+* the Flight Logs row becomes read-only, because the booking now holds its times.
