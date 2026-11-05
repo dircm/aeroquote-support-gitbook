@@ -5,6 +5,7 @@
 ## What's New
 
 * [What's New](whats-new/README.md)
+  * [November 2026](whats-new/november-2026.md)
   * [October 2026](whats-new/october-2026.md)
   * [September 2026](whats-new/september-2026.md)
   * [August 2026](whats-new/august-2026.md)
