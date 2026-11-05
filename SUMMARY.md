@@ -43,6 +43,7 @@
   * [Maintenance Limits](guides/aircraft/maintenance-limits.md)
 * [⚙️ Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
+  * [🔑 Login & Account Access](guides/settings/login-and-account-access.md)
   * [Company Knowledge](guides/settings/company-knowledge.md)
   * [💳 Billing](guides/settings/billing.md)
   * [🔌 Integrations](guides/settings/integrations.md)

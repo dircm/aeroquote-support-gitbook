@@ -6,6 +6,10 @@ description: Manage your AeroQuote subscription and billing.
 
 The Billing tab lets you manage your AeroQuote subscription, view invoices, and update payment methods.
 
+{% hint style="info" %}
+**Keep getting sent to this page, or seeing "Billing issues"?** That means your company's subscription isn't active — your login itself is fine. Users with billing permission are redirected here to fix it; other users should ask their account owner or a billing admin. For password, 2FA or other login problems, see [Login & Account Access](login-and-account-access.md).
+{% endhint %}
+
 ---
 
 ## Accessing Billing Settings
