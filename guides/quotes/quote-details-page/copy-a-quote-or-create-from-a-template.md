@@ -13,18 +13,23 @@ Repeat work, such as the same route every year, doesn't need to be quoted from s
 Both buttons open the same window:
 
 * **Copy to new Quote** is in the header of **Quote Details** on any quote.
-* **Create new Quote** appears on a quote template ("Create a new Quote from this template").
+* **Create new Quote** appears on a quote template ("Create a new Quote from this template"). To find your templates, go to **Templates** in the sidebar and use the **Quote Templates** table (or the **Templates** tab of the Quotes list). Click a template to open it, then click **Create new Quote**.
 
 In the window:
 
 1. Select the date and time of the first **charter** flight for the new quote. All flights move by the same amount, so the itinerary keeps its shape.
-2. Choose whether to tick **Reprice using current rates** (see below). It is **off** by default.
+2. Choose whether to tick **Reprice using current rates** (see below). It is **off** by default. The window explains the switch like this:
+
+   > Keep turned off: the new quote keeps the same costs and prices in the template.\
+   > Turn On: All costs are recalculated using current costs. Flight times, routes, and your added cost lines are kept; options with a manually overridden cost are not repriced.
+
+   "All costs" here means the rate-based charges listed in the table below. Fuel uplift, other costs you entered and any manually overridden charges are kept as they were.
 3. Click **Create**. The new quote opens on its **Quote Details** step.
 
 The original quote or template is **never changed**. Contacts are not copied.
 
 {% hint style="info" %}
-**Save as Template turns the current quote into the template.** To keep a quote you've already sent, click **Copy to new Quote** first, then click **Save as Template** on the copy. Templates are listed under the **Templates** tab of the Quotes list.
+**Save as Template turns the current quote into the template.** To keep a quote you've already sent, click **Copy to new Quote** first, then click **Save as Template** on the copy. Templates are listed in the **Quote Templates** table on the **Templates** page, and under the **Templates** tab of the Quotes list.
 {% endhint %}
 
 ## Without repricing (default)
@@ -62,11 +67,11 @@ These are kept as they were and listed in a warning so you can check them:
 * Flights with **fuel uplift costs**. Review fuel pricing.
 * Flights on **external (RFQ) aircraft**. These are priced by the other operator.
 
-If a quote can't be repriced safely (for example, an aircraft or airport has been removed), no new quote is created and a message explains why. You can then copy without repricing, or fix the original first.
+If a quote can't be repriced safely (for example, an aircraft or airport has been removed), no new quote is created and a message explains why. The message stays until you click **OK**. You can then copy without repricing, or fix the original first.
 
 ### Review before sending
 
-After creating a repriced quote, a summary stays on screen until you close it. It shows the cost and price **before → after**, plus any warnings. Check the options, flights and price on the new quote before you send it to your customer.
+After creating a repriced quote, a summary stays on screen until you click **OK**. It doesn't disappear on its own. It shows the cost and price **before → after**, plus any warnings. Check the options, flights and price on the new quote before you send it to your customer.
 
 There's no separate button to reprice an existing quote. Repricing only happens when you create a new quote this way.
 
@@ -74,6 +79,6 @@ There's no separate button to reprice an existing quote. Repricing only happens 
 
 1. Open last year's quote for the route and click **Copy to new Quote**, keeping the date. On the copy, click **Save as Template** and give it a clear name, such as "Annual charter – Route A to B".
 2. When rates change, update your aircraft charges and airport charges.
-3. Next year, open the template from the **Templates** tab and click **Create new Quote**.
+3. Next year, go to **Templates** in the sidebar, click the template in **Quote Templates**, and click **Create new Quote**.
 4. Pick the new first charter date, tick **Reprice using current rates**, and click **Create**.
 5. Review the before → after summary and any warnings, adjust if needed, then send.
