@@ -94,6 +94,7 @@
   * [Archive and unarchive quotes](guides/quotes/archive-and-unarchive-quotes.md)
   * [Quote Details Page](guides/quotes/quote-details-page/README.md)
     * [Edit Quote valid till date](guides/quotes/quote-details-page/edit-quote-valid-till-date.md)
+    * [Copy a quote or create one from a template](guides/quotes/quote-details-page/copy-a-quote-or-create-from-a-template.md)
 * [Request For Quote](guides/request-for-quote/README.md)
   * [Creating an Aircraft with External Operator](guides/request-for-quote/creating-an-aircraft-with-external-operator.md)
   * [Creating a Request For Quote](guides/request-for-quote/creating-a-request-for-quote.md)

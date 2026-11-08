@@ -10,10 +10,13 @@ Templates let you save quote configurations that you use frequently. Instead of 
 
 ## Accessing Templates
 
-From the sidebar, click **Templates** to open the Templates list. The page has two sections:
+From the sidebar, click **Templates** to open the Templates list. The page has three sections:
 
 * **Email Templates** — reusable wording for the email that delivers a quote (see below).
+* **Quote Templates** — quotes you saved with **Save as Template**, ready to create a new quote from (see below).
 * **Booking Templates** — saved booking layouts you can reuse.
+
+Quote templates are different from document/PDF templates and email templates. A quote template is a whole quote (aircraft, options, flights and costs) kept for re-use.
 
 ***
 
@@ -75,6 +78,23 @@ To save the message you've just edited as a new reusable template, use **Save as
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/select email template.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Quote Templates
+
+The **Quote Templates** table lists every quote template for your account, with its **Template name**, **Job Notes** and when it was last **Updated**. Use the search box to find a template by name. Quotes and templates from other accounts are never shown, and you need permission to view quotes to see this table.
+
+To create a new quote from a template:
+
+1. Click the template in **Quote Templates**. It opens on its **Quote Details** step. Opening it doesn't change the template.
+2. Click **Create new Quote**.
+3. Pick the date of the first charter flight and choose whether to tick **Reprice using current rates**. "Current rates" are the aircraft and airport charges saved in your account; weather, fuel prices and flight plans are not re-run.
+4. Click **Create**. If you repriced, a before → after summary stays on screen until you click **OK**.
+
+To add a quote template, open a quote and click **Save as Template** (copy the quote first if you want to keep the original). See [Copy a quote or create one from a template](../quotes/quote-details-page/copy-a-quote-or-create-from-a-template.md).
+
+If there are no quote templates yet, the table shows **No Quote Templates yet**.
 
 ***
 

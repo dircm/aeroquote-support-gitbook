@@ -37,8 +37,8 @@ These buttons appear near the top of **Quote Details** (permission and status de
 
 | Control | What it does |
 | --- | --- |
-| **Copy to new Quote** | Copies flights and aircraft options into a new quote (contacts are **not** copied). You choose a start date for the new quote. |
-| **Save as Template** | Converts this quote into a reusable template for similar jobs. |
+| **Copy to new Quote** | Copies flights and aircraft options into a new quote (contacts are **not** copied). You choose a start date for the new quote, and can tick **Reprice using current rates**. See [Copy a quote or create one from a template](copy-a-quote-or-create-from-a-template.md). |
+| **Save as Template** | Converts this quote into a reusable template for similar jobs. Copy first if you want to keep this quote as it is. |
 | **Delete Quote** | Permanently deletes this quote (confirmation required). |
 
 ***
