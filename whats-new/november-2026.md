@@ -1,10 +1,27 @@
 ---
 description: >-
   Maintenance Tracker, dated baselines, aircraft time in tenths, Confirm hours,
-  crew live flight times, plus add and edit flights on Flight Logs.
+  crew live flight times, add and edit flights on Flight Logs, and the CASA
+  audit trail now live on production.
 ---
 
 # November 2026
+
+
+## CASA audit trail now live
+
+The Maintenance Tracker on production now keeps a CASA-oriented audit trail of maintenance records. In short:
+
+- Audit rows include a reason, the actor's ARN, source and device context.
+- Aircraft TTIS is credited from **Departure** to **Arrival**, and held until both times exist.
+- The hours ledger is append-only: a later change writes a reversal plus a new capture, and does not overwrite earlier rows.
+- Sign-off needs the **Maintenance - Sign Off** permission, a confirmation of the name and ARN (pre-filled from the user profile), and a reason on corrections and voids. Sign-offs cannot be hard-deleted.
+- Life-limit and component writes are audited; life-limit items are soft-deleted rather than removed outright. Installed component snapshots are re-anchored when you update a baseline or adjust totals.
+- **Record history** (per aircraft or all aircraft) is a read-only view behind **Maintenance - View Records**, with **Export CSV** and **Export PDF**.
+
+Dates these went live (Australia/Brisbane, AEST) are listed in [CASA audit trail — what is live](../guides/aircraft/maintenance-tracker.md#casa-audit-trail--what-is-live).
+
+See [Maintenance Tracker](../guides/aircraft/maintenance-tracker.md) and [Permissions](../guides/settings/permissions.md).
 
 ## Add and edit flights on Flight Logs
 

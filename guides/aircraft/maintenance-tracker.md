@@ -1,12 +1,13 @@
 ---
 description: >-
-  Run Out Report, due items, pending hours confirmation, and the Crew app
-  views that come with the Maintenance Tracker add-on.
+  Run Out Report, due items, pending hours confirmation, Record history,
+  CASA audit trail, and the Crew app views that come with the Maintenance
+  Tracker add-on.
 ---
 
 # Maintenance Tracker
 
-The Maintenance Tracker is an add-on module. It builds on [Maintenance Limits](maintenance-limits.md): confirmed flight hours, landings and engine cycles flow into a live due list (the **Run Out Report**), with program items, components, sign-offs and an audit trail.
+The Maintenance Tracker is an add-on module. It builds on [Maintenance Limits](maintenance-limits.md): confirmed flight hours, landings and engine cycles flow into a live due list (the **Run Out Report**), with program items, components, sign-offs, an append-only audit trail and a read-only **Record history** page.
 
 {% hint style="info" %}
 The Maintenance Tracker is enabled per operator by AeroQuote. Contact [support@aeroquote.com](mailto:support@aeroquote.com) to switch it on. There is no self-serve toggle for it on **Settings → Modules** yet.
@@ -74,11 +75,15 @@ In **Flight Logs**:
 * Open a flight, review the times, check **Landings** and **Cycles** under **Confirm hours**, then click **Confirm hours**.
 * Or tick several pending flights (Flight Logs entries that are not on a booking) and click **Confirm N selected**.
 
-Confirming does not change the flight times. It records you as the reviewer, posts the hours to the aircraft totals once, and writes an audit entry. Newly confirmed flights are credited in tenths of an hour (see [Aircraft time in tenths](maintenance-limits.md#aircraft-time-in-tenths)). Flights confirmed before this rule was introduced are not changed.
+Confirming does not change the flight times. It records you as the reviewer, posts the hours to the aircraft totals, and writes an audit entry. Newly confirmed flights are credited in tenths of an hour (see [Aircraft time in tenths](maintenance-limits.md#aircraft-time-in-tenths)). Flights confirmed before the tenths rule was introduced are not changed.
+
+Aircraft **TTIS** is credited from **Departure** to **Arrival**, not from Off Block to On Block. The credit is held until both departure and arrival times exist. If either time is later cleared, any earlier TTIS credit for that flight is taken back (reversed) until both times are present again.
+
+The hours ledger is append-only. A later change does not overwrite an earlier row. Instead AeroQuote writes a reversal of the previous credit and, when the new times are complete, a new capture. Existing ledger rows stay as they were.
 
 Flights with on-block times before the aircraft's baseline are covered by the baseline and never appear as pending.
 
-If flight tracking later revises the block times on a confirmed Flight Logs entry that is not on a booking, the flight goes back to pending and its hours are taken out of the totals until it is confirmed again.
+If flight tracking later revises the times on a confirmed Flight Logs entry that is not on a booking, the flight goes back to pending and its hours are taken out of the totals until it is confirmed again.
 
 {% hint style="info" %}
 There is no Confirm hours or Pending hours screen in the Crew app. Confirm tracked or logged hours on the web in Flight Logs. See [How hours work](../bookings-operators/flight-tracking/flight-logs.md#how-hours-work).
@@ -104,6 +109,10 @@ From then on, component times grow with the aircraft. Component cycles are the a
 * **Install** fits the component to an aircraft or parent component; install history is kept.
 * **Overhauled** resets TSO and CSO to zero.
 
+Registering a component, and recording an install, remove or overhaul, needs a **reason**. Those changes, and life-limit writes, are written to the append-only audit trail. Life-limit items are soft-deleted rather than removed outright, so the record remains in history.
+
+If you update the aircraft baseline or adjust totals (a change that is not from a flight), installed component snapshots are re-anchored so their times stay consistent with the new aircraft totals.
+
 To track a program item against a component (for example an engine's overhaul life), choose the component when you add the item.
 
 ***
@@ -128,14 +137,19 @@ The amber threshold is set per limit when you [edit an item](#edit-an-item-and-i
 
 ## Record a sign-off
 
+Sign-off needs the **Maintenance - Sign Off** permission. It is granted by default to the same roles that have aircraft edit permission, and an account administrator can add or remove it at **Settings → Permissions**.
+
 When the maintenance has been done and certified:
 
 1. On the Run Out Report, click **View** on the item, then **Sign off**
 2. Enter the **Completed date** (today or earlier)
 3. Check **Aircraft hours at completion**. It is pre-filled with the current figure; change it to the hours recorded at completion. **Cycles at completion** and **Landings at completion** also appear when the item has those limits
-4. Enter **Signed off by (name / licence)**. Your own AeroQuote name is also recorded as the user who entered it
-5. Add the **Work order / reference** (optional) and **Notes**
-6. Click **Record sign-off**. The message **Sign-off recorded. Next due has been rolled forward.** confirms it
+4. Enter **Signed off by (name)**. The **ARN** is pre-filled from your AeroQuote profile; check it and change it if needed. **Licence type** is optional (for example LAME or B1)
+5. Tick **I confirm this name and ARN are correct for this sign-off.** The name and ARN are stored on that sign-off and are not changed if your profile is updated later
+6. Add the **Work order / reference** (optional) and **Notes**
+7. Click **Record sign-off**. The message **Sign-off recorded. Next due has been rolled forward.** confirms it
+
+Your AeroQuote user is also recorded as the person who entered the sign-off.
 
 ### How next due rolls forward
 
@@ -148,7 +162,7 @@ When the maintenance has been done and certified:
 
 If a sign-off was recorded in error, open the item page, find it in **Sign-off history**, and click **Void sign-off** (shown to users with aircraft edit permission). Enter the **Reason (required)** and click **Void and recalculate**.
 
-A voided sign-off is never deleted. It stays in the history marked **Voided**, and the item's due state goes back to what it was before that sign-off.
+A sign-off cannot be hard-deleted. A voided sign-off stays in the history marked **Voided**, the item's due state goes back to what it was before that sign-off, and the void is written to the audit trail.
 
 ***
 
@@ -161,9 +175,46 @@ A voided sign-off is never deleted. It stays in the history marked **Voided**, a
 5. Use **Add limit** or **Remove limit** as needed. An item needs at least one limit
 6. Click **Save and recalculate**
 
-Next due is recalculated from the existing last-done values. The sign-off history is not changed. Untick **Active** to take an item off the Run Out Report without deleting it.
+You must enter a **Reason for this change** before you save. Next due is recalculated from the existing last-done values. The sign-off history is not changed. Untick **Active** to take an item off the Run Out Report without deleting it.
 
-The item page also has **Maintenance audit history**: an append-only record of item and sign-off changes, each with date and time, user, and expandable before and after values. Entries cannot be edited or deleted.
+The item page also has **Maintenance audit history**: an append-only record of item and sign-off changes, each with date and time, user, and expandable before and after values. Entries cannot be edited or deleted. For the operator-wide or per-aircraft view, use [Record history](#record-history).
+
+***
+
+
+## Record history
+
+**Record history** is a read-only page of maintenance record changes for one aircraft, or for every aircraft in the operator: program items, sign-offs, components, life limits and confirmed flight hours, newest first.
+
+1. From the Run Out Report, click **Record history** (or **Record history (all aircraft)**). From an aircraft page, click **Record history** for that aircraft
+2. Filter by **Action**, **Record type**, and a **From** / **To** date range if you need to narrow the list. Click **Reset filters** to clear them
+3. Each row shows **When**, **Who**, **ARN**, **Source**, **Action**, **Record** and **Reason**. Expand **Before / after** to see the previous and new values
+
+The page needs the **Maintenance - View Records** permission. It is granted by default to every role that has aircraft edit permission, and an account administrator can add or remove it at **Settings → Permissions**.
+
+### Export CSV or PDF
+
+On Record history, click **Export CSV** or **Export PDF**. The file uses the filters you have set. Export is a signed-in action on this page; it is not a public download link. Unauthenticated requests are sent to the login page and do not receive any record data.
+
+***
+
+## CASA audit trail — what is live
+
+This is the operator- and auditor-facing record of CASA audit-trail behaviour now live in the Maintenance Tracker on production (`app.aeroquote.com`). Times are Australia/Brisbane (AEST).
+
+| Live from (AEST) | Change |
+| ---------------- | ------ |
+| 8:13:25 PM, 10 Nov 2026 | Audit rows include reason, the actor's ARN, source and device context (PR 477) |
+| 8:25:48 PM, 10 Nov 2026 | Installed component snapshots are re-anchored when aircraft totals change for a reason other than a flight, for example a baseline update or an adjust-totals (PR 474) |
+| 8:37:12 PM, 10 Nov 2026 | Life-limit model, calculator and write actions (PR 475) |
+| 9:04:08 PM, 10 Nov 2026 | Aircraft TTIS is credited from departure to arrival, and held until both times exist (PR 476) |
+| 9:25:00 PM, 10 Nov 2026 | A reason is required on corrections and voids; the sign-off ARN is taken from the user profile and must be confirmed for that sign-off; sign-off uses the **Maintenance - Sign Off** permission; sign-offs cannot be hard-deleted (PR 478) |
+| 7:19:37 AM, 11 Nov 2026 | The aircraft hours ledger is append-only: a change writes a reversal plus a new capture, and earlier rows are not overwritten (PR 479) |
+| 7:34:36 AM, 11 Nov 2026 | Life-limit and component writes use the same CASA audit treatment, and life-limit items are soft-deleted rather than removed outright (PR 480) |
+| 7:47:22 AM, 11 Nov 2026 | Read-only per-aircraft and operator-wide **Record history** page, behind **Maintenance - View Records** (PR 481) |
+| 7:55:24 AM, 11 Nov 2026 | **Export CSV** and **Export PDF** of the filtered Record history (PR 482) |
+
+A standing maintenance-auditor login with an access expiry is not in this release (see the next stack item, PR 483).
 
 ***
 
@@ -211,15 +262,17 @@ They do not see TTIS pills, **Due Items**, **Maintenance totals**, or pending ho
 | View the Run Out Report and Due Items | Users with access to the maintenance features (crew: Fleet list aircraft only) | Web and app |
 | Set or update a dated baseline | Users with the **Aircraft - Maintenance Totals** permission or aircraft edit permission. By default: account administrator, manager, chief pilot and crew roles | Web (whole fleet) and app (Fleet list only) |
 | Confirm tracked or logged flight hours | Users with aircraft edit permission | Web only |
-| Create program items and record sign-offs | Users with access to the Run Out Report | Web only |
-| Edit items and limits, void sign-offs | Users with aircraft edit permission | Web only |
+| Create program items | Users with access to the Run Out Report | Web only |
+| Record a sign-off | Users with the **Maintenance - Sign Off** permission | Web only |
+| Edit items and limits, void sign-offs | Users with aircraft edit permission (a reason is required) | Web only |
+| View and export Record history | Users with the **Maintenance - View Records** permission | Web only |
 | Edit live booking flight times | Crew in the app (and operations on the booking). Crew times override FlightAware / Flightradar24 | Crew app and web |
 | Edit older Flight Log (recorded flight) times | Office users with aircraft edit permission on the web. Crew cannot edit these in the app | Web only |
 
-An account administrator can remove the **Aircraft - Maintenance Totals** permission from any role at **Settings → Permissions**.
+An account administrator can add or remove **Aircraft - Maintenance Totals**, **Maintenance - Sign Off** and **Maintenance - View Records** from any role at **Settings → Permissions**.
 
 {% hint style="warning" %}
-Airworthiness directives, service bulletins, life-limited part alerts, defects and exports are not yet part of the tracker.
+Airworthiness directives, service bulletins, life-limited part *alerts* and defects are not yet part of the tracker. Record history can be exported as CSV or PDF from the **Record history** page; that is not an aircraft-export or defect record.
 {% endhint %}
 
-See also [Maintenance Limits](maintenance-limits.md) for baselines, tenths and the aircraft **Maintenance** tab, and [Flight Logs](../bookings-operators/flight-tracking/flight-logs.md) for **Confirm hours**.
+See also [Maintenance Limits](maintenance-limits.md) for baselines, tenths and the aircraft **Maintenance** tab, [Flight Logs](../bookings-operators/flight-tracking/flight-logs.md) for **Confirm hours**, and [Permissions](../settings/permissions.md) for **Maintenance - Sign Off** and **Maintenance - View Records**.

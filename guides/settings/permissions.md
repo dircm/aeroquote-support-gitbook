@@ -114,3 +114,19 @@ By default it is granted to the account administrator, manager, chief pilot and 
 
 See [Update a baseline](../aircraft/maintenance-limits.md#update-a-baseline).
 
+---
+
+## Maintenance - Sign Off
+
+The **Maintenance - Sign Off** permission controls who can record a program-item sign-off on the Maintenance Tracker. It is granted by default to every role that has aircraft edit permission. An account administrator can add or remove it from a role on this page.
+
+See [Record a sign-off](../aircraft/maintenance-tracker.md#record-a-sign-off).
+
+---
+
+## Maintenance - View Records
+
+The **Maintenance - View Records** permission controls who can open **Record history** and export it as CSV or PDF. It is granted by default to every role that has aircraft edit permission. An account administrator can add or remove it from a role on this page.
+
+See [Record history](../aircraft/maintenance-tracker.md#record-history).
+

@@ -73,6 +73,8 @@ Do this once per aircraft, using the figures from the logbook or current mainten
 
 A baseline is the aircraft's absolute TTIS, landings and engine cycles **as at** a specific date and time. Every baseline records who entered it, when it was entered, the effective (as at) time and the reason.
 
+Confirmed flights after the baseline add TTIS from **Departure** to **Arrival** (held until both times exist). If you update a baseline or use **Adjust totals**, installed component snapshots are re-anchored so their times stay consistent with the new aircraft totals. See [Maintenance Tracker](maintenance-tracker.md#confirmed-and-pending-hours).
+
 * Flights whose on-block time is **before** the as-at time never change the totals. They are already included in the baseline figures.
 * Confirmed flights whose on-block time is **at or after** the as-at time are added on top.
 * The as-at time cannot be in the future, and cannot be earlier than the aircraft's latest baseline.
