@@ -213,8 +213,17 @@ This is the operator- and auditor-facing record of CASA audit-trail behaviour no
 | 7:34:36 AM, 11 Nov 2026 | Life-limit and component writes use the same CASA audit treatment, and life-limit items are soft-deleted rather than removed outright (PR 480) |
 | 7:47:22 AM, 11 Nov 2026 | Read-only per-aircraft and operator-wide **Record history** page, behind **Maintenance - View Records** (PR 481) |
 | 7:55:24 AM, 11 Nov 2026 | **Export CSV** and **Export PDF** of the filtered Record history (PR 482) |
+| 8:06:45 AM, 11 Nov 2026 | Standing **Maintenance Auditor** invited login, with an access expiry, read-only access to every aircraft in the operator, and audited exports (PR 483) |
 
-A standing maintenance-auditor login with an access expiry is not in this release (see the next stack item, PR 483).
+### Maintenance Auditor logins
+
+An account administrator can invite a CASA or other auditor using the existing staff form, assigning the **Maintenance Auditor** role and an **Auditor access expiry** date. The expiry is shown on the staff list.
+
+- The auditor sees every aircraft in the operator (Fleet list scoping does not apply).
+- Access is a standing invited login. It remains valid through the expiry date and is refused from the day after, including any existing session.
+- The auditor is read-only: they cannot write maintenance records, and they cannot impersonate or be impersonated.
+- After signing in they land on the Run Out Report. Web and app navigation show only **Run Out Report** and **Record history**.
+- **Export CSV** and **Export PDF** from Record history write an **exported** row to the audit trail (who, when, and the filters used).
 
 ***
 
@@ -266,6 +275,7 @@ They do not see TTIS pills, **Due Items**, **Maintenance totals**, or pending ho
 | Record a sign-off | Users with the **Maintenance - Sign Off** permission | Web only |
 | Edit items and limits, void sign-offs | Users with aircraft edit permission (a reason is required) | Web only |
 | View and export Record history | Users with the **Maintenance - View Records** permission | Web only |
+| Maintenance Auditor login | Invited **Maintenance Auditor** role, with an **Auditor access expiry**. Read-only access to every aircraft in the operator; refused from the day after expiry | Web (Run Out Report and Record history only) |
 | Edit live booking flight times | Crew in the app (and operations on the booking). Crew times override FlightAware / Flightradar24 | Crew app and web |
 | Edit older Flight Log (recorded flight) times | Office users with aircraft edit permission on the web. Crew cannot edit these in the app | Web only |
 

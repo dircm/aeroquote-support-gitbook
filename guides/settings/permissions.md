@@ -130,3 +130,15 @@ The **Maintenance - View Records** permission controls who can open **Record his
 
 See [Record history](../aircraft/maintenance-tracker.md#record-history).
 
+---
+
+## Maintenance Auditor
+
+The **Maintenance Auditor** role is a standing invited login for a CASA or other auditor. It has only **Maintenance - View Records** and aircraft view permission, so the auditor can read and export maintenance records but cannot change them.
+
+When you assign this role, an **Auditor access expiry** date is required. Access remains valid through that date and is refused from the day after, including any session that is still open. The expiry is shown on the staff list under **Auditor access**.
+
+Auditors see every aircraft in the operator. They land on the Run Out Report, and their navigation is limited to **Run Out Report** and **Record history**. Exports from Record history are written to the audit trail.
+
+See [Maintenance Auditor logins](../aircraft/maintenance-tracker.md#maintenance-auditor-logins).
+

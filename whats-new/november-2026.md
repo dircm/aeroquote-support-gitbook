@@ -18,6 +18,7 @@ The Maintenance Tracker on production now keeps a CASA-oriented audit trail of m
 - Sign-off needs the **Maintenance - Sign Off** permission, a confirmation of the name and ARN (pre-filled from the user profile), and a reason on corrections and voids. Sign-offs cannot be hard-deleted.
 - Life-limit and component writes are audited; life-limit items are soft-deleted rather than removed outright. Installed component snapshots are re-anchored when you update a baseline or adjust totals.
 - **Record history** (per aircraft or all aircraft) is a read-only view behind **Maintenance - View Records**, with **Export CSV** and **Export PDF**.
+- A **Maintenance Auditor** can be invited with an **Auditor access expiry**. They have read-only access to every aircraft in the operator. Access is refused from the day after expiry, including existing sessions. Exports are written to the audit trail.
 
 Dates these went live (Australia/Brisbane, AEST) are listed in [CASA audit trail — what is live](../guides/aircraft/maintenance-tracker.md#casa-audit-trail--what-is-live).
 
