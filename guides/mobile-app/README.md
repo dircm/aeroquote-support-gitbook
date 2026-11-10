@@ -16,11 +16,11 @@ Designed for **pilots, crew, and operations staff** who need quick access in the
 * **Bookings & Flights** — Browse all bookings, view flight legs with departure/arrival times, routes, and crew
 * **Passenger Management** — View contact details, edit weights, add and remove passengers on flights
 * **Passenger Check-In** — Check in passengers and cargo via toggle or QR code scanner
-* **Flight Status** — Record block off/on, departure/arrival times; receive automatic notifications from FlightRadar24
+* **Flight Status** — Record **Off Block**, **Departure**, **Arrival** and **On Block**; adjust **ETD** and **ETA**; receive automatic notifications from Flightradar24 and FlightAware. Crew-entered times override tracking, and **On Block** marks hours as confirmed
 * **Log Position & Update ETA** — Report GPS position and update estimated arrival during flights
 * **Calendar Sync** — Sync flight schedules to your device calendar
 * **Booking Sharing** — Share the customer booking link
-* **Aircraft & Fleet** — View fleet aircraft you have been assigned to
+* **Aircraft & Fleet** — View fleet aircraft you have been assigned to. If the Maintenance Tracker is on, **Due Items** and **Maintenance totals** appear on each aircraft card. Operators without the module still see the **Aircraft** tab and profile avatar, but no maintenance features
 * **Offline Support** — All operations work without internet; data syncs automatically when connectivity returns
 * **Push Notifications** — Receive real-time alerts for booking updates
 * **Help & Getting Started** — In-app help guide with swipe-through pages on first launch

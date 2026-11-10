@@ -81,6 +81,17 @@ If you had access during the free evaluation period, the dashboard banner says *
 
 ---
 
+## Aircraft Maintenance and Maintenance Tracker
+
+These features are switched on per operator by AeroQuote, rather than from a paid subscribe button on this page.
+
+- **Aircraft Maintenance** keeps running totals (TTIS, landings and engine cycles) and dated baselines. Once AeroQuote has enabled it for your account, an **Aircraft Maintenance** card (labelled **Free**) appears here so you can disable or re-enable it. See [Maintenance Limits](../aircraft/maintenance-limits.md).
+- **Maintenance Tracker** is an add-on module for the **Run Out Report**, program items, sign-offs and **Due Items** in the Crew app. There is no self-serve toggle for it on this page yet. Contact [support@aeroquote.com](mailto:support@aeroquote.com) to switch it on. See [Maintenance Tracker](../aircraft/maintenance-tracker.md).
+
+Operators without these features do not see the maintenance screens in the web app. In the Crew app they still see the profile avatar and the **Aircraft** tab, but not Due Items, Maintenance totals or TTIS pills.
+
+---
+
 ## Who Can Manage Modules
 
 Module subscription changes require the **billing.manage** permission, which is assigned to the **Account Administrator** role by default. Users without this permission can still see the Modules page but cannot subscribe or unsubscribe from paid modules.

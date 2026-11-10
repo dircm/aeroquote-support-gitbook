@@ -12,7 +12,7 @@ AeroQuote integrates with flight tracking providers (FlightRadar24 and FlightAwa
 2. Tapping the notification opens a **confirmation sheet** pre-filled with the detected time
 3. Crew can accept the time as-is or adjust it before confirming
 
-Once confirmed by crew, the time is locked and cannot be overwritten by subsequent tracking updates. This ensures crew-confirmed times always take priority.
+Crew-entered times override FlightAware and Flightradar24 for that flight, and are not overwritten by later tracking updates. Crew can also go back and edit a time they already entered on the same live booking leg.
 
 {% hint style="info" %}
 If a notification arrives while the app is open, the confirmation sheet appears automatically — no need to tap the notification.
@@ -20,14 +20,15 @@ If a notification arrives while the app is open, the confirmation sheet appears 
 
 ## Flight Timeline
 
-The Flight Detail screen shows four time events in sequence:
+The Flight Detail screen shows these times in sequence:
 
-1. **Block Off** — When the aircraft leaves the gate/parking position
-2. **Departed** — When the aircraft takes off
-3. **Arrived** — When the aircraft lands
-4. **Block On** — When the aircraft reaches the gate/parking position
+1. **Off Block** — Engine start or push-back, when the aircraft leaves the parking position
+2. **Departure** — When the aircraft takes off
+3. **ETA** — Estimated arrival, while the flight is airborne (with a source label when one is available)
+4. **Arrival** — When the aircraft lands
+5. **On Block** — Engine shutdown, when the aircraft reaches the parking position
 
-Each event has a button that shows the recorded time once confirmed. Tap any button to record or edit the time.
+Until the flight has departed, **Adjust ETD** is also available. Each event has a button that shows the recorded time once confirmed. Tap a button to record it (**Record Off Block**, **Mark Departed**, **Mark Arrived**, **Record On Block**) or, if it is already set, to edit it (**Edit Off Block**, **Edit Departure**, **Edit Arrival**, **Edit On Block**).
 
 ## Confirming a Departure
 
@@ -52,14 +53,18 @@ Each event has a button that shows the recorded time once confirmed. Tap any but
 If flight tracking doesn't detect a flight (e.g. remote airstrips, VFR flights without ADS-B coverage), you can record times manually:
 
 1. On the Flight Detail screen, scroll to the **Flight Status** section
-2. Tap the **Block Off** button to record gate departure (optional)
-3. Tap the **Departed** button and confirm the takeoff time
-4. After departure is recorded, the **Arrived** button becomes active — tap and confirm when landed
-5. Tap the **Block On** button to record gate arrival (optional)
+2. Tap **Off Block** to record engine start or push-back (optional), then **Confirm Off Block**
+3. Tap **Departure** and **Confirm Departure**
+4. After departure is recorded, **Arrival** becomes active — tap and **Confirm Arrival** when landed
+5. Tap **On Block** to record engine shutdown (optional), then **Confirm On Block**
 
 {% hint style="warning" %}
-Manual entries take priority over tracking data. Once you confirm a time, it won't be overwritten.
+Crew-entered times take priority over tracking data. Once you confirm a time, FlightAware and Flightradar24 will not overwrite it. You can still edit it yourself on the same live booking leg.
 {% endhint %}
+
+Recording **On Block** counts towards the aircraft's maintenance totals (if the aircraft has a baseline) and marks the flight's hours as confirmed. The office does not need to confirm those hours again in Flight Logs. See [Confirmed and pending hours](../aircraft/maintenance-tracker.md#confirmed-and-pending-hours).
+
+Crew cannot edit older **Flight Log** entries (recorded flights that are not the live booking leg) in the app. Ask operations to correct those on the web with aircraft edit permission.
 
 ## Adjust ETD
 
@@ -73,7 +78,7 @@ Before a flight begins, crew can adjust the estimated departure time (ETD):
 The new departure time updates the flight schedule — the arrival time shifts accordingly based on the planned flight duration. The booking's start and end times are also recalculated.
 
 {% hint style="info" %}
-The Adjust ETD button disappears once the flight enters an in-progress state (block off recorded, departed, etc.). ETD can only be changed before the flight begins.
+The **Adjust ETD** button disappears once the flight is in progress (**Off Block** or **Departure** recorded). **ETD** can only be changed before the flight has departed. To change an ETD already set, the sheet is titled **Edit ETD**.
 {% endhint %}
 
 ## Live Time Remaining
@@ -121,7 +126,7 @@ Crew-set ETAs take priority over automated tracking ETAs.
 
 All flight status operations work offline:
 
-* **Block off/on**, **departure/arrival**, **ETA updates**, **ETD adjustments**, and **position logs** are all saved locally and queued for sync
+* **Off Block**, **On Block**, **Departure**, **Arrival**, **ETA** updates, **ETD** adjustments, and position logs are all saved locally and queued for sync
 * A pending indicator shows until the update reaches the server
 * Updates sync automatically when connectivity is restored
 * Failed syncs are retried with exponential backoff

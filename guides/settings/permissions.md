@@ -103,3 +103,14 @@ To restore access:
 - Deactivate users immediately when they leave
 - Use Admin role sparingly
 - Keep at least two Owner accounts for redundancy
+
+---
+
+## Aircraft - Maintenance Totals
+
+The **Aircraft - Maintenance Totals** permission controls who can set or update a dated maintenance baseline on the web and in the Crew app. Aircraft edit permission also allows this.
+
+By default it is granted to the account administrator, manager, chief pilot and crew roles. An account administrator can add or remove it from a role on this page.
+
+See [Update a baseline](../aircraft/maintenance-limits.md#update-a-baseline).
+
