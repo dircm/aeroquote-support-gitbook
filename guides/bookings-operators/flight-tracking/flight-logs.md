@@ -1,12 +1,59 @@
 ---
 description: >-
-  Hours flown over the last 7, 30 and 90 days, flights that are on a booking,
-  and what each tracking badge means.
+  Add and edit flights, how hours work, hours flown over the last 7, 30 and 90
+  days, flights that are on a booking, deleting, and what each tracking badge means.
 ---
 
 # Flight Logs
 
-Flight Logs lists the flights FlightAware saw for your aircraft.
+Flight Logs lists the flights FlightAware saw for your aircraft, plus any flights you add yourself.
+
+## Add a flight
+
+Use **Add flight** for a flight FlightAware missed.
+
+1. Select **Add flight** at the top of Flight Logs.
+2. Choose the **Aircraft**. Only aircraft in your fleet are listed.
+3. Enter **From** and **To** as ICAO or IATA codes, for example **YSSY** or **SYD**.
+4. Enter **Off-block** and **On-block**, **Takeoff** and **Landing**, or all four. Times are in the **departure airport's local time**.
+5. Optionally enter **Passengers** and **Circuits**.
+6. Select **Save flight**.
+
+AeroQuote checks that:
+
+- on-block is after off-block
+- landing is after takeoff
+- at least one pair of times is entered
+- no time is in the future
+
+{% hint style="info" %}
+Saving a flight doesn't add any hours. Check the times, then use **Confirm hours** (see [How hours work](#how-hours-work)).
+{% endhint %}
+
+## Edit a flight
+
+Select **Edit** on a row to change it.
+
+- For a flight that **isn't on a booking**, you can change everything: aircraft, airports, times, passengers and circuits.
+- If you change the airports, AeroQuote keeps your airports even if FlightAware sends an update for that flight later.
+- If the flight's hours are already confirmed, they're updated for you. See [How hours work](#how-hours-work).
+
+For a flight that **is on a booking**, see [Flights on a booking](#flights-on-a-booking).
+
+## How hours work
+
+**Confirm hours** posts a flight's block time to your records:
+
+- **Aircraft hours, landings and engine cycles** are posted when aircraft maintenance is on and the aircraft has a maintenance baseline. Landings are the number of circuits, or 1 if none is entered.
+- **Crew flight time** is posted when flight and duty time is on.
+
+**Confirm hours** is offered when either of those is on.
+
+Once a flight's hours are confirmed:
+
+- If you edit its block times, circuits or aircraft, the hours are adjusted by the difference. You're never counted twice.
+- If you change the aircraft, the hours move from the old aircraft to the new one.
+- If you clear the on-block time, the hours are taken back and the flight shows as not confirmed.
 
 ## Hours flown
 
@@ -21,7 +68,7 @@ Three **Hours flown** cards sit at the top of the page:
 - The totals include every aircraft on your account, whatever fleet or date filter you have set.
 - Each flight counts its **block time** (off blocks to on blocks). If there's no block time, the flight counts its airborne time instead. For a [circuit session](circuit-sessions.md), that's the sum of the airborne time on each hop.
 - A flight counts once it has landed. Flights still in the air don't count yet.
-- Totals are shown in hours to one decimal place, for example **12.5 h**. They update when a flight lands, when times change, or when a flight is deleted.
+- Totals are shown in hours to one decimal place, for example **12.5 h**. They update when a flight lands, when you add or edit a flight, or when a flight is deleted.
 
 ## Flights on a booking
 
@@ -34,10 +81,19 @@ When you turn a flight into a booking, it **stays on Flight Logs**. The row show
 When you open the flight, the panel shows **Linked to** with the booking code and type.
 
 {% hint style="info" %}
-A flight on a booking is read-only on Flight Logs. Its times are shown but can't be edited here, and **Mark as landed** and **Not flown** aren't offered. If you try to change them, you'll see *"This flight is on a booking. Edit its times on the booking."* Change the times on the booking instead.
+On Flight Logs you can only change the **airports** of a flight that's on a booking, and only on the flight log itself. Its times and aircraft belong to the booking. **Mark as landed** and **Not flown** aren't offered. If you try to change the times, you'll see *"This flight is on a booking. Edit its times on the booking."*
+
+**Edit** shows a link to the booking. Change the times, the aircraft and the leg's airports on the booking. Flight Logs never changes the booking.
 {% endhint %}
 
-The times from Flight Logs are still copied onto the booking's leg when you convert the flight.
+The times from Flight Logs are still copied onto the booking's leg when you convert the flight. After that, the leg's hours belong to the booking.
+
+## Delete a flight
+
+Select **Delete** on a row, or tick several rows and delete them together.
+
+- **Flight not on a booking, hours confirmed:** the aircraft hours, landings, engine cycles and crew flight time posted from it are taken back. You'll see a warning first.
+- **Flight on a booking:** only the flight log is deleted. The booking, its leg and the hours on that leg are kept. The warning says so.
 
 ## Tracking badges
 
@@ -49,3 +105,20 @@ Sometimes AeroQuote closes a flight because FlightAware never reported a landing
 | **Arrival unconfirmed** | FlightAware stopped tracking the flight before it reported a landing. | **Mark as landed** and enter the landing time. |
 | **Expired** | The flight is long overdue and no landing was reported. | **Mark as landed** and enter the landing time. |
 | **Not flown** | The flight never departed, or you marked it **Not flown**. | **Mark as landed** if it did fly. |
+
+## Flights to and from custom airports
+
+FlightAware has no airport code for a private strip or other custom airport. For those flights it sends no destination, or sends a position instead of a code. AeroQuote now matches the flight to your booking when that position is within about 10 nm of the custom airport you booked. Departures from a custom airport are matched the same way.
+
+The aircraft (by registration, flight number or alert) and the date still have to match. If FlightAware reports a different real airport from the one you booked, the flight isn't matched to the booking. It appears on Flight Logs instead.
+
+## Link to existing booking
+
+Sometimes a flight that was already booked still appears on Flight Logs as unmatched. To fix that, select the flight and choose **Link to existing booking**. Then pick the booked leg and click **Link**. Only legs on the same aircraft within two days of the flight are listed.
+
+When you link a flight:
+
+* its times are copied onto the leg, and the booking is updated as if FlightAware had matched the flight;
+* any hours you already confirmed move to the leg, so they are not counted twice;
+* no new booking is created;
+* the Flight Logs row becomes read-only, because the booking now holds its times.

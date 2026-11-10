@@ -5,6 +5,7 @@
 ## What's New
 
 * [What's New](whats-new/README.md)
+  * [November 2026](whats-new/november-2026.md)
   * [October 2026](whats-new/october-2026.md)
   * [September 2026](whats-new/september-2026.md)
   * [August 2026](whats-new/august-2026.md)
@@ -44,6 +45,7 @@
   * [🆕 Maintenance Tracker](guides/aircraft/maintenance-tracker.md)
 * [⚙️ Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
+  * [🔑 Login & Account Access](guides/settings/login-and-account-access.md)
   * [Company Knowledge](guides/settings/company-knowledge.md)
   * [💳 Billing](guides/settings/billing.md)
   * [🔌 Integrations](guides/settings/integrations.md)
@@ -93,6 +95,7 @@
   * [Archive and unarchive quotes](guides/quotes/archive-and-unarchive-quotes.md)
   * [Quote Details Page](guides/quotes/quote-details-page/README.md)
     * [Edit Quote valid till date](guides/quotes/quote-details-page/edit-quote-valid-till-date.md)
+    * [Copy a quote or create one from a template](guides/quotes/quote-details-page/copy-a-quote-or-create-from-a-template.md)
 * [Request For Quote](guides/request-for-quote/README.md)
   * [Creating an Aircraft with External Operator](guides/request-for-quote/creating-an-aircraft-with-external-operator.md)
   * [Creating a Request For Quote](guides/request-for-quote/creating-a-request-for-quote.md)
