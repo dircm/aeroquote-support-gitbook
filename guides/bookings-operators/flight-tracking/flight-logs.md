@@ -42,18 +42,35 @@ For a flight that **is on a booking**, see [Flights on a booking](#flights-on-a-
 
 ## How hours work
 
-**Confirm hours** posts a flight's block time to your records:
+**Confirm hours** posts a flight's hours to your records:
 
-- **Aircraft hours, landings and engine cycles** are posted when aircraft maintenance is on and the aircraft has a maintenance baseline. Landings are the number of circuits, or 1 if none is entered.
+- **Aircraft hours, landings and engine cycles** are posted when aircraft maintenance is on and the aircraft has a maintenance baseline. Aircraft **TTIS** is credited from **Departure** to **Arrival** (not Off Block to On Block), in tenths of an hour, and only once both departure and arrival times exist. If either time is missing, the TTIS credit is held; if an earlier credit had been posted, it is reversed until both times are present again. Landings are the number of circuits, or 1 if none is entered. You can change **Landings** and **Cycles** (whole numbers from 1 to 999) before confirming.
 - **Crew flight time** is posted when flight and duty time is on.
 
-**Confirm hours** is offered when either of those is on.
+**Confirm hours** is offered when either of those is on. Confirming does not change the flight times. It records you as the reviewer and posts the hours once.
+
+Hours that come from flight tracking (FlightAware or Flightradar24), or from flights you add on Flight Logs, stay pending until someone with aircraft edit permission confirms them. They do not count towards aircraft totals or the [Run Out Report](../../aircraft/maintenance-tracker.md) until then.
+
+- A count of **N flights pending hours confirmation** is shown at the top of Flight Logs, and each such flight has an **Hours pending confirmation** badge.
+- Open a flight, review the times under **Confirm hours**, then click **Confirm hours**.
+- Or tick several pending flights that are not on a booking, and click **Confirm N selected**. Booking flights are confirmed one at a time.
+- The [Run Out Report](../../aircraft/maintenance-tracker.md) also has an amber link, **N flights pending hours confirmation — review in Flight Logs**.
+
+An **On Block** time that crew record in the Crew app for their booking leg is confirmed automatically. The office does not need to confirm it again.
+
+When aircraft maintenance is on, newly confirmed flights are credited to TTIS from departure to arrival, in tenths of an hour, using the 6-minute table (0–3 minutes is .0, 4–9 is .1, and so on; 58–60 rounds up to the next hour). See [Aircraft time in tenths](../../aircraft/maintenance-limits.md#aircraft-time-in-tenths). Flights confirmed before the tenths rule was introduced are not changed. The hours ledger is append-only: editing times writes a reversal of the previous credit and a new capture, and does not overwrite earlier rows.
+
+Flights with on-block times before the aircraft's baseline never appear as pending — they are already covered by the baseline.
+
+If flight tracking later revises the block times on a confirmed Flight Logs entry that is not on a booking, the flight goes back to pending and its hours are taken out of the totals until it is confirmed again.
 
 Once a flight's hours are confirmed:
 
-- If you edit its block times, circuits or aircraft, the hours are adjusted by the difference. You're never counted twice.
+- If you edit its departure, arrival or block times, circuits or aircraft, the hours are adjusted by a reversal of the previous credit and a new capture where needed. You're never counted twice, and earlier ledger rows are not overwritten.
 - If you change the aircraft, the hours move from the old aircraft to the new one.
-- If you clear the on-block time, the hours are taken back and the flight shows as not confirmed.
+- If you clear the on-block time, or clear departure or arrival so TTIS cannot be calculated, the hours are taken back and the flight shows as not confirmed when the on-block time is cleared.
+
+There is no Confirm hours screen in the Crew app. Crew cannot edit older Flight Log entries in the app; change those on the web with aircraft edit permission, or edit a booking flight's times on the booking.
 
 ## Hours flown
 

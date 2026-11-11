@@ -103,3 +103,42 @@ To restore access:
 - Deactivate users immediately when they leave
 - Use Admin role sparingly
 - Keep at least two Owner accounts for redundancy
+
+---
+
+## Aircraft - Maintenance Totals
+
+The **Aircraft - Maintenance Totals** permission controls who can set or update a dated maintenance baseline on the web and in the Crew app. Aircraft edit permission also allows this.
+
+By default it is granted to the account administrator, manager, chief pilot and crew roles. An account administrator can add or remove it from a role on this page.
+
+See [Update a baseline](../aircraft/maintenance-limits.md#update-a-baseline).
+
+---
+
+## Maintenance - Sign Off
+
+The **Maintenance - Sign Off** permission controls who can record a program-item sign-off on the Maintenance Tracker. It is granted by default to every role that has aircraft edit permission. An account administrator can add or remove it from a role on this page.
+
+See [Record a sign-off](../aircraft/maintenance-tracker.md#record-a-sign-off).
+
+---
+
+## Maintenance - View Records
+
+The **Maintenance - View Records** permission controls who can open **Record history** and export it as CSV or PDF. It is granted by default to every role that has aircraft edit permission. An account administrator can add or remove it from a role on this page.
+
+See [Record history](../aircraft/maintenance-tracker.md#record-history).
+
+---
+
+## Maintenance Auditor
+
+The **Maintenance Auditor** role is a standing invited login for a CASA or other auditor. It has only **Maintenance - View Records** and aircraft view permission, so the auditor can read and export maintenance records but cannot change them.
+
+When you assign this role, an **Auditor access expiry** date is required. Access remains valid through that date and is refused from the day after, including any session that is still open. The expiry is shown on the staff list under **Auditor access**.
+
+Auditors see every aircraft in the operator. They land on the Run Out Report, and their navigation is limited to **Run Out Report** and **Record history**. Exports from Record history are written to the audit trail.
+
+See [Maintenance Auditor logins](../aircraft/maintenance-tracker.md#maintenance-auditor-logins).
+

@@ -42,6 +42,7 @@
   * [Aircraft Images](guides/aircraft/aircraft-images.md)
   * [Adding aircraft (with External Operator)](guides/aircraft/adding-aircraft-with-external-operator.md)
   * [Maintenance Limits](guides/aircraft/maintenance-limits.md)
+  * [🆕 Maintenance Tracker](guides/aircraft/maintenance-tracker.md)
 * [⚙️ Settings](guides/settings/README.md)
   * [Account Settings](guides/settings/account-settings.md)
   * [🔑 Login & Account Access](guides/settings/login-and-account-access.md)

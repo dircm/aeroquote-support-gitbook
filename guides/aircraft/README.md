@@ -56,6 +56,8 @@ Each aircraft has several configuration tabs:
 | [**Costings**](costings.md) | Hourly rates, positioning costs, minimums |
 | [**Cost Simulator**](cost-simulator.md) | Test pricing before going live |
 | [**Images**](aircraft-images.md) | Photos for quotes and documents |
+| [**Maintenance Limits**](maintenance-limits.md) | TTIS, landings, cycles, dated baselines and tracked items |
+| [**Maintenance Tracker**](maintenance-tracker.md) | Run Out Report, program items, Due Items (add-on module) |
 
 ---
 
@@ -83,6 +85,14 @@ Each aircraft has several configuration tabs:
 
 {% content-ref url="adding-aircraft-with-external-operator.md" %}
 [adding-aircraft-with-external-operator.md](adding-aircraft-with-external-operator.md)
+{% endcontent-ref %}
+
+{% content-ref url="maintenance-limits.md" %}
+[maintenance-limits.md](maintenance-limits.md)
+{% endcontent-ref %}
+
+{% content-ref url="maintenance-tracker.md" %}
+[maintenance-tracker.md](maintenance-tracker.md)
 {% endcontent-ref %}
 
 ---
