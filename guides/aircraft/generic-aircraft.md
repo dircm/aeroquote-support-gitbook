@@ -37,7 +37,7 @@ If you only have **one** aircraft of a type, you don't need a generic. Quote tha
 The quickest way to set up a generic is to copy one of your aircraft of that type.
 
 1. Open the real aircraft and go to the **Details** tab.
-2. Select **Copy as generic aircraft type** (next to **Copy to new Aircraft**).
+2. Select the arrow next to **Copy to new Aircraft**, then choose **Copy as generic aircraft type**. (If you can't edit aircraft but can add them, you'll see a plain **Copy as generic aircraft type** button instead.)
 3. Check the **Generic type name**. It is filled in as the aircraft type followed by "(Generic)", for example "Cessna Citation CJ2 (Generic)". You can change it. If the name is already used by one of your aircraft, a number is added, for example "Cessna Citation CJ2 (Generic 2)".
 4. Optionally tick **Link this aircraft to the new generic type**. The aircraft stays on its own rates; tick **Use the generic type's rates** on its Details tab later if you want it to follow the generic.
 5. Select **Create generic type**.
