@@ -28,6 +28,8 @@ If you only have **one** aircraft of a type, you don't need a generic. Quote tha
 
 **New:** in **Add Aircraft**, tick **Generic aircraft type**, choose the aircraft type, and finish the wizard as usual. There is no registration step.
 
+**At your plan's aircraft limit:** the Aircraft list shows **Add generic aircraft type** instead of **Add new Aircraft**. Generics don't count towards the limit, so you can still add them. A real aircraft can't be added until you're below the limit, and a generic can't be switched back to a real aircraft while you're at it.
+
 **Existing aircraft:** open the aircraft, go to the **Details** tab, and switch on **Generic aircraft type**. To switch it off again, unlink its aircraft first; it also needs a registration.
 
 ***
