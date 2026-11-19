@@ -58,6 +58,15 @@ AeroQuote uses role-based permissions:
 Role names and permissions may vary based on your subscription plan. Contact support for custom role configurations.
 {% endhint %}
 
+### Contacts permissions
+
+| Permission | Allows |
+|------|--------------|
+| **Contacts - View** / **Contacts - View All** | Open the Contacts page. Without either, Contacts is hidden from the menu |
+| **Contacts - Edit** | Edit contacts, and set or import [baselines](../contacts/contact-baselines.md) |
+| **Contacts - Export** | **Export metrics** on the Contacts page. Given to account administrators by default |
+| **Settings - Edit** | Change the [frequent flyer settings](../contacts/contact-metrics.md#frequent-flyer-tiers) |
+
 ---
 
 ## Editing User Permissions

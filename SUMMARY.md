@@ -68,6 +68,8 @@
   * [Add a new contact](guides/contacts/add-a-new-contact.md)
   * [Import contacts](guides/contacts/import-contacts.md)
   * [Export contacts](guides/contacts/export-contacts.md)
+  * [🆕 Contact and passenger metrics](guides/contacts/contact-metrics.md)
+  * [🆕 Contact baselines](guides/contacts/contact-baselines.md)
 * [👨‍💼 Staff](guides/staff/README.md)
 * [External Operators](guides/external-operators/README.md)
   * [Add a new External Operator](guides/external-operators/add-a-new-external-operator.md)
