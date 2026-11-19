@@ -7,6 +7,19 @@ description: >-
 
 # November 2026
 
+## Contact and passenger metrics
+
+The **Contacts** page now shows how much each contact has flown with you and how often they have been quoted:
+
+- **Type** (Passenger, Contact or Both), **Quotes inc · sent · acc**, **Flights**, **Hours**, **Distance km**, **Last flown**, and a suggested **Frequent flyer** tier.
+- Revenue flights only: charter, scheduled and tour. Past confirmed legs that were never closed off count as estimated.
+- Filter by flight type, dates flown, minimum flights or hours, recency, tier, and quote activity. Click a Flights number for the contact's flight history.
+- **Export metrics** (admins, **Contacts - Export** permission) downloads the rows shown with full metrics, a Flights sheet and values.
+- **Baselines**: add opening figures for travel before AeroQuote, one contact at a time or with **Import baselines** from a CSV, with a preview before anything is saved.
+- Roles without **Contacts - View** or **Contacts - View All** no longer see Contacts.
+
+See [Contact and passenger metrics](../guides/contacts/contact-metrics.md), [Contact baselines](../guides/contacts/contact-baselines.md) and [Export contacts](../guides/contacts/export-contacts.md).
+
 
 ## CASA audit trail now live
 
