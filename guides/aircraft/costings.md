@@ -16,6 +16,12 @@ The Costings section defines how AeroQuote calculates prices for this aircraft. 
 
 ***
 
+## Aircraft linked to a generic type
+
+If the aircraft is linked to a [generic aircraft type](generic-aircraft.md) with **Use the generic type's rates** ticked, its Costings are copied from the generic and this tab is read-only. Change the rates on the generic instead, or untick the option on the **Details** tab to give the aircraft its own rates. On a generic, changes are copied straight away to its linked aircraft that use its rates.
+
+***
+
 ## Suggest costs for me
 
 If you are setting up a new type or refreshing rates, use AI suggestions instead of starting from a blank form:
