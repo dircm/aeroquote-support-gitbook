@@ -64,6 +64,24 @@ Need the full path comparison (internal job PDF vs customer package vs booking)?
 
 ***
 
+## Customers can download the selected documents
+
+Every document under **Selected Documents** can also be downloaded from the customer's online quote. They don't need the email attachments.
+
+* When a customer opens the quote link, a **Documents** section below the quote options lists each selected document with its name, file type and size, plus a **Download** button
+* The placeholder document downloads as the quote PDF in the style you picked
+* Anyone with the quote link can download the documents. No customer login is needed, the same as viewing the quote
+* If you remove a document from **Selected Documents**, it disappears from the online quote straight away, and old download links stop working
+* Once the quote expires (its valid-until date passes or it's marked **Expired**), the **Documents** section is hidden and downloads are no longer available. Old download links stop working too. An **accepted** quote doesn't expire this way, so the customer keeps access to its documents
+* Each download is recorded in **Quote Events** on the quote's **Status** step, for example *Quote document downloaded by customer*. You don't get a notification
+* If no documents are selected, the **Documents** section doesn't appear
+
+{% hint style="warning" %}
+Only add documents you're happy for the customer to have. Anything in **Selected Documents** can be downloaded by anyone who has the quote link.
+{% endhint %}
+
+***
+
 ## Watch the walkthrough (optional)
 
 **Watch the walkthrough:** [Arcade demo](https://app.arcade.software/share/nS4AOa0tzXgqwqpUNw0Y)
