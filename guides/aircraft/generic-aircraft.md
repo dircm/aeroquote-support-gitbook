@@ -32,6 +32,22 @@ If you only have **one** aircraft of a type, you don't need a generic. Quote tha
 
 **Existing aircraft:** open the aircraft, go to the **Details** tab, and switch on **Generic aircraft type**. To switch it off again, unlink its aircraft first; it also needs a registration.
 
+### Copy an aircraft as a generic type
+
+The quickest way to set up a generic is to copy one of your aircraft of that type.
+
+1. Open the real aircraft and go to the **Details** tab.
+2. Select **Copy as generic aircraft type** (next to **Copy to new Aircraft**).
+3. Check the **Generic type name**. It is filled in as the aircraft type followed by "(Generic)", for example "Cessna Citation CJ2 (Generic)". You can change it. If the name is already used by one of your aircraft, a number is added, for example "Cessna Citation CJ2 (Generic 2)".
+4. Optionally tick **Link this aircraft to the new generic type**. The aircraft stays on its own rates; tick **Use the generic type's rates** on its Details tab later if you want it to follow the generic.
+5. Select **Create generic type**.
+
+**Copied:** all the Costings (charter and ferry rates, price margin, hourly rates, minimum customer price, auto and default airport charges, route (sector) charges), any custom route charges, durations and landing charges, the photos and banner (as separate copies), and the type and performance details.
+
+**Not copied:** the home base, registration, serial number and year of manufacture, flight tracking, hours and maintenance data, and the advanced (iFlightPlanner) model.
+
+This works at your plan's aircraft limit, because generics don't count towards it. It isn't offered on a generic (use **Copy to new Aircraft**) or on a partner aircraft.
+
 ***
 
 ## Link your aircraft to the generic
