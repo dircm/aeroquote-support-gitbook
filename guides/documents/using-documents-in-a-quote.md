@@ -72,7 +72,7 @@ Every document under **Selected Documents** can also be downloaded from the cust
 * The placeholder document downloads as the quote PDF in the style you picked
 * Anyone with the quote link can download the documents. No customer login is needed, the same as viewing the quote
 * If you remove a document from **Selected Documents**, it disappears from the online quote straight away, and old download links stop working
-* Downloads stay available for as long as the online quote can be viewed, including after the quote's valid-until date
+* Once the quote expires (its valid-until date passes or it's marked **Expired**), the **Documents** section is hidden and downloads are no longer available. Old download links stop working too. An **accepted** quote doesn't expire this way, so the customer keeps access to its documents
 * Each download is recorded in **Quote Events** on the quote's **Status** step, for example *Quote document downloaded by customer*. You don't get a notification
 * If no documents are selected, the **Documents** section doesn't appear
 
