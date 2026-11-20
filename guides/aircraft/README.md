@@ -42,6 +42,10 @@ Click any aircraft to view and edit its details.
 **Tip:** Enter the **registration** early in the wizard — AeroQuote can look up and apply the aircraft type for you (you can cancel the lookup or change the type anytime). Type search also looks up the advanced model catalogue first; native types appear only if that search is empty. On Costings later, use **Suggest costs for me** for a first-pass rate and cost setup.
 {% endhint %}
 
+{% hint style="info" %}
+**Several aircraft of the same type?** Create a [generic aircraft type](generic-aircraft.md) to quote the type, then pick the real aircraft when you create the flight.
+{% endhint %}
+
 ---
 
 ## Aircraft Configuration Sections

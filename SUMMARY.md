@@ -41,6 +41,7 @@
   * [Cost Simulator](guides/aircraft/cost-simulator.md)
   * [Aircraft Images](guides/aircraft/aircraft-images.md)
   * [Adding aircraft (with External Operator)](guides/aircraft/adding-aircraft-with-external-operator.md)
+  * [🆕 Generic aircraft types](guides/aircraft/generic-aircraft.md)
   * [Maintenance Limits](guides/aircraft/maintenance-limits.md)
   * [🆕 Maintenance Tracker](guides/aircraft/maintenance-tracker.md)
 * [⚙️ Settings](guides/settings/README.md)
