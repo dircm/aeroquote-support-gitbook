@@ -82,6 +82,22 @@ If you unlink an aircraft, it keeps the last rates it had. Changing a generic's 
 
 Choose the generic as the aircraft for an option, the same way you would choose a real aircraft. The quote uses the generic's speed and Costings.
 
+### Filter the aircraft search: Fleet, Generic or Both
+
+Wherever you add or choose an aircraft for a request or a quote, a small **Fleet / Generic / Both** switch sits above the aircraft search:
+
+* **Add Aircraft** on a request and in Quote Builder;
+* the aircraft search in **Trip Builder**;
+* the aircraft on a quote option, and on a single leg.
+
+| Choice | Shows |
+| ------ | ----- |
+| **Fleet** | Real aircraft only: your own aircraft and partner (external operator) aircraft |
+| **Generic** | Generic aircraft types only |
+| **Both** | Everything (the default) |
+
+The switch works with whatever you type in the search. Your choice is remembered in that browser tab until you close it, and applies to every aircraft search in the tab. It isn't saved to your account, so other users and other tabs start on **Both**.
+
 ***
 
 ## Create the flight: pick the real aircraft
