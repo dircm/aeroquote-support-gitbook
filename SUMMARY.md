@@ -123,7 +123,7 @@
 * [📝 Amendments](guides/bookings-operators/amendments.md)
   * [📧 Sending Confirmations](guides/bookings-operators/sending-confirmations.md)
 * [⏱️ Flight Time Limits](guides/ftl/README.md)
-  * [FTL Dashboard & Compliance](guides/ftl/ftl-dashboard-and-compliance.md)
+  * [FTL Dashboard & Summary](guides/ftl/ftl-dashboard-and-compliance.md)
 * [Accounting Integration](guides/accounting-integration/README.md)
   * [Xero Integration Setup](guides/accounting-integration/xero-integration-setup.md)
   * [Quickbooks Integration Setup](guides/accounting-integration/quickbooks-integration-setup.md)
