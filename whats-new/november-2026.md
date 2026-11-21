@@ -8,12 +8,15 @@ description: >-
 # November 2026
 
 
-## Email requests: one quote per request and a maximum ground stay
+## Email requests: one quote per request, a maximum ground stay and an automated quote fleet
 
 * A charter request with sectors on different days now becomes **one quote with every leg**, not one quote per day. It is still split when the sectors carry different references, a sector has no date, sectors don't connect, or no single aircraft can fly every leg.
 * New **Quoting rules** on the Email requests page: set a **maximum ground stay** in days and hours. When the wait between legs is longer, the aircraft returns to base. You can **follow the limit** or **use the cheaper price**, which prices both ways per aircraft.
 * Returning to base from a leg that already ends at base no longer adds a base-to-base ferry.
 * When an aircraft returns to base between legs, **daily charges now count only the days away from base**. Previously the whole trip was charged.
+
+* New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Types with no charter rate are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
+* Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
 
 See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
 
