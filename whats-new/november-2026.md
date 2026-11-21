@@ -12,7 +12,7 @@ description: >-
 
 * A charter request with sectors on different days now becomes **one quote with every leg**, not one quote per day. It is still split when the sectors carry different references, a sector has no date, sectors don't connect, or no single aircraft can fly every leg.
 * New **Quoting rules** on the Email requests page: set a **maximum ground stay** in days and hours. When the wait between legs is longer, the aircraft returns to base. You can **follow the limit** or **use the cheaper price**, which prices both ways per aircraft.
-* A **minimum time at base** (default 2 hours) stops a quote flying home only to turn around and fly back out with almost no time on the ground. If the turnaround would be shorter than the minimum, the aircraft stays away and the draft says why. A live **plain-language summary** under the controls explains the rules as you set them, for example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 hours at base."
+* A **minimum time at base** (default **2 days**, entered in days and hours) stops a quote flying home only to turn around and fly back out with almost no time on the ground. If the turnaround would be shorter than the minimum, the aircraft stays away and the draft says why. A live **plain-language summary** under the controls explains the rules as you set them, for example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 days at base."
 * Returning to base from a leg that already ends at base no longer adds a base-to-base ferry.
 * When an aircraft returns to base between legs, **daily charges now count only the days away from base**. Previously the whole trip was charged.
 

@@ -35,7 +35,7 @@ Enter the longest time the aircraft should wait away from base between legs, in 
 * When a wait is longer than the limit, the aircraft **returns to base** after the earlier leg and comes back for the next one. Overnight and ground-time charges for the gap are not charged.
 * If that leg already finishes at the aircraft's base, **no extra ferry is added**. The aircraft is already home.
 
-A **plain-language summary** under the controls explains the rules as you have them, and updates as you change the boxes, before you save. For example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 hours at base."
+A **plain-language summary** under the controls explains the rules as you have them, and updates as you change the boxes, before you save. For example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 days at base."
 
 The draft explains what happened, for example:
 
@@ -52,7 +52,7 @@ One limit applies to all your aircraft. The longest limit you can set is 30 d 23
 
 A return to base can be a short turnaround when the destination is far from base: the aircraft flies home only to turn around and fly back out soon after.
 
-Enter the shortest time the aircraft should spend on the ground at base, in **hours**. The default is **2 hours**. Leave the box blank for no minimum.
+Enter the shortest time the aircraft should spend on the ground at base, in **days and hours**. The default is **2 days**. Leave both boxes blank for no minimum.
 
 When a return to base is triggered, AeroQuote works out the time at base from the wait between legs minus the flights home and back (using the durations already calculated for the quote; it does not make an extra iFlightPlanner call). If that would be less than the minimum, the aircraft **stays away** instead, and the draft says why, for example:
 
