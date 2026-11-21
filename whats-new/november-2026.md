@@ -8,6 +8,19 @@ description: >-
 # November 2026
 
 
+## Email requests: one quote per request, a maximum ground stay and an automated quote fleet
+
+* A charter request with sectors on different days now becomes **one quote with every leg**, not one quote per day. It is still split when the sectors carry different references, a sector has no date, sectors don't connect, or no single aircraft can fly every leg.
+* New **Quoting rules** on the Email requests page: set a **maximum ground stay** in days and hours. When the wait between legs is longer, the aircraft returns to base. You can **follow the limit** or **use the cheaper price**, which prices both ways per aircraft.
+* A **minimum time at base** (default **2 days**, entered in days and hours) stops a quote flying home only to turn around and fly back out with almost no time on the ground. If the turnaround would be shorter than the minimum, the aircraft stays away and the draft says why. A live **plain-language summary** under the controls explains the rules as you set them, for example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 days at base."
+* Returning to base from a leg that already ends at base no longer adds a base-to-base ferry.
+* When an aircraft returns to base between legs, **daily charges now count only the days away from base**. Previously the whole trip was charged.
+
+* New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Aircraft that can't be priced (hourly rates with no charter rate, or margin pricing with no margin or cost items) are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
+* Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
+
+See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
+
 ## CASA audit trail now live
 
 The Maintenance Tracker on production now keeps a CASA-oriented audit trail of maintenance records. In short:
