@@ -19,7 +19,7 @@ description: >-
 * New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Aircraft that can't be priced (hourly rates with no charter rate, or margin pricing with no margin or cost items) are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
 * Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
 
-* Automated quotes use fewer iFlightPlanner calls. Aircraft are ranked with AeroQuote's own estimate first, and only the shortlist (your options per quote, plus up to 2 types within 15%) is priced through iFlightPlanner. Aircraft that miss the shortlist show their price marked **(estimate)**.
+* Automated quotes use fewer iFlightPlanner calls. Aircraft are ranked with AeroQuote's own estimate first, and only the shortlist (your options per quote, plus up to 2 types within 15%) is priced through iFlightPlanner. Aircraft that miss the shortlist show their price marked **(estimate)**. You can turn this off in **Quoting rules** on the Email requests page.
 
 See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
 

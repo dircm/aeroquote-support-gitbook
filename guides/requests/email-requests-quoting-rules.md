@@ -85,6 +85,8 @@ Quoted prices always come from your normal pricing (iFlightPlanner), so customer
 
 An aircraft on iFlightPlanner that has no AeroQuote aircraft type or no cruise speed can't be estimated, so it's priced through iFlightPlanner as before.
 
+Ranking with estimates is on by default. To turn it off, open **Quoting rules** on the **Email requests** page, untick **Rank aircraft with AeroQuote estimates first (fewer iFlightPlanner calls)** and click **Save quoting rules**. Every aircraft is then priced through iFlightPlanner to rank them, as before. The heading line and the summary under the rules show which way it's set. You need permission to edit settings to change it, and every change is recorded.
+
 All quoting rule changes apply to new email requests. To update a draft that already exists, use **Re-run** on that request.
 
 ## Daily charges when the aircraft goes home
