@@ -2,7 +2,8 @@
 description: >-
   How automated quotes from emailed charter requests are grouped, and the
   quoting rules for the maximum time an aircraft waits on the ground away
-  from base, and which aircraft are quoted automatically.
+  from base, the minimum time it must have at base if it flies home, and
+  which aircraft are quoted automatically.
 ---
 
 # Email requests: quoting rules
@@ -34,6 +35,8 @@ Enter the longest time the aircraft should wait away from base between legs, in 
 * When a wait is longer than the limit, the aircraft **returns to base** after the earlier leg and comes back for the next one. Overnight and ground-time charges for the gap are not charged.
 * If that leg already finishes at the aircraft's base, **no extra ferry is added**. The aircraft is already home.
 
+A **plain-language summary** under the controls explains the rules as you have them, and updates as you change the boxes, before you save. For example: "Aircraft away longer than 2 days fly home in between, unless they'd have less than 2 hours at base."
+
 The draft explains what happened, for example:
 
 > Ground stay at Darwin (4 d 2 h) exceeds the 1 d 0 h limit; aircraft returns to base between legs (already at base, no ferry needed).
@@ -44,6 +47,18 @@ One limit applies to all your aircraft. The longest limit you can set is 30 d 23
 
 * **Follow the limit**: always return to base when the wait is longer than the limit.
 * **Use the cheaper price**: price each aircraft both ways (returning to base and staying away) and keep whichever is cheaper. The draft says which was used, for example "VH-ABC: returning to base is cheaper (returning to base A$4,200.00, staying away A$5,000.00 ex tax)."
+
+### Minimum time at base
+
+A return to base can be a short turnaround when the destination is far from base: the aircraft flies home only to turn around and fly back out soon after.
+
+Enter the shortest time the aircraft should spend on the ground at base, in **hours**. The default is **2 hours**. Leave the box blank for no minimum.
+
+When a return to base is triggered, AeroQuote works out the time at base from the wait between legs minus the flights home and back (using the durations already calculated for the quote; it does not make an extra iFlightPlanner call). If that would be less than the minimum, the aircraft **stays away** instead, and the draft says why, for example:
+
+> VH-ABC: returning to base from Katherine would leave only 1 h at base (minimum 2 h; ferries home and back take 2 h); quoted staying away.
+
+This check does not apply when the aircraft is **already at base** (no ferry is added). Daily charges still count only the days the aircraft is away when it does fly home, and the full stay when it stays away.
 
 ### Automated quote fleet
 
