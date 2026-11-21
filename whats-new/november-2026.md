@@ -19,6 +19,8 @@ description: >-
 * New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Aircraft that can't be priced (hourly rates with no charter rate, or margin pricing with no margin or cost items) are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
 * Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
 
+* When an email asks for a particular aircraft, for example "Can you quote the Conquest?", a matching aircraft is now **always included** in the draft, even when it's dearer, unless every matching aircraft is booked, unavailable or can't fly the trip. "Only the Conquest" quotes matching aircraft only. Types are matched by common name, model, ICAO code, category or registration. When no match can be quoted, the draft says why.
+
 See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
 
 ## CASA audit trail now live

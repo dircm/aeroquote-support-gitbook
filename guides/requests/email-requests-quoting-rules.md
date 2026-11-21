@@ -2,8 +2,9 @@
 description: >-
   How automated quotes from emailed charter requests are grouped, and the
   quoting rules for the maximum time an aircraft waits on the ground away
-  from base, the minimum time it must have at base if it flies home, and
-  which aircraft are quoted automatically.
+  from base, the minimum time it must have at base if it flies home,
+  which aircraft are quoted automatically, and how a requested aircraft
+  (for example "can you quote the Conquest") is always included.
 ---
 
 # Email requests: quoting rules
@@ -78,6 +79,42 @@ To leave one aircraft out of automated quotes, open the aircraft, tick **Exclude
 To keep pricing quick, AeroQuote prices only the **3 nearest aircraft of each type** (by positioning distance) and keeps the cheapest of each type.
 
 All quoting rule changes apply to new email requests. To update a draft that already exists, use **Re-run** on that request.
+
+## When the email asks for a particular aircraft
+
+Requesters sometimes ask for an aircraft by name, for example "Can you quote the Conquest?". AeroQuote reads that from the email and makes sure a matching aircraft is in the draft, even when it's dearer than the other options. This works for ACS table emails (the text above the table) and for emails the AI reads.
+
+**What it understands**
+
+* A **type or model**, as people write it: a common name ("Conquest", "King Air", "Caravan", "Navajo"), the full model ("Cessna 441 Conquest II"), or an ICAO type code ("C441", "BE20", "B200").
+* A **category**, for example "Turboprop".
+* A **registration**, for example "VH-JFO". The 3-letter callsign ("JFO") works too.
+
+AeroQuote matches these against each aircraft's ICAO type code, name, manufacturer, category and registration, and knows common names. "Conquest" matches a Cessna 441 Conquest II (C441), and "King Air" or "B200" matches a Beechcraft King Air (BE20).
+
+**How the options are chosen**
+
+* **"Can you quote the Conquest?"** (a preference): the draft keeps the normal options, cheapest first, and the best matching aircraft takes the place of the dearest option that wasn't asked for. The number of options stays within **Options per quote**. The aircraft it replaces is listed with the options over the limit.
+* **"Only the Conquest"** or **"Must be a Conquest"** (exclusive): only matching aircraft are quoted. Other aircraft are listed as "left out: the email asked for only Conquest."
+* **A registration**: that aircraft is quoted instead of a cheaper aircraft of the same type.
+
+The requested aircraft still has to pass the normal checks: it must be in the automated quote fleet, available on the trip days (when **Skip unavailable aircraft** is on), and able to fly the trip (seats, strip length, range and the positioning cap). It's priced the same way as the other options. When ranking with AeroQuote estimates is on, it's added to the shortlist that's priced through iFlightPlanner.
+
+**What the reviewer sees**
+
+The draft shows a line starting with ✈, and the option is marked **requested**. For example:
+
+> Requested Conquest: Cessna 441 Conquest II VH-JFO is in the options, ahead of cheaper aircraft (see the options over the limit).
+
+If no matching aircraft can be quoted, the draft has the normal best options and a line in red saying why:
+
+> Requested Conquest: all booked or unavailable on these dates (VH-JFO is not available: …); quoted the best options without it.
+
+> Requested King Air: no matching aircraft in the fleet; quoted the best options without it.
+
+Other reasons are "no matching aircraft can be quoted for this trip", with each aircraft's reason (for example the strip is too short, or it isn't in the automated quote fleet), and "no matching aircraft could be priced". An exclusive request falls back to the normal best options in the same way. The same lines go into the draft quote's operator notes.
+
+The wording from the email is still kept in the request's instructions for the reviewer.
 
 ## Daily charges when the aircraft goes home
 
