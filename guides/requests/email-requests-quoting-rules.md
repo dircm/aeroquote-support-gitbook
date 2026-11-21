@@ -51,7 +51,11 @@ For a large fleet, these settings decide which aircraft are priced and how many 
 
 * **Options per quote**: how many aircraft options a draft offers, from 1 to 6. The default is **4**. Options are always listed **cheapest first**, one per aircraft type.
 * **Positioning cap**: the most positioning (base to first pickup, plus last drop-off back to base) an aircraft can need and still be quoted, from 100 to 2,000 NM. The default is **500 NM**. Raise it if aircraft at another base, for example Alice Springs on Top End requests, should be considered. If no aircraft is within the cap, the nearest aircraft is quoted and the draft says the cap was relaxed.
-* **Types to quote**: tick the aircraft types that can be quoted automatically. Types with **no charter rate** are greyed out ("no charter rate, not quoted") and are never priced. Add an hourly charter rate on the aircraft to make the type available. When every type is ticked, types that get a charter rate later are included automatically.
+* **Types to quote**: tick the aircraft types that can be quoted automatically. Only aircraft that can be priced are quoted, following each aircraft's pricing setting:
+  * **Use fixed hourly rates**: the aircraft needs a **charter rate**.
+  * **Margin percentage over total costs**: the aircraft needs a **margin** and at least one **cost item**. The charter rate can be empty or zero.
+
+  Types with no aircraft that can be priced are greyed out ("no charter rate or margin costs, not quoted") and are never priced, and the draft tells the reviewer which aircraft were left out and what's missing. When every type is ticked, types that can be priced later are included automatically.
 * **Skip unavailable aircraft**: on by default. An aircraft that is **booked, booked out, or not released from maintenance** on the trip days is left out, and the draft tells the reviewer which aircraft were skipped and why. Turn it off to keep those aircraft with a warning instead. Cautions such as deferred defects or maintenance coming due are always shown on the draft but don't stop the aircraft being quoted.
 
 To leave one aircraft out of automated quotes, open the aircraft, tick **Exclude from automated quotes** on the details step and save. Excluded aircraft are listed in the panel under **Left out of automated quotes**, with **Include again**.

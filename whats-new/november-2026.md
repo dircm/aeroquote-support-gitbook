@@ -15,7 +15,7 @@ description: >-
 * Returning to base from a leg that already ends at base no longer adds a base-to-base ferry.
 * When an aircraft returns to base between legs, **daily charges now count only the days away from base**. Previously the whole trip was charged.
 
-* New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Types with no charter rate are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
+* New **Automated quote fleet** in Quoting rules: set the **options per quote** (default 4), the **positioning cap** (default 500 NM, now adjustable), and which **aircraft types** are quoted. Aircraft that can't be priced (hourly rates with no charter rate, or margin pricing with no margin or cost items) are never priced. Aircraft can be left out individually with **Exclude from automated quotes**.
 * Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
 
 See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
