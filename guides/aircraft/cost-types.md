@@ -80,6 +80,8 @@ A flat charge applied for each calendar day of the trip. Use this for costs that
 
 {% hint style="info" %}
 Daily charges are applied at the option level, not per individual flight. The number of days is calculated from the first departure to the last arrival.
+
+When the option **returns to base between legs**, only the days the aircraft is away from base count. For example, a flight out on Friday and a return on Tuesday, going home in between, is 2 days, not 5. A leg that already ends at base doesn't add a base-to-base ferry.
 {% endhint %}
 
 ***

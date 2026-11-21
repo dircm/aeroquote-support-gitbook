@@ -8,6 +8,15 @@ description: >-
 # November 2026
 
 
+## Email requests: one quote per request and a maximum ground stay
+
+* A charter request with sectors on different days now becomes **one quote with every leg**, not one quote per day. It is still split when the sectors carry different references, a sector has no date, sectors don't connect, or no single aircraft can fly every leg.
+* New **Quoting rules** on the Email requests page: set a **maximum ground stay** in days and hours. When the wait between legs is longer, the aircraft returns to base. You can **follow the limit** or **use the cheaper price**, which prices both ways per aircraft.
+* Returning to base from a leg that already ends at base no longer adds a base-to-base ferry.
+* When an aircraft returns to base between legs, **daily charges now count only the days away from base**. Previously the whole trip was charged.
+
+See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
+
 ## CASA audit trail now live
 
 The Maintenance Tracker on production now keeps a CASA-oriented audit trail of maintenance records. In short:

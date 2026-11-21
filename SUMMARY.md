@@ -80,6 +80,7 @@
   * [Creating a Request (Operators)](guides/requests/creating-a-request-operators.md)
   * [Creating a Request (Brokers)](guides/requests/creating-a-request-brokers.md)
   * [Using the Estimator](guides/requests/using-the-estimator.md)
+  * [🆕 Email requests: quoting rules](guides/requests/email-requests-quoting-rules.md)
 * [Quotes](guides/quotes/README.md)
   * [Create a Quote from a Request (Operators)](guides/quotes/create-a-quote-from-a-request-operators.md)
   * [Create a Quote from a Request (Brokers)](guides/quotes/create-a-quote-from-a-request-brokers.md)
