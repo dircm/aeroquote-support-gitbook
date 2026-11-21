@@ -77,6 +77,14 @@ To leave one aircraft out of automated quotes, open the aircraft, tick **Exclude
 
 To keep pricing quick, AeroQuote prices only the **3 nearest aircraft of each type** (by positioning distance) and keeps the cheapest of each type.
 
+#### Ranking with AeroQuote estimates
+
+Aircraft that use iFlightPlanner (performance database estimates) are first **ranked with AeroQuote's own estimate**, worked out from the aircraft's stored performance, so ranking makes no iFlightPlanner calls. Only the **shortlist** is then priced through iFlightPlanner. The shortlist is the cheapest type of each aircraft up to your **Options per quote**, plus up to **2 more types** priced within **15%** of the last place. If iFlightPlanner's flight times move the proposed departure times, the shortlist is priced again at the new times.
+
+Quoted prices always come from your normal pricing (iFlightPlanner), so customers see the same prices as before. On the draft, aircraft that missed the shortlist show AeroQuote's own price marked **(estimate)**, under "more types priced but over the option limit". In **aircraft not quoted**, a dearer aircraft of the same type says "on AeroQuote estimates, ranking only" when the estimates decided it.
+
+An aircraft on iFlightPlanner that has no AeroQuote aircraft type or no cruise speed can't be estimated, so it's priced through iFlightPlanner as before.
+
 All quoting rule changes apply to new email requests. To update a draft that already exists, use **Re-run** on that request.
 
 ## Daily charges when the aircraft goes home
