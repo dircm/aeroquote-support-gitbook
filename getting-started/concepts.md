@@ -28,7 +28,7 @@ Common modules you will meet by name:
 | **Bookings Module** | Shown in the sidebar as **Flights**. Crew, passengers, flight tracking, and analytics (paid) |
 | **Request for Quote (RFQ)** | Broker-style bulk RFQs to external operators (free; often included on broker plans) |
 | **Scheduled Flights (RPT)** | Seat-selling on published routes and a public storefront (paid; depends on Flights) |
-| **FTL / Crew Limits** | Flight- and duty-time compliance tracking for crew (enabled separately when available) |
+| **FTL / Crew Limits** | Flight- and duty-time tracking for crew — a planning aid (enabled separately when available) |
 
 If a feature is module-dependent, it is noted below. See [Modules](../guides/settings/modules.md) for enabling and billing detail.
 
@@ -200,7 +200,7 @@ The **AeroQuote Crew** mobile app is for pilots, crew, and ops staff in the fiel
 
 ## Flight Time Limits (FTL)
 
-**FTL / Crew Limits** tracks crew duty, flight hours, and compliance against profiles when the capability is enabled for your account (Settings → Modules). It depends on accurate crew assignment and block times on bookings.
+**FTL / Crew Limits** tracks crew duty and flight hours against profiles, as a planning aid (your operations manual governs), when the capability is enabled for your account (Settings → Modules). It depends on accurate crew assignment and block times on bookings.
 
 **Guide:** [Flight Time Limits](../guides/ftl/README.md)
 
