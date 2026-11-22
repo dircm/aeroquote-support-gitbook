@@ -20,6 +20,7 @@ description: >-
 * Aircraft that are **booked, booked out or not released** on the trip days are now skipped automatically, and the draft says why. Only the 3 nearest aircraft of each type are priced; options stay cheapest first.
 
 * When an email asks for a particular aircraft, for example "Can you quote the Conquest?", a matching aircraft is now **always included** in the draft, even when it's dearer, unless every matching aircraft is booked, unavailable or can't fly the trip. "Only the Conquest" quotes matching aircraft only. Types are matched by common name, model, ICAO code, category or registration. When no match can be quoted, the draft says why.
+* New **Price rounding** in Quoting rules: round each option's quoted price up, to the nearest, or down, to the nearest A$1, A$5, A$10, A$50, A$100, A$500 or A$1,000. Off by default. Rounding happens after the aircraft are chosen, so it does not change which options appear. A live example (A$12,343.25 and a smaller trip of A$2,849.60) shows the effect. Rounding up is the usual choice so a quote is never below the calculated price. Rounding down never goes below the aircraft's **minimum price to customer**. This applies only to quotes from email requests; cost is not rounded, and tax is worked out from the rounded amount.
 
 See [Email requests: quoting rules](../guides/requests/email-requests-quoting-rules.md).
 

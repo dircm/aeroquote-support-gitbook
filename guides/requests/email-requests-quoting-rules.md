@@ -3,8 +3,9 @@ description: >-
   How automated quotes from emailed charter requests are grouped, and the
   quoting rules for the maximum time an aircraft waits on the ground away
   from base, the minimum time it must have at base if it flies home,
-  which aircraft are quoted automatically, and how a requested aircraft
-  (for example "can you quote the Conquest") is always included.
+  which aircraft are quoted automatically, how a requested aircraft
+  (for example "can you quote the Conquest") is always included, and how
+  option prices can be rounded.
 ---
 
 # Email requests: quoting rules
@@ -60,6 +61,27 @@ When a return to base is triggered, AeroQuote works out the time at base from th
 > VH-ABC: returning to base from Katherine would leave only 1 h at base (minimum 2 h; ferries home and back take 2 h); quoted staying away.
 
 This check does not apply when the aircraft is **already at base** (no ferry is added). Daily charges still count only the days the aircraft is away when it does fly home, and the full stay when it stays away.
+
+### Price rounding
+
+Off by default. When you turn it on, each option's **quoted price is rounded** after the aircraft have been chosen, so rounding never changes which options appear.
+
+Choose **Save quoting rules** to apply it. A live example under the controls, starting from A$12,343.25 and a smaller trip of A$2,849.60, shows what your choice would do.
+
+* **Round to the nearest**: choose **Don't round**, or an increment of A$1, A$5, A$10, A$50, A$100, A$500 or A$1,000.
+* **Round up** (the usual choice): the price is never below the calculated amount, for example A$12,343.25 becomes A$12,400.00 when rounding up to the nearest A$100.
+* **Round to nearest**: halfway cases round up. A price can go slightly below the calculated amount.
+* **Round down**: can put a small trip below cost. The price is never taken below the aircraft's **minimum price to customer**. If rounding down would go below that minimum, the price is kept at the minimum and the draft says so.
+
+Rounding is applied to the **stored sell price** of each option (the figure after any margin or hourly rates, and after the aircraft's minimum price to customer). **Cost is not rounded.** Tax is worked out from the rounded amount: when tax is added on top, the price you edit is before tax; when tax is included in the price, the rounded figure is the customer total. This applies only to **quotes created from email requests**, not to quotes you build by hand.
+
+The draft shows a line for each option that was changed, for example:
+
+> Rounded up to the nearest A$100 (was A$12,343.25).
+
+> VH-ABC: price kept at the minimum of A$12,350.00 (rounding down to the nearest A$100 would have been A$12,300.00).
+
+The same lines go into the draft quote's operator notes. The heading of **Quoting rules** shows whether rounding is on, for example "prices rounded up to the nearest A$100".
 
 ### Automated quote fleet
 
